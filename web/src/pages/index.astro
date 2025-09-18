@@ -1,0 +1,72 @@
+---
+// Main landing page that redirects to documentation
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>MetaSpec-Kyocera Documentation</title>
+    <meta name="description" content="Unified MetaSpec-Kyocera system: Multi-agent framework for Kyocera meter reading management with zero-cost architecture">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="0; url=/MetaSpec-Kyocera/docs/readme/">
+    <link rel="canonical" href="/MetaSpec-Kyocera/docs/readme/">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-align: center;
+        }
+        .container {
+            max-width: 600px;
+            padding: 2rem;
+        }
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+        p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+        }
+        .loading {
+            display: inline-block;
+            animation: spin 1s linear infinite;
+        }
+        @keyframes spin {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+        a {
+            color: #ffd700;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>MetaSpec-Kyocera</h1>
+        <p>Unified multi-agent framework for Kyocera meter reading management</p>
+        <p><span class="loading">🔄</span> Redirecting to documentation...</p>
+        <p>If you are not redirected automatically, <a href="/MetaSpec-Kyocera/docs/readme/">click here</a>.</p>
+    </div>
+
+    <script>
+        // Fallback redirect in case meta refresh doesn't work
+        setTimeout(function() {
+            window.location.href = '/MetaSpec-Kyocera/docs/readme/';
+        }, 100);
+    </script>
+</body>
+</html>
