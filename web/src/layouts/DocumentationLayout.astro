@@ -15,37 +15,19 @@ const { title, description = "MetaSpec-Kyocera Documentation" } = Astro.props;
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <title>{title} | MetaSpec-Kyocera</title>
-    <style>
-        /* Ensure markdown content is styled properly */
-        .prose {
-            max-width: none;
-        }
-        .prose h1, .prose h2, .prose h3, .prose h4, .prose h5, .prose h6 {
-            scroll-margin-top: 2rem;
-        }
-        .prose pre {
-            overflow-x: auto;
-        }
-        .prose code {
-            font-size: 0.875em;
-        }
-        .prose table {
-            font-size: 0.875em;
-        }
 
-        /* Navigation styles */
-        .nav-link {
-            @apply block px-3 py-2 text-sm text-gray-600 hover:text-gray-900 hover:bg-gray-50 rounded-md transition-colors;
-        }
-        .nav-link.active {
-            @apply text-blue-600 bg-blue-50;
-        }
-        .nav-section-title {
-            @apply text-xs font-semibold text-gray-400 uppercase tracking-wider mb-2 px-3;
-        }
-    </style>
+    <!-- Import global styles -->
+    <link rel="stylesheet" href="/src/styles/globals.css" />
+
+    <!-- Inter font from Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- JetBrains Mono for code -->
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
-<body class="bg-gray-50 min-h-screen">
+<body class="bg-background text-foreground min-h-screen antialiased">
     <div class="flex">
         <!-- Sidebar Navigation -->
         <nav class="w-64 bg-white shadow-sm border-r border-gray-200 min-h-screen fixed left-0 top-0 overflow-y-auto">
