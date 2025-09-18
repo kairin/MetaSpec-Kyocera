@@ -51,7 +51,12 @@ jobs:
           cp AGENTS.md web/src/pages/docs/agents.md
 
           # Copy documentation structure maintaining hierarchy
-          cp -r docs/* web/src/pages/docs/
+          if [ -d "docs" ]; then
+            (cd docs && find . -name "*.md" -type f | while read -r file; do
+              mkdir -p "$(dirname "../web/src/pages/docs/$file")"
+              cp "$file" "../web/src/pages/docs/$file"
+            done)
+          fi
 
           # Create navigation structure file
           cat > web/src/pages/docs/navigation.json << 'EOF'
