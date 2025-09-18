@@ -113,12 +113,8 @@ run_workflow_locally() {
     fi
 
     print_info "Installing npm dependencies..."
-    if [ -f "package-lock.json" ]; then
-        npm ci
-    else
-        print_warning "package-lock.json not found, using npm install"
-        npm install --legacy-peer-deps
-    fi
+    # Always use npm install with legacy-peer-deps to avoid sync issues
+    npm install --legacy-peer-deps
     cd ..
 
     # Step 4: Prepare documentation

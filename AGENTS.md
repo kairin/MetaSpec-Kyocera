@@ -13,8 +13,9 @@
 ### 🚨 CRITICAL: Zero-Cost Operations
 - **NO CLOUD SERVICES**: All processing runs locally only
 - **NO SUBSCRIPTION FEES**: No external services that incur charges
-- **NO GITHUB ACTIONS**: Use local runners only to avoid GitHub Actions charges
-- **LOCAL CI/CD**: All automation via cron/systemd locally
+- **GITHUB ACTIONS**: Only for documentation deployment (free tier: 2000 min/month)
+- **LOCAL CI/CD FIRST**: All workflows MUST run locally before GitHub deployment
+- **COST MONITORING**: Track GitHub Actions usage monthly
 
 ### 🚨 CRITICAL: Package Management
 - **UV EXCLUSIVELY**: NEVER use pip, conda, poetry, or any other Python package manager
@@ -64,6 +65,46 @@ git checkout main
 git merge "$BRANCH_NAME" --no-ff
 git push origin main
 # NEVER: git branch -d "$BRANCH_NAME"
+```
+
+### 🚨 CRITICAL: Local CI/CD Requirements
+
+#### Pre-Deployment Verification (MANDATORY)
+**EVERY** commit/push MUST complete these steps locally FIRST:
+
+```bash
+# 1. Run local workflow (MANDATORY before GitHub)
+./local-infra/runners/gh-workflow-local.sh local
+
+# 2. Verify local build success
+./local-infra/runners/gh-workflow-local.sh status
+
+# 3. Test documentation locally
+cd web && npm run preview
+
+# 4. Only then commit using branch strategy
+DATETIME=$(date +"%Y%m%d-%H%M%S")
+BRANCH_NAME="${DATETIME}-type-description"
+git checkout -b "$BRANCH_NAME"
+# ... rest of workflow
+```
+
+#### Local Workflow Tools (MANDATORY)
+- **`./local-infra/runners/gh-workflow-local.sh`** - Local GitHub Actions simulation
+- **`./local-infra/runners/gh-pages-setup.sh`** - Zero-cost Pages configuration
+- **Commands**: `local`, `status`, `trigger`, `pages`, `all`
+- **Requirement**: Local success BEFORE any GitHub deployment
+
+#### Cost Verification (MANDATORY)
+```bash
+# Check GitHub Actions usage
+gh api user/settings/billing/actions
+
+# Monitor workflow runs
+gh run list --limit 10 --json status,conclusion,name,createdAt
+
+# Verify zero-cost compliance
+./local-infra/runners/gh-pages-setup.sh
 ```
 
 ## 🏗️ System Architecture
