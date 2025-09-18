@@ -1,0 +1,60 @@
+<svg viewBox="0 0 900 400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Step 1 -->
+  <rect x="50" y="150" width="120" height="100" fill="#e8f4f8" stroke="#0078d4" stroke-width="2" rx="10"/>
+  <text x="110" y="180" text-anchor="middle" font-size="12" font-weight="bold">1. Download</text>
+  <text x="110" y="200" text-anchor="middle" font-size="10">Export .eml</text>
+  <text x="110" y="215" text-anchor="middle" font-size="10">from Outlook</text>
+  <text x="110" y="230" text-anchor="middle" font-size="10">to emails/</text>
+  
+  <!-- Step 2 -->
+  <rect x="220" y="150" width="120" height="100" fill="#f0fff0" stroke="#28a745" stroke-width="2" rx="10"/>
+  <text x="280" y="180" text-anchor="middle" font-size="12" font-weight="bold">2. Process</text>
+  <text x="280" y="200" text-anchor="middle" font-size="10">Run CLI</text>
+  <text x="280" y="215" text-anchor="middle" font-size="10">Extract data</text>
+  <text x="280" y="230" text-anchor="middle" font-size="10">Generate files</text>
+  
+  <!-- Step 3 -->
+  <rect x="390" y="150" width="120" height="100" fill="#fff8dc" stroke="#ff8c00" stroke-width="2" rx="10"/>
+  <text x="450" y="180" text-anchor="middle" font-size="12" font-weight="bold">3. Store</text>
+  <text x="450" y="200" text-anchor="middle" font-size="10">DuckDB</text>
+  <text x="450" y="215" text-anchor="middle" font-size="10">Compress</text>
+  <text x="450" y="230" text-anchor="middle" font-size="10">Archive</text>
+  
+  <!-- Step 4 -->
+  <rect x="560" y="150" width="120" height="100" fill="#f0f8ff" stroke="#4169e1" stroke-width="2" rx="10"/>
+  <text x="620" y="180" text-anchor="middle" font-size="12" font-weight="bold">4. Organize</text>
+  <text x="620" y="200" text-anchor="middle" font-size="10">By Model</text>
+  <text x="620" y="215" text-anchor="middle" font-size="10">By Serial</text>
+  <text x="620" y="230" text-anchor="middle" font-size="10">By Date</text>
+  
+  <!-- Step 5 -->
+  <rect x="730" y="150" width="120" height="100" fill="#fff0f5" stroke="#ff1493" stroke-width="2" rx="10"/>
+  <text x="790" y="180" text-anchor="middle" font-size="12" font-weight="bold">5. Access</text>
+  <text x="790" y="200" text-anchor="middle" font-size="10">CLI/TUI/Web</text>
+  <text x="790" y="215" text-anchor="middle" font-size="10">Reports</text>
+  <text x="790" y="230" text-anchor="middle" font-size="10">Analytics</text>
+  
+  <!-- Arrows -->
+  <path d="M 170 200 L 220 200" stroke="#333" stroke-width="2" marker-end="url(#arrowblack)"/>
+  <path d="M 340 200 L 390 200" stroke="#333" stroke-width="2" marker-end="url(#arrowblack)"/>
+  <path d="M 510 200 L 560 200" stroke="#333" stroke-width="2" marker-end="url(#arrowblack)"/>
+  <path d="M 680 200 L 730 200" stroke="#333" stroke-width="2" marker-end="url(#arrowblack)"/>
+  
+  <!-- Timeline -->
+  <text x="110" y="280" text-anchor="middle" font-size="10" fill="#666">Manual</text>
+  <text x="110" y="295" text-anchor="middle" font-size="10" fill="#666">(Once)</text>
+  
+  <text x="280" y="280" text-anchor="middle" font-size="10" fill="#666">Automated</text>
+  <text x="280" y="295" text-anchor="middle" font-size="10" fill="#666">(&lt; 3 sec/email)</text>
+  
+  <text x="450" y="280" text-anchor="middle" font-size="10" fill="#666">Instant</text>
+  <text x="620" y="280" text-anchor="middle" font-size="10" fill="#666">Automatic</text>
+  <text x="790" y="280" text-anchor="middle" font-size="10" fill="#666">Real-time</text>
+  
+  <!-- Arrow marker -->
+  <defs>
+    <marker id="arrowblack" markerWidth="10" markerHeight="10" refX="5" refY="5">
+      <polygon points="0,0 10,5 0,10" fill="#333"/>
+    </marker>
+  </defs>
+</svg>

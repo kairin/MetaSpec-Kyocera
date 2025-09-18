@@ -1,0 +1,447 @@
+# Validation Framework Contract
+# Defines the interface for agent validation and testing
+
+openapi: 3.0.3
+info:
+  title: Validation Framework Contract
+  version: 1.0.0
+  description: Contract for Guardian Agent validation and testing framework
+
+paths:
+  /validate/agent:
+    post:
+      summary: Validate a Guardian Agent
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/AgentValidationRequest'
+      responses:
+        '200':
+          description: Validation completed
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/AgentValidationResponse'
+
+  /validate/workflow:
+    post:
+      summary: Validate a workflow chain
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/WorkflowValidationRequest'
+      responses:
+        '200':
+          description: Workflow validation completed
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/WorkflowValidationResponse'
+
+  /validate/batch:
+    post:
+      summary: Batch validate multiple agents
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/BatchValidationRequest'
+      responses:
+        '200':
+          description: Batch validation completed
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/BatchValidationResponse'
+
+components:
+  schemas:
+    AgentValidationRequest:
+      type: object
+      required:
+        - agent_id
+        - validation_perspectives
+      properties:
+        agent_id:
+          type: string
+          pattern: '^[0-9]{3}$'
+          description: Agent to validate
+        validation_perspectives:
+          type: array
+          items:
+            type: string
+            enum:
+              - development
+              - testing
+              - code_review
+              - production_readiness
+          description: Validation perspectives to apply
+        test_depth:
+          type: string
+          enum:
+            - surface
+            - standard
+            - comprehensive
+          default: standard
+        performance_testing:
+          type: boolean
+          default: true
+          description: Include performance SLA testing
+
+    AgentValidationResponse:
+      type: object
+      required:
+        - agent_id
+        - overall_status
+        - validation_results
+        - timestamp
+      properties:
+        agent_id:
+          type: string
+        overall_status:
+          type: string
+          enum:
+            - pass
+            - partial
+            - fail
+        validation_results:
+          type: array
+          items:
+            $ref: '#/components/schemas/ValidationResult'
+        performance_metrics:
+          $ref: '#/components/schemas/ValidationPerformanceMetrics'
+        timestamp:
+          type: string
+          format: date-time
+        recommendations:
+          type: array
+          items:
+            type: string
+          description: Improvement recommendations
+
+    ValidationResult:
+      type: object
+      required:
+        - perspective
+        - checks
+        - summary
+      properties:
+        perspective:
+          type: string
+          enum:
+            - development
+            - testing
+            - code_review
+            - production_readiness
+        checks:
+          type: array
+          items:
+            $ref: '#/components/schemas/ValidationCheck'
+        summary:
+          $ref: '#/components/schemas/ValidationSummary'
+
+    ValidationCheck:
+      type: object
+      required:
+        - check_id
+        - description
+        - status
+        - timestamp
+      properties:
+        check_id:
+          type: string
+          description: Unique check identifier
+        description:
+          type: string
+          description: What is being validated
+        status:
+          type: string
+          enum:
+            - "✓"      # complete
+            - "☐"      # incomplete
+            - "~"      # partial
+            - "✗"      # failed
+            - "⚠️"      # warning
+        timestamp:
+          type: string
+          format: date-time
+        details:
+          type: string
+          description: Additional details about the check
+        completion_percentage:
+          type: integer
+          minimum: 0
+          maximum: 100
+          description: For partial status, percentage complete
+        error_message:
+          type: string
+          description: Error details for failed checks
+        remediation:
+          type: string
+          description: How to fix failed or incomplete checks
+
+    ValidationSummary:
+      type: object
+      required:
+        - total_checks
+        - passed_checks
+        - failed_checks
+        - completion_percentage
+      properties:
+        total_checks:
+          type: integer
+        passed_checks:
+          type: integer
+        failed_checks:
+          type: integer
+        partial_checks:
+          type: integer
+        warning_checks:
+          type: integer
+        completion_percentage:
+          type: number
+          minimum: 0.0
+          maximum: 100.0
+        blockers:
+          type: array
+          items:
+            type: string
+          description: Issues blocking production readiness
+
+    ValidationPerformanceMetrics:
+      type: object
+      properties:
+        response_time:
+          type: object
+          properties:
+            average:
+              type: number
+              description: Average response time in seconds
+            p95:
+              type: number
+              description: 95th percentile response time
+            max:
+              type: number
+              description: Maximum response time observed
+        sla_compliance:
+          type: object
+          properties:
+            target:
+              type: number
+              description: Target response time
+            actual:
+              type: number
+              description: Actual average response time
+            compliant:
+              type: boolean
+              description: Whether SLA was met
+        quality_metrics:
+          type: object
+          properties:
+            accuracy:
+              type: number
+              minimum: 0.0
+              maximum: 1.0
+            completeness:
+              type: number
+              minimum: 0.0
+              maximum: 1.0
+            consistency:
+              type: number
+              minimum: 0.0
+              maximum: 1.0
+
+    WorkflowValidationRequest:
+      type: object
+      required:
+        - workflow_name
+        - agent_chain
+      properties:
+        workflow_name:
+          type: string
+          description: Name of workflow to validate
+        agent_chain:
+          type: array
+          items:
+            type: string
+          description: Ordered list of agent IDs in workflow
+        test_scenarios:
+          type: array
+          items:
+            $ref: '#/components/schemas/WorkflowTestScenario'
+        performance_requirements:
+          type: object
+          properties:
+            max_total_time:
+              type: integer
+              description: Maximum acceptable workflow time
+            quality_threshold:
+              type: number
+              description: Minimum workflow quality
+
+    WorkflowTestScenario:
+      type: object
+      required:
+        - scenario_name
+        - input
+        - expected_output
+      properties:
+        scenario_name:
+          type: string
+        input:
+          type: string
+          description: Test input for workflow
+        expected_output:
+          type: string
+          description: Expected final output
+        success_criteria:
+          type: array
+          items:
+            type: string
+          description: Criteria for successful workflow execution
+
+    WorkflowValidationResponse:
+      type: object
+      required:
+        - workflow_name
+        - overall_status
+        - agent_results
+        - workflow_metrics
+      properties:
+        workflow_name:
+          type: string
+        overall_status:
+          type: string
+          enum:
+            - pass
+            - partial
+            - fail
+        agent_results:
+          type: array
+          items:
+            $ref: '#/components/schemas/AgentValidationResponse'
+        workflow_metrics:
+          type: object
+          properties:
+            total_execution_time:
+              type: number
+            handoff_efficiency:
+              type: number
+              description: Average handoff time between agents
+            end_to_end_success_rate:
+              type: number
+              minimum: 0.0
+              maximum: 1.0
+            cost_efficiency:
+              type: number
+              description: Cost per successful workflow execution
+
+    BatchValidationRequest:
+      type: object
+      required:
+        - agent_ids
+      properties:
+        agent_ids:
+          type: array
+          items:
+            type: string
+          description: List of agent IDs to validate
+        validation_config:
+          $ref: '#/components/schemas/BatchValidationConfig'
+        parallel_execution:
+          type: boolean
+          default: true
+          description: Whether to validate agents in parallel
+
+    BatchValidationConfig:
+      type: object
+      properties:
+        perspectives:
+          type: array
+          items:
+            type: string
+            enum:
+              - development
+              - testing
+              - code_review
+              - production_readiness
+          description: Validation perspectives for all agents
+        test_depth:
+          type: string
+          enum:
+            - surface
+            - standard
+            - comprehensive
+          default: standard
+        performance_testing:
+          type: boolean
+          default: true
+        report_format:
+          type: string
+          enum:
+            - json
+            - markdown
+            - console
+            - all
+          default: json
+
+    BatchValidationResponse:
+      type: object
+      required:
+        - batch_id
+        - overall_summary
+        - agent_results
+        - timestamp
+      properties:
+        batch_id:
+          type: string
+          description: Unique batch validation ID
+        overall_summary:
+          $ref: '#/components/schemas/BatchSummary'
+        agent_results:
+          type: array
+          items:
+            $ref: '#/components/schemas/AgentValidationResponse'
+        timestamp:
+          type: string
+          format: date-time
+        execution_time:
+          type: number
+          description: Total batch execution time
+
+    BatchSummary:
+      type: object
+      required:
+        - total_agents
+        - passed_agents
+        - failed_agents
+        - overall_health
+      properties:
+        total_agents:
+          type: integer
+        passed_agents:
+          type: integer
+        failed_agents:
+          type: integer
+        partial_agents:
+          type: integer
+        overall_health:
+          type: number
+          minimum: 0.0
+          maximum: 100.0
+          description: Overall system health percentage
+        critical_issues:
+          type: array
+          items:
+            type: string
+          description: System-wide issues requiring immediate attention
+        recommendations:
+          type: array
+          items:
+            type: string
+          description: System-level improvement recommendations

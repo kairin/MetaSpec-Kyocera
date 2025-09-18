@@ -1,0 +1,114 @@
+{
+  "timestamp": "2025-09-17T18:09:41+08:00",
+  "project_root": "/home/kkk/Apps/DeepResearchAgent",
+  "results": [
+    {
+      "name": "uv Installation",
+      "status": "PASS",
+      "message": "uv installed: uv 0.8.15",
+      "details": null
+    },
+    {
+      "name": "System Python 3.13",
+      "status": "PASS",
+      "message": "System Python 3.13 available: Python 3.13.3",
+      "details": null
+    },
+    {
+      "name": "uv Python 3.13 Detection",
+      "status": "PASS",
+      "message": "uv can detect Python 3.13",
+      "details": null
+    },
+    {
+      "name": "Virtual Environment Python Version",
+      "status": "PASS",
+      "message": "Virtual environment uses Python 3.13",
+      "details": null
+    },
+    {
+      "name": "Build System Migration",
+      "status": "PASS",
+      "message": "Build system migrated to hatchling",
+      "details": null
+    },
+    {
+      "name": "Poetry Cleanup",
+      "status": "PASS",
+      "message": "Poetry configuration removed from pyproject.toml",
+      "details": null
+    },
+    {
+      "name": "Dependencies Format",
+      "status": "PASS",
+      "message": "Dependencies in uv format (project.dependencies)",
+      "details": null
+    },
+    {
+      "name": "uv.lock File",
+      "status": "PASS",
+      "message": "uv.lock file exists",
+      "details": null
+    },
+    {
+      "name": "Poetry Lock Cleanup",
+      "status": "PASS",
+      "message": "poetry.lock properly removed",
+      "details": null
+    },
+    {
+      "name": "Makefile uv Integration",
+      "status": "PASS",
+      "message": "Makefile uses uv commands",
+      "details": null
+    },
+    {
+      "name": "Makefile Poetry Cleanup",
+      "status": "PASS",
+      "message": "Poetry references removed from Makefile",
+      "details": null
+    },
+    {
+      "name": "Import: import src",
+      "status": "PASS",
+      "message": "Import successful",
+      "details": null
+    },
+    {
+      "name": "Import: from src.models import model_manager",
+      "status": "PASS",
+      "message": "Import successful",
+      "details": null
+    },
+    {
+      "name": "Import: from src.tools import AsyncTool",
+      "status": "PASS",
+      "message": "Import successful",
+      "details": null
+    },
+    {
+      "name": "Import: from src.agent import create_agent",
+      "status": "PASS",
+      "message": "Import successful",
+      "details": null
+    },
+    {
+      "name": "Legacy Package Manager References",
+      "status": "WARN",
+      "message": "Found legacy references",
+      "details": "pip install: 758 occurrences; poetry: 81 occurrences; conda install: 4 occurrences; pipenv: 3 occurrences"
+    },
+    {
+      "name": "Clean Environment Creation",
+      "status": "PASS",
+      "message": "Can create fresh uv environment with Python 3.13",
+      "details": null
+    }
+  ],
+  "summary": {
+    "passed": 16,
+    "failed": 0,
+    "warnings": 1,
+    "success": true
+  }
+}

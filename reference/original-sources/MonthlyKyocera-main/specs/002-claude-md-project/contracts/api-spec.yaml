@@ -1,0 +1,956 @@
+openapi: 3.0.3
+info:
+  title: Kyocera Meter Reading Management API
+  description: REST API for processing and managing Kyocera device meter readings
+  version: 1.0.0
+  contact:
+    name: API Support
+    email: admin@example.com
+  license:
+    name: MIT
+    
+servers:
+  - url: http://localhost:8000/api
+    description: Development server
+  - url: https://api.kyocera-meters.example.com
+    description: Production server
+
+tags:
+  - name: emails
+    description: Email processing operations
+  - name: devices
+    description: Device management
+  - name: readings
+    description: Meter reading operations
+  - name: reports
+    description: Report generation
+  - name: dashboard
+    description: Dashboard statistics
+  - name: logs
+    description: System logs
+
+paths:
+  /emails/process:
+    post:
+      tags:
+        - emails
+      summary: Process pending emails
+      description: Triggers processing of emails in the pending folder
+      operationId: processEmails
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                batch_size:
+                  type: integer
+                  default: 50
+                  description: Number of emails to process
+                dry_run:
+                  type: boolean
+                  default: false
+                  description: Simulate processing without changes
+      responses:
+        '200':
+          description: Processing completed
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ProcessingResult'
+        '400':
+          $ref: '#/components/responses/BadRequest'
+        '500':
+          $ref: '#/components/responses/InternalError'
+
+  /emails/{email_id}:
+    get:
+      tags:
+        - emails
+      summary: Get email details
+      operationId: getEmail
+      parameters:
+        - $ref: '#/components/parameters/EmailId'
+      responses:
+        '200':
+          description: Email details
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/EmailMessage'
+        '404':
+          $ref: '#/components/responses/NotFound'
+
+  /emails/{message_id}/reconstruct:
+    get:
+      tags:
+        - emails
+      summary: Reconstruct original email from compressed storage
+      description: Decompresses and reconstructs the complete .eml file
+      operationId: reconstructEmail
+      parameters:
+        - name: message_id
+          in: path
+          required: true
+          schema:
+            type: string
+          description: RFC 822 Message-ID
+      responses:
+        '200':
+          description: Reconstructed email file
+          content:
+            message/rfc822:
+              schema:
+                type: string
+                format: binary
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ReconstructedEmail'
+        '404':
+          $ref: '#/components/responses/NotFound'
+        '500':
+          $ref: '#/components/responses/InternalError'
+
+  /emails/threads/{thread_id}:
+    get:
+      tags:
+        - emails
+      summary: Get email thread with all messages
+      operationId: getEmailThread
+      parameters:
+        - name: thread_id
+          in: path
+          required: true
+          schema:
+            type: string
+          description: Thread identifier
+      responses:
+        '200':
+          description: Email thread details
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/EmailThread'
+        '404':
+          $ref: '#/components/responses/NotFound'
+
+  /emails/compress:
+    post:
+      tags:
+        - emails
+      summary: Compress email for storage
+      description: Compresses large emails to target size (<10MB)
+      operationId: compressEmail
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required:
+                - message_id
+              properties:
+                message_id:
+                  type: string
+                  description: Message-ID to compress
+                compression_method:
+                  type: string
+                  enum: [zstd, gzip, auto]
+                  default: auto
+                  description: Compression method (auto selects best)
+                target_size_mb:
+                  type: integer
+                  default: 10
+                  description: Target size in MB
+      responses:
+        '200':
+          description: Compression result
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/CompressionResult'
+        '400':
+          $ref: '#/components/responses/BadRequest'
+        '404':
+          $ref: '#/components/responses/NotFound'
+        '500':
+          $ref: '#/components/responses/InternalError'
+
+  /devices:
+    get:
+      tags:
+        - devices
+      summary: List all devices
+      operationId: listDevices
+      parameters:
+        - name: status
+          in: query
+          schema:
+            type: string
+            enum: [active, inactive, retired]
+          description: Filter by status
+        - name: model
+          in: query
+          schema:
+            type: string
+          description: Filter by model
+        - $ref: '#/components/parameters/Limit'
+        - $ref: '#/components/parameters/Offset'
+      responses:
+        '200':
+          description: List of devices
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  items:
+                    type: array
+                    items:
+                      $ref: '#/components/schemas/Device'
+                  total:
+                    type: integer
+                  limit:
+                    type: integer
+                  offset:
+                    type: integer
+
+  /devices/{serial}:
+    get:
+      tags:
+        - devices
+      summary: Get device details
+      operationId: getDevice
+      parameters:
+        - $ref: '#/components/parameters/DeviceSerial'
+      responses:
+        '200':
+          description: Device details
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Device'
+        '404':
+          $ref: '#/components/responses/NotFound'
+
+  /devices/{serial}/readings:
+    get:
+      tags:
+        - readings
+      summary: Get device meter readings
+      operationId: getDeviceReadings
+      parameters:
+        - $ref: '#/components/parameters/DeviceSerial'
+        - name: start_date
+          in: query
+          schema:
+            type: string
+            format: date
+          description: Start date (YYYY-MM-DD)
+        - name: end_date
+          in: query
+          schema:
+            type: string
+            format: date
+          description: End date (YYYY-MM-DD)
+        - $ref: '#/components/parameters/Limit'
+        - $ref: '#/components/parameters/Offset'
+      responses:
+        '200':
+          description: List of meter readings
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  items:
+                    type: array
+                    items:
+                      $ref: '#/components/schemas/MeterReading'
+                  total:
+                    type: integer
+                  device:
+                    $ref: '#/components/schemas/Device'
+
+  /readings:
+    get:
+      tags:
+        - readings
+      summary: List all meter readings
+      operationId: listReadings
+      parameters:
+        - name: date
+          in: query
+          schema:
+            type: string
+            format: date
+          description: Filter by specific date
+        - name: month
+          in: query
+          schema:
+            type: string
+            pattern: '^\d{4}-\d{2}$'
+          description: Filter by month (YYYY-MM)
+        - $ref: '#/components/parameters/Limit'
+        - $ref: '#/components/parameters/Offset'
+      responses:
+        '200':
+          description: List of readings
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  items:
+                    type: array
+                    items:
+                      $ref: '#/components/schemas/MeterReading'
+                  total:
+                    type: integer
+
+  /reports/generate:
+    post:
+      tags:
+        - reports
+      summary: Generate report
+      operationId: generateReport
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required:
+                - report_type
+                - start_date
+                - end_date
+                - format
+              properties:
+                report_type:
+                  type: string
+                  enum: [monthly, yearly, device, department]
+                start_date:
+                  type: string
+                  format: date
+                end_date:
+                  type: string
+                  format: date
+                format:
+                  type: string
+                  enum: [pdf, excel, csv, json]
+                device_serial:
+                  type: string
+                  description: Required for device reports
+                department:
+                  type: string
+                  description: Required for department reports
+      responses:
+        '200':
+          description: Report generated
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Report'
+            application/pdf:
+              schema:
+                type: string
+                format: binary
+            text/csv:
+              schema:
+                type: string
+        '400':
+          $ref: '#/components/responses/BadRequest'
+
+  /reports/{report_id}:
+    get:
+      tags:
+        - reports
+      summary: Get report
+      operationId: getReport
+      parameters:
+        - name: report_id
+          in: path
+          required: true
+          schema:
+            type: integer
+      responses:
+        '200':
+          description: Report content
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Report'
+            application/pdf:
+              schema:
+                type: string
+                format: binary
+        '404':
+          $ref: '#/components/responses/NotFound'
+
+  /dashboard/stats:
+    get:
+      tags:
+        - dashboard
+      summary: Get dashboard statistics
+      operationId: getDashboardStats
+      parameters:
+        - name: period
+          in: query
+          schema:
+            type: string
+            enum: [today, week, month, year]
+            default: month
+      responses:
+        '200':
+          description: Dashboard statistics
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/DashboardStats'
+
+  /dashboard/trends:
+    get:
+      tags:
+        - dashboard
+      summary: Get usage trends
+      operationId: getUsageTrends
+      parameters:
+        - name: period
+          in: query
+          schema:
+            type: string
+            enum: [daily, weekly, monthly]
+            default: monthly
+        - name: months
+          in: query
+          schema:
+            type: integer
+            default: 12
+            minimum: 1
+            maximum: 24
+      responses:
+        '200':
+          description: Usage trend data
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  labels:
+                    type: array
+                    items:
+                      type: string
+                  datasets:
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        label:
+                          type: string
+                        data:
+                          type: array
+                          items:
+                            type: number
+
+  /logs:
+    get:
+      tags:
+        - logs
+      summary: Get system logs
+      operationId: getLogs
+      parameters:
+        - name: status
+          in: query
+          schema:
+            type: string
+            enum: [success, failure, warning]
+        - name: entity_type
+          in: query
+          schema:
+            type: string
+        - name: start_date
+          in: query
+          schema:
+            type: string
+            format: date-time
+        - name: end_date
+          in: query
+          schema:
+            type: string
+            format: date-time
+        - $ref: '#/components/parameters/Limit'
+        - $ref: '#/components/parameters/Offset'
+      responses:
+        '200':
+          description: List of log entries
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  items:
+                    type: array
+                    items:
+                      $ref: '#/components/schemas/ProcessingLog'
+                  total:
+                    type: integer
+
+  /health:
+    get:
+      tags:
+        - system
+      summary: Health check
+      operationId: healthCheck
+      responses:
+        '200':
+          description: System healthy
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+                    enum: [healthy, degraded, unhealthy]
+                  version:
+                    type: string
+                  uptime:
+                    type: integer
+                  database:
+                    type: string
+                    enum: [connected, disconnected]
+
+components:
+  schemas:
+    Device:
+      type: object
+      required:
+        - model
+        - serial_number
+        - status
+      properties:
+        model:
+          type: string
+          example: "TASKalfa 3253ci"
+        serial_number:
+          type: string
+          example: "ABC1234567"
+        location:
+          type: string
+          example: "Building A, Floor 2"
+        status:
+          type: string
+          enum: [active, inactive, retired]
+        last_reading_date:
+          type: string
+          format: date-time
+        created_at:
+          type: string
+          format: date-time
+        updated_at:
+          type: string
+          format: date-time
+
+    MeterReading:
+      type: object
+      required:
+        - id
+        - device_model
+        - device_serial
+        - reading_date
+        - total_counter
+      properties:
+        id:
+          type: integer
+        device_model:
+          type: string
+        device_serial:
+          type: string
+        reading_date:
+          type: string
+          format: date
+        total_counter:
+          type: integer
+          minimum: 0
+        black_counter:
+          type: integer
+          minimum: 0
+        color_counter:
+          type: integer
+          minimum: 0
+        scan_counter:
+          type: integer
+          minimum: 0
+        fax_counter:
+          type: integer
+          minimum: 0
+        source_email_id:
+          type: string
+        file_paths:
+          type: object
+          properties:
+            pdf:
+              type: string
+            txt:
+              type: string
+            md:
+              type: string
+            yaml:
+              type: string
+        created_at:
+          type: string
+          format: date-time
+
+    EmailMessage:
+      type: object
+      required:
+        - id
+        - message_id
+        - received_date
+        - sender
+        - processing_status
+      properties:
+        id:
+          type: string
+        message_id:
+          type: string
+          description: RFC 822 Message-ID header
+        in_reply_to:
+          type: string
+          description: In-Reply-To header for threading
+        references:
+          type: string
+          description: References header chain
+        thread_id:
+          type: string
+          description: Thread identifier
+        received_date:
+          type: string
+          format: date-time
+        sender:
+          type: string
+          format: email
+        subject:
+          type: string
+        body_text:
+          type: string
+        attachments:
+          type: array
+          items:
+            type: object
+            properties:
+              filename:
+                type: string
+              content_type:
+                type: string
+              size:
+                type: integer
+                description: Size in bytes (no limit)
+        processing_status:
+          type: string
+          enum: [pending, processed, failed, quarantined]
+        quarantine_reason:
+          type: string
+        processed_at:
+          type: string
+          format: date-time
+        created_at:
+          type: string
+          format: date-time
+
+    Report:
+      type: object
+      properties:
+        id:
+          type: integer
+        report_type:
+          type: string
+          enum: [monthly, yearly, device, department]
+        device_model:
+          type: string
+        device_serial:
+          type: string
+        start_date:
+          type: string
+          format: date
+        end_date:
+          type: string
+          format: date
+        format:
+          type: string
+          enum: [pdf, excel, csv, json]
+        file_path:
+          type: string
+        generated_at:
+          type: string
+          format: date-time
+
+    ProcessingLog:
+      type: object
+      properties:
+        id:
+          type: integer
+        timestamp:
+          type: string
+          format: date-time
+        action:
+          type: string
+        status:
+          type: string
+          enum: [success, failure, warning]
+        entity_type:
+          type: string
+        entity_id:
+          type: string
+        details:
+          type: object
+        error_message:
+          type: string
+        file_path:
+          type: string
+
+    ProcessingResult:
+      type: object
+      properties:
+        processed:
+          type: integer
+          description: Number of successfully processed emails
+        failed:
+          type: integer
+          description: Number of failed emails
+        quarantined:
+          type: integer
+          description: Number of quarantined emails
+        total_time:
+          type: number
+          format: float
+          description: Total processing time in seconds
+        errors:
+          type: array
+          items:
+            type: object
+            properties:
+              email_id:
+                type: string
+              error:
+                type: string
+
+    EmailThread:
+      type: object
+      required:
+        - thread_id
+        - root_message_id
+        - message_count
+      properties:
+        thread_id:
+          type: string
+        root_message_id:
+          type: string
+        subject:
+          type: string
+        participant_count:
+          type: integer
+        message_count:
+          type: integer
+        first_message_date:
+          type: string
+          format: date-time
+        last_activity:
+          type: string
+          format: date-time
+        messages:
+          type: array
+          items:
+            $ref: '#/components/schemas/EmailMessage'
+
+    CompressedEmail:
+      type: object
+      required:
+        - id
+        - original_message_id
+        - compression_method
+        - original_size
+        - compressed_size
+      properties:
+        id:
+          type: string
+        original_message_id:
+          type: string
+        compression_method:
+          type: string
+          enum: [zstd, gzip, none]
+        original_size:
+          type: integer
+          description: Original size in bytes
+        compressed_size:
+          type: integer
+          description: Compressed size in bytes
+        compression_ratio:
+          type: number
+          format: float
+          description: Compression ratio (0-100%)
+        metadata_json:
+          type: object
+          description: Complete headers and structure for reconstruction
+        compressed_at:
+          type: string
+          format: date-time
+
+    ReconstructedEmail:
+      type: object
+      required:
+        - message_id
+        - original_size
+        - reconstructed
+      properties:
+        message_id:
+          type: string
+        original_size:
+          type: integer
+        reconstructed:
+          type: boolean
+        eml_content:
+          type: string
+          description: Base64 encoded .eml file content
+        headers:
+          type: object
+        error:
+          type: string
+
+    CompressionResult:
+      type: object
+      required:
+        - success
+        - original_size
+        - compressed_size
+      properties:
+        success:
+          type: boolean
+        message_id:
+          type: string
+        original_size:
+          type: integer
+        compressed_size:
+          type: integer
+        compression_ratio:
+          type: number
+          format: float
+        compression_method:
+          type: string
+        error:
+          type: string
+
+    DashboardStats:
+      type: object
+      properties:
+        total_devices:
+          type: integer
+        active_devices:
+          type: integer
+        total_readings:
+          type: integer
+        readings_this_month:
+          type: integer
+        total_pages:
+          type: integer
+        pages_this_month:
+          type: integer
+        processing_queue:
+          type: integer
+        failed_emails:
+          type: integer
+        last_processing:
+          type: string
+          format: date-time
+
+    Error:
+      type: object
+      required:
+        - error
+        - message
+      properties:
+        error:
+          type: string
+        message:
+          type: string
+        details:
+          type: object
+
+  parameters:
+    EmailId:
+      name: email_id
+      in: path
+      required: true
+      schema:
+        type: string
+      description: Email message ID
+
+    DeviceSerial:
+      name: serial
+      in: path
+      required: true
+      schema:
+        type: string
+      description: Device serial number
+
+    Limit:
+      name: limit
+      in: query
+      schema:
+        type: integer
+        default: 50
+        minimum: 1
+        maximum: 100
+      description: Maximum items to return
+
+    Offset:
+      name: offset
+      in: query
+      schema:
+        type: integer
+        default: 0
+        minimum: 0
+      description: Number of items to skip
+
+  responses:
+    BadRequest:
+      description: Bad request
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/Error'
+
+    NotFound:
+      description: Resource not found
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/Error'
+
+    InternalError:
+      description: Internal server error
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/Error'
+
+  securitySchemes:
+    ApiKey:
+      type: apiKey
+      in: header
+      name: X-API-Key
+      description: API key for authentication
+
+    BasicAuth:
+      type: http
+      scheme: basic
+      description: Basic authentication (future)
+
+    BearerAuth:
+      type: http
+      scheme: bearer
+      bearerFormat: JWT
+      description: JWT authentication (future)
+
+security:
+  - ApiKey: []

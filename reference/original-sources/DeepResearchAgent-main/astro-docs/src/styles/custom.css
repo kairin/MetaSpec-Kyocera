@@ -1,0 +1,117 @@
+/* Emergency Recovery Styling */
+
+/* Highlight emergency content */
+[data-page-slug="guides/emergency-recovery"] {
+  --sl-color-accent: #ff6b35;
+  --sl-color-accent-high: #ff4500;
+}
+
+/* Emergency badge styling */
+.emergency-badge {
+  background: linear-gradient(45deg, #ff6b35, #ff4500);
+  color: white;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  font-weight: bold;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* Code block highlighting for emergency commands */
+.emergency-commands pre {
+  border-left: 4px solid #ff6b35;
+  background: #fff3f0;
+}
+
+/* Quick reference card styling */
+.quick-reference {
+  background: #fff9f5;
+  border: 2px solid #ff6b35;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  margin: 1rem 0;
+  font-family: monospace;
+  font-size: 0.9rem;
+}
+
+/* File organization tree styling */
+.file-tree {
+  font-family: 'JetBrains Mono', 'Fira Code', Consolas, monospace;
+  background: #f8f9fa;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  border-left: 4px solid #28a745;
+}
+
+/* Emergency warning callouts */
+.emergency-warning {
+  background: linear-gradient(135deg, #fff5f5 0%, #fed7d7 100%);
+  border: 2px solid #e53e3e;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  margin: 1rem 0;
+}
+
+.emergency-warning::before {
+  content: "🚨 ";
+  font-size: 1.2em;
+  margin-right: 0.5rem;
+}
+
+/* Success indicators */
+.success-indicator {
+  color: #28a745;
+  font-weight: bold;
+}
+
+.success-indicator::before {
+  content: "✅ ";
+  margin-right: 0.25rem;
+}
+
+/* Command styling */
+.command-line {
+  background: #1a1a1a;
+  color: #00ff00;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  font-family: monospace;
+  margin: 0.5rem 0;
+}
+
+/* Navigation enhancement for emergency items */
+[aria-label*="Emergency"] {
+  background: linear-gradient(90deg, rgba(255, 107, 53, 0.1) 0%, transparent 100%);
+  border-left: 3px solid #ff6b35;
+}
+
+/* Tool organization sections */
+.tool-section {
+  margin: 1.5rem 0;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  border-left: 4px solid #007acc;
+  background: #f8fdff;
+}
+
+.tool-section h3 {
+  color: #007acc;
+  margin-top: 0;
+}
+
+/* Status badges */
+.status-complete::before {
+  content: "✅ ";
+  color: #28a745;
+}
+
+.status-pending::before {
+  content: "⏳ ";
+  color: #ffc107;
+}
+
+.status-warning::before {
+  content: "⚠️ ";
+  color: #ff6b35;
+}

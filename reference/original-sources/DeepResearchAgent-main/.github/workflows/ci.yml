@@ -1,0 +1,94 @@
+name: CI
+
+# 🚫 DISABLED: All automation runs locally to avoid charges
+# Run locally with: ./scripts/local_ci_cd.sh
+# See AGENTS.md for local development workflow
+
+on:
+  # ❌ DISABLED - Never run online to prevent charges
+  # push:
+  #   branches: [ main, develop ]
+  # pull_request:
+  #   branches: [ main, develop ]
+  # workflow_dispatch:  # Manual trigger disabled
+
+  # This workflow is intentionally disabled
+  workflow_call:  # Only callable from other workflows (none exist)
+
+jobs:
+  test:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [ubuntu-latest, macos-latest, windows-latest]
+        python-version: ["3.11", "3.12", "3.13"]
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Install uv
+      uses: astral-sh/setup-uv@v4
+      with:
+        enable-cache: true
+        cache-dependency-glob: "uv.lock"
+
+    - name: Set up Python ${{ matrix.python-version }}
+      run: uv python install ${{ matrix.python-version }}
+
+    - name: Install dependencies
+      run: uv sync --all-extras
+
+    - name: Install Playwright browsers
+      run: uv run playwright install chromium --with-deps
+      if: matrix.os == 'ubuntu-latest'
+
+    - name: Run linting
+      run: |
+        uv run ruff check .
+        uv run mypy src/
+
+    - name: Run formatting check
+      run: |
+        uv run black --check .
+        uv run isort --check-only .
+
+    - name: Run tests
+      run: uv run pytest -v
+
+    - name: Test import
+      run: uv run python -c "import src; print('Import successful')"
+
+  dependency-check:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Install uv
+      uses: astral-sh/setup-uv@v4
+
+    - name: Check dependency resolution
+      run: uv sync --dry-run
+
+    - name: Check for security vulnerabilities
+      run: uv run pip-audit
+      continue-on-error: true
+
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Install uv
+      uses: astral-sh/setup-uv@v4
+
+    - name: Build package
+      run: uv build
+
+    - name: Upload build artifacts
+      uses: actions/upload-artifact@v4
+      with:
+        name: dist
+        path: dist/

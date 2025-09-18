@@ -1,0 +1,24 @@
+<svg viewBox="0 0 800 300" xmlns="http://www.w3.org/2000/svg">
+  <!-- Outlook Inbox -->
+  <rect x="50" y="50" width="700" height="200" fill="#f0f0f0" stroke="#333" stroke-width="2"/>
+  <rect x="50" y="50" width="700" height="40" fill="#0078d4" stroke="#333" stroke-width="2"/>
+  <text x="400" y="75" text-anchor="middle" fill="white" font-size="18" font-weight="bold">Outlook Inbox - Manual Process</text>
+  
+  <!-- Email List -->
+  <text x="70" y="120" font-size="12" fill="#333">📧 Karin SIMD (ITE) - W793605465 - Counter Report</text>
+  <text x="70" y="140" font-size="12" fill="#333">📧 Karin SIMD (ITE) - W793605466 - Counter Report</text>
+  <text x="70" y="160" font-size="12" fill="#333">📧 Karin SIMD (ITE) - W793605467 - Toner Alert</text>
+  <text x="70" y="180" font-size="12" fill="#333">📧 Karin SIMD (ITE) - W793605468 - Counter Report</text>
+  <text x="70" y="200" font-size="12" fill="#333">📧 ... hundreds more emails to process manually ...</text>
+  
+  <!-- Manual Work Arrow -->
+  <path d="M 400 250 L 400 280" stroke="#ff0000" stroke-width="3" marker-end="url(#arrowred)"/>
+  <text x="450" y="270" font-size="14" fill="#ff0000">Manual Download &amp; Processing</text>
+  
+  <!-- Arrow marker -->
+  <defs>
+    <marker id="arrowred" markerWidth="10" markerHeight="10" refX="5" refY="5">
+      <polygon points="0,0 10,5 0,10" fill="#ff0000"/>
+    </marker>
+  </defs>
+</svg>

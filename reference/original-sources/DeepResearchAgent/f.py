@@ -1,0 +1,1 @@
+import sys,os;[sys.stdout.write(s)for s in['\033[?1000l','\033[?1002l','\033[?1003l','\033[?1006l','\033[?1015l']];sys.stdout.flush();os.system('stty sane');print('Fixed')

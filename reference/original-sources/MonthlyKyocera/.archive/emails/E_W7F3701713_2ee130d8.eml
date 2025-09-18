@@ -1,0 +1,190 @@
+Received: from SG2PR01MB4589.apcprd01.prod.exchangelabs.com
+ (2603:1096:4:1ba::9) by SEZPR01MB5319.apcprd01.prod.exchangelabs.com with
+ HTTPS; Thu, 11 Sep 2025 07:46:47 +0000
+Authentication-Results: dkim=none (message not signed)
+ header.d=none;dmarc=none action=none header.from=connect.ite.edu.sg;
+Received: from SEZPR01MB5319.apcprd01.prod.exchangelabs.com
+ (2603:1096:101:ef::14) by SG2PR01MB4589.apcprd01.prod.exchangelabs.com
+ (2603:1096:4:1ba::9) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.9094.22; Thu, 11 Sep
+ 2025 07:46:45 +0000
+From: Microsoft Outlook
+	<MicrosoftExchange329e71ec88ae4615bbc36ab6ce41109e@connect.ite.edu.sg>
+To: <kairin_simo@ite.edu.sg>
+Date: Thu, 11 Sep 2025 07:46:45 +0000
+Content-Type: multipart/report; report-type=delivery-status;
+	boundary="05077ed0-ce15-467d-a422-7e88746e1d04"
+X-MS-Exchange-Organization-SCL: 1
+X-MS-Exchange-Message-Is-Ndr:
+Content-Language: en-US
+Message-ID: <67dd15ce-e408-4588-a385-5a97369bee93@SEZPR01MB5319.apcprd01.prod.exchangelabs.com>
+In-Reply-To: <SEZPR01MB5319047F0CA8909141487D92B309A@SEZPR01MB5319.apcprd01.prod.exchangelabs.com>
+References: <SEZPR01MB5319047F0CA8909141487D92B309A@SEZPR01MB5319.apcprd01.prod.exchangelabs.com>
+Subject: Undeliverable: W7F3701713
+Auto-Submitted: auto-replied
+X-MS-Exchange-Organization-AuthSource: SEZPR01MB5319.apcprd01.prod.exchangelabs.com
+X-MS-Exchange-Organization-AuthAs: Internal
+X-MS-Exchange-Organization-AuthMechanism: 05
+X-MS-Exchange-Organization-Network-Message-Id: bc7e251a-d6cf-49ac-ee26-08ddf1075b5a
+Return-Path: <>
+X-MS-Exchange-Organization-ExpirationStartTime: 11 Sep 2025 07:46:45.8954
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-MessageDirectionality: Originating
+X-MS-Office365-Filtering-Correlation-Id: bc7e251a-d6cf-49ac-ee26-08ddf1075b5a
+X-MS-PublicTrafficType: Email
+X-MS-TrafficTypeDiagnostic: SG2PR01MB4589:EE_|SEZPR01MB5319:EE_
+X-MS-Exchange-AtpMessageProperties: SA
+X-Microsoft-Antispam: BCL:0;ARA:13230040|366016|1930700014|8096899003|41050700001;
+X-Forefront-Antispam-Report: CIP:255.255.255.255;CTRY:;LANG:en;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:SEZPR01MB5319.apcprd01.prod.exchangelabs.com;PTR:;CAT:NONE;SFS:(13230040)(366016)(1930700014)(8096899003)(41050700001);DIR:INT;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 11 Sep 2025 07:46:45.6223
+ (UTC)
+X-MS-Exchange-CrossTenant-FromEntityHeader: Hosted
+X-MS-Exchange-CrossTenant-AuthSource: SEZPR01MB5319.apcprd01.prod.exchangelabs.com
+X-MS-Exchange-CrossTenant-AuthAs: Internal
+X-MS-Exchange-CrossTenant-Network-Message-Id: bc7e251a-d6cf-49ac-ee26-08ddf1075b5a
+X-MS-Exchange-CrossTenant-Id: 13b42c8c-cbcf-4e3d-9d20-f55b7b5ee3c1
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: SG2PR01MB4589
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:01.6113030
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.9094.017
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(910005)(944506478)(944626604)(4710137)(4711095)(920097)(425001)(930097)(140003);
+X-Microsoft-Antispam-Message-Info:
+	veojVNXtzQsuf0z3RW8SE/dC+QwAP7aw0RmI2ITbhy39mAZOcSEhd1lBZ1CGNqmyijw0S7RjPi/+G1EEMiPaJ4FEVhgeP+FYQVzdWDCrZ7UtNdW8cgDlXPE0DYber1wxgvKyoC9AMmuH8LMHwepGsz6n5eqf0zbocWJN1MsHpZKYVW+1tRKkfVWKVwAf45NziNcjh+OIehxe0aDHEz5rKziRUcvT7qi02VvNo4NgaYQunHNrLkvtKifvnHXirs9EKiBOtY45Xz+hVvkIJtytRXyhOnkGhg4///LJpSYmjjvP3XIvo0UWyE2vVndZHZZxyLD16Tmcmm7gF3PaMy4xGk94s6QpANJLm3mOaLmscdyM6zbssGuNYqwj02bAIFfZnlA6EQ/LhnV+togkvXfFU3WrHtoTaB3TorZBEjibVZX903sE6EhnCJr3Q26HuBmkTulzdNHX2h1Sn0O0FqHQLqVmbodTTN0Dlfv1/aUZdQa7VTKW3Qn73PODxFOJRTrEGAIILQdMK+9uPFt/3jCqlODjbFdqmDbWQipSVfeqBbabM2lpRoJLpCMmrf9mG+3NVWXp6z3aR+NWKq86lcvkzha0z5nNuB15yBOahrOTnWOx2RywcAY8gs4dkCNCTb+YkelDbE79kKt0qOlm7G8JHrY8di/4dNLWb27wmNElKjTF5+937OZysgzWBCiGTmVcCxrHc4yiRFSFwrB3mwYcZWBJLwkNuRxdIwYwWkYL9a5ZI/KkFpQzj0ZddgR3a6DYkgskOsfZpdTszL9hlwK59mOUa3izlJhn7k/3+n80W2nF7/96GXbTT2uaYNT4FBOgsU2VLKgM3HXkZ5Mf5gTmoNriRk8IonHb20yJXKapno4OhdOPWqp/cvKg/FKV2LOlYUh5LjUeJL6AVEMU7BwYXNtI6mnYE7TYDvmY8FpaY4UHLYfx/2MjkZqmCv+37XDhO2WF6njUidryXUxm914MYw==
+MIME-Version: 1.0
+
+--05077ed0-ce15-467d-a422-7e88746e1d04
+Content-Type: multipart/alternative; differences=Content-Type;
+	boundary="9a052ccc-6494-4435-8111-49e05693b5dc"
+
+--9a052ccc-6494-4435-8111-49e05693b5dc
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+Delivery has failed to these recipients or groups:
+
+ite-cas@outlook.com<mailto:ite-cas@outlook.com>
+Your message is larger than the size limit for messages. Please make it sma=
+ller and try sending it again.
+
+
+
+
+
+
+
+
+Diagnostic information for administrators:
+
+Generating server: SEZPR01MB5319.apcprd01.prod.exchangelabs.com
+
+ite-cas@outlook.com
+Remote server returned '554-5.3.4 Content conversion limit(s) exceeded 554 =
+5.3.4 STOREDRV.Submit.Exception:ConversionFailedException; Failed to proces=
+s message due to a permanent exception with message [BeginDiagnosticData]Co=
+ntent conversion: Maximum number of body parts (250) per message exceeded C=
+onversionFailedException: Content conversion: Maximum number of body parts =
+(250) per message exceeded[EndDiagnosticData]'
+
+Original message headers:
+
+Received: from SEZPR01MB5319.apcprd01.prod.exchangelabs.com
+ ([fe80::9b17:e363:96fc:f8f1]) by SEZPR01MB5319.apcprd01.prod.exchangelabs.=
+com
+ ([fe80::9b17:e363:96fc:f8f1%4]) with mapi id 15.20.9094.021; Thu, 11 Sep 2=
+025
+ 07:46:45 +0000
+MIME-Version: 1.0
+Content-Type: text/plain
+Date: Thu, 11 Sep 2025 07:46:45 +0000
+Message-ID:
+        <SEZPR01MB5319047F0CA8909141487D92B309A@SEZPR01MB5319.apcprd01.prod=
+.exchangelabs.com>
+Subject: W7F3701713
+
+
+--9a052ccc-6494-4435-8111-49e05693b5dc
+Content-Type: text/html; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+<html><head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dus-ascii"=
+></head><body>
+<p><b><font color=3D"#000066" size=3D"3" face=3D"Arial">Delivery has failed=
+ to these recipients or groups:</font></b></p>
+<font color=3D"#000000" size=3D"2" face=3D"Tahoma"><p><a href=3D"mailto:ite=
+-cas@outlook.com">ite-cas@outlook.com</a><br>
+</font>
+<font color=3D"#000000" size=3D"3" face=3D"Arial">Your message is larger th=
+an the size limit for messages. Please make it smaller and try sending it a=
+gain.<br>
+</font>
+<font color=3D"#000000" size=3D"2" face=3D"Tahoma"><br>
+</p>
+</font>
+<br><br><br><br><br><br>
+<font color=3D"#808080" size=3D"2" face=3D"Tahoma"><p><b>Diagnostic informa=
+tion for administrators:</b></p>
+<p>Generating server: SEZPR01MB5319.apcprd01.prod.exchangelabs.com<br>
+</p>
+<p>ite-cas@outlook.com<br>
+Remote server  returned '554-5.3.4 Content conversion limit(s) exceeded
+554 5.3.4 STOREDRV.Submit.Exception:ConversionFailedException; Failed to pr=
+ocess message due to a permanent exception with message [BeginDiagnosticDat=
+a]Content conversion: Maximum number of body parts (250) per message exceed=
+ed ConversionFailedException: Content conversion: Maximum number of body pa=
+rts (250) per message exceeded[EndDiagnosticData]'<br>
+</p>
+<p>Original message headers:</p>
+<pre>Received: from SEZPR01MB5319.apcprd01.prod.exchangelabs.com
+ ([fe80::9b17:e363:96fc:f8f1]) by SEZPR01MB5319.apcprd01.prod.exchangelabs.=
+com
+ ([fe80::9b17:e363:96fc:f8f1%4]) with mapi id 15.20.9094.021; Thu, 11 Sep 2=
+025
+ 07:46:45 +0000
+MIME-Version: 1.0
+Content-Type: text/plain
+Date: Thu, 11 Sep 2025 07:46:45 +0000
+Message-ID:
+	&lt;SEZPR01MB5319047F0CA8909141487D92B309A@SEZPR01MB5319.apcprd01.prod.exc=
+hangelabs.com&gt;
+Subject: W7F3701713
+</pre>
+</font>
+</body>
+</html>=
+
+--9a052ccc-6494-4435-8111-49e05693b5dc--
+
+--05077ed0-ce15-467d-a422-7e88746e1d04
+Content-Type: message/delivery-status
+
+Original-Envelope-Id: <SEZPR01MB5319047F0CA8909141487D92B309A@SEZPR01MB5319.apcprd01.prod.exchangelabs.com>
+Reporting-MTA: dns;SEZPR01MB5319.apcprd01.prod.exchangelabs.com
+Received-From-MTA: dns;apcprd01.prod.exchangelabs.com
+Arrival-Date: Thu, 11 Sep 2025 07:46:45 +0000
+
+Final-Recipient: rfc822;ite-cas@outlook.com
+Action: failed
+Status: 5.3.4
+Diagnostic-Code: smtp;554-5.3.4 Content conversion limit(s) exceeded
+ 554 5.3.4 STOREDRV.Submit.Exception:ConversionFailedException; Failed to process message due to a permanent exception with message [BeginDiagnosticData]Content conversion: Maximum number of body parts (250) per message exceeded ConversionFailedException: Content conversion: Maximum number of body parts (250) per message exceeded[EndDiagnosticData]
+
+
+--05077ed0-ce15-467d-a422-7e88746e1d04
+Content-Type: message/rfc822
+
+Received: from SEZPR01MB5319.apcprd01.prod.exchangelabs.com
+ ([fe80::9b17:e363:96fc:f8f1]) by SEZPR01MB5319.apcprd01.prod.exchangelabs.com
+ ([fe80::9b17:e363:96fc:f8f1%4]) with mapi id 15.20.9094.021; Thu, 11 Sep 2025
+ 07:46:45 +0000
+Content-Type: text/plain
+Date: Thu, 11 Sep 2025 07:46:45 +0000
+Message-ID: <SEZPR01MB5319047F0CA8909141487D92B309A@SEZPR01MB5319.apcprd01.prod.exchangelabs.com>
+Subject: W7F3701713
+MIME-Version: 1.0
+
+
+--05077ed0-ce15-467d-a422-7e88746e1d04--

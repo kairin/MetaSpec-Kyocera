@@ -1,0 +1,229 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '../components/ui/card';
+import { Badge } from '../components/ui/badge';
+import { Button } from '../components/ui/button';
+---
+
+<Layout title="Emergency Recovery - DeepResearchAgent">
+	<style>
+		@import '../styles/globals.css';
+	</style>
+
+	<div class="container mx-auto px-6 py-12">
+		<div class="mx-auto max-w-4xl">
+			<!-- Emergency Header -->
+			<div class="text-center mb-12">
+				<Badge variant="emergency" class="mb-4 text-lg px-4 py-2">🚨 CRITICAL EMERGENCY GUIDE</Badge>
+				<h1 class="text-4xl font-bold tracking-tight mb-4 text-red-600 dark:text-red-400">Terminal Recovery</h1>
+				<p class="text-xl text-muted-foreground">
+					If your terminal is flooded with escape sequences like <code class="bg-red-100 dark:bg-red-900/30 px-2 py-1 rounded text-red-600 dark:text-red-400">&lt;35;83;16M</code> and you can't type, follow these steps immediately.
+				</p>
+			</div>
+
+			<!-- Quick Reference Card -->
+			<Card class="border-red-200 dark:border-red-800 bg-red-50 dark:bg-red-950/20 mb-8">
+				<CardHeader>
+					<CardTitle class="text-red-600 dark:text-red-400 flex items-center space-x-2">
+						<span>⚡</span>
+						<span>Quick Reference Card</span>
+					</CardTitle>
+					<CardDescription>
+						Keep this handy for emergencies - print or bookmark this page
+					</CardDescription>
+				</CardHeader>
+				<CardContent>
+					<div class="quick-reference">
+						<strong>🚨 TERMINAL FLOODED - CAN'T TYPE:</strong><br/><br/>
+						<strong>1.</strong> Close terminal window → Open new terminal<br/>
+						<strong>2.</strong> Rapid Ctrl+C (press 3-4 times quickly)<br/>
+						<strong>3.</strong> Type: <code>./fix</code> (when you get a moment)
+					</div>
+				</CardContent>
+			</Card>
+
+			<!-- Immediate Recovery Methods -->
+			<div class="space-y-6">
+				<!-- Method 1 -->
+				<Card class="border-l-4 border-l-red-500">
+					<CardHeader>
+						<CardTitle class="flex items-center space-x-2">
+							<Badge variant="emergency">Method 1</Badge>
+							<span>Force Terminal Restart (Fastest)</span>
+						</CardTitle>
+						<CardDescription>
+							Most reliable solution when terminal is completely unresponsive
+						</CardDescription>
+					</CardHeader>
+					<CardContent>
+						<div class="space-y-3">
+							<div class="flex items-start space-x-3">
+								<Badge variant="outline" class="mt-1">1</Badge>
+								<span><strong>Close the terminal window/tab completely</strong> (click X or Ctrl+Shift+W)</span>
+							</div>
+							<div class="flex items-start space-x-3">
+								<Badge variant="outline" class="mt-1">2</Badge>
+								<span><strong>Open a new terminal window</strong></span>
+							</div>
+							<div class="flex items-start space-x-3">
+								<Badge variant="outline" class="mt-1">3</Badge>
+								<span>Mouse tracking only affects the specific terminal session</span>
+							</div>
+						</div>
+					</CardContent>
+				</Card>
+
+				<!-- Method 2 -->
+				<Card class="border-l-4 border-l-orange-500">
+					<CardHeader>
+						<CardTitle class="flex items-center space-x-2">
+							<Badge variant="destructive">Method 2</Badge>
+							<span>Keyboard Interrupts</span>
+						</CardTitle>
+						<CardDescription>
+							Try these rapidly when terminal is flooded
+						</CardDescription>
+					</CardHeader>
+					<CardContent>
+						<div class="space-y-3">
+							<div class="flex items-start space-x-3">
+								<Badge variant="secondary" class="mt-1">Key</Badge>
+								<span><strong>Ctrl+C Ctrl+C Ctrl+C</strong> (hold and press multiple times)</span>
+							</div>
+							<div class="flex items-start space-x-3">
+								<Badge variant="secondary" class="mt-1">Key</Badge>
+								<span><strong>Ctrl+Z</strong> (suspend current process)</span>
+							</div>
+							<div class="flex items-start space-x-3">
+								<Badge variant="secondary" class="mt-1">Key</Badge>
+								<span><strong>Ctrl+\\</strong> (force quit signal)</span>
+							</div>
+							<div class="flex items-start space-x-3">
+								<Badge variant="secondary" class="mt-1">Key</Badge>
+								<span><strong>Ctrl+D</strong> (end input/session)</span>
+							</div>
+						</div>
+					</CardContent>
+				</Card>
+
+				<!-- Method 3 -->
+				<Card class="border-l-4 border-l-green-500">
+					<CardHeader>
+						<CardTitle class="flex items-center space-x-2">
+							<Badge variant="success">Method 3</Badge>
+							<span>Emergency Commands</span>
+						</CardTitle>
+						<CardDescription>
+							Once you break through the flood
+						</CardDescription>
+					</CardHeader>
+					<CardContent>
+						<div class="space-y-4">
+							<div>
+								<h4 class="font-semibold mb-2">Ultra-short commands (type quickly):</h4>
+								<div class="code-block">
+									<pre><code>./fix</code></pre>
+								</div>
+							</div>
+							<div>
+								<h4 class="font-semibold mb-2">Alternative:</h4>
+								<div class="code-block">
+									<pre><code>python3 f.py</code></pre>
+								</div>
+							</div>
+							<div>
+								<h4 class="font-semibold mb-2">With uv:</h4>
+								<div class="code-block">
+									<pre><code>uv run python tools/emergency/fix_mouse.py</code></pre>
+								</div>
+							</div>
+						</div>
+					</CardContent>
+				</Card>
+			</div>
+
+			<!-- Root Cause -->
+			<Card class="mt-8">
+				<CardHeader>
+					<CardTitle class="flex items-center space-x-2">
+						<span>🔍</span>
+						<span>Root Cause</span>
+					</CardTitle>
+					<CardDescription>
+						Understanding why this happens
+					</CardDescription>
+				</CardHeader>
+				<CardContent>
+					<div class="space-y-4">
+						<p>Mouse tracking escape sequences are left enabled when TUI applications exit improperly:</p>
+						<ul class="space-y-2 text-sm list-disc list-inside ml-4">
+							<li>TUI enables mouse tracking for click detection</li>
+							<li>Improper exit leaves tracking enabled</li>
+							<li>Every mouse movement floods terminal with escape data</li>
+							<li>Terminal becomes unusable</li>
+						</ul>
+					</div>
+				</CardContent>
+			</Card>
+
+			<!-- Prevention -->
+			<Card class="mt-8">
+				<CardHeader>
+					<CardTitle class="flex items-center space-x-2">
+						<span>🛡️</span>
+						<span>Prevention</span>
+					</CardTitle>
+					<CardDescription>
+						How we've fixed this in the current version
+					</CardDescription>
+				</CardHeader>
+				<CardContent>
+					<div class="space-y-2">
+						<div class="status-complete">Emergency cleanup runs on script startup</div>
+						<div class="status-complete">Proper TUI exit handlers clean up on quit</div>
+						<div class="status-complete">Signal handlers ensure cleanup on crashes</div>
+					</div>
+				</CardContent>
+			</Card>
+
+			<!-- Technical Details -->
+			<Card class="mt-8">
+				<CardHeader>
+					<CardTitle class="flex items-center space-x-2">
+						<span>⚙️</span>
+						<span>Technical Details</span>
+					</CardTitle>
+					<CardDescription>
+						ANSI escape sequences that control mouse tracking
+					</CardDescription>
+				</CardHeader>
+				<CardContent>
+					<div class="space-y-4">
+						<p>Mouse tracking is controlled by ANSI escape sequences:</p>
+						<div class="code-block text-xs">
+							<pre><code>\033[?1000l  # Disable X11 mouse reporting
+\033[?1002l  # Disable cell motion tracking
+\033[?1003l  # Disable all motion tracking</code></pre>
+						</div>
+						<p class="text-sm text-muted-foreground">
+							The emergency scripts send these sequences to restore normal terminal behavior.
+						</p>
+					</div>
+				</CardContent>
+			</Card>
+
+			<!-- Call to Action -->
+			<div class="mt-12 text-center">
+				<h3 class="text-xl font-semibold mb-4">Need More Help?</h3>
+				<div class="flex flex-col sm:flex-row gap-4 justify-center">
+					<Button variant="outline" size="lg" asChild>
+						<a href="/quick-start">Back to Quick Start</a>
+					</Button>
+					<Button variant="outline" size="lg" asChild>
+						<a href="/file-organization">File Organization</a>
+					</Button>
+				</div>
+			</div>
+		</div>
+	</div>
+</Layout>

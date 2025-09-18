@@ -1,0 +1,1304 @@
+{
+  "name": "claude-guardian-agents",
+  "version": "2.5.1",
+  "description": "Comprehensive system of specialized AI agents for software development and project management",
+  "repository": "https://github.com/kairin/claude-guardian-agents",
+  "license": "MIT",
+  "updated_at": "2025-09-11T10:30:00Z",
+  "categories": {
+    "strategy": {
+      "name": "Strategic & Product",
+      "description": "Product strategy, planning, and design agents",
+      "agents": [
+        "001",
+        "002",
+        "003",
+        "006",
+        "005",
+        "004",
+        "021",
+        "023",
+        "022",
+        "024",
+        "025"
+      ]
+    },
+    "architecture": {
+      "name": "Technical Architecture",
+      "description": "System architecture and technical leadership agents",
+      "agents": [
+        "043",
+        "045",
+        "044",
+        "041",
+        "042"
+      ]
+    },
+    "backend": {
+      "name": "Backend Development",
+      "description": "Backend, API, and database development agents",
+      "agents": [
+        "061",
+        "062",
+        "063"
+      ]
+    },
+    "frontend": {
+      "name": "Frontend Development",
+      "description": "Frontend, UI, and web development agents",
+      "agents": [
+        "064",
+        "066",
+        "065"
+      ]
+    },
+    "mobile": {
+      "name": "Mobile Development",
+      "description": "iOS, Android, and cross-platform mobile agents",
+      "agents": [
+        "068",
+        "069",
+        "067"
+      ]
+    },
+    "quality": {
+      "name": "Quality Engineering",
+      "description": "Testing, QA, and quality assurance agents",
+      "agents": [
+        "072",
+        "073",
+        "071"
+      ]
+    },
+    "devops": {
+      "name": "DevOps & Infrastructure",
+      "description": "DevOps, infrastructure, and deployment agents",
+      "agents": [
+        "081",
+        "082",
+        "083"
+      ]
+    },
+    "security": {
+      "name": "Security Operations",
+      "description": "Security, compliance, and risk management agents",
+      "agents": [
+        "092",
+        "094",
+        "093"
+      ]
+    },
+    "data": {
+      "name": "Data Operations",
+      "description": "Data engineering, analytics, and data management agents",
+      "agents": [
+        "097",
+        "095",
+        "096"
+      ]
+    },
+    "operations": {
+      "name": "IT Operations",
+      "description": "IT operations, service management, and support agents",
+      "agents": [
+        "100",
+        "098",
+        "099",
+        "091"
+      ]
+    },
+    "thinktank": {
+      "name": "Think-Tank Reasoning",
+      "description": "Parallel reasoning and problem-solving enhancement agents with diverse personality archetypes",
+      "agents": [
+        "101",
+        "102",
+        "103",
+        "104",
+        "105",
+        "106",
+        "107",
+        "108"
+      ]
+    }
+  },
+  "agents": {
+    "001": {
+      "name": "001-strategy-product-leadership-guardian",
+      "title": "Strategy Product Leadership Guardian",
+      "category": "strategy",
+      "complexity": "complex",
+      "path": "1-product/1-product-management/001-strategy-product-leadership-guardian.md",
+      "checksum": "0a1fa4e8c4294b92",
+      "research_foundations": 3,
+      "tools": [
+        "web_search",
+        "web_fetch"
+      ],
+      "triggers": [
+        "product strategy",
+        "high-level product decisions, roadmap planning, and team leadership guidance",
+        "product strategy tasks"
+      ]
+    },
+    "002": {
+      "name": "002-strategy-product-strategy-guardian",
+      "title": "Strategy Product Strategy Guardian",
+      "category": "strategy",
+      "complexity": "moderate",
+      "path": "1-product/1-product-management/1-product-strategy/002-strategy-product-strategy-guardian.md",
+      "checksum": "0ceb093ee8fa185c",
+      "research_foundations": 3,
+      "tools": [
+        "web_search",
+        "web_fetch"
+      ],
+      "triggers": [
+        "product strategy",
+        "detailed product strategy tasks",
+        "strategic planning, competitive analysis, and market opportunity identification"
+      ]
+    },
+    "003": {
+      "name": "003-strategy-product-management-guardian",
+      "title": "Strategy Product Management Guardian",
+      "category": "strategy",
+      "complexity": "moderate",
+      "path": "1-product/1-product-management/1-product-strategy/003-strategy-product-management-guardian.md",
+      "checksum": "16e19dc8c02d2a36",
+      "research_foundations": 3,
+      "tools": [
+        "web_search",
+        "web_fetch"
+      ],
+      "triggers": [
+        "product strategy implementation tasks",
+        "strategic planning translation to actionable roadmaps, market research, and cross-team coordination",
+        "strategy implementation"
+      ]
+    },
+    "006": {
+      "name": "006-strategy-product-associate-guardian",
+      "title": "Strategy Product Associate Guardian",
+      "category": "strategy",
+      "complexity": "moderate",
+      "path": "1-product/1-product-management/2-product-ownership/006-strategy-product-associate-guardian.md",
+      "checksum": "cb95c05f3de7ac7a",
+      "research_foundations": 3,
+      "tools": [
+        "write",
+        "read",
+        "grep"
+      ],
+      "triggers": [
+        "product management",
+        "associate product owner tasks",
+        "product owner",
+        "user story assistance, team collaboration, and junior product management tasks"
+      ]
+    },
+    "005": {
+      "name": "005-strategy-product-senior-guardian",
+      "title": "Strategy Product Senior Guardian",
+      "category": "strategy",
+      "complexity": "complex",
+      "path": "1-product/1-product-management/2-product-ownership/005-strategy-product-senior-guardian.md",
+      "checksum": "ecee38c68dceb677",
+      "research_foundations": 3,
+      "tools": [
+        "write",
+        "read",
+        "grep"
+      ],
+      "triggers": [
+        "user story creation, backlog prioritization, and development team coordination",
+        "senior product owner tasks",
+        "product owner"
+      ]
+    },
+    "004": {
+      "name": "004-strategy-product-ownership-guardian",
+      "title": "Strategy Product Ownership Guardian",
+      "category": "strategy",
+      "complexity": "moderate",
+      "path": "1-product/1-product-management/2-product-ownership/004-strategy-product-ownership-guardian.md",
+      "checksum": "bb42f86553e65637",
+      "research_foundations": 3,
+      "tools": [
+        "write",
+        "read",
+        "grep"
+      ],
+      "triggers": [
+        "ownership leadership",
+        "feature prioritization, agile product management, and customer needs alignment",
+        "product ownership leadership tasks"
+      ]
+    },
+    "021": {
+      "name": "021-design-product-leadership-guardian",
+      "title": "Design Product Leadership Guardian",
+      "category": "strategy",
+      "complexity": "complex",
+      "path": "1-product/2-product-design/021-design-product-leadership-guardian.md",
+      "checksum": "44d221d25fe312de",
+      "research_foundations": 3,
+      "tools": [
+        "web_search",
+        "web_fetch"
+      ],
+      "triggers": [
+        "design leadership tasks",
+        "design leadership",
+        "design team management, design system architecture, and design quality standards"
+      ]
+    },
+    "023": {
+      "name": "023-design-ux-junior-guardian",
+      "title": "Design Ux Junior Guardian",
+      "category": "strategy",
+      "complexity": "simple",
+      "path": "1-product/2-product-design/1-ux-research/023-design-ux-junior-guardian.md",
+      "checksum": "45eac5548511bb1d",
+      "research_foundations": 3,
+      "tools": [
+        "web_search",
+        "web_fetch"
+      ],
+      "triggers": [
+        "junior ux research tasks",
+        "ux research",
+        "basic research tasks, data collection, and ux research assistance",
+        "basic research"
+      ]
+    },
+    "022": {
+      "name": "022-design-ux-research-guardian",
+      "title": "Design Ux Research Guardian",
+      "category": "strategy",
+      "complexity": "moderate",
+      "path": "1-product/2-product-design/1-ux-research/022-design-ux-research-guardian.md",
+      "checksum": "921218f279627ffe",
+      "research_foundations": 3,
+      "tools": [
+        "web_search",
+        "web_fetch"
+      ],
+      "triggers": [
+        "ux research tasks",
+        "ux research",
+        "user research studies, data analysis, and user experience insights"
+      ]
+    },
+    "024": {
+      "name": "024-design-ui-interface-guardian",
+      "title": "Design Ui Interface Guardian",
+      "category": "strategy",
+      "complexity": "moderate",
+      "path": "1-product/2-product-design/2-ui-design/024-design-ui-interface-guardian.md",
+      "checksum": "bcd659c3ac32e254",
+      "research_foundations": 3,
+      "tools": [
+        "write",
+        "read",
+        "web_search"
+      ],
+      "triggers": [
+        "ui design tasks",
+        "interface design, design system creation, and visual user experience",
+        "ui design"
+      ]
+    },
+    "025": {
+      "name": "025-design-ui-junior-guardian",
+      "title": "Design Ui Junior Guardian",
+      "category": "strategy",
+      "complexity": "simple",
+      "path": "1-product/2-product-design/2-ui-design/025-design-ui-junior-guardian.md",
+      "checksum": "46b3c3b10f10671d",
+      "research_foundations": 3,
+      "tools": [
+        "write",
+        "read",
+        "web_search"
+      ],
+      "triggers": [
+        "junior ui design tasks",
+        "basic design",
+        "basic design tasks, design system implementation, and ui design assistance",
+        "ui design"
+      ]
+    },
+    "101": {
+      "name": "101-thinktank-first-principles-guardian",
+      "title": "Think Tank First Principles Guardian",
+      "category": "thinktank",
+      "complexity": "moderate",
+      "path": "4-thinktank/1-analytical/101-thinktank-first-principles-guardian.md",
+      "checksum": "8e07970f0a866436",
+      "research_foundations": 4,
+      "tools": [
+        "google_web_search",
+        "web_fetch"
+      ],
+      "triggers": [
+        "first principles thinking",
+        "fundamental problem analysis",
+        "break down complex problems"
+      ]
+    },
+    "102": {
+      "name": "102-thinktank-human-patterns-guardian",
+      "title": "Think Tank Human Patterns Guardian",
+      "category": "thinktank",
+      "complexity": "moderate",
+      "path": "4-thinktank/3-human-centered/102-thinktank-human-patterns-guardian.md",
+      "checksum": "011c206370462c43",
+      "research_foundations": 5,
+      "tools": [
+        "google_web_search",
+        "web_fetch"
+      ],
+      "triggers": [
+        "human behavior analysis",
+        "cultural patterns",
+        "anthropological insights"
+      ]
+    },
+    "103": {
+      "name": "103-thinktank-creative-lateral-guardian",
+      "title": "Think Tank Creative Lateral Guardian",
+      "category": "thinktank",
+      "complexity": "moderate",
+      "path": "4-thinktank/2-creative/103-thinktank-creative-lateral-guardian.md",
+      "checksum": "e1e6a53e906b047f",
+      "research_foundations": 4,
+      "tools": [
+        "google_web_search",
+        "web_fetch"
+      ],
+      "triggers": [
+        "creative thinking",
+        "lateral thinking",
+        "innovative solutions"
+      ]
+    },
+    "104": {
+      "name": "104-thinktank-mathematician-logical-guardian",
+      "title": "Think Tank Mathematician Logical Guardian",
+      "category": "thinktank",
+      "complexity": "complex",
+      "path": "4-thinktank/1-analytical/104-thinktank-mathematician-logical-guardian.md",
+      "checksum": "a1b2c3d4e5f6g7h8",
+      "research_foundations": 5,
+      "tools": [
+        "google_web_search",
+        "web_fetch"
+      ],
+      "triggers": [
+        "mathematical analysis",
+        "logical reasoning",
+        "quantitative problem solving"
+      ]
+    },
+    "105": {
+      "name": "105-thinktank-inventor-innovative-guardian",
+      "title": "Think Tank Inventor Innovative Guardian",
+      "category": "thinktank",
+      "complexity": "moderate",
+      "path": "4-thinktank/2-creative/105-thinktank-inventor-innovative-guardian.md",
+      "checksum": "b2c3d4e5f6g7h8i9",
+      "research_foundations": 4,
+      "tools": [
+        "google_web_search",
+        "web_fetch"
+      ],
+      "triggers": [
+        "practical innovation",
+        "invention methodology",
+        "systematic creativity"
+      ]
+    },
+    "106": {
+      "name": "106-thinktank-psychologist-behavioral-guardian",
+      "title": "Think Tank Psychologist Behavioral Guardian",
+      "category": "thinktank",
+      "complexity": "complex",
+      "path": "4-thinktank/3-human-centered/106-thinktank-psychologist-behavioral-guardian.md",
+      "checksum": "c3d4e5f6g7h8i9j0",
+      "research_foundations": 6,
+      "tools": [
+        "google_web_search",
+        "web_fetch"
+      ],
+      "triggers": [
+        "behavioral psychology",
+        "cognitive analysis",
+        "psychological insights"
+      ]
+    },
+    "107": {
+      "name": "107-thinktank-child-naive-guardian",
+      "title": "Think Tank Child Naive Guardian",
+      "category": "thinktank",
+      "complexity": "simple",
+      "path": "4-thinktank/4-unconventional/107-thinktank-child-naive-guardian.md",
+      "checksum": "4fe8fd4ce55fbddb",
+      "research_foundations": 3,
+      "tools": [
+        "google_web_search",
+        "web_fetch"
+      ],
+      "triggers": [
+        "naive questioning",
+        "childlike curiosity",
+        "simplification approach"
+      ]
+    },
+    "108": {
+      "name": "108-thinktank-contrarian-challenger-guardian",
+      "title": "Think Tank Contrarian Challenger Guardian",
+      "category": "thinktank",
+      "complexity": "complex",
+      "path": "4-thinktank/4-unconventional/108-thinktank-contrarian-challenger-guardian.md",
+      "checksum": "d4e5f6g7h8i9j0k1",
+      "research_foundations": 5,
+      "tools": [
+        "google_web_search",
+        "web_fetch"
+      ],
+      "triggers": [
+        "devil's advocate",
+        "challenge assumptions",
+        "contrarian analysis"
+      ]
+    },
+    "043": {
+      "name": "043-architecture-vp-engineering-guardian",
+      "title": "Architecture Vp Engineering Guardian",
+      "category": "architecture",
+      "complexity": "moderate",
+      "path": "2-engineering/2-software-engineering/043-architecture-vp-engineering-guardian.md",
+      "checksum": "6400f5ea13b34b5a",
+      "research_foundations": 3,
+      "tools": [
+        "web_search",
+        "web_fetch"
+      ],
+      "triggers": [
+        "engineering strategy, team management, and delivery oversight",
+        "vp-level engineering leadership tasks",
+        "engineering leadership"
+      ]
+    },
+    "064": {
+      "name": "064-development-frontend-director-guardian",
+      "title": "Development Frontend Director Guardian",
+      "category": "frontend",
+      "complexity": "complex",
+      "path": "2-engineering/2-software-engineering/3-frontend-engineering/064-development-frontend-director-guardian.md",
+      "checksum": "a3fc6bbc8e54eafa",
+      "research_foundations": 3,
+      "tools": [
+        "web_search",
+        "web_fetch",
+        "write",
+        "read",
+        "edit"
+      ],
+      "triggers": [
+        "frontend team leadership, ui/ux implementation, and client-side development strategy",
+        "ui development",
+        "web development",
+        "frontend director-level tasks",
+        "frontend development"
+      ]
+    },
+    "066": {
+      "name": "066-development-frontend-junior-guardian",
+      "title": "Development Frontend Junior Guardian",
+      "category": "frontend",
+      "complexity": "simple",
+      "path": "2-engineering/2-software-engineering/3-frontend-engineering/066-development-frontend-junior-guardian.md",
+      "checksum": "e493339663ef0b4a",
+      "research_foundations": 3,
+      "tools": [
+        "web_search",
+        "web_fetch",
+        "write",
+        "read",
+        "edit"
+      ],
+      "triggers": [
+        "ui development",
+        "web development",
+        "basic frontend tasks, ui component implementation, and junior developer mentoring",
+        "frontend development",
+        "basic frontend",
+        "junior frontend development tasks"
+      ]
+    },
+    "065": {
+      "name": "065-development-frontend-senior-guardian",
+      "title": "Development Frontend Senior Guardian",
+      "category": "frontend",
+      "complexity": "complex",
+      "path": "2-engineering/2-software-engineering/3-frontend-engineering/065-development-frontend-senior-guardian.md",
+      "checksum": "68ce0e373321f423",
+      "research_foundations": 3,
+      "tools": [
+        "web_search",
+        "web_fetch",
+        "write",
+        "read",
+        "edit"
+      ],
+      "triggers": [
+        "ui development",
+        "web development",
+        "senior frontend development tasks",
+        "complex frontend development, modern web technologies, and user interface implementation",
+        "frontend development"
+      ]
+    },
+    "045": {
+      "name": "045-architecture-senior-architect-guardian",
+      "title": "Architecture Senior Architect Guardian",
+      "category": "architecture",
+      "complexity": "complex",
+      "path": "2-engineering/2-software-engineering/1-architecture/045-architecture-senior-architect-guardian.md",
+      "checksum": "0b28279089c89d0d",
+      "research_foundations": 3,
+      "tools": [
+        "web_search",
+        "web_fetch",
+        "write",
+        "read"
+      ],
+      "triggers": [
+        "senior architect",
+        "senior architect tasks",
+        "detailed system architecture, design documentation, and architectural solution development"
+      ]
+    },
+    "044": {
+      "name": "044-architecture-principal-architect-guardian",
+      "title": "Architecture Principal Architect Guardian",
+      "category": "architecture",
+      "complexity": "complex",
+      "path": "2-engineering/2-software-engineering/1-architecture/044-architecture-principal-architect-guardian.md",
+      "checksum": "4c7d1e281284beb1",
+      "research_foundations": 3,
+      "tools": [
+        "web_search",
+        "web_fetch",
+        "write",
+        "read"
+      ],
+      "triggers": [
+        "architectural decision-making, technical standards definition, and system design",
+        "principal architect tasks",
+        "principal architect"
+      ]
+    },
+    "061": {
+      "name": "061-development-backend-director-guardian",
+      "title": "Development Backend Director Guardian",
+      "category": "backend",
+      "complexity": "complex",
+      "path": "2-engineering/2-software-engineering/2-backend-engineering/061-development-backend-director-guardian.md",
+      "checksum": "f0a5ea94891415a0",
+      "research_foundations": 3,
+      "tools": [
+        "web_search",
+        "web_fetch",
+        "write",
+        "read",
+        "bash"
+      ],
+      "triggers": [
+        "api development",
+        "database design",
+        "backend development",
+        "backend team leadership, api design, and server-side development strategy",
+        "backend director-level tasks"
+      ]
+    },
+    "062": {
+      "name": "062-development-backend-senior-guardian",
+      "title": "Development Backend Senior Guardian",
+      "category": "backend",
+      "complexity": "complex",
+      "path": "2-engineering/2-software-engineering/2-backend-engineering/062-development-backend-senior-guardian.md",
+      "checksum": "3fa681fd9b20f8c5",
+      "research_foundations": 3,
+      "tools": [
+        "web_search",
+        "web_fetch",
+        "write",
+        "read",
+        "bash",
+        "edit"
+      ],
+      "triggers": [
+        "complex backend development, api architecture, and database design",
+        "senior backend development tasks",
+        "api development",
+        "database design",
+        "backend development"
+      ]
+    },
+    "063": {
+      "name": "063-development-backend-junior-guardian",
+      "title": "Development Backend Junior Guardian",
+      "category": "backend",
+      "complexity": "simple",
+      "path": "2-engineering/2-software-engineering/2-backend-engineering/063-development-backend-junior-guardian.md",
+      "checksum": "722a549ad2df3a40",
+      "research_foundations": 3,
+      "tools": [
+        "web_search",
+        "web_fetch",
+        "write",
+        "read",
+        "bash",
+        "edit"
+      ],
+      "triggers": [
+        "junior backend development tasks",
+        "api development",
+        "database design",
+        "basic backend",
+        "backend development",
+        "basic backend tasks, api implementation assistance, and junior developer mentoring"
+      ]
+    },
+    "068": {
+      "name": "068-development-mobile-senior-guardian",
+      "title": "Development Mobile Senior Guardian",
+      "category": "mobile",
+      "complexity": "complex",
+      "path": "2-engineering/2-software-engineering/4-mobile-engineering/068-development-mobile-senior-guardian.md",
+      "checksum": "a9e2f69a964b8e24",
+      "research_foundations": 3,
+      "tools": [
+        "web_search",
+        "web_fetch",
+        "write",
+        "read",
+        "edit"
+      ],
+      "triggers": [
+        "ios development",
+        "complex mobile development, ios/android native development, and mobile architecture",
+        "android development",
+        "mobile development",
+        "senior mobile development tasks"
+      ]
+    },
+    "069": {
+      "name": "069-development-mobile-junior-guardian",
+      "title": "Development Mobile Junior Guardian",
+      "category": "mobile",
+      "complexity": "simple",
+      "path": "2-engineering/2-software-engineering/4-mobile-engineering/069-development-mobile-junior-guardian.md",
+      "checksum": "f74fdd1078ac5ea2",
+      "research_foundations": 3,
+      "tools": [
+        "web_search",
+        "web_fetch",
+        "write",
+        "read",
+        "edit"
+      ],
+      "triggers": [
+        "ios development",
+        "basic mobile",
+        "junior mobile development tasks",
+        "android development",
+        "mobile development",
+        "basic mobile tasks, ui component implementation, and junior developer mentoring"
+      ]
+    },
+    "067": {
+      "name": "067-development-mobile-director-guardian",
+      "title": "Development Mobile Director Guardian",
+      "category": "mobile",
+      "complexity": "complex",
+      "path": "2-engineering/2-software-engineering/4-mobile-engineering/067-development-mobile-director-guardian.md",
+      "checksum": "6f187e558c798b5f",
+      "research_foundations": 3,
+      "tools": [
+        "web_search",
+        "web_fetch",
+        "write",
+        "read",
+        "edit"
+      ],
+      "triggers": [
+        "ios development",
+        "mobile director-level tasks",
+        "android development",
+        "mobile development",
+        "mobile team leadership, ios/android development, and mobile app strategy"
+      ]
+    },
+    "072": {
+      "name": "072-development-quality-senior-guardian",
+      "title": "Development Quality Senior Guardian",
+      "category": "quality",
+      "complexity": "complex",
+      "path": "2-engineering/3-quality-engineering/072-development-quality-senior-guardian.md",
+      "checksum": "cbddd23ecb76b710",
+      "research_foundations": 3,
+      "tools": [
+        "web_search",
+        "web_fetch",
+        "write",
+        "read",
+        "edit"
+      ],
+      "triggers": [
+        "quality assurance",
+        "test automation",
+        "testing",
+        "quality engineering",
+        "complex testing strategies, test automation frameworks, and quality assurance leadership",
+        "senior quality engineering tasks"
+      ]
+    },
+    "073": {
+      "name": "073-development-quality-junior-guardian",
+      "title": "Development Quality Junior Guardian",
+      "category": "quality",
+      "complexity": "simple",
+      "path": "2-engineering/3-quality-engineering/073-development-quality-junior-guardian.md",
+      "checksum": "0422e09f47c9dab0",
+      "research_foundations": 3,
+      "tools": [
+        "web_search",
+        "web_fetch",
+        "write",
+        "read",
+        "edit"
+      ],
+      "triggers": [
+        "basic testing tasks, manual testing execution, and junior developer mentoring",
+        "quality assurance",
+        "test automation",
+        "testing",
+        "quality engineering",
+        "basic testing",
+        "junior quality engineering tasks"
+      ]
+    },
+    "071": {
+      "name": "071-development-quality-director-guardian",
+      "title": "Development Quality Director Guardian",
+      "category": "quality",
+      "complexity": "complex",
+      "path": "2-engineering/3-quality-engineering/071-development-quality-director-guardian.md",
+      "checksum": "b59dec7d2f92184d",
+      "research_foundations": 3,
+      "tools": [
+        "web_search",
+        "web_fetch"
+      ],
+      "triggers": [
+        "quality assurance",
+        "test automation",
+        "level leadership",
+        "testing",
+        "quality director-level leadership tasks",
+        "quality team management, testing automation, and qa process development"
+      ]
+    },
+    "081": {
+      "name": "081-infrastructure-devops-director-guardian",
+      "title": "Infrastructure Devops Director Guardian",
+      "category": "devops",
+      "complexity": "complex",
+      "path": "2-engineering/4-devops-engineering/081-infrastructure-devops-director-guardian.md",
+      "checksum": "4a5e11a161e8b1c6",
+      "research_foundations": 3,
+      "tools": [
+        "web_search",
+        "web_fetch"
+      ],
+      "triggers": [
+        "ci/cd",
+        "level leadership",
+        "devops director-level leadership tasks",
+        "deployment",
+        "ci/cd pipeline management, cloud infrastructure oversight, and deployment automation",
+        "devops",
+        "infrastructure"
+      ]
+    },
+    "082": {
+      "name": "082-infrastructure-devops-senior-guardian",
+      "title": "Infrastructure Devops Senior Guardian",
+      "category": "devops",
+      "complexity": "complex",
+      "path": "2-engineering/4-devops-engineering/082-infrastructure-devops-senior-guardian.md",
+      "checksum": "a76d916dff6291ef",
+      "research_foundations": 3,
+      "tools": [
+        "web_search",
+        "web_fetch",
+        "write",
+        "read",
+        "edit"
+      ],
+      "triggers": [
+        "devops engineering",
+        "complex ci/cd pipelines, infrastructure management, and devops leadership",
+        "ci/cd",
+        "senior devops engineering tasks",
+        "deployment",
+        "devops",
+        "infrastructure"
+      ]
+    },
+    "083": {
+      "name": "083-infrastructure-devops-junior-guardian",
+      "title": "Infrastructure Devops Junior Guardian",
+      "category": "devops",
+      "complexity": "simple",
+      "path": "2-engineering/4-devops-engineering/083-infrastructure-devops-junior-guardian.md",
+      "checksum": "59500dcdd2c09f46",
+      "research_foundations": 3,
+      "tools": [
+        "web_search",
+        "web_fetch",
+        "write",
+        "read",
+        "edit"
+      ],
+      "triggers": [
+        "devops engineering",
+        "ci/cd",
+        "junior devops engineering tasks",
+        "basic infrastructure",
+        "basic infrastructure tasks, deployment support, and junior developer mentoring",
+        "deployment",
+        "devops",
+        "infrastructure"
+      ]
+    },
+    "041": {
+      "name": "041-architecture-cto-leadership-guardian",
+      "title": "Architecture Cto Leadership Guardian",
+      "category": "architecture",
+      "complexity": "complex",
+      "path": "2-engineering/1-cto-office/041-architecture-cto-leadership-guardian.md",
+      "checksum": "b47d8001727f4f22",
+      "research_foundations": 3,
+      "tools": [
+        "web_search",
+        "web_fetch"
+      ],
+      "triggers": [
+        "cto-level technology strategy tasks",
+        "technical vision, engineering team management, and technology infrastructure planning",
+        "technology strategy"
+      ]
+    },
+    "042": {
+      "name": "042-architecture-technical-fellow-guardian",
+      "title": "Architecture Technical Fellow Guardian",
+      "category": "architecture",
+      "complexity": "moderate",
+      "path": "2-engineering/1-cto-office/042-architecture-technical-fellow-guardian.md",
+      "checksum": "8d229fdf19d676dd",
+      "research_foundations": 3,
+      "tools": [
+        "write",
+        "read",
+        "bash",
+        "grep",
+        "glob"
+      ],
+      "triggers": [
+        "and research",
+        "technical fellow-level innovation and research tasks",
+        "complex technical challenges, architecture analysis, and engineering mentorship"
+      ]
+    },
+    "100": {
+      "name": "100-operations-it-junior-guardian",
+      "title": "Operations It Junior Guardian",
+      "category": "operations",
+      "complexity": "simple",
+      "path": "3-operations/4-it-operations/100-operations-it-junior-guardian.md",
+      "checksum": "976c0bba8912fc90",
+      "research_foundations": 3,
+      "tools": [
+        "web_search",
+        "web_fetch",
+        "write",
+        "read",
+        "edit"
+      ],
+      "triggers": [
+        "it operations",
+        "basic technical support, documentation, and system maintenance",
+        "junior it operations tasks"
+      ]
+    },
+    "098": {
+      "name": "098-operations-it-director-guardian",
+      "title": "Operations It Director Guardian",
+      "category": "operations",
+      "complexity": "complex",
+      "path": "3-operations/4-it-operations/098-operations-it-director-guardian.md",
+      "checksum": "52659e6fc4720bd2",
+      "research_foundations": 3,
+      "tools": [
+        "web_search",
+        "web_fetch"
+      ],
+      "triggers": [
+        "it director-level leadership tasks",
+        "level leadership",
+        "it strategy, system administration, and service management"
+      ]
+    },
+    "099": {
+      "name": "099-operations-it-senior-guardian",
+      "title": "Operations It Senior Guardian",
+      "category": "operations",
+      "complexity": "complex",
+      "path": "3-operations/4-it-operations/099-operations-it-senior-guardian.md",
+      "checksum": "c5cee81c0ffd56ba",
+      "research_foundations": 3,
+      "tools": [
+        "web_search",
+        "web_fetch",
+        "write",
+        "read",
+        "edit"
+      ],
+      "triggers": [
+        "it operations",
+        "complex technical support, system troubleshooting, and it process improvement",
+        "senior it operations tasks"
+      ]
+    },
+    "091": {
+      "name": "091-operations-coo-leadership-guardian",
+      "title": "Operations Coo Leadership Guardian",
+      "category": "operations",
+      "complexity": "complex",
+      "path": "3-operations/1-coo-office/091-operations-coo-leadership-guardian.md",
+      "checksum": "87e76f5e3590782f",
+      "research_foundations": 3,
+      "tools": [
+        "web_search",
+        "web_fetch"
+      ],
+      "triggers": [
+        "coo-level operations strategy tasks",
+        "operations strategy",
+        "operations oversight, process optimization, and executive decision-making"
+      ]
+    },
+    "092": {
+      "name": "092-security-operations-director-guardian",
+      "title": "Security Operations Director Guardian",
+      "category": "security",
+      "complexity": "complex",
+      "path": "3-operations/2-security-operations/092-security-operations-director-guardian.md",
+      "checksum": "59d8bb6760e66afc",
+      "research_foundations": 3,
+      "tools": [
+        "web_search",
+        "web_fetch"
+      ],
+      "triggers": [
+        "security",
+        "security strategy, incident response coordination, and security team leadership",
+        "security director-level leadership tasks",
+        "compliance",
+        "level leadership",
+        "risk management"
+      ]
+    },
+    "094": {
+      "name": "094-security-operations-junior-guardian",
+      "title": "Security Operations Junior Guardian",
+      "category": "security",
+      "complexity": "simple",
+      "path": "3-operations/2-security-operations/094-security-operations-junior-guardian.md",
+      "checksum": "1381e848351f900c",
+      "research_foundations": 3,
+      "tools": [
+        "web_search",
+        "web_fetch",
+        "write",
+        "read",
+        "edit"
+      ],
+      "triggers": [
+        "security",
+        "junior security operations tasks",
+        "security operations",
+        "compliance",
+        "basic security monitoring, vulnerability scanning, and incident support",
+        "risk management"
+      ]
+    },
+    "093": {
+      "name": "093-security-operations-senior-guardian",
+      "title": "Security Operations Senior Guardian",
+      "category": "security",
+      "complexity": "complex",
+      "path": "3-operations/2-security-operations/093-security-operations-senior-guardian.md",
+      "checksum": "30bba48269b966d9",
+      "research_foundations": 3,
+      "tools": [
+        "web_search",
+        "web_fetch",
+        "write",
+        "read",
+        "edit"
+      ],
+      "triggers": [
+        "security",
+        "complex security assessments, incident response, and penetration testing",
+        "security operations",
+        "compliance",
+        "senior security operations tasks",
+        "risk management"
+      ]
+    },
+    "097": {
+      "name": "097-data-operations-junior-guardian",
+      "title": "Data Operations Junior Guardian",
+      "category": "data",
+      "complexity": "simple",
+      "path": "3-operations/3-data-operations/097-data-operations-junior-guardian.md",
+      "checksum": "9ee81821f7de1221",
+      "research_foundations": 3,
+      "tools": [
+        "web_search",
+        "web_fetch",
+        "write",
+        "read",
+        "edit"
+      ],
+      "triggers": [
+        "data operations",
+        "junior data operations tasks",
+        "basic data pipeline maintenance, monitoring, and junior developer mentoring"
+      ]
+    },
+    "095": {
+      "name": "095-data-operations-director-guardian",
+      "title": "Data Operations Director Guardian",
+      "category": "data",
+      "complexity": "complex",
+      "path": "3-operations/3-data-operations/095-data-operations-director-guardian.md",
+      "checksum": "17a04aa191c67297",
+      "research_foundations": 3,
+      "tools": [
+        "web_search",
+        "web_fetch"
+      ],
+      "triggers": [
+        "level leadership",
+        "data director-level leadership tasks",
+        "data strategy, data governance, and analytics leadership"
+      ]
+    },
+    "096": {
+      "name": "096-data-operations-senior-guardian",
+      "title": "Data Operations Senior Guardian",
+      "category": "data",
+      "complexity": "complex",
+      "path": "3-operations/3-data-operations/096-data-operations-senior-guardian.md",
+      "checksum": "2ccb753d5b7f6176",
+      "research_foundations": 3,
+      "tools": [
+        "web_search",
+        "web_fetch",
+        "write",
+        "read",
+        "edit"
+      ],
+      "triggers": [
+        "senior data operations tasks",
+        "data operations",
+        "complex data pipeline design, data infrastructure management, and data architecture"
+      ]
+    }
+  },
+  "workflows": {
+    "feature_development": {
+      "name": "Complete Feature Development",
+      "description": "End-to-end feature development workflow",
+      "chain": [
+        "002",
+        "044",
+        "062",
+        "072",
+        "081"
+      ],
+      "estimated_duration": "2-5 days",
+      "triggers": [
+        "build feature",
+        "implement feature",
+        "new feature development"
+      ]
+    },
+    "api_development": {
+      "name": "API Development & Testing",
+      "description": "Backend API development with quality assurance",
+      "chain": [
+        "062",
+        "072"
+      ],
+      "estimated_duration": "1-3 days",
+      "triggers": [
+        "api development",
+        "backend api",
+        "rest api",
+        "graphql api"
+      ]
+    },
+    "deployment_pipeline": {
+      "name": "Production Deployment",
+      "description": "Secure production deployment workflow",
+      "chain": [
+        "081"
+      ],
+      "estimated_duration": "4-8 hours",
+      "triggers": [
+        "deploy",
+        "deployment",
+        "production release",
+        "go live"
+      ]
+    }
+  },
+  "project_templates": {
+    "nodejs": {
+      "recommended_agents": [
+        "001",
+        "002",
+        "003",
+        "006",
+        "005",
+        "004",
+        "021",
+        "023",
+        "022",
+        "024",
+        "025",
+        "043",
+        "064",
+        "066",
+        "065",
+        "045",
+        "044",
+        "061",
+        "062",
+        "063",
+        "072",
+        "073",
+        "071",
+        "081",
+        "082",
+        "083",
+        "041",
+        "042"
+      ],
+      "common_workflows": [
+        "api_development",
+        "feature_development"
+      ],
+      "spec_integration": true
+    },
+    "python": {
+      "recommended_agents": [
+        "001",
+        "002",
+        "003",
+        "006",
+        "005",
+        "004",
+        "021",
+        "023",
+        "022",
+        "024",
+        "025",
+        "043",
+        "045",
+        "044",
+        "061",
+        "062",
+        "063",
+        "072",
+        "073",
+        "071",
+        "081",
+        "082",
+        "083",
+        "041",
+        "042",
+        "097",
+        "095",
+        "096"
+      ],
+      "common_workflows": [
+        "api_development",
+        "data_processing"
+      ],
+      "spec_integration": true
+    },
+    "generic": {
+      "recommended_agents": [
+        "001",
+        "002",
+        "003",
+        "006",
+        "005",
+        "004",
+        "021",
+        "023",
+        "022",
+        "024",
+        "025",
+        "100",
+        "098",
+        "099",
+        "091"
+      ],
+      "common_workflows": [
+        "feature_development"
+      ],
+      "spec_integration": false
+    }
+  },
+  "integration": {
+    "claude_code": {
+      "supported": true,
+      "agent_path": ".claude/agents/",
+      "index_file": "agent-index.json",
+      "auto_selection": true
+    },
+    "spec_kit": {
+      "supported": true,
+      "repository": "https://github.com/kairin/spec-kit",
+      "sync_command": "gpm sync-specs",
+      "spec_path": "specs/"
+    }
+  },
+  "metadata": {
+    "total_agents": 49,
+    "research_papers": 123,
+    "workflow_chains": 3,
+    "supported_languages": 7,
+    "min_gpm_version": "1.0.0"
+  }
+}

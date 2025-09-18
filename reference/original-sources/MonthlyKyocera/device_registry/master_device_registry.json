@@ -1,0 +1,646 @@
+{
+  "W792300234": {
+    "serial_number": "W792300234",
+    "model": "TASKalfa 5054ci",
+    "location": "Block 3 Level 2 Student Services (SSV)",
+    "ip_url": "kairin_simo@ite.edu.sg; ITECW-Kyocera-Monthly@connect.ite.edu.sg",
+    "email_address": "",
+    "device_number": "2",
+    "has_scans": true,
+    "scan_count": 2,
+    "scan_files": [
+      "Screenshot From 2025-09-09 18-15-48.png",
+      "Screenshot From 2025-09-09 18-15-14.png"
+    ],
+    "counter_emails": 1,
+    "toner_emails": 0,
+    "other_emails": 8,
+    "total_emails": 9,
+    "data_sources": [
+      "inventory",
+      "scans",
+      "emails"
+    ]
+  },
+  "W792Y00900": {
+    "serial_number": "W792Y00900",
+    "model": "TASKalfa 5054ci",
+    "location": "Block 3 Level 6 Student Care (SCR)",
+    "ip_url": "kairin_simo@ite.edu.sg; ITECW-Kyocera-Monthly@connect.ite.edu.sg",
+    "email_address": "",
+    "device_number": "5",
+    "has_scans": true,
+    "scan_count": 2,
+    "scan_files": [
+      "Screenshot from 2025-09-09 18-22-24.png",
+      "Screenshot from 2025-09-09 18-22-07.png"
+    ],
+    "counter_emails": 0,
+    "toner_emails": 0,
+    "other_emails": 2,
+    "total_emails": 2,
+    "data_sources": [
+      "inventory",
+      "scans",
+      "emails"
+    ]
+  },
+  "W792Y00901": {
+    "serial_number": "W792Y00901",
+    "model": "TASKalfa 5054ci",
+    "location": "Block 3 Level 5 Library@West",
+    "ip_url": "kairin_simo@ite.edu.sg; ITECW-Kyocera-Monthly@connect.ite.edu.sg",
+    "email_address": "",
+    "device_number": "4",
+    "has_scans": true,
+    "scan_count": 2,
+    "scan_files": [
+      "Screenshot from 2025-09-09 18-20-51.png",
+      "Screenshot from 2025-09-09 18-21-13.png"
+    ],
+    "counter_emails": 0,
+    "toner_emails": 0,
+    "other_emails": 4,
+    "total_emails": 4,
+    "data_sources": [
+      "inventory",
+      "scans",
+      "emails"
+    ]
+  },
+  "W792Y00912": {
+    "serial_number": "W792Y00912",
+    "model": "TASKalfa 5054ci",
+    "location": "Block 2 Level 2 Customer Visitor Centre (CVC)",
+    "ip_url": "kairin_simo@ite.edu.sg; ITECW-Kyocera-Monthly@connect.ite.edu.sg",
+    "email_address": "",
+    "device_number": "1",
+    "has_scans": true,
+    "scan_count": 2,
+    "scan_files": [
+      "Screenshot From 2025-09-09 18-12-10.png",
+      "Screenshot From 2025-09-09 18-12-44.png"
+    ],
+    "counter_emails": 0,
+    "toner_emails": 0,
+    "other_emails": 2,
+    "total_emails": 2,
+    "data_sources": [
+      "inventory",
+      "scans",
+      "emails"
+    ]
+  },
+  "W792Y00913": {
+    "serial_number": "W792Y00913",
+    "model": "TASKalfa 5054ci",
+    "location": "Block 3 Level 3 Student Development (SDV, ASC)",
+    "ip_url": "kairin_simo@ite.edu.sg; ITECW-Kyocera-Monthly@connect.ite.edu.sg",
+    "email_address": "",
+    "device_number": "3",
+    "has_scans": true,
+    "scan_count": 2,
+    "scan_files": [
+      "Screenshot from 2025-09-09 18-18-48.png",
+      "Screenshot from 2025-09-09 18-19-23.png"
+    ],
+    "counter_emails": 0,
+    "toner_emails": 0,
+    "other_emails": 6,
+    "total_emails": 6,
+    "data_sources": [
+      "inventory",
+      "scans",
+      "emails"
+    ]
+  },
+  "W792Y00917": {
+    "serial_number": "W792Y00917",
+    "model": "TASKalfa 5054ci",
+    "location": "Block 3 Level 7 School of Hospitality (SOH)",
+    "ip_url": "kairin_simo@ite.edu.sg; ITECW-Kyocera-Monthly@connect.ite.edu.sg",
+    "email_address": "",
+    "device_number": "8",
+    "has_scans": true,
+    "scan_count": 2,
+    "scan_files": [
+      "Screenshot from 2025-09-09 18-26-20.png",
+      "Screenshot from 2025-09-09 18-26-46.png"
+    ],
+    "counter_emails": 0,
+    "toner_emails": 0,
+    "other_emails": 6,
+    "total_emails": 6,
+    "data_sources": [
+      "inventory",
+      "scans",
+      "emails"
+    ]
+  },
+  "W793601285": {
+    "serial_number": "W793601285",
+    "model": "TASKalfa 5054ci",
+    "location": "Block 6 Level 5 School of Engineering (SOE SH Room)",
+    "ip_url": "kairin_simo@ite.edu.sg; ITECW-Kyocera-Monthly@connect.ite.edu.sg",
+    "email_address": "",
+    "device_number": "23",
+    "has_scans": true,
+    "scan_count": 2,
+    "scan_files": [
+      "Screenshot from 2025-09-09 18-56-02.png",
+      "Screenshot from 2025-09-09 18-56-28.png"
+    ],
+    "counter_emails": 0,
+    "toner_emails": 0,
+    "other_emails": 4,
+    "total_emails": 4,
+    "data_sources": [
+      "inventory",
+      "scans",
+      "emails"
+    ]
+  },
+  "W793601330": {
+    "serial_number": "W793601330",
+    "model": "TASKalfa 5054ci",
+    "location": "Block 3 Level 9 (P Office)",
+    "ip_url": "kairin_simo@ite.edu.sg; ITECW-Kyocera-Monthly@connect.ite.edu.sg",
+    "email_address": "",
+    "device_number": "11",
+    "has_scans": true,
+    "scan_count": 2,
+    "scan_files": [
+      "Screenshot from 2025-09-09 18-31-33.png",
+      "Screenshot from 2025-09-09 18-31-12.png"
+    ],
+    "counter_emails": 0,
+    "toner_emails": 0,
+    "other_emails": 6,
+    "total_emails": 6,
+    "data_sources": [
+      "inventory",
+      "scans",
+      "emails"
+    ]
+  },
+  "W793601403": {
+    "serial_number": "W793601403",
+    "model": "TASKalfa 5054ci",
+    "location": "Block 3 Level 8 College Administration Services (CAS)",
+    "ip_url": "kairin_simo@ite.edu.sg; ITECW-Kyocera-Monthly@connect.ite.edu.sg",
+    "email_address": "",
+    "device_number": "9",
+    "has_scans": true,
+    "scan_count": 2,
+    "scan_files": [
+      "Screenshot from 2025-09-09 18-27-49.png",
+      "Screenshot from 2025-09-09 18-28-37.png"
+    ],
+    "counter_emails": 0,
+    "toner_emails": 0,
+    "other_emails": 4,
+    "total_emails": 4,
+    "data_sources": [
+      "inventory",
+      "scans",
+      "emails"
+    ]
+  },
+  "W794302146": {
+    "serial_number": "W794302146",
+    "model": "TASKalfa 5054ci",
+    "location": "Block 5 Level 5 School of Electronics & ICT (SEIT)",
+    "ip_url": "kairin_simo@ite.edu.sg; ITECW-Kyocera-Monthly@connect.ite.edu.sg",
+    "email_address": "",
+    "device_number": "21",
+    "has_scans": true,
+    "scan_count": 2,
+    "scan_files": [
+      "Screenshot from 2025-09-09 19-04-11.png",
+      "Screenshot from 2025-09-09 19-05-01.png"
+    ],
+    "counter_emails": 2,
+    "toner_emails": 2,
+    "other_emails": 9,
+    "total_emails": 13,
+    "data_sources": [
+      "inventory",
+      "scans",
+      "emails"
+    ]
+  },
+  "W7F3501393": {
+    "serial_number": "W7F3501393",
+    "model": "TASKalfa 5004i",
+    "location": "Block 3 Level 7 School of Hospitality (SOH)",
+    "ip_url": "kairin_simo@ite.edu.sg; ITECW-Kyocera-Monthly@connect.ite.edu.sg",
+    "email_address": "",
+    "device_number": "7",
+    "has_scans": true,
+    "scan_count": 2,
+    "scan_files": [
+      "Screenshot from 2025-09-09 18-24-31.png",
+      "Screenshot from 2025-09-09 18-24-47.png"
+    ],
+    "counter_emails": 1,
+    "toner_emails": 0,
+    "other_emails": 6,
+    "total_emails": 7,
+    "data_sources": [
+      "inventory",
+      "scans",
+      "emails"
+    ]
+  },
+  "W7F3501399": {
+    "serial_number": "W7F3501399",
+    "model": "TASKalfa 5004i",
+    "location": "Block 3 Level 8 School of Engineering (FME)",
+    "ip_url": "kairin_simo@ite.edu.sg; ITECW-Kyocera-Monthly@connect.ite.edu.sg",
+    "email_address": "",
+    "device_number": "10",
+    "has_scans": true,
+    "scan_count": 2,
+    "scan_files": [
+      "Screenshot from 2025-09-09 18-30-22.png",
+      "Screenshot from 2025-09-09 18-30-40.png"
+    ],
+    "counter_emails": 1,
+    "toner_emails": 0,
+    "other_emails": 2,
+    "total_emails": 3,
+    "data_sources": [
+      "inventory",
+      "scans",
+      "emails"
+    ]
+  },
+  "W7F3501401": {
+    "serial_number": "W7F3501401",
+    "model": "TASKalfa 5004i",
+    "location": "Block 4 Level 5 School of Business (Trade)",
+    "ip_url": "kairin_simo@ite.edu.sg; ITECW-Kyocera-Monthly@connect.ite.edu.sg",
+    "email_address": "",
+    "device_number": "14",
+    "has_scans": true,
+    "scan_count": 2,
+    "scan_files": [
+      "Screenshot from 2025-09-09 18-37-13.png",
+      "Screenshot from 2025-09-09 18-36-48.png"
+    ],
+    "counter_emails": 0,
+    "toner_emails": 0,
+    "other_emails": 6,
+    "total_emails": 6,
+    "data_sources": [
+      "inventory",
+      "scans",
+      "emails"
+    ]
+  },
+  "W7F3501405": {
+    "serial_number": "W7F3501405",
+    "model": "TASKalfa 5004i",
+    "location": "Block 3 Level 7 School of Hospitality (SOH)",
+    "ip_url": "kairin_simo@ite.edu.sg; ITECW-Kyocera-Monthly@connect.ite.edu.sg",
+    "email_address": "",
+    "device_number": "6",
+    "has_scans": true,
+    "scan_count": 2,
+    "scan_files": [
+      "Screenshot from 2025-09-09 18-23-37.png",
+      "Screenshot from 2025-09-09 18-23-05.png"
+    ],
+    "counter_emails": 0,
+    "toner_emails": 0,
+    "other_emails": 6,
+    "total_emails": 6,
+    "data_sources": [
+      "inventory",
+      "scans",
+      "emails"
+    ]
+  },
+  "W7F3501425": {
+    "serial_number": "W7F3501425",
+    "model": "TASKalfa 5004i",
+    "location": "Block 4 Level 5 School of Business (Trade)",
+    "ip_url": "kairin_simo@ite.edu.sg; ITECW-Kyocera-Monthly@connect.ite.edu.sg",
+    "email_address": "",
+    "device_number": "15",
+    "has_scans": true,
+    "scan_count": 2,
+    "scan_files": [
+      "Screenshot from 2025-09-09 18-38-46.png",
+      "Screenshot from 2025-09-09 18-39-04.png"
+    ],
+    "counter_emails": 0,
+    "toner_emails": 0,
+    "other_emails": 4,
+    "total_emails": 4,
+    "data_sources": [
+      "inventory",
+      "scans",
+      "emails"
+    ]
+  },
+  "W7F3501460": {
+    "serial_number": "W7F3501460",
+    "model": "TASKalfa 5004i",
+    "location": "Block 4 Level 5 School of Business (Trade)",
+    "ip_url": "kairin_simo@ite.edu.sg; ITECW-Kyocera-Monthly@connect.ite.edu.sg",
+    "email_address": "",
+    "device_number": "13",
+    "has_scans": true,
+    "scan_count": 2,
+    "scan_files": [
+      "Screenshot from 2025-09-09 18-35-23.png",
+      "Screenshot from 2025-09-09 18-35-40.png"
+    ],
+    "counter_emails": 0,
+    "toner_emails": 0,
+    "other_emails": 4,
+    "total_emails": 4,
+    "data_sources": [
+      "inventory",
+      "scans",
+      "emails"
+    ]
+  },
+  "W7F3601550": {
+    "serial_number": "W7F3601550",
+    "model": "TASKalfa 5004i",
+    "location": "Block 6 Level 5 School of Engineering (SOE)",
+    "ip_url": "kairin_simo@ite.edu.sg; ITECW-Kyocera-Monthly@connect.ite.edu.sg",
+    "email_address": "",
+    "device_number": "27",
+    "has_scans": true,
+    "scan_count": 2,
+    "scan_files": [
+      "Screenshot from 2025-09-09 19-01-32.png",
+      "Screenshot from 2025-09-09 19-02-04.png"
+    ],
+    "counter_emails": 0,
+    "toner_emails": 0,
+    "other_emails": 2,
+    "total_emails": 2,
+    "data_sources": [
+      "inventory",
+      "scans",
+      "emails"
+    ]
+  },
+  "W7F3601552": {
+    "serial_number": "W7F3601552",
+    "model": "TASKalfa 5004i",
+    "location": "Block 5 Level 5 School of Electronics & ICT (SEIT)",
+    "ip_url": "kairin_simo@ite.edu.sg; ITECW-Kyocera-Monthly@connect.ite.edu.sg",
+    "email_address": "",
+    "device_number": "19",
+    "has_scans": true,
+    "scan_count": 2,
+    "scan_files": [
+      "Screenshot from 2025-09-09 18-51-03.png",
+      "Screenshot from 2025-09-09 18-50-39.png"
+    ],
+    "counter_emails": 2,
+    "toner_emails": 2,
+    "other_emails": 10,
+    "total_emails": 14,
+    "data_sources": [
+      "inventory",
+      "scans",
+      "emails"
+    ]
+  },
+  "W7F3601555": {
+    "serial_number": "W7F3601555",
+    "model": "TASKalfa 5004i",
+    "location": "Block 5 Level 5 School of Electronics & ICT (SEIT)",
+    "ip_url": "kairin_simo@ite.edu.sg; ITECW-Kyocera-Monthly@connect.ite.edu.sg",
+    "email_address": "",
+    "device_number": "20",
+    "has_scans": true,
+    "scan_count": 2,
+    "scan_files": [
+      "Screenshot from 2025-09-09 18-52-34.png",
+      "Screenshot from 2025-09-09 18-52-15.png"
+    ],
+    "counter_emails": 2,
+    "toner_emails": 2,
+    "other_emails": 8,
+    "total_emails": 12,
+    "data_sources": [
+      "inventory",
+      "scans",
+      "emails"
+    ]
+  },
+  "W7F3601558": {
+    "serial_number": "W7F3601558",
+    "model": "TASKalfa 5004i",
+    "location": "Block 6 Level 5 School of Engineering (SOE)",
+    "ip_url": "kairin_simo@ite.edu.sg; ITECW-Kyocera-Monthly@connect.ite.edu.sg",
+    "email_address": "",
+    "device_number": "24",
+    "has_scans": true,
+    "scan_count": 2,
+    "scan_files": [
+      "Screenshot from 2025-09-09 18-57-48.png",
+      "Screenshot from 2025-09-09 18-57-05.png"
+    ],
+    "counter_emails": 0,
+    "toner_emails": 0,
+    "other_emails": 4,
+    "total_emails": 4,
+    "data_sources": [
+      "inventory",
+      "scans",
+      "emails"
+    ]
+  },
+  "W7F3601563": {
+    "serial_number": "W7F3601563",
+    "model": "TASKalfa 5004i",
+    "location": "Block 5 Level 5 School of Electronics & ICT (SEIT)",
+    "ip_url": "kairin_simo@ite.edu.sg; ITECW-Kyocera-Monthly@connect.ite.edu.sg",
+    "email_address": "",
+    "device_number": "17",
+    "has_scans": true,
+    "scan_count": 2,
+    "scan_files": [
+      "Screenshot from 2025-09-09 18-43-07.png",
+      "Screenshot from 2025-09-09 18-43-41.png"
+    ],
+    "counter_emails": 2,
+    "toner_emails": 2,
+    "other_emails": 8,
+    "total_emails": 12,
+    "data_sources": [
+      "inventory",
+      "scans",
+      "emails"
+    ]
+  },
+  "W7F3601564": {
+    "serial_number": "W7F3601564",
+    "model": "TASKalfa 5004i",
+    "location": "Block 5 Level 5 School of Electronics & ICT (SEIT)",
+    "ip_url": "kairin_simo@ite.edu.sg; ITECW-Kyocera-Monthly@connect.ite.edu.sg",
+    "email_address": "",
+    "device_number": "16",
+    "has_scans": true,
+    "scan_count": 2,
+    "scan_files": [
+      "Screenshot from 2025-09-09 18-42-06.png",
+      "Screenshot from 2025-09-09 18-40-32.png"
+    ],
+    "counter_emails": 2,
+    "toner_emails": 2,
+    "other_emails": 3,
+    "total_emails": 7,
+    "data_sources": [
+      "inventory",
+      "scans",
+      "emails"
+    ]
+  },
+  "W7F3601568": {
+    "serial_number": "W7F3601568",
+    "model": "TASKalfa 5004i",
+    "location": "Block 4 Level 4 School of Business (Lifeskills)",
+    "ip_url": "kairin_simo@ite.edu.sg; ITECW-Kyocera-Monthly@connect.ite.edu.sg",
+    "email_address": "",
+    "device_number": "12",
+    "has_scans": true,
+    "scan_count": 2,
+    "scan_files": [
+      "Screenshot from 2025-09-09 18-34-11.png",
+      "Screenshot from 2025-09-09 18-33-54.png"
+    ],
+    "counter_emails": 0,
+    "toner_emails": 0,
+    "other_emails": 6,
+    "total_emails": 6,
+    "data_sources": [
+      "inventory",
+      "scans",
+      "emails"
+    ]
+  },
+  "W7F3601570": {
+    "serial_number": "W7F3601570",
+    "model": "TASKalfa 5004i",
+    "location": "Block 5 Level 5 School of Electronics & ICT (SEIT)",
+    "ip_url": "kairin_simo@ite.edu.sg; ITECW-Kyocera-Monthly@connect.ite.edu.sg",
+    "email_address": "",
+    "device_number": "18",
+    "has_scans": true,
+    "scan_count": 2,
+    "scan_files": [
+      "Screenshot from 2025-09-09 18-47-10.png",
+      "Screenshot from 2025-09-09 18-44-48.png"
+    ],
+    "counter_emails": 3,
+    "toner_emails": 2,
+    "other_emails": 8,
+    "total_emails": 13,
+    "data_sources": [
+      "inventory",
+      "scans",
+      "emails"
+    ]
+  },
+  "W7F3601610": {
+    "serial_number": "W7F3601610",
+    "model": "TASKalfa 5004i",
+    "location": "Block 6 Level 5 School of Engineering (SOE)",
+    "ip_url": "kairin_simo@ite.edu.sg; ITECW-Kyocera-Monthly@connect.ite.edu.sg",
+    "email_address": "",
+    "device_number": "28",
+    "has_scans": true,
+    "scan_count": 2,
+    "scan_files": [
+      "Screenshot from 2025-09-09 19-02-37.png",
+      "Screenshot from 2025-09-09 19-03-02.png"
+    ],
+    "counter_emails": 0,
+    "toner_emails": 0,
+    "other_emails": 3,
+    "total_emails": 3,
+    "data_sources": [
+      "inventory",
+      "scans",
+      "emails"
+    ]
+  },
+  "W7F3601615": {
+    "serial_number": "W7F3601615",
+    "model": "TASKalfa 5004i",
+    "location": "Block 6 Level 3 School of Business (PE)",
+    "ip_url": "kairin_simo@ite.edu.sg; ITECW-Kyocera-Monthly@connect.ite.edu.sg",
+    "email_address": "",
+    "device_number": "22",
+    "has_scans": true,
+    "scan_count": 2,
+    "scan_files": [
+      "Screenshot from 2025-09-09 18-53-23.png",
+      "Screenshot from 2025-09-09 18-55-32.png"
+    ],
+    "counter_emails": 0,
+    "toner_emails": 0,
+    "other_emails": 10,
+    "total_emails": 10,
+    "data_sources": [
+      "inventory",
+      "scans",
+      "emails"
+    ]
+  },
+  "W7F3701713": {
+    "serial_number": "W7F3701713",
+    "model": "TASKalfa 5004i",
+    "location": "Block 6 Level 5 School of Engineering (SOE)",
+    "ip_url": "kairin_simo@ite.edu.sg; ITECW-Kyocera-Monthly@connect.ite.edu.sg",
+    "email_address": "",
+    "device_number": "26",
+    "has_scans": true,
+    "scan_count": 2,
+    "scan_files": [
+      "Screenshot from 2025-09-09 19-00-48.png",
+      "Screenshot from 2025-09-09 19-00-17.png"
+    ],
+    "counter_emails": 0,
+    "toner_emails": 0,
+    "other_emails": 14,
+    "total_emails": 14,
+    "data_sources": [
+      "inventory",
+      "scans",
+      "emails"
+    ]
+  },
+  "W7F3701780": {
+    "serial_number": "W7F3701780",
+    "model": "TASKalfa 5004i",
+    "location": "Block 6 Level 5 School of Engineering (SOE)",
+    "ip_url": "kairin_simo@ite.edu.sg; ITECW-Kyocera-Monthly@connect.ite.edu.sg",
+    "email_address": "",
+    "device_number": "25",
+    "has_scans": true,
+    "scan_count": 2,
+    "scan_files": [
+      "Screenshot from 2025-09-09 18-59-38.png",
+      "Screenshot from 2025-09-09 18-59-12.png"
+    ],
+    "counter_emails": 0,
+    "toner_emails": 0,
+    "other_emails": 2,
+    "total_emails": 2,
+    "data_sources": [
+      "inventory",
+      "scans",
+      "emails"
+    ]
+  }
+}

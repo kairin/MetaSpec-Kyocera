@@ -1,0 +1,230 @@
+# Service Contracts
+# Kyocera Meter Reading Management System
+
+services:
+  EmailParser:
+    description: Extract metadata and content from .eml files
+    interface:
+      parse_email:
+        input:
+          file_path: string
+        output:
+          success:
+            received_date: datetime
+            subject: string
+            sender: string
+            body_text: string
+            body_html: string | null
+            attachments: list[string]
+          error:
+            error_type: PARSE_ERROR | FILE_NOT_FOUND | INVALID_FORMAT
+            message: string
+        exceptions:
+          - FileNotFoundError
+          - PermissionError
+          - EmailParseError
+
+  DeviceExtractor:
+    description: Pattern matching for device identification
+    interface:
+      extract_device_info:
+        input:
+          text: string
+          source: SUBJECT | BODY | FILENAME
+        output:
+          success:
+            serial_number: string | null
+            model: string | null
+            confidence: float  # 0.0-1.0
+          error:
+            error_type: NO_MATCH | INVALID_INPUT
+            message: string
+      
+      validate_serial:
+        input:
+          serial: string
+        output:
+          valid: boolean
+          normalized: string  # Uppercase, trimmed
+
+  PDFConverter:
+    description: Generate PDF from text content
+    interface:
+      text_to_pdf:
+        input:
+          text: string
+          title: string
+          metadata:
+            device_serial: string
+            device_model: string
+            reading_date: date
+        output:
+          success:
+            pdf_bytes: bytes
+            page_count: integer
+          error:
+            error_type: GENERATION_ERROR | INVALID_INPUT
+            message: string
+      
+      save_pdf:
+        input:
+          pdf_bytes: bytes
+          file_path: string
+        output:
+          success:
+            saved_path: string
+            file_size: integer
+          error:
+            error_type: WRITE_ERROR | PERMISSION_ERROR
+            message: string
+
+  FolderManager:
+    description: Directory structure operations
+    interface:
+      ensure_device_folder:
+        input:
+          model: string
+          serial: string
+          date: date
+        output:
+          success:
+            folder_path: string
+            created: boolean  # true if new, false if exists
+          error:
+            error_type: PERMISSION_ERROR | INVALID_PATH
+            message: string
+      
+      list_device_folders:
+        input:
+          base_path: string
+          model_filter: string | null
+        output:
+          success:
+            folders: list[DeviceFolder]
+            total_count: integer
+          error:
+            error_type: PATH_NOT_FOUND | PERMISSION_ERROR
+            message: string
+      
+      validate_structure:
+        input:
+          base_path: string
+        output:
+          valid: boolean
+          issues: list[string]
+          can_repair: boolean
+      
+      repair_structure:
+        input:
+          base_path: string
+          issues: list[string]
+        output:
+          success:
+            repaired: list[string]
+            failed: list[string]
+          error:
+            error_type: REPAIR_FAILED | PERMISSION_ERROR
+            message: string
+
+  MeterProcessor:
+    description: Main processing orchestration
+    interface:
+      process_email:
+        input:
+          email_path: string
+          output_base: string
+          options:
+            dry_run: boolean
+            skip_duplicates: boolean
+        output:
+          success:
+            device_serial: string
+            device_model: string
+            reading_date: date
+            pdf_path: string
+            txt_path: string
+            folder_path: string
+          partial:
+            processed_parts: list[string]
+            failed_parts: list[string]
+            warnings: list[string]
+          error:
+            error_type: CRITICAL_ERROR | PARSE_ERROR | DEVICE_ERROR
+            message: string
+            email_path: string
+      
+      process_batch:
+        input:
+          input_dir: string
+          output_base: string
+          options:
+            parallel: boolean
+            max_workers: integer
+        output:
+          success:
+            total_processed: integer
+            successful: list[string]
+            failed: list[string]
+            duration_seconds: float
+          error:
+            error_type: BATCH_ERROR | NO_FILES
+            message: string
+
+data_types:
+  DeviceFolder:
+    model: string
+    serial: string
+    path: string
+    file_count: integer
+    last_modified: datetime
+    size_bytes: integer
+
+  ProcessingResult:
+    status: SUCCESS | PARTIAL | FAILED
+    message: string
+    details: object
+
+  EmailMetadata:
+    received_date: datetime
+    subject: string
+    sender: string
+    size_bytes: integer
+
+validation_rules:
+  serial_number:
+    pattern: "^[A-Z0-9]{6,20}$"
+    case: upper
+  
+  model:
+    pattern: "^TASKalfa-[0-9]{4}[ci]{0,2}$"
+    case: preserve
+  
+  date_folder:
+    pattern: "^\\d{4}-\\d{2}-\\d{2}$"
+  
+  email_file:
+    extension: ".eml"
+    max_size_mb: 25
+
+performance_contracts:
+  EmailParser:
+    parse_email:
+      max_duration_ms: 500
+      max_memory_mb: 50
+  
+  DeviceExtractor:
+    extract_device_info:
+      max_duration_ms: 100
+      max_memory_mb: 10
+  
+  PDFConverter:
+    text_to_pdf:
+      max_duration_ms: 1000
+      max_memory_mb: 100
+  
+  MeterProcessor:
+    process_email:
+      max_duration_ms: 3000
+      max_memory_mb: 200
+    process_batch:
+      throughput: 100  # emails per minute

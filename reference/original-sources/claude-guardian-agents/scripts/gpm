@@ -1,0 +1,410 @@
+#!/bin/bash
+# Guardian Package Manager (GPM) - Main Script
+# Manages installation and updates of Guardian Agents
+
+set -e
+
+GPM_VERSION="1.0.0"
+GPM_REPO="https://github.com/kairin/claude-guardian-agents"
+GPM_API="https://api.github.com/repos/kairin/claude-guardian-agents"
+
+# Colors for output
+RED='\033[0;31m'
+GREEN='\033[0;32m'
+YELLOW='\033[1;33m'
+BLUE='\033[0;34m'
+PURPLE='\033[0;35m'
+NC='\033[0m'
+
+print_status() { echo -e "${BLUE}🛡️  $1${NC}"; }
+print_success() { echo -e "${GREEN}✅ $1${NC}"; }
+print_warning() { echo -e "${YELLOW}⚠️  $1${NC}"; }
+print_error() { echo -e "${RED}❌ $1${NC}"; exit 1; }
+print_info() { echo -e "${PURPLE}ℹ️  $1${NC}"; }
+
+# Help text
+show_help() {
+    cat << EOF
+Guardian Package Manager (GPM) v$GPM_VERSION
+
+USAGE:
+    gpm <command> [options]
+
+COMMANDS:
+    init                Initialize Guardian system in current project
+    install             Install all Guardian agents
+    install <category>  Install specific agent category
+    update              Update all agents with smart merge
+    status              Show installation status
+    list                List available agents
+    search <term>       Search agents by keyword
+    customize <agent>   Create local customization
+    sync-specs          Synchronize with spec-kit
+    version             Show version information
+    help                Show this help message
+
+CATEGORIES:
+    strategy            Product and strategic planning agents (001-006, 021-025)
+    architecture        Technical architecture agents (041-045)
+    backend             Backend development agents (061-063)
+    frontend            Frontend development agents (064-066)
+    mobile              Mobile development agents (067-069)
+    quality             Quality engineering agents (071-073)
+    devops              DevOps and infrastructure agents (081-083)
+    security            Security operations agents (092-094)
+    data                Data operations agents (095-097)
+    operations          IT operations agents (098-100)
+    thinktank           Think-tank reasoning agents (101-120)
+
+EXAMPLES:
+    gpm init                    # Initialize in current project
+    gpm install                 # Install all agents
+    gpm install backend         # Install only backend agents
+    gpm update                  # Smart update all agents
+    gpm status                  # Check installation status
+    gpm search "api development" # Find agents for API work
+
+For more information, visit:
+https://github.com/kairin/claude-guardian-agents
+EOF
+}
+
+# Check if we're in a project directory
+check_project_dir() {
+    if [[ ! -d ".git" && ! -f "package.json" && ! -f "requirements.txt" && ! -f "Cargo.toml" && ! -f "go.mod" ]]; then
+        print_warning "No project detected in current directory"
+        print_info "GPM works best when run from a project root directory"
+    fi
+}
+
+# Detect project type
+detect_project_type() {
+    if [ -f "package.json" ]; then echo "nodejs"
+    elif [ -f "requirements.txt" ] || [ -f "pyproject.toml" ]; then echo "python"
+    elif [ -f "Cargo.toml" ]; then echo "rust"
+    elif [ -f "go.mod" ]; then echo "golang"
+    elif [ -f "pom.xml" ] || [ -f "build.gradle" ]; then echo "java"
+    elif [ -f "Gemfile" ]; then echo "ruby"
+    elif [ -f "composer.json" ]; then echo "php"
+    else echo "generic"
+    fi
+}
+
+# Initialize Guardian system
+cmd_init() {
+    print_status "Initializing Guardian system..."
+
+    check_project_dir
+    PROJECT_TYPE=$(detect_project_type)
+
+    # Create directory structure
+    mkdir -p .claude/agents
+    mkdir -p .guardian/{customizations,templates,cache}
+
+    # Initialize metadata
+    cat > .guardian/metadata.json << EOF
+{
+    "guardian_version": null,
+    "project_type": "$PROJECT_TYPE",
+    "installed_at": null,
+    "agents": {},
+    "customizations": {},
+    "spec_integration": false
+}
+EOF
+
+    # Check for spec-kit integration
+    if [ -d "specs" ]; then
+        print_info "spec-kit detected - enabling integration"
+        mkdir -p specs/{agents,workflows}
+        echo '{"spec_integration": true}' > .guardian/spec-config.json
+
+        # Update metadata
+        sed -i 's/"spec_integration": false/"spec_integration": true/' .guardian/metadata.json
+    fi
+
+    # Create .gitignore entries
+    if [ -f ".gitignore" ]; then
+        if ! grep -q ".guardian/cache" .gitignore; then
+            echo "" >> .gitignore
+            echo "# Guardian Package Manager" >> .gitignore
+            echo ".guardian/cache/" >> .gitignore
+        fi
+    fi
+
+    print_success "Guardian system initialized for $PROJECT_TYPE project"
+    print_info "Run 'gpm install' to install Guardian agents"
+}
+
+# Install agents
+cmd_install() {
+    local category="$1"
+
+    if [ ! -f ".guardian/metadata.json" ]; then
+        print_error "Guardian system not initialized. Run 'gpm init' first."
+    fi
+
+    print_status "Installing Guardian agents..."
+
+    # Download agent manifest
+    local manifest_url="$GPM_REPO/raw/main/manifest.json"
+    curl -sSL "$manifest_url" -o .guardian/cache/manifest.json
+
+    # Install agents based on category or all
+    if [ -n "$category" ]; then
+        install_category "$category"
+    else
+        install_all_agents
+    fi
+
+    # Generate agent index for LLM
+    generate_agent_index
+
+    # Update metadata
+    update_metadata_install
+
+    print_success "Guardian agents installed successfully!"
+    print_info "Agents are now available in .claude/agents/ for Claude Code"
+}
+
+# Install specific category
+install_category() {
+    local category="$1"
+    print_status "Installing $category agents..."
+
+    case "$category" in
+        "strategy")
+            download_agents "001-006" "021-025"
+            ;;
+        "architecture")
+            download_agents "041-045"
+            ;;
+        "backend")
+            download_agents "061-063"
+            ;;
+        "frontend")
+            download_agents "064-066"
+            ;;
+        "mobile")
+            download_agents "067-069"
+            ;;
+        "quality")
+            download_agents "071-073"
+            ;;
+        "devops")
+            download_agents "081-083"
+            ;;
+        "security")
+            download_agents "092-094"
+            ;;
+        "data")
+            download_agents "095-097"
+            ;;
+        "operations")
+            download_agents "091" "098-100"
+            ;;
+        "thinktank")
+            download_agents "101-120"
+            ;;
+        *)
+            print_error "Unknown category: $category"
+            ;;
+    esac
+}
+
+# Install all agents
+install_all_agents() {
+    print_status "Installing all Guardian agents..."
+
+    # Download all agent categories
+    download_agents "001-006" "021-025" "041-045" "061-069" "071-073" "081-083" "091-100" "101-120"
+}
+
+# Download agents (placeholder - would be implemented with actual download logic)
+download_agents() {
+    local ranges=("$@")
+
+    for range in "${ranges[@]}"; do
+        if [[ "$range" == *"-"* ]]; then
+            # Handle ranges like "001-006"
+            local start=$(echo "$range" | cut -d'-' -f1)
+            local end=$(echo "$range" | cut -d'-' -f2)
+
+            # Convert to numbers for iteration
+            local start_num=$((10#$start))
+            local end_num=$((10#$end))
+
+            for ((i=start_num; i<=end_num; i++)); do
+                local agent_id=$(printf "%03d" $i)
+                download_single_agent "$agent_id"
+            done
+        else
+            # Handle single agents
+            download_single_agent "$range"
+        fi
+    done
+}
+
+# Download single agent
+download_single_agent() {
+    local agent_id="$1"
+
+    # Find agent file in repository structure
+    local agent_file=$(find_agent_file "$agent_id")
+
+    if [ -n "$agent_file" ]; then
+        print_info "Downloading agent $agent_id..."
+        local download_url="$GPM_REPO/raw/main/$agent_file"
+        local local_name=$(basename "$agent_file")
+
+        curl -sSL "$download_url" -o ".claude/agents/$local_name"
+
+        # Calculate checksum
+        local checksum=$(sha256sum ".claude/agents/$local_name" | cut -d' ' -f1)
+
+        # Update metadata
+        update_agent_metadata "$agent_id" "$checksum"
+    else
+        print_warning "Agent $agent_id not found in repository"
+    fi
+}
+
+# Find agent file in repository (would query actual repo structure)
+find_agent_file() {
+    local agent_id="$1"
+
+    # This would actually query the repository structure
+    # For now, return a placeholder
+    echo "placeholder-path/$agent_id-guardian.md"
+}
+
+# Generate agent index for LLM consumption
+generate_agent_index() {
+    print_status "Generating agent index for LLM..."
+
+    cat > .claude/agents/agent-index.json << 'EOF'
+{
+    "system": "claude-guardian-agents",
+    "version": "2.3.0",
+    "description": "Specialized AI agents for software development, project management, and operations",
+    "usage": "Claude Code can automatically select appropriate agents based on task descriptions",
+
+    "agents_by_category": {
+        "strategy": {
+            "description": "Product strategy and planning",
+            "agents": ["001-strategy-product-leadership-guardian", "002-strategy-product-strategy-guardian"]
+        },
+        "backend": {
+            "description": "Backend development and APIs",
+            "agents": ["061-development-backend-director-guardian", "062-development-backend-senior-guardian"]
+        },
+        "frontend": {
+            "description": "Frontend development and UI",
+            "agents": ["064-development-frontend-director-guardian", "065-development-frontend-senior-guardian"]
+        },
+        "quality": {
+            "description": "Quality engineering and testing",
+            "agents": ["071-development-quality-director-guardian", "072-development-quality-senior-guardian"]
+        }
+    },
+
+    "workflow_chains": {
+        "feature_development": [
+            "002-strategy-product-strategy-guardian",
+            "044-architecture-principal-architect-guardian",
+            "062-development-backend-senior-guardian",
+            "072-development-quality-senior-guardian",
+            "081-infrastructure-devops-director-guardian"
+        ],
+        "api_development": [
+            "062-development-backend-senior-guardian",
+            "072-development-quality-senior-guardian"
+        ],
+        "deployment": [
+            "081-infrastructure-devops-director-guardian",
+            "092-security-operations-director-guardian"
+        ]
+    },
+
+    "selection_hints": {
+        "api development": ["062-development-backend-senior-guardian"],
+        "database design": ["062-development-backend-senior-guardian"],
+        "ui design": ["024-design-ui-interface-guardian"],
+        "testing": ["072-development-quality-senior-guardian"],
+        "deployment": ["081-infrastructure-devops-director-guardian"],
+        "security": ["092-security-operations-director-guardian"]
+    }
+}
+EOF
+}
+
+# Update metadata helpers
+update_agent_metadata() {
+    local agent_id="$1"
+    local checksum="$2"
+
+    # Update metadata.json with agent info (would use jq in real implementation)
+    print_info "Updated metadata for agent $agent_id"
+}
+
+update_metadata_install() {
+    local install_time=$(date -u +"%Y-%m-%dT%H:%M:%SZ")
+
+    # Update installation timestamp (would use jq in real implementation)
+    sed -i "s/\"installed_at\": null/\"installed_at\": \"$install_time\"/" .guardian/metadata.json
+    sed -i "s/\"guardian_version\": null/\"guardian_version\": \"$GPM_VERSION\"/" .guardian/metadata.json
+}
+
+# Show installation status
+cmd_status() {
+    if [ ! -f ".guardian/metadata.json" ]; then
+        print_error "Guardian system not initialized"
+    fi
+
+    print_info "Guardian Package Manager Status"
+    echo ""
+
+    # Parse metadata (would use jq in real implementation)
+    if [ -f ".guardian/metadata.json" ]; then
+        echo "Installation Status: Initialized"
+        echo "Project Type: $(detect_project_type)"
+        echo "Spec Integration: $([ -f ".guardian/spec-config.json" ] && echo "Enabled" || echo "Disabled")"
+        echo ""
+
+        local agent_count=$(find .claude/agents -name "*.md" -type f 2>/dev/null | wc -l)
+        echo "Installed Agents: $agent_count"
+
+        if [ -f ".claude/agents/agent-index.json" ]; then
+            echo "Agent Index: Generated ✅"
+        else
+            echo "Agent Index: Missing ❌"
+        fi
+    fi
+}
+
+# Main command dispatcher
+main() {
+    case "${1:-help}" in
+        "init")
+            cmd_init
+            ;;
+        "install")
+            cmd_install "$2"
+            ;;
+        "status")
+            cmd_status
+            ;;
+        "version")
+            echo "Guardian Package Manager v$GPM_VERSION"
+            ;;
+        "help"|"-h"|"--help")
+            show_help
+            ;;
+        *)
+            print_error "Unknown command: $1. Run 'gpm help' for usage information."
+            ;;
+    esac
+}
+
+# Run main function with all arguments
+main "$@"

@@ -1,0 +1,119 @@
+name: CI/CD Pipeline
+
+# 🚫 DISABLED: All automation runs locally to avoid charges
+# Run locally with: ./scripts/local_ci_cd.sh
+# See AGENTS.md for local development workflow
+
+on:
+  # ❌ DISABLED - Never run online to prevent charges
+  # push:
+  #   branches: [ main, develop ]
+  # pull_request:
+  #   branches: [ main, develop ]
+  # workflow_dispatch:  # Manual trigger disabled
+
+  # This workflow is intentionally disabled
+  workflow_call:  # Only callable from other workflows (none exist)
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ["3.13"]
+
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Set up Python ${{ matrix.python-version }}
+      uses: actions/setup-python@v5
+      with:
+        python-version: ${{ matrix.python-version }}
+
+    - name: Install uv
+      uses: astral-sh/setup-uv@v3
+      with:
+        version: "latest"
+
+    - name: Set up cache
+      uses: actions/cache@v4
+      with:
+        path: ~/.cache/uv
+        key: uv-${{ runner.os }}-${{ matrix.python-version }}-${{ hashFiles('**/uv.lock') }}
+        restore-keys: |
+          uv-${{ runner.os }}-${{ matrix.python-version }}-
+
+    - name: Install dependencies
+      run: uv sync --all-extras
+
+    - name: Run comprehensive tests
+      run: uv run python scripts/run_comprehensive_tests.py --all --verbose --coverage
+
+    - name: Upload test results
+      uses: actions/upload-artifact@v4
+      if: always()
+      with:
+        name: test-results-${{ matrix.python-version }}
+        path: test_output/
+
+    - name: Upload coverage reports
+      uses: codecov/codecov-action@v4
+      if: success()
+      with:
+        file: ./test_output/coverage.xml
+        flags: unittests
+        name: codecov-umbrella
+        fail_ci_if_error: false
+
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: "3.13"
+
+    - name: Install uv
+      uses: astral-sh/setup-uv@v3
+      with:
+        version: "latest"
+
+    - name: Install dependencies
+      run: uv sync --all-extras
+
+    - name: Run linting
+      run: |
+        uv run ruff check .
+        uv run ruff format --check .
+
+  security:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: "3.13"
+
+    - name: Install uv
+      uses: astral-sh/setup-uv@v3
+      with:
+        version: "latest"
+
+    - name: Install dependencies
+      run: uv sync --all-extras
+
+    - name: Run security checks
+      run: |
+        uv run pip-audit
+        uv run bandit -r src/ -f json -o security_report.json || true
+
+    - name: Upload security report
+      uses: actions/upload-artifact@v4
+      if: always()
+      with:
+        name: security-report
+        path: security_report.json

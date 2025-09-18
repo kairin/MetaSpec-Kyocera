@@ -1,0 +1,301 @@
+---
+// ResearchDashboard.astro - Display research session data
+import researchData from '../data/research-sessions.json';
+import researchStats from '../data/research-stats.json';
+
+const { sessions, total_sessions, generated_at } = researchData;
+const { config_types, status_breakdown, recent_activity } = researchStats;
+---
+
+<div class="research-dashboard">
+  <header class="dashboard-header">
+    <h1>DeepResearchAgent Dashboard</h1>
+    <p class="last-updated">Last updated: {new Date(generated_at).toLocaleString()}</p>
+  </header>
+
+  <div class="stats-grid">
+    <div class="stat-card">
+      <h3>Total Sessions</h3>
+      <div class="stat-number">{total_sessions}</div>
+    </div>
+
+    <div class="stat-card">
+      <h3>Configuration Types</h3>
+      <div class="config-breakdown">
+        {Object.entries(config_types).map(([config, count]) => (
+          <div class="config-item">
+            <span class="config-name">{config}</span>
+            <span class="config-count">{count}</span>
+          </div>
+        ))}
+      </div>
+    </div>
+
+    <div class="stat-card">
+      <h3>Status Breakdown</h3>
+      <div class="status-breakdown">
+        {Object.entries(status_breakdown).map(([status, count]) => (
+          <div class="status-item">
+            <span class={`status-badge status-${status}`}>{status}</span>
+            <span class="status-count">{count}</span>
+          </div>
+        ))}
+      </div>
+    </div>
+  </div>
+
+  <section class="recent-sessions">
+    <h2>Recent Research Sessions</h2>
+
+    {sessions.length === 0 ? (
+      <div class="no-sessions">
+        <p>No research sessions found.</p>
+        <p>Run a research task to see results here.</p>
+      </div>
+    ) : (
+      <div class="sessions-list">
+        {sessions.map((session) => (
+          <div class="session-card" key={session.id}>
+            <div class="session-header">
+              <h3 class="session-task">{session.task}</h3>
+              <span class={`session-status status-${session.status}`}>{session.status}</span>
+            </div>
+
+            <div class="session-meta">
+              <span class="session-config">Config: {session.config_type}</span>
+              <span class="session-time">{session.timestamp}</span>
+            </div>
+
+            <div class="session-result">
+              <strong>Result:</strong> {session.result}
+            </div>
+
+            {session.log_file && (
+              <div class="session-files">
+                <span class="file-link">📄 {session.log_file}</span>
+              </div>
+            )}
+          </div>
+        ))}
+      </div>
+    )}
+  </section>
+
+  <section class="live-indicator">
+    <div class="indicator-dot"></div>
+    <span>Live data from DeepResearchAgent</span>
+  </section>
+</div>
+
+<style>
+  .research-dashboard {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  }
+
+  .dashboard-header {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  .dashboard-header h1 {
+    color: #2563eb;
+    margin-bottom: 0.5rem;
+  }
+
+  .last-updated {
+    color: #6b7280;
+    font-size: 0.9rem;
+  }
+
+  .stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+  }
+
+  .stat-card {
+    background: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  }
+
+  .stat-card h3 {
+    margin: 0 0 1rem 0;
+    color: #374151;
+    font-size: 1.1rem;
+  }
+
+  .stat-number {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #2563eb;
+  }
+
+  .config-breakdown, .status-breakdown {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .config-item, .status-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+    background: #f9fafb;
+    border-radius: 4px;
+  }
+
+  .config-name, .status-count, .config-count {
+    font-weight: 500;
+  }
+
+  .status-badge {
+    padding: 0.25rem 0.75rem;
+    border-radius: 9999px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+
+  .status-completed {
+    background: #dcfce7;
+    color: #166534;
+  }
+
+  .status-unknown {
+    background: #fef3c7;
+    color: #92400e;
+  }
+
+  .recent-sessions {
+    margin-bottom: 2rem;
+  }
+
+  .recent-sessions h2 {
+    color: #374151;
+    margin-bottom: 1.5rem;
+  }
+
+  .no-sessions {
+    text-align: center;
+    padding: 3rem;
+    background: #f9fafb;
+    border-radius: 8px;
+    color: #6b7280;
+  }
+
+  .sessions-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .session-card {
+    background: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  }
+
+  .session-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+  }
+
+  .session-task {
+    margin: 0;
+    color: #374151;
+    font-size: 1.1rem;
+    flex: 1;
+  }
+
+  .session-status {
+    margin-left: 1rem;
+  }
+
+  .session-meta {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+    color: #6b7280;
+  }
+
+  .session-result {
+    background: #f0f9ff;
+    padding: 1rem;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+    border-left: 4px solid #2563eb;
+  }
+
+  .session-files {
+    font-size: 0.9rem;
+    color: #6b7280;
+  }
+
+  .file-link {
+    text-decoration: none;
+    color: #2563eb;
+  }
+
+  .live-indicator {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 1rem;
+    background: #f0f9ff;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    color: #1e40af;
+  }
+
+  .indicator-dot {
+    width: 8px;
+    height: 8px;
+    background: #10b981;
+    border-radius: 50%;
+    animation: pulse 2s infinite;
+  }
+
+  @keyframes pulse {
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.5;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .research-dashboard {
+      padding: 1rem;
+    }
+
+    .stats-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .session-header {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0.5rem;
+    }
+
+    .session-meta {
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+  }
+</style>

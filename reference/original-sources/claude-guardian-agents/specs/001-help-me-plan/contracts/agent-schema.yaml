@@ -1,0 +1,245 @@
+# Guardian Agent YAML Schema Contract
+# Defines the structure and validation rules for Guardian Agent configuration files
+
+openapi: 3.0.3
+info:
+  title: Guardian Agent Schema Contract
+  version: 1.0.0
+  description: Schema contract for Guardian Agent YAML frontmatter configuration
+
+components:
+  schemas:
+    GuardianAgent:
+      type: object
+      required:
+        - name
+        - description
+        - model
+        - complexity
+      properties:
+        name:
+          type: string
+          pattern: '^[0-9]{3}-[a-z]+-[a-z]+-[a-z]+-guardian$'
+          description: Agent name following naming convention
+          example: "001-strategy-product-leadership-guardian"
+        description:
+          type: string
+          minLength: 50
+          maxLength: 500
+          pattern: '.*MUST BE USED.*'
+          description: Agent description with required trigger phrase
+          example: "Strategic product leadership and vision setting. MUST BE USED for product strategy tasks."
+        model:
+          type: string
+          enum:
+            - claude-3-5-haiku
+            - claude-3-5-sonnet
+          description: Claude model assignment
+        tools:
+          type: array
+          items:
+            type: string
+            enum:
+              - web_search
+              - web_fetch
+              - bash
+              - read_file
+              - edit_file
+              - write_file
+              - grep
+              - glob
+          description: Available Claude Code tools
+          example: ["web_search", "web_fetch"]
+        complexity:
+          type: string
+          enum:
+            - simple
+            - complex
+            - hybrid
+          description: Task complexity classification
+        department:
+          type: string
+          enum:
+            - Strategy
+            - Design
+            - Architecture
+            - Development
+            - Infrastructure
+            - Operations
+          description: Organizational department
+        role:
+          type: string
+          description: Specific role within department
+          example: "Product Leadership"
+        specialization:
+          type: string
+          description: Unique expertise area
+          example: "Strategic product vision and team leadership"
+
+    SpecializationProfile:
+      type: object
+      required:
+        - primary_responsibilities
+        - performance_sla
+      properties:
+        primary_responsibilities:
+          type: array
+          items:
+            type: string
+          minItems: 3
+          maxItems: 8
+          description: Core capabilities this agent must handle
+        secondary_responsibilities:
+          type: array
+          items:
+            type: string
+          description: Optional capabilities agent can handle
+        exclusions:
+          type: array
+          items:
+            type: string
+          description: Explicitly forbidden capabilities
+        domain_expertise:
+          type: array
+          items:
+            type: string
+          description: Technology or business domains
+        performance_sla:
+          $ref: '#/components/schemas/PerformanceSLA'
+
+    PerformanceSLA:
+      type: object
+      required:
+        - response_time_target
+        - quality_target
+      properties:
+        response_time_target:
+          type: integer
+          minimum: 1
+          maximum: 30
+          description: Maximum response time in seconds
+        quality_target:
+          type: number
+          minimum: 0.8
+          maximum: 1.0
+          description: Minimum quality score
+        availability_target:
+          type: number
+          minimum: 0.95
+          maximum: 1.0
+          description: Minimum uptime percentage
+
+    WorkflowChain:
+      type: object
+      required:
+        - name
+        - chain_type
+        - agents
+        - triggers
+      properties:
+        name:
+          type: string
+          description: Descriptive chain name
+        chain_type:
+          type: string
+          enum:
+            - sequential
+            - conditional
+            - parallel
+            - hybrid
+        agents:
+          type: array
+          items:
+            $ref: '#/components/schemas/ChainAgent'
+          minItems: 2
+        triggers:
+          type: array
+          items:
+            type: string
+          description: Phrases that activate this chain
+
+    ChainAgent:
+      type: object
+      required:
+        - agent_id
+        - position
+      properties:
+        agent_id:
+          type: string
+          pattern: '^[0-9]{3}$'
+          description: Three-digit agent ID
+        position:
+          type: integer
+          minimum: 1
+          description: Position in chain sequence
+        condition:
+          type: string
+          description: Optional routing condition
+        parallel_group:
+          type: string
+          description: Optional parallel execution group
+
+    ValidationFramework:
+      type: object
+      required:
+        - validation_perspectives
+        - status_symbols
+        - test_suites
+      properties:
+        validation_perspectives:
+          type: array
+          items:
+            type: string
+            enum:
+              - development
+              - testing
+              - code_review
+              - production_readiness
+          minItems: 4
+          maxItems: 4
+        status_symbols:
+          type: object
+          required:
+            - complete
+            - incomplete
+            - partial
+            - failed
+            - warning
+          properties:
+            complete:
+              type: string
+              enum: ["✓"]
+            incomplete:
+              type: string
+              enum: ["☐"]
+            partial:
+              type: string
+              enum: ["~"]
+            failed:
+              type: string
+              enum: ["✗"]
+            warning:
+              type: string
+              enum: ["⚠️"]
+        test_suites:
+          type: array
+          items:
+            $ref: '#/components/schemas/TestSuite'
+
+    TestSuite:
+      type: object
+      required:
+        - suite_name
+        - test_count
+        - success_criteria
+      properties:
+        suite_name:
+          type: string
+        test_count:
+          type: integer
+          minimum: 1
+        success_criteria:
+          type: string
+        automated:
+          type: boolean
+          default: true

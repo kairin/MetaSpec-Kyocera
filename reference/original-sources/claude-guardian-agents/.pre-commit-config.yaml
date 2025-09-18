@@ -1,0 +1,70 @@
+# Guardian Agents Pre-commit Configuration
+# Ensures code quality using uv-managed tools
+
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.5.0
+    hooks:
+      - id: trailing-whitespace
+      # Removed end-of-file-fixer to prevent infinite loops
+      - id: check-yaml
+      - id: check-json
+      - id: check-toml
+      - id: check-merge-conflict
+      - id: check-added-large-files
+        args: ['--maxkb=1024']
+      - id: check-case-conflict
+      - id: check-docstring-first
+      - id: check-executables-have-shebangs
+      - id: check-shebang-scripts-are-executable
+
+  - repo: https://github.com/psf/black
+    rev: 23.12.1
+    hooks:
+      - id: black
+        language_version: python3
+        args: [--line-length=88]
+
+  - repo: https://github.com/astral-sh/ruff-pre-commit
+    rev: v0.1.9
+    hooks:
+      - id: ruff
+        args: [--fix, --exit-non-zero-on-fix]
+
+  - repo: https://github.com/pre-commit/mirrors-mypy
+    rev: v1.8.0
+    hooks:
+      - id: mypy
+        additional_dependencies: [
+          types-PyYAML,
+          types-requests,
+          types-python-dateutil
+        ]
+        args: [--ignore-missing-imports]
+
+
+
+
+
+  - repo: local
+    hooks:
+      - id: uv-check
+        name: uv dependency check
+        entry: uv
+        args: [pip, check]
+        language: system
+        pass_filenames: false
+
+
+
+ci:
+  autofix_commit_msg: |
+    🤖 [pre-commit.ci] auto fixes from pre-commit.com hooks
+
+    for more information, see https://pre-commit.ci
+  autofix_prs: false
+  autoupdate_branch: ''
+  autoupdate_commit_msg: '🤖 [pre-commit.ci] pre-commit autoupdate'
+  autoupdate_schedule: weekly
+  skip: []
+  submodules: false

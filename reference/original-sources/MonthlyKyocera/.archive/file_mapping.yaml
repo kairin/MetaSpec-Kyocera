@@ -1,0 +1,3675 @@
+created: '2025-09-11T21:59:28.025798'
+files:
+  D_50e68bc9:
+    archive_name: D_50e68bc9.ods
+    archive_path: .archive/data/D_50e68bc9.ods
+    archived_at: '2025-09-11T21:59:28.063324'
+    file_size: 18065
+    original_name: Devices in ITE CW-with-ip-add.ods
+    original_path: emails/Devices in ITE CW-with-ip-add.ods
+    serial: null
+    type: data
+  D_63d6031d:
+    archive_name: D_63d6031d.csv
+    archive_path: .archive/data/D_63d6031d.csv
+    archived_at: '2025-09-11T21:59:28.063508'
+    file_size: 20612
+    original_name: Devices in ITE CW-with-ip-add.csv
+    original_path: emails/Devices in ITE CW-with-ip-add.csv
+    serial: null
+    type: data
+  E_W792300234_2a6ec065:
+    archive_name: E_W792300234_2a6ec065.eml
+    archive_path: .archive/emails/E_W792300234_2a6ec065.eml
+    archived_at: '2025-09-11T21:59:28.035593'
+    file_size: 662930
+    original_name: W792300234 (3).eml
+    original_path: emails/pending/W792300234 (3).eml
+    serial: W792300234
+    type: emails
+  E_W792300234_3a761afa:
+    archive_name: E_W792300234_3a761afa.eml
+    archive_path: .archive/emails/E_W792300234_3a761afa.eml
+    archived_at: '2025-09-11T21:59:28.055801'
+    file_size: 782082
+    original_name: W792300234 (2).eml
+    original_path: emails/originals/W792300234 (2).eml
+    serial: W792300234
+    type: emails
+  E_W792300234_3ed859e2:
+    archive_name: E_W792300234_3ed859e2.eml
+    archive_path: .archive/emails/E_W792300234_3ed859e2.eml
+    archived_at: '2025-09-11T21:59:28.029563'
+    file_size: 35577
+    original_name: 002 - TASKalfa 5054ci - W792300234 - Counter - Block 3 Level 2
+      Student Services (SSV), TASKalfa 5054ci .eml
+    original_path: emails/pending/002 - TASKalfa 5054ci - W792300234 - Counter - Block
+      3 Level 2 Student Services (SSV), TASKalfa 5054ci .eml
+    serial: W792300234
+    type: emails
+  E_W792300234_47c2f573:
+    archive_name: E_W792300234_47c2f573.eml
+    archive_path: .archive/emails/E_W792300234_47c2f573.eml
+    archived_at: '2025-09-11T21:59:28.030419'
+    file_size: 682531
+    original_name: W792300234 (1).eml
+    original_path: emails/pending/W792300234 (1).eml
+    serial: W792300234
+    type: emails
+  E_W792300234_8c7ac74c:
+    archive_name: E_W792300234_8c7ac74c.eml
+    archive_path: .archive/emails/E_W792300234_8c7ac74c.eml
+    archived_at: '2025-09-11T21:59:28.062324'
+    file_size: 662930
+    original_name: W792300234 (3).eml
+    original_path: emails/originals/W792300234 (3).eml
+    serial: W792300234
+    type: emails
+  E_W792300234_a41f62c2:
+    archive_name: E_W792300234_a41f62c2.eml
+    archive_path: .archive/emails/E_W792300234_a41f62c2.eml
+    archived_at: '2025-09-11T21:59:28.032037'
+    file_size: 782082
+    original_name: W792300234 (2).eml
+    original_path: emails/pending/W792300234 (2).eml
+    serial: W792300234
+    type: emails
+  E_W792300234_c7b6613b:
+    archive_name: E_W792300234_c7b6613b.eml
+    archive_path: .archive/emails/E_W792300234_c7b6613b.eml
+    archived_at: '2025-09-11T21:59:28.053595'
+    file_size: 682531
+    original_name: W792300234 (1).eml
+    original_path: emails/originals/W792300234 (1).eml
+    serial: W792300234
+    type: emails
+  E_W792300234_d744e04e:
+    archive_name: E_W792300234_d744e04e.eml
+    archive_path: .archive/emails/E_W792300234_d744e04e.eml
+    archived_at: '2025-09-11T21:59:28.032875'
+    file_size: 108609
+    original_name: W792300234.eml
+    original_path: emails/pending/W792300234.eml
+    serial: W792300234
+    type: emails
+  E_W792300234_e0dd2b34:
+    archive_name: E_W792300234_e0dd2b34.eml
+    archive_path: .archive/emails/E_W792300234_e0dd2b34.eml
+    archived_at: '2025-09-11T21:59:28.052447'
+    file_size: 35577
+    original_name: 002 - TASKalfa 5054ci - W792300234 - Counter - Block 3 Level 2
+      Student Services (SSV), TASKalfa 5054ci .eml
+    original_path: emails/originals/002 - TASKalfa 5054ci - W792300234 - Counter -
+      Block 3 Level 2 Student Services (SSV), TASKalfa 5054ci .eml
+    serial: W792300234
+    type: emails
+  E_W792300234_fa929c15:
+    archive_name: E_W792300234_fa929c15.eml
+    archive_path: .archive/emails/E_W792300234_fa929c15.eml
+    archived_at: '2025-09-11T21:59:28.057654'
+    file_size: 108609
+    original_name: W792300234.eml
+    original_path: emails/originals/W792300234.eml
+    serial: W792300234
+    type: emails
+  E_W792Y00900_5108c4c9:
+    archive_name: E_W792Y00900_5108c4c9.eml
+    archive_path: .archive/emails/E_W792Y00900_5108c4c9.eml
+    archived_at: '2025-09-11T21:59:28.027709'
+    file_size: 9310
+    original_name: Undeliverable_ W792Y00900.eml
+    original_path: emails/pending/Undeliverable_ W792Y00900.eml
+    serial: W792Y00900
+    type: emails
+  E_W792Y00900_d0f29d27:
+    archive_name: E_W792Y00900_d0f29d27.eml
+    archive_path: .archive/emails/E_W792Y00900_d0f29d27.eml
+    archived_at: '2025-09-11T21:59:28.047770'
+    file_size: 9310
+    original_name: Undeliverable_ W792Y00900.eml
+    original_path: emails/originals/Undeliverable_ W792Y00900.eml
+    serial: W792Y00900
+    type: emails
+  E_W792Y00901_0db0f09d:
+    archive_name: E_W792Y00901_0db0f09d.eml
+    archive_path: .archive/emails/E_W792Y00901_0db0f09d.eml
+    archived_at: '2025-09-11T21:59:28.031748'
+    file_size: 545839
+    original_name: W792Y00901 (1).eml
+    original_path: emails/pending/W792Y00901 (1).eml
+    serial: W792Y00901
+    type: emails
+  E_W792Y00901_147b2b1d:
+    archive_name: E_W792Y00901_147b2b1d.eml
+    archive_path: .archive/emails/E_W792Y00901_147b2b1d.eml
+    archived_at: '2025-09-11T21:59:28.034610'
+    file_size: 719151
+    original_name: W792Y00901.eml
+    original_path: emails/pending/W792Y00901.eml
+    serial: W792Y00901
+    type: emails
+  E_W792Y00901_40917891:
+    archive_name: E_W792Y00901_40917891.eml
+    archive_path: .archive/emails/E_W792Y00901_40917891.eml
+    archived_at: '2025-09-11T21:59:28.055026'
+    file_size: 545839
+    original_name: W792Y00901 (1).eml
+    original_path: emails/originals/W792Y00901 (1).eml
+    serial: W792Y00901
+    type: emails
+  E_W792Y00901_a8259eb1:
+    archive_name: E_W792Y00901_a8259eb1.eml
+    archive_path: .archive/emails/E_W792Y00901_a8259eb1.eml
+    archived_at: '2025-09-11T21:59:28.060776'
+    file_size: 719151
+    original_name: W792Y00901.eml
+    original_path: emails/originals/W792Y00901.eml
+    serial: W792Y00901
+    type: emails
+  E_W792Y00912_2dccea1c:
+    archive_name: E_W792Y00912_2dccea1c.eml
+    archive_path: .archive/emails/E_W792Y00912_2dccea1c.eml
+    archived_at: '2025-09-11T21:59:28.049302'
+    file_size: 9312
+    original_name: Undeliverable_ W792Y00912.eml
+    original_path: emails/originals/Undeliverable_ W792Y00912.eml
+    serial: W792Y00912
+    type: emails
+  E_W792Y00912_9d2c8de2:
+    archive_name: E_W792Y00912_9d2c8de2.eml
+    archive_path: .archive/emails/E_W792Y00912_9d2c8de2.eml
+    archived_at: '2025-09-11T21:59:28.028348'
+    file_size: 9312
+    original_name: Undeliverable_ W792Y00912.eml
+    original_path: emails/pending/Undeliverable_ W792Y00912.eml
+    serial: W792Y00912
+    type: emails
+  E_W792Y00913_3b142381:
+    archive_name: E_W792Y00913_3b142381.eml
+    archive_path: .archive/emails/E_W792Y00913_3b142381.eml
+    archived_at: '2025-09-11T21:59:28.050497'
+    file_size: 967402
+    original_name: W792Y00913 (1).eml
+    original_path: emails/originals/W792Y00913 (1).eml
+    serial: W792Y00913
+    type: emails
+  E_W792Y00913_471e8c12:
+    archive_name: E_W792Y00913_471e8c12.eml
+    archive_path: .archive/emails/E_W792Y00913_471e8c12.eml
+    archived_at: '2025-09-11T21:59:28.058330'
+    file_size: 469223
+    original_name: W792Y00913 (2).eml
+    original_path: emails/originals/W792Y00913 (2).eml
+    serial: W792Y00913
+    type: emails
+  E_W792Y00913_798e9f37:
+    archive_name: E_W792Y00913_798e9f37.eml
+    archive_path: .archive/emails/E_W792Y00913_798e9f37.eml
+    archived_at: '2025-09-11T21:59:28.033069'
+    file_size: 469223
+    original_name: W792Y00913 (2).eml
+    original_path: emails/pending/W792Y00913 (2).eml
+    serial: W792Y00913
+    type: emails
+  E_W792Y00913_d9beada1:
+    archive_name: E_W792Y00913_d9beada1.eml
+    archive_path: .archive/emails/E_W792Y00913_d9beada1.eml
+    archived_at: '2025-09-11T21:59:28.060556'
+    file_size: 618751
+    original_name: W792Y00913.eml
+    original_path: emails/originals/W792Y00913.eml
+    serial: W792Y00913
+    type: emails
+  E_W792Y00913_db013339:
+    archive_name: E_W792Y00913_db013339.eml
+    archive_path: .archive/emails/E_W792Y00913_db013339.eml
+    archived_at: '2025-09-11T21:59:28.028829'
+    file_size: 967402
+    original_name: W792Y00913 (1).eml
+    original_path: emails/pending/W792Y00913 (1).eml
+    serial: W792Y00913
+    type: emails
+  E_W792Y00913_db90422a:
+    archive_name: E_W792Y00913_db90422a.eml
+    archive_path: .archive/emails/E_W792Y00913_db90422a.eml
+    archived_at: '2025-09-11T21:59:28.034422'
+    file_size: 618751
+    original_name: W792Y00913.eml
+    original_path: emails/pending/W792Y00913.eml
+    serial: W792Y00913
+    type: emails
+  E_W792Y00917_113e953f:
+    archive_name: E_W792Y00917_113e953f.eml
+    archive_path: .archive/emails/E_W792Y00917_113e953f.eml
+    archived_at: '2025-09-11T21:59:28.054838'
+    file_size: 704576
+    original_name: W792Y00917 (1).eml
+    original_path: emails/originals/W792Y00917 (1).eml
+    serial: W792Y00917
+    type: emails
+  E_W792Y00917_32e430e2:
+    archive_name: E_W792Y00917_32e430e2.eml
+    archive_path: .archive/emails/E_W792Y00917_32e430e2.eml
+    archived_at: '2025-09-11T21:59:28.057313'
+    file_size: 568755
+    original_name: W792Y00917.eml
+    original_path: emails/originals/W792Y00917.eml
+    serial: W792Y00917
+    type: emails
+  E_W792Y00917_3a201c59:
+    archive_name: E_W792Y00917_3a201c59.eml
+    archive_path: .archive/emails/E_W792Y00917_3a201c59.eml
+    archived_at: '2025-09-11T21:59:28.029927'
+    file_size: 804697
+    original_name: W792Y00917 (2).eml
+    original_path: emails/pending/W792Y00917 (2).eml
+    serial: W792Y00917
+    type: emails
+  E_W792Y00917_8404e912:
+    archive_name: E_W792Y00917_8404e912.eml
+    archive_path: .archive/emails/E_W792Y00917_8404e912.eml
+    archived_at: '2025-09-11T21:59:28.052826'
+    file_size: 804697
+    original_name: W792Y00917 (2).eml
+    original_path: emails/originals/W792Y00917 (2).eml
+    serial: W792Y00917
+    type: emails
+  E_W792Y00917_8e6ffbb6:
+    archive_name: E_W792Y00917_8e6ffbb6.eml
+    archive_path: .archive/emails/E_W792Y00917_8e6ffbb6.eml
+    archived_at: '2025-09-11T21:59:28.031557'
+    file_size: 704576
+    original_name: W792Y00917 (1).eml
+    original_path: emails/pending/W792Y00917 (1).eml
+    serial: W792Y00917
+    type: emails
+  E_W792Y00917_fa3cd3c0:
+    archive_name: E_W792Y00917_fa3cd3c0.eml
+    archive_path: .archive/emails/E_W792Y00917_fa3cd3c0.eml
+    archived_at: '2025-09-11T21:59:28.032686'
+    file_size: 568755
+    original_name: W792Y00917.eml
+    original_path: emails/pending/W792Y00917.eml
+    serial: W792Y00917
+    type: emails
+  E_W793601285_1b9c22ca:
+    archive_name: E_W793601285_1b9c22ca.eml
+    archive_path: .archive/emails/E_W793601285_1b9c22ca.eml
+    archived_at: '2025-09-11T21:59:28.057222'
+    file_size: 356142
+    original_name: W793601285.eml
+    original_path: emails/originals/W793601285.eml
+    serial: W793601285
+    type: emails
+  E_W793601285_28465899:
+    archive_name: E_W793601285_28465899.eml
+    archive_path: .archive/emails/E_W793601285_28465899.eml
+    archived_at: '2025-09-11T21:59:28.031839'
+    file_size: 618847
+    original_name: W793601285 (1).eml
+    original_path: emails/pending/W793601285 (1).eml
+    serial: W793601285
+    type: emails
+  E_W793601285_2e9e8b38:
+    archive_name: E_W793601285_2e9e8b38.eml
+    archive_path: .archive/emails/E_W793601285_2e9e8b38.eml
+    archived_at: '2025-09-11T21:59:28.031091'
+    file_size: 682424
+    original_name: W793601285 (2).eml
+    original_path: emails/pending/W793601285 (2).eml
+    serial: W793601285
+    type: emails
+  E_W793601285_40b63faf:
+    archive_name: E_W793601285_40b63faf.eml
+    archive_path: .archive/emails/E_W793601285_40b63faf.eml
+    archived_at: '2025-09-11T21:59:28.032594'
+    file_size: 356142
+    original_name: W793601285.eml
+    original_path: emails/pending/W793601285.eml
+    serial: W793601285
+    type: emails
+  E_W793601285_bab2fa2b:
+    archive_name: E_W793601285_bab2fa2b.eml
+    archive_path: .archive/emails/E_W793601285_bab2fa2b.eml
+    archived_at: '2025-09-11T21:59:28.054365'
+    file_size: 682424
+    original_name: W793601285 (2).eml
+    original_path: emails/originals/W793601285 (2).eml
+    serial: W793601285
+    type: emails
+  E_W793601285_f3c6701c:
+    archive_name: E_W793601285_f3c6701c.eml
+    archive_path: .archive/emails/E_W793601285_f3c6701c.eml
+    archived_at: '2025-09-11T21:59:28.055304'
+    file_size: 618847
+    original_name: W793601285 (1).eml
+    original_path: emails/originals/W793601285 (1).eml
+    serial: W793601285
+    type: emails
+  E_W793601330_204f0ad0:
+    archive_name: E_W793601330_204f0ad0.eml
+    archive_path: .archive/emails/E_W793601330_204f0ad0.eml
+    archived_at: '2025-09-11T21:59:28.026587'
+    file_size: 546215
+    original_name: W793601330.eml
+    original_path: emails/pending/W793601330.eml
+    serial: W793601330
+    type: emails
+  E_W793601330_208c6a27:
+    archive_name: E_W793601330_208c6a27.eml
+    archive_path: .archive/emails/E_W793601330_208c6a27.eml
+    archived_at: '2025-09-11T21:59:28.045348'
+    file_size: 546215
+    original_name: W793601330.eml
+    original_path: emails/originals/W793601330.eml
+    serial: W793601330
+    type: emails
+  E_W793601330_72bda4bd:
+    archive_name: E_W793601330_72bda4bd.eml
+    archive_path: .archive/emails/E_W793601330_72bda4bd.eml
+    archived_at: '2025-09-11T21:59:28.035893'
+    file_size: 839679
+    original_name: W793601330 (1).eml
+    original_path: emails/pending/W793601330 (1).eml
+    serial: W793601330
+    type: emails
+  E_W793601330_7f4a26ca:
+    archive_name: E_W793601330_7f4a26ca.eml
+    archive_path: .archive/emails/E_W793601330_7f4a26ca.eml
+    archived_at: '2025-09-11T21:59:28.030802'
+    file_size: 2006863
+    original_name: W793601330 (2).eml
+    original_path: emails/pending/W793601330 (2).eml
+    serial: W793601330
+    type: emails
+  E_W793601330_be4635eb:
+    archive_name: E_W793601330_be4635eb.eml
+    archive_path: .archive/emails/E_W793601330_be4635eb.eml
+    archived_at: '2025-09-11T21:59:28.062787'
+    file_size: 839679
+    original_name: W793601330 (1).eml
+    original_path: emails/originals/W793601330 (1).eml
+    serial: W793601330
+    type: emails
+  E_W793601330_d9c501a4:
+    archive_name: E_W793601330_d9c501a4.eml
+    archive_path: .archive/emails/E_W793601330_d9c501a4.eml
+    archived_at: '2025-09-11T21:59:28.053968'
+    file_size: 2006863
+    original_name: W793601330 (2).eml
+    original_path: emails/originals/W793601330 (2).eml
+    serial: W793601330
+    type: emails
+  E_W793601403_13a24344:
+    archive_name: E_W793601403_13a24344.eml
+    archive_path: .archive/emails/E_W793601403_13a24344.eml
+    archived_at: '2025-09-11T21:59:28.046909'
+    file_size: 604821
+    original_name: W793601403.eml
+    original_path: emails/originals/W793601403.eml
+    serial: W793601403
+    type: emails
+  E_W793601403_245d12fc:
+    archive_name: E_W793601403_245d12fc.eml
+    archive_path: .archive/emails/E_W793601403_245d12fc.eml
+    archived_at: '2025-09-11T21:59:28.057534'
+    file_size: 568952
+    original_name: W793601403 (1).eml
+    original_path: emails/originals/W793601403 (1).eml
+    serial: W793601403
+    type: emails
+  E_W793601403_77510517:
+    archive_name: E_W793601403_77510517.eml
+    archive_path: .archive/emails/E_W793601403_77510517.eml
+    archived_at: '2025-09-11T21:59:28.027343'
+    file_size: 604821
+    original_name: W793601403.eml
+    original_path: emails/pending/W793601403.eml
+    serial: W793601403
+    type: emails
+  E_W793601403_e1ec74fd:
+    archive_name: E_W793601403_e1ec74fd.eml
+    archive_path: .archive/emails/E_W793601403_e1ec74fd.eml
+    archived_at: '2025-09-11T21:59:28.032782'
+    file_size: 568952
+    original_name: W793601403 (1).eml
+    original_path: emails/pending/W793601403 (1).eml
+    serial: W793601403
+    type: emails
+  E_W794302146_0130e866:
+    archive_name: E_W794302146_0130e866.eml
+    archive_path: .archive/emails/E_W794302146_0130e866.eml
+    archived_at: '2025-09-11T21:59:28.053309'
+    file_size: 13576
+    original_name: Toner [TASKalfa 5054ci] [SN - W794302146] [IP - 172.27.132.49]
+      - Block 1 Level 5 School of Electronics & ICT (SEIT, Rm 1533).eml
+    original_path: emails/originals/Toner [TASKalfa 5054ci] [SN - W794302146] [IP
+      - 172.27.132.49] - Block 1 Level 5 School of Electronics & ICT (SEIT, Rm 1533).eml
+    serial: W794302146
+    type: emails
+  E_W794302146_0509c878:
+    archive_name: E_W794302146_0509c878.eml
+    archive_path: .archive/emails/E_W794302146_0509c878.eml
+    archived_at: '2025-09-11T21:59:28.035304'
+    file_size: 36258
+    original_name: TASKalfa 5054ci - W794302146 - Counter - Block 5 Level 5 School
+      of Electronics & ICT (SEIT), TASKalfa 5054ci.eml
+    original_path: emails/pending/TASKalfa 5054ci - W794302146 - Counter - Block 5
+      Level 5 School of Electronics & ICT (SEIT), TASKalfa 5054ci.eml
+    serial: W794302146
+    type: emails
+  E_W794302146_0e6c6cee:
+    archive_name: E_W794302146_0e6c6cee.eml
+    archive_path: .archive/emails/E_W794302146_0e6c6cee.eml
+    archived_at: '2025-09-11T21:59:28.030238'
+    file_size: 13576
+    original_name: Toner [TASKalfa 5054ci] [SN - W794302146] [IP - 172.27.132.49]
+      - Block 1 Level 5 School of Electronics & ICT (SEIT, Rm 1533).eml
+    original_path: emails/pending/Toner [TASKalfa 5054ci] [SN - W794302146] [IP -
+      172.27.132.49] - Block 1 Level 5 School of Electronics & ICT (SEIT, Rm 1533).eml
+    serial: W794302146
+    type: emails
+  E_W794302146_1aef099a:
+    archive_name: E_W794302146_1aef099a.eml
+    archive_path: .archive/emails/E_W794302146_1aef099a.eml
+    archived_at: '2025-09-11T21:59:28.059800'
+    file_size: 72830
+    original_name: W794302146 (1).eml
+    original_path: emails/originals/W794302146 (1).eml
+    serial: W794302146
+    type: emails
+  E_W794302146_21a1b0e3:
+    archive_name: E_W794302146_21a1b0e3.eml
+    archive_path: .archive/emails/E_W794302146_21a1b0e3.eml
+    archived_at: '2025-09-11T21:59:28.048747'
+    file_size: 72830
+    original_name: W794302146.eml
+    original_path: emails/originals/W794302146.eml
+    serial: W794302146
+    type: emails
+  E_W794302146_38515dc8:
+    archive_name: E_W794302146_38515dc8.eml
+    archive_path: .archive/emails/E_W794302146_38515dc8.eml
+    archived_at: '2025-09-11T21:59:28.033928'
+    file_size: 72830
+    original_name: W794302146 (1).eml
+    original_path: emails/pending/W794302146 (1).eml
+    serial: W794302146
+    type: emails
+  E_W794302146_55ea8504:
+    archive_name: E_W794302146_55ea8504.eml
+    archive_path: .archive/emails/E_W794302146_55ea8504.eml
+    archived_at: '2025-09-11T21:59:28.035399'
+    file_size: 929550
+    original_name: W794302146 (4).eml
+    original_path: emails/pending/W794302146 (4).eml
+    serial: W794302146
+    type: emails
+  E_W794302146_57d2e83f:
+    archive_name: E_W794302146_57d2e83f.eml
+    archive_path: .archive/emails/E_W794302146_57d2e83f.eml
+    archived_at: '2025-09-11T21:59:28.051512'
+    file_size: 529578
+    original_name: W794302146 (2).eml
+    original_path: emails/originals/W794302146 (2).eml
+    serial: W794302146
+    type: emails
+  E_W794302146_77d13d94:
+    archive_name: E_W794302146_77d13d94.eml
+    archive_path: .archive/emails/E_W794302146_77d13d94.eml
+    archived_at: '2025-09-11T21:59:28.062045'
+    file_size: 929550
+    original_name: W794302146 (4).eml
+    original_path: emails/originals/W794302146 (4).eml
+    serial: W794302146
+    type: emails
+  E_W794302146_78fb3def:
+    archive_name: E_W794302146_78fb3def.eml
+    archive_path: .archive/emails/E_W794302146_78fb3def.eml
+    archived_at: '2025-09-11T21:59:28.028074'
+    file_size: 72830
+    original_name: W794302146.eml
+    original_path: emails/pending/W794302146.eml
+    serial: W794302146
+    type: emails
+  E_W794302146_815b47ab:
+    archive_name: E_W794302146_815b47ab.eml
+    archive_path: .archive/emails/E_W794302146_815b47ab.eml
+    archived_at: '2025-09-11T21:59:28.034326'
+    file_size: 597875
+    original_name: W794302146 (3).eml
+    original_path: emails/pending/W794302146 (3).eml
+    serial: W794302146
+    type: emails
+  E_W794302146_99b46196:
+    archive_name: E_W794302146_99b46196.eml
+    archive_path: .archive/emails/E_W794302146_99b46196.eml
+    archived_at: '2025-09-11T21:59:28.060371'
+    file_size: 597875
+    original_name: W794302146 (3).eml
+    original_path: emails/originals/W794302146 (3).eml
+    serial: W794302146
+    type: emails
+  E_W794302146_ee5f1081:
+    archive_name: E_W794302146_ee5f1081.eml
+    archive_path: .archive/emails/E_W794302146_ee5f1081.eml
+    archived_at: '2025-09-11T21:59:28.029112'
+    file_size: 529578
+    original_name: W794302146 (2).eml
+    original_path: emails/pending/W794302146 (2).eml
+    serial: W794302146
+    type: emails
+  E_W794302146_f6cea033:
+    archive_name: E_W794302146_f6cea033.eml
+    archive_path: .archive/emails/E_W794302146_f6cea033.eml
+    archived_at: '2025-09-11T21:59:28.061943'
+    file_size: 36258
+    original_name: TASKalfa 5054ci - W794302146 - Counter - Block 5 Level 5 School
+      of Electronics & ICT (SEIT), TASKalfa 5054ci.eml
+    original_path: emails/originals/TASKalfa 5054ci - W794302146 - Counter - Block
+      5 Level 5 School of Electronics & ICT (SEIT), TASKalfa 5054ci.eml
+    serial: W794302146
+    type: emails
+  E_W7F3501393_01149b3e:
+    archive_name: E_W7F3501393_01149b3e.eml
+    archive_path: .archive/emails/E_W7F3501393_01149b3e.eml
+    archived_at: '2025-09-11T21:59:28.033633'
+    file_size: 814794
+    original_name: W7F3501393 (2).eml
+    original_path: emails/pending/W7F3501393 (2).eml
+    serial: W7F3501393
+    type: emails
+  E_W7F3501393_0396d054:
+    archive_name: E_W7F3501393_0396d054.eml
+    archive_path: .archive/emails/E_W7F3501393_0396d054.eml
+    archived_at: '2025-09-11T21:59:28.045638'
+    file_size: 529800
+    original_name: W7F3501393.eml
+    original_path: emails/originals/W7F3501393.eml
+    serial: W7F3501393
+    type: emails
+  E_W7F3501393_448eaf0e:
+    archive_name: E_W7F3501393_448eaf0e.eml
+    archive_path: .archive/emails/E_W7F3501393_448eaf0e.eml
+    archived_at: '2025-09-11T21:59:28.026782'
+    file_size: 529800
+    original_name: W7F3501393.eml
+    original_path: emails/pending/W7F3501393.eml
+    serial: W7F3501393
+    type: emails
+  E_W7F3501393_650bf61a:
+    archive_name: E_W7F3501393_650bf61a.eml
+    archive_path: .archive/emails/E_W7F3501393_650bf61a.eml
+    archived_at: '2025-09-11T21:59:28.061741'
+    file_size: 30636
+    original_name: 007 - TASKalfa 5004i - W7F3501393 - Counter - Block 3 Level 7 School
+      of Hospitality (SOH), TASKalfa 5004i .eml
+    original_path: emails/originals/007 - TASKalfa 5004i - W7F3501393 - Counter -
+      Block 3 Level 7 School of Hospitality (SOH), TASKalfa 5004i .eml
+    serial: W7F3501393
+    type: emails
+  E_W7F3501393_c6b495ae:
+    archive_name: E_W7F3501393_c6b495ae.eml
+    archive_path: .archive/emails/E_W7F3501393_c6b495ae.eml
+    archived_at: '2025-09-11T21:59:28.035110'
+    file_size: 30636
+    original_name: 007 - TASKalfa 5004i - W7F3501393 - Counter - Block 3 Level 7 School
+      of Hospitality (SOH), TASKalfa 5004i .eml
+    original_path: emails/pending/007 - TASKalfa 5004i - W7F3501393 - Counter - Block
+      3 Level 7 School of Hospitality (SOH), TASKalfa 5004i .eml
+    serial: W7F3501393
+    type: emails
+  E_W7F3501393_ee45afba:
+    archive_name: E_W7F3501393_ee45afba.eml
+    archive_path: .archive/emails/E_W7F3501393_ee45afba.eml
+    archived_at: '2025-09-11T21:59:28.054564'
+    file_size: 614018
+    original_name: W7F3501393 (1).eml
+    original_path: emails/originals/W7F3501393 (1).eml
+    serial: W7F3501393
+    type: emails
+  E_W7F3501393_f3ae0ba6:
+    archive_name: E_W7F3501393_f3ae0ba6.eml
+    archive_path: .archive/emails/E_W7F3501393_f3ae0ba6.eml
+    archived_at: '2025-09-11T21:59:28.058893'
+    file_size: 814794
+    original_name: W7F3501393 (2).eml
+    original_path: emails/originals/W7F3501393 (2).eml
+    serial: W7F3501393
+    type: emails
+  E_W7F3501393_f9732517:
+    archive_name: E_W7F3501393_f9732517.eml
+    archive_path: .archive/emails/E_W7F3501393_f9732517.eml
+    archived_at: '2025-09-11T21:59:28.031282'
+    file_size: 614018
+    original_name: W7F3501393 (1).eml
+    original_path: emails/pending/W7F3501393 (1).eml
+    serial: W7F3501393
+    type: emails
+  E_W7F3501399_14376846:
+    archive_name: E_W7F3501399_14376846.eml
+    archive_path: .archive/emails/E_W7F3501399_14376846.eml
+    archived_at: '2025-09-11T21:59:28.046813'
+    file_size: 9312
+    original_name: Undeliverable_ W7F3501399.eml
+    original_path: emails/originals/Undeliverable_ W7F3501399.eml
+    serial: W7F3501399
+    type: emails
+  E_W7F3501399_45b0075e:
+    archive_name: E_W7F3501399_45b0075e.eml
+    archive_path: .archive/emails/E_W7F3501399_45b0075e.eml
+    archived_at: '2025-09-11T21:59:28.027254'
+    file_size: 9312
+    original_name: Undeliverable_ W7F3501399.eml
+    original_path: emails/pending/Undeliverable_ W7F3501399.eml
+    serial: W7F3501399
+    type: emails
+  E_W7F3501399_a34fc3ae:
+    archive_name: E_W7F3501399_a34fc3ae.eml
+    archive_path: .archive/emails/E_W7F3501399_a34fc3ae.eml
+    archived_at: '2025-09-11T21:59:28.061844'
+    file_size: 31089
+    original_name: 010 - TASKalfa 5004i - W7F3501399 - Counter - Block 3 Level 8 School
+      of Engineering (FME), TASKalfa 5004i .eml
+    original_path: emails/originals/010 - TASKalfa 5004i - W7F3501399 - Counter -
+      Block 3 Level 8 School of Engineering (FME), TASKalfa 5004i .eml
+    serial: W7F3501399
+    type: emails
+  E_W7F3501399_fe1fa2ef:
+    archive_name: E_W7F3501399_fe1fa2ef.eml
+    archive_path: .archive/emails/E_W7F3501399_fe1fa2ef.eml
+    archived_at: '2025-09-11T21:59:28.035208'
+    file_size: 31089
+    original_name: 010 - TASKalfa 5004i - W7F3501399 - Counter - Block 3 Level 8 School
+      of Engineering (FME), TASKalfa 5004i .eml
+    original_path: emails/pending/010 - TASKalfa 5004i - W7F3501399 - Counter - Block
+      3 Level 8 School of Engineering (FME), TASKalfa 5004i .eml
+    serial: W7F3501399
+    type: emails
+  E_W7F3501401_1b040f4e:
+    archive_name: E_W7F3501401_1b040f4e.eml
+    archive_path: .archive/emails/E_W7F3501401_1b040f4e.eml
+    archived_at: '2025-09-11T21:59:28.029383'
+    file_size: 444155
+    original_name: W7F3501401 (2).eml
+    original_path: emails/pending/W7F3501401 (2).eml
+    serial: W7F3501401
+    type: emails
+  E_W7F3501401_687fc74d:
+    archive_name: E_W7F3501401_687fc74d.eml
+    archive_path: .archive/emails/E_W7F3501401_687fc74d.eml
+    archived_at: '2025-09-11T21:59:28.028922'
+    file_size: 1938833
+    original_name: W7F3501401.eml
+    original_path: emails/pending/W7F3501401.eml
+    serial: W7F3501401
+    type: emails
+  E_W7F3501401_6a1689b3:
+    archive_name: E_W7F3501401_6a1689b3.eml
+    archive_path: .archive/emails/E_W7F3501401_6a1689b3.eml
+    archived_at: '2025-09-11T21:59:28.052163'
+    file_size: 444155
+    original_name: W7F3501401 (2).eml
+    original_path: emails/originals/W7F3501401 (2).eml
+    serial: W7F3501401
+    type: emails
+  E_W7F3501401_93835939:
+    archive_name: E_W7F3501401_93835939.eml
+    archive_path: .archive/emails/E_W7F3501401_93835939.eml
+    archived_at: '2025-09-11T21:59:28.050586'
+    file_size: 1938833
+    original_name: W7F3501401.eml
+    original_path: emails/originals/W7F3501401.eml
+    serial: W7F3501401
+    type: emails
+  E_W7F3501401_a897c1d6:
+    archive_name: E_W7F3501401_a897c1d6.eml
+    archive_path: .archive/emails/E_W7F3501401_a897c1d6.eml
+    archived_at: '2025-09-11T21:59:28.048556'
+    file_size: 497760
+    original_name: W7F3501401 (1).eml
+    original_path: emails/originals/W7F3501401 (1).eml
+    serial: W7F3501401
+    type: emails
+  E_W7F3501401_c516dc44:
+    archive_name: E_W7F3501401_c516dc44.eml
+    archive_path: .archive/emails/E_W7F3501401_c516dc44.eml
+    archived_at: '2025-09-11T21:59:28.027976'
+    file_size: 497760
+    original_name: W7F3501401 (1).eml
+    original_path: emails/pending/W7F3501401 (1).eml
+    serial: W7F3501401
+    type: emails
+  E_W7F3501405_3627e3bb:
+    archive_name: E_W7F3501405_3627e3bb.eml
+    archive_path: .archive/emails/E_W7F3501405_3627e3bb.eml
+    archived_at: '2025-09-11T21:59:28.034704'
+    file_size: 637697
+    original_name: W7F3501405 (1).eml
+    original_path: emails/pending/W7F3501405 (1).eml
+    serial: W7F3501405
+    type: emails
+  E_W7F3501405_952495e2:
+    archive_name: E_W7F3501405_952495e2.eml
+    archive_path: .archive/emails/E_W7F3501405_952495e2.eml
+    archived_at: '2025-09-11T21:59:28.056281'
+    file_size: 837180
+    original_name: W7F3501405 (2).eml
+    original_path: emails/originals/W7F3501405 (2).eml
+    serial: W7F3501405
+    type: emails
+  E_W7F3501405_ad1f78f1:
+    archive_name: E_W7F3501405_ad1f78f1.eml
+    archive_path: .archive/emails/E_W7F3501405_ad1f78f1.eml
+    archived_at: '2025-09-11T21:59:28.032226'
+    file_size: 837180
+    original_name: W7F3501405 (2).eml
+    original_path: emails/pending/W7F3501405 (2).eml
+    serial: W7F3501405
+    type: emails
+  E_W7F3501405_ca86f2ac:
+    archive_name: E_W7F3501405_ca86f2ac.eml
+    archive_path: .archive/emails/E_W7F3501405_ca86f2ac.eml
+    archived_at: '2025-09-11T21:59:28.027433'
+    file_size: 75408
+    original_name: W7F3501405.eml
+    original_path: emails/pending/W7F3501405.eml
+    serial: W7F3501405
+    type: emails
+  E_W7F3501405_f43f7f63:
+    archive_name: E_W7F3501405_f43f7f63.eml
+    archive_path: .archive/emails/E_W7F3501405_f43f7f63.eml
+    archived_at: '2025-09-11T21:59:28.047003'
+    file_size: 75408
+    original_name: W7F3501405.eml
+    original_path: emails/originals/W7F3501405.eml
+    serial: W7F3501405
+    type: emails
+  E_W7F3501405_fa1f5c00:
+    archive_name: E_W7F3501405_fa1f5c00.eml
+    archive_path: .archive/emails/E_W7F3501405_fa1f5c00.eml
+    archived_at: '2025-09-11T21:59:28.060959'
+    file_size: 637697
+    original_name: W7F3501405 (1).eml
+    original_path: emails/originals/W7F3501405 (1).eml
+    serial: W7F3501405
+    type: emails
+  E_W7F3501425_3003d78f:
+    archive_name: E_W7F3501425_3003d78f.eml
+    archive_path: .archive/emails/E_W7F3501425_3003d78f.eml
+    archived_at: '2025-09-11T21:59:28.033445'
+    file_size: 561736
+    original_name: W7F3501425.eml
+    original_path: emails/pending/W7F3501425.eml
+    serial: W7F3501425
+    type: emails
+  E_W7F3501425_41afd392:
+    archive_name: E_W7F3501425_41afd392.eml
+    archive_path: .archive/emails/E_W7F3501425_41afd392.eml
+    archived_at: '2025-09-11T21:59:28.028456'
+    file_size: 660507
+    original_name: W7F3501425 (1).eml
+    original_path: emails/pending/W7F3501425 (1).eml
+    serial: W7F3501425
+    type: emails
+  E_W7F3501425_608e42d1:
+    archive_name: E_W7F3501425_608e42d1.eml
+    archive_path: .archive/emails/E_W7F3501425_608e42d1.eml
+    archived_at: '2025-09-11T21:59:28.058703'
+    file_size: 561736
+    original_name: W7F3501425.eml
+    original_path: emails/originals/W7F3501425.eml
+    serial: W7F3501425
+    type: emails
+  E_W7F3501425_c82d16bb:
+    archive_name: E_W7F3501425_c82d16bb.eml
+    archive_path: .archive/emails/E_W7F3501425_c82d16bb.eml
+    archived_at: '2025-09-11T21:59:28.049758'
+    file_size: 660507
+    original_name: W7F3501425 (1).eml
+    original_path: emails/originals/W7F3501425 (1).eml
+    serial: W7F3501425
+    type: emails
+  E_W7F3501460_0ab80369:
+    archive_name: E_W7F3501460_0ab80369.eml
+    archive_path: .archive/emails/E_W7F3501460_0ab80369.eml
+    archived_at: '2025-09-11T21:59:28.032412'
+    file_size: 531226
+    original_name: W7F3501460 (2).eml
+    original_path: emails/pending/W7F3501460 (2).eml
+    serial: W7F3501460
+    type: emails
+  E_W7F3501460_0eba6f93:
+    archive_name: E_W7F3501460_0eba6f93.eml
+    archive_path: .archive/emails/E_W7F3501460_0eba6f93.eml
+    archived_at: '2025-09-11T21:59:28.046237'
+    file_size: 573086
+    original_name: W7F3501460.eml
+    original_path: emails/originals/W7F3501460.eml
+    serial: W7F3501460
+    type: emails
+  E_W7F3501460_d1729df2:
+    archive_name: E_W7F3501460_d1729df2.eml
+    archive_path: .archive/emails/E_W7F3501460_d1729df2.eml
+    archived_at: '2025-09-11T21:59:28.056743'
+    file_size: 531226
+    original_name: W7F3501460 (2).eml
+    original_path: emails/originals/W7F3501460 (2).eml
+    serial: W7F3501460
+    type: emails
+  E_W7F3501460_f38cfff7:
+    archive_name: E_W7F3501460_f38cfff7.eml
+    archive_path: .archive/emails/E_W7F3501460_f38cfff7.eml
+    archived_at: '2025-09-11T21:59:28.026965'
+    file_size: 573086
+    original_name: W7F3501460.eml
+    original_path: emails/pending/W7F3501460.eml
+    serial: W7F3501460
+    type: emails
+  E_W7F3601550_9d98ba00:
+    archive_name: E_W7F3601550_9d98ba00.eml
+    archive_path: .archive/emails/E_W7F3601550_9d98ba00.eml
+    archived_at: '2025-09-11T21:59:28.062601'
+    file_size: 539715
+    original_name: W7F3601550 (1).eml
+    original_path: emails/originals/W7F3601550 (1).eml
+    serial: W7F3601550
+    type: emails
+  E_W7F3601550_ad8bfd73:
+    archive_name: E_W7F3601550_ad8bfd73.eml
+    archive_path: .archive/emails/E_W7F3601550_ad8bfd73.eml
+    archived_at: '2025-09-11T21:59:28.035794'
+    file_size: 539715
+    original_name: W7F3601550 (1).eml
+    original_path: emails/pending/W7F3601550 (1).eml
+    serial: W7F3601550
+    type: emails
+  E_W7F3601550_b861ac86:
+    archive_name: E_W7F3601550_b861ac86.eml
+    archive_path: .archive/emails/E_W7F3601550_b861ac86.eml
+    archived_at: '2025-09-11T21:59:28.027889'
+    file_size: 401932
+    original_name: W7F3601550.eml
+    original_path: emails/pending/W7F3601550.eml
+    serial: W7F3601550
+    type: emails
+  E_W7F3601550_e4a16bbe:
+    archive_name: E_W7F3601550_e4a16bbe.eml
+    archive_path: .archive/emails/E_W7F3601550_e4a16bbe.eml
+    archived_at: '2025-09-11T21:59:28.048456'
+    file_size: 401932
+    original_name: W7F3601550.eml
+    original_path: emails/originals/W7F3601550.eml
+    serial: W7F3601550
+    type: emails
+  E_W7F3601552_01e8c4e4:
+    archive_name: E_W7F3601552_01e8c4e4.eml
+    archive_path: .archive/emails/E_W7F3601552_01e8c4e4.eml
+    archived_at: '2025-09-11T21:59:28.058610'
+    file_size: 65648
+    original_name: W7F3601552.eml
+    original_path: emails/originals/W7F3601552.eml
+    serial: W7F3601552
+    type: emails
+  E_W7F3601552_0755288b:
+    archive_name: E_W7F3601552_0755288b.eml
+    archive_path: .archive/emails/E_W7F3601552_0755288b.eml
+    archived_at: '2025-09-11T21:59:28.029657'
+    file_size: 481437
+    original_name: W7F3601552 (3).eml
+    original_path: emails/pending/W7F3601552 (3).eml
+    serial: W7F3601552
+    type: emails
+  E_W7F3601552_189ba322:
+    archive_name: E_W7F3601552_189ba322.eml
+    archive_path: .archive/emails/E_W7F3601552_189ba322.eml
+    archived_at: '2025-09-11T21:59:28.046331'
+    file_size: 31534
+    original_name: Counter [TASKalfa 5004i] [SN - W7F3601552] [IP - 172.27.132.44]
+      Block 5 Level 5 School of Electronics & ICT (SEIT).eml
+    original_path: emails/originals/Counter [TASKalfa 5004i] [SN - W7F3601552] [IP
+      - 172.27.132.44] Block 5 Level 5 School of Electronics & ICT (SEIT).eml
+    serial: W7F3601552
+    type: emails
+  E_W7F3601552_1b6089f0:
+    archive_name: E_W7F3601552_1b6089f0.eml
+    archive_path: .archive/emails/E_W7F3601552_1b6089f0.eml
+    archived_at: '2025-09-11T21:59:28.028165'
+    file_size: 490608
+    original_name: W7F3601552 (1).eml
+    original_path: emails/pending/W7F3601552 (1).eml
+    serial: W7F3601552
+    type: emails
+  E_W7F3601552_3e4f9010:
+    archive_name: E_W7F3601552_3e4f9010.eml
+    archive_path: .archive/emails/E_W7F3601552_3e4f9010.eml
+    archived_at: '2025-09-11T21:59:28.061445'
+    file_size: 738588
+    original_name: W7F3601552 (4).eml
+    original_path: emails/originals/W7F3601552 (4).eml
+    serial: W7F3601552
+    type: emails
+  E_W7F3601552_437b92aa:
+    archive_name: E_W7F3601552_437b92aa.eml
+    archive_path: .archive/emails/E_W7F3601552_437b92aa.eml
+    archived_at: '2025-09-11T21:59:28.033353'
+    file_size: 65648
+    original_name: W7F3601552.eml
+    original_path: emails/pending/W7F3601552.eml
+    serial: W7F3601552
+    type: emails
+  E_W7F3601552_44b76fa4:
+    archive_name: E_W7F3601552_44b76fa4.eml
+    archive_path: .archive/emails/E_W7F3601552_44b76fa4.eml
+    archived_at: '2025-09-11T21:59:28.049079'
+    file_size: 490608
+    original_name: W7F3601552 (1).eml
+    original_path: emails/originals/W7F3601552 (1).eml
+    serial: W7F3601552
+    type: emails
+  E_W7F3601552_91381288:
+    archive_name: E_W7F3601552_91381288.eml
+    archive_path: .archive/emails/E_W7F3601552_91381288.eml
+    archived_at: '2025-09-11T21:59:28.034994'
+    file_size: 738588
+    original_name: W7F3601552 (4).eml
+    original_path: emails/pending/W7F3601552 (4).eml
+    serial: W7F3601552
+    type: emails
+  E_W7F3601552_9b4e8dba:
+    archive_name: E_W7F3601552_9b4e8dba.eml
+    archive_path: .archive/emails/E_W7F3601552_9b4e8dba.eml
+    archived_at: '2025-09-11T21:59:28.054178'
+    file_size: 443663
+    original_name: W7F3601552 (2).eml
+    original_path: emails/originals/W7F3601552 (2).eml
+    serial: W7F3601552
+    type: emails
+  E_W7F3601552_9d56a2e7:
+    archive_name: E_W7F3601552_9d56a2e7.eml
+    archive_path: .archive/emails/E_W7F3601552_9d56a2e7.eml
+    archived_at: '2025-09-11T21:59:28.056373'
+    file_size: 11109
+    original_name: Toner [TASKalfa 5004i] [SN - W7F3601552] [IP - 172.27.132.44] Block
+      5 Level 5 School of Electronics & ICT (SEIT).eml
+    original_path: emails/originals/Toner [TASKalfa 5004i] [SN - W7F3601552] [IP -
+      172.27.132.44] Block 5 Level 5 School of Electronics & ICT (SEIT).eml
+    serial: W7F3601552
+    type: emails
+  E_W7F3601552_c7043874:
+    archive_name: E_W7F3601552_c7043874.eml
+    archive_path: .archive/emails/E_W7F3601552_c7043874.eml
+    archived_at: '2025-09-11T21:59:28.032320'
+    file_size: 11109
+    original_name: Toner [TASKalfa 5004i] [SN - W7F3601552] [IP - 172.27.132.44] Block
+      5 Level 5 School of Electronics & ICT (SEIT).eml
+    original_path: emails/pending/Toner [TASKalfa 5004i] [SN - W7F3601552] [IP - 172.27.132.44]
+      Block 5 Level 5 School of Electronics & ICT (SEIT).eml
+    serial: W7F3601552
+    type: emails
+  E_W7F3601552_d59f4a6a:
+    archive_name: E_W7F3601552_d59f4a6a.eml
+    archive_path: .archive/emails/E_W7F3601552_d59f4a6a.eml
+    archived_at: '2025-09-11T21:59:28.052538'
+    file_size: 481437
+    original_name: W7F3601552 (3).eml
+    original_path: emails/originals/W7F3601552 (3).eml
+    serial: W7F3601552
+    type: emails
+  E_W7F3601552_d8cfa028:
+    archive_name: E_W7F3601552_d8cfa028.eml
+    archive_path: .archive/emails/E_W7F3601552_d8cfa028.eml
+    archived_at: '2025-09-11T21:59:28.030989'
+    file_size: 443663
+    original_name: W7F3601552 (2).eml
+    original_path: emails/pending/W7F3601552 (2).eml
+    serial: W7F3601552
+    type: emails
+  E_W7F3601552_db80475c:
+    archive_name: E_W7F3601552_db80475c.eml
+    archive_path: .archive/emails/E_W7F3601552_db80475c.eml
+    archived_at: '2025-09-11T21:59:28.027068'
+    file_size: 31534
+    original_name: Counter [TASKalfa 5004i] [SN - W7F3601552] [IP - 172.27.132.44]
+      Block 5 Level 5 School of Electronics & ICT (SEIT).eml
+    original_path: emails/pending/Counter [TASKalfa 5004i] [SN - W7F3601552] [IP -
+      172.27.132.44] Block 5 Level 5 School of Electronics & ICT (SEIT).eml
+    serial: W7F3601552
+    type: emails
+  E_W7F3601555_114c5682:
+    archive_name: E_W7F3601555_114c5682.eml
+    archive_path: .archive/emails/E_W7F3601555_114c5682.eml
+    archived_at: '2025-09-11T21:59:28.030329'
+    file_size: 64199
+    original_name: W7F3601555.eml
+    original_path: emails/pending/W7F3601555.eml
+    serial: W7F3601555
+    type: emails
+  E_W7F3601555_29ef94a2:
+    archive_name: E_W7F3601555_29ef94a2.eml
+    archive_path: .archive/emails/E_W7F3601555_29ef94a2.eml
+    archived_at: '2025-09-11T21:59:28.053875'
+    file_size: 10621
+    original_name: Toner [TASKalfa 5004i] [SN - W7F3601555] [IP - 172.27.132.45] Block
+      5 Level 5 School of Electronics & ICT (SEIT).eml
+    original_path: emails/originals/Toner [TASKalfa 5004i] [SN - W7F3601555] [IP -
+      172.27.132.45] Block 5 Level 5 School of Electronics & ICT (SEIT).eml
+    serial: W7F3601555
+    type: emails
+  E_W7F3601555_2c6f9b9b:
+    archive_name: E_W7F3601555_2c6f9b9b.eml
+    archive_path: .archive/emails/E_W7F3601555_2c6f9b9b.eml
+    archived_at: '2025-09-11T21:59:28.061260'
+    file_size: 888062
+    original_name: W7F3601555 (3).eml
+    original_path: emails/originals/W7F3601555 (3).eml
+    serial: W7F3601555
+    type: emails
+  E_W7F3601555_3a02fd0c:
+    archive_name: E_W7F3601555_3a02fd0c.eml
+    archive_path: .archive/emails/E_W7F3601555_3a02fd0c.eml
+    archived_at: '2025-09-11T21:59:28.030708'
+    file_size: 10621
+    original_name: Toner [TASKalfa 5004i] [SN - W7F3601555] [IP - 172.27.132.45] Block
+      5 Level 5 School of Electronics & ICT (SEIT).eml
+    original_path: emails/pending/Toner [TASKalfa 5004i] [SN - W7F3601555] [IP - 172.27.132.45]
+      Block 5 Level 5 School of Electronics & ICT (SEIT).eml
+    serial: W7F3601555
+    type: emails
+  E_W7F3601555_619eedea:
+    archive_name: E_W7F3601555_619eedea.eml
+    archive_path: .archive/emails/E_W7F3601555_619eedea.eml
+    archived_at: '2025-09-11T21:59:28.053409'
+    file_size: 64199
+    original_name: W7F3601555.eml
+    original_path: emails/originals/W7F3601555.eml
+    serial: W7F3601555
+    type: emails
+  E_W7F3601555_75d1a12d:
+    archive_name: E_W7F3601555_75d1a12d.eml
+    archive_path: .archive/emails/E_W7F3601555_75d1a12d.eml
+    archived_at: '2025-09-11T21:59:28.034231'
+    file_size: 31075
+    original_name: Counter [TASKalfa 5004i] [SN - W7F3601555] [IP - 172.27.132.45]
+      Block 5 Level 5 School of Electronics & ICT (SEIT).eml
+    original_path: emails/pending/Counter [TASKalfa 5004i] [SN - W7F3601555] [IP -
+      172.27.132.45] Block 5 Level 5 School of Electronics & ICT (SEIT).eml
+    serial: W7F3601555
+    type: emails
+  E_W7F3601555_84e14394:
+    archive_name: E_W7F3601555_84e14394.eml
+    archive_path: .archive/emails/E_W7F3601555_84e14394.eml
+    archived_at: '2025-09-11T21:59:28.060279'
+    file_size: 31075
+    original_name: Counter [TASKalfa 5004i] [SN - W7F3601555] [IP - 172.27.132.45]
+      Block 5 Level 5 School of Electronics & ICT (SEIT).eml
+    original_path: emails/originals/Counter [TASKalfa 5004i] [SN - W7F3601555] [IP
+      - 172.27.132.45] Block 5 Level 5 School of Electronics & ICT (SEIT).eml
+    serial: W7F3601555
+    type: emails
+  E_W7F3601555_cf0af476:
+    archive_name: E_W7F3601555_cf0af476.eml
+    archive_path: .archive/emails/E_W7F3601555_cf0af476.eml
+    archived_at: '2025-09-11T21:59:28.029838'
+    file_size: 578860
+    original_name: W7F3601555 (2).eml
+    original_path: emails/pending/W7F3601555 (2).eml
+    serial: W7F3601555
+    type: emails
+  E_W7F3601555_d0d7fe4b:
+    archive_name: E_W7F3601555_d0d7fe4b.eml
+    archive_path: .archive/emails/E_W7F3601555_d0d7fe4b.eml
+    archived_at: '2025-09-11T21:59:28.034894'
+    file_size: 888062
+    original_name: W7F3601555 (3).eml
+    original_path: emails/pending/W7F3601555 (3).eml
+    serial: W7F3601555
+    type: emails
+  E_W7F3601555_d2816f75:
+    archive_name: E_W7F3601555_d2816f75.eml
+    archive_path: .archive/emails/E_W7F3601555_d2816f75.eml
+    archived_at: '2025-09-11T21:59:28.052717'
+    file_size: 578860
+    original_name: W7F3601555 (2).eml
+    original_path: emails/originals/W7F3601555 (2).eml
+    serial: W7F3601555
+    type: emails
+  E_W7F3601555_fba85b19:
+    archive_name: E_W7F3601555_fba85b19.eml
+    archive_path: .archive/emails/E_W7F3601555_fba85b19.eml
+    archived_at: '2025-09-11T21:59:28.055611'
+    file_size: 501134
+    original_name: W7F3601555 (1).eml
+    original_path: emails/originals/W7F3601555 (1).eml
+    serial: W7F3601555
+    type: emails
+  E_W7F3601555_fc8c1e94:
+    archive_name: E_W7F3601555_fc8c1e94.eml
+    archive_path: .archive/emails/E_W7F3601555_fc8c1e94.eml
+    archived_at: '2025-09-11T21:59:28.031931'
+    file_size: 501134
+    original_name: W7F3601555 (1).eml
+    original_path: emails/pending/W7F3601555 (1).eml
+    serial: W7F3601555
+    type: emails
+  E_W7F3601558_7a138622:
+    archive_name: E_W7F3601558_7a138622.eml
+    archive_path: .archive/emails/E_W7F3601558_7a138622.eml
+    archived_at: '2025-09-11T21:59:28.034514'
+    file_size: 486090
+    original_name: W7F3601558 (2).eml
+    original_path: emails/pending/W7F3601558 (2).eml
+    serial: W7F3601558
+    type: emails
+  E_W7F3601558_9491025d:
+    archive_name: E_W7F3601558_9491025d.eml
+    archive_path: .archive/emails/E_W7F3601558_9491025d.eml
+    archived_at: '2025-09-11T21:59:28.046613'
+    file_size: 560322
+    original_name: W7F3601558.eml
+    original_path: emails/originals/W7F3601558.eml
+    serial: W7F3601558
+    type: emails
+  E_W7F3601558_d0ae4e83:
+    archive_name: E_W7F3601558_d0ae4e83.eml
+    archive_path: .archive/emails/E_W7F3601558_d0ae4e83.eml
+    archived_at: '2025-09-11T21:59:28.060676'
+    file_size: 486090
+    original_name: W7F3601558 (2).eml
+    original_path: emails/originals/W7F3601558 (2).eml
+    serial: W7F3601558
+    type: emails
+  E_W7F3601558_e80fd28e:
+    archive_name: E_W7F3601558_e80fd28e.eml
+    archive_path: .archive/emails/E_W7F3601558_e80fd28e.eml
+    archived_at: '2025-09-11T21:59:28.027163'
+    file_size: 560322
+    original_name: W7F3601558.eml
+    original_path: emails/pending/W7F3601558.eml
+    serial: W7F3601558
+    type: emails
+  E_W7F3601563_0a8e211d:
+    archive_name: E_W7F3601563_0a8e211d.eml
+    archive_path: .archive/emails/E_W7F3601563_0a8e211d.eml
+    archived_at: '2025-09-11T21:59:28.035689'
+    file_size: 418190
+    original_name: W7F3601563 (1).eml
+    original_path: emails/pending/W7F3601563 (1).eml
+    serial: W7F3601563
+    type: emails
+  E_W7F3601563_233eadd7:
+    archive_name: E_W7F3601563_233eadd7.eml
+    archive_path: .archive/emails/E_W7F3601563_233eadd7.eml
+    archived_at: '2025-09-11T21:59:28.030016'
+    file_size: 694580
+    original_name: W7F3601563 (2).eml
+    original_path: emails/pending/W7F3601563 (2).eml
+    serial: W7F3601563
+    type: emails
+  E_W7F3601563_334cd2b1:
+    archive_name: E_W7F3601563_334cd2b1.eml
+    archive_path: .archive/emails/E_W7F3601563_334cd2b1.eml
+    archived_at: '2025-09-11T21:59:28.030895'
+    file_size: 31541
+    original_name: Counter [TASKalfa 5004i] [SN - W7F3601563] [IP - 172.27.132.42]
+      Block 5 Level 5 School of Electronics & ICT (SEIT).eml
+    original_path: emails/pending/Counter [TASKalfa 5004i] [SN - W7F3601563] [IP -
+      172.27.132.42] Block 5 Level 5 School of Electronics & ICT (SEIT).eml
+    serial: W7F3601563
+    type: emails
+  E_W7F3601563_639594b9:
+    archive_name: E_W7F3601563_639594b9.eml
+    archive_path: .archive/emails/E_W7F3601563_639594b9.eml
+    archived_at: '2025-09-11T21:59:28.054083'
+    file_size: 31541
+    original_name: Counter [TASKalfa 5004i] [SN - W7F3601563] [IP - 172.27.132.42]
+      Block 5 Level 5 School of Electronics & ICT (SEIT).eml
+    original_path: emails/originals/Counter [TASKalfa 5004i] [SN - W7F3601563] [IP
+      - 172.27.132.42] Block 5 Level 5 School of Electronics & ICT (SEIT).eml
+    serial: W7F3601563
+    type: emails
+  E_W7F3601563_71208a20:
+    archive_name: E_W7F3601563_71208a20.eml
+    archive_path: .archive/emails/E_W7F3601563_71208a20.eml
+    archived_at: '2025-09-11T21:59:28.027800'
+    file_size: 612729
+    original_name: W7F3601563 (3).eml
+    original_path: emails/pending/W7F3601563 (3).eml
+    serial: W7F3601563
+    type: emails
+  E_W7F3601563_7da806b6:
+    archive_name: E_W7F3601563_7da806b6.eml
+    archive_path: .archive/emails/E_W7F3601563_7da806b6.eml
+    archived_at: '2025-09-11T21:59:28.048066'
+    file_size: 612729
+    original_name: W7F3601563 (3).eml
+    original_path: emails/originals/W7F3601563 (3).eml
+    serial: W7F3601563
+    type: emails
+  E_W7F3601563_8041d54e:
+    archive_name: E_W7F3601563_8041d54e.eml
+    archive_path: .archive/emails/E_W7F3601563_8041d54e.eml
+    archived_at: '2025-09-11T21:59:28.059403'
+    file_size: 11116
+    original_name: Toner [TASKalfa 5004i] [SN - W7F3601563] [IP - 172.27.132.42] Block
+      5 Level 5 School of Electronics & ICT (SEIT).eml
+    original_path: emails/originals/Toner [TASKalfa 5004i] [SN - W7F3601563] [IP -
+      172.27.132.42] Block 5 Level 5 School of Electronics & ICT (SEIT).eml
+    serial: W7F3601563
+    type: emails
+  E_W7F3601563_93d905c0:
+    archive_name: E_W7F3601563_93d905c0.eml
+    archive_path: .archive/emails/E_W7F3601563_93d905c0.eml
+    archived_at: '2025-09-11T21:59:28.033828'
+    file_size: 11116
+    original_name: Toner [TASKalfa 5004i] [SN - W7F3601563] [IP - 172.27.132.42] Block
+      5 Level 5 School of Electronics & ICT (SEIT).eml
+    original_path: emails/pending/Toner [TASKalfa 5004i] [SN - W7F3601563] [IP - 172.27.132.42]
+      Block 5 Level 5 School of Electronics & ICT (SEIT).eml
+    serial: W7F3601563
+    type: emails
+  E_W7F3601563_9d69dcdb:
+    archive_name: E_W7F3601563_9d69dcdb.eml
+    archive_path: .archive/emails/E_W7F3601563_9d69dcdb.eml
+    archived_at: '2025-09-11T21:59:28.030609'
+    file_size: 65562
+    original_name: W7F3601563.eml
+    original_path: emails/pending/W7F3601563.eml
+    serial: W7F3601563
+    type: emails
+  E_W7F3601563_bc64012f:
+    archive_name: E_W7F3601563_bc64012f.eml
+    archive_path: .archive/emails/E_W7F3601563_bc64012f.eml
+    archived_at: '2025-09-11T21:59:28.062417'
+    file_size: 418190
+    original_name: W7F3601563 (1).eml
+    original_path: emails/originals/W7F3601563 (1).eml
+    serial: W7F3601563
+    type: emails
+  E_W7F3601563_e085055e:
+    archive_name: E_W7F3601563_e085055e.eml
+    archive_path: .archive/emails/E_W7F3601563_e085055e.eml
+    archived_at: '2025-09-11T21:59:28.053778'
+    file_size: 65562
+    original_name: W7F3601563.eml
+    original_path: emails/originals/W7F3601563.eml
+    serial: W7F3601563
+    type: emails
+  E_W7F3601563_f457ab5f:
+    archive_name: E_W7F3601563_f457ab5f.eml
+    archive_path: .archive/emails/E_W7F3601563_f457ab5f.eml
+    archived_at: '2025-09-11T21:59:28.052919'
+    file_size: 694580
+    original_name: W7F3601563 (2).eml
+    original_path: emails/originals/W7F3601563 (2).eml
+    serial: W7F3601563
+    type: emails
+  E_W7F3601564_210e122d:
+    archive_name: E_W7F3601564_210e122d.eml
+    archive_path: .archive/emails/E_W7F3601564_210e122d.eml
+    archived_at: '2025-09-11T21:59:28.026471'
+    file_size: 403245
+    original_name: W7F3601564 (1).eml
+    original_path: emails/pending/W7F3601564 (1).eml
+    serial: W7F3601564
+    type: emails
+  E_W7F3601564_23be547d:
+    archive_name: E_W7F3601564_23be547d.eml
+    archive_path: .archive/emails/E_W7F3601564_23be547d.eml
+    archived_at: '2025-09-11T21:59:28.034032'
+    file_size: 10965
+    original_name: Toner [TASKalfa 5004i] [SN - W7F3601564] [IP - 172.27.132.41] Block
+      5 Level 5 School of Electronics & ICT (SEIT).eml
+    original_path: emails/pending/Toner [TASKalfa 5004i] [SN - W7F3601564] [IP - 172.27.132.41]
+      Block 5 Level 5 School of Electronics & ICT (SEIT).eml
+    serial: W7F3601564
+    type: emails
+  E_W7F3601564_3a67c4ae:
+    archive_name: E_W7F3601564_3a67c4ae.eml
+    archive_path: .archive/emails/E_W7F3601564_3a67c4ae.eml
+    archived_at: '2025-09-11T21:59:28.026688'
+    file_size: 64289
+    original_name: W7F3601564.eml
+    original_path: emails/pending/W7F3601564.eml
+    serial: W7F3601564
+    type: emails
+  E_W7F3601564_4f42b297:
+    archive_name: E_W7F3601564_4f42b297.eml
+    archive_path: .archive/emails/E_W7F3601564_4f42b297.eml
+    archived_at: '2025-09-11T21:59:28.044991'
+    file_size: 403245
+    original_name: W7F3601564 (1).eml
+    original_path: emails/originals/W7F3601564 (1).eml
+    serial: W7F3601564
+    type: emails
+  E_W7F3601564_b022257c:
+    archive_name: E_W7F3601564_b022257c.eml
+    archive_path: .archive/emails/E_W7F3601564_b022257c.eml
+    archived_at: '2025-09-11T21:59:28.045445'
+    file_size: 64289
+    original_name: W7F3601564.eml
+    original_path: emails/originals/W7F3601564.eml
+    serial: W7F3601564
+    type: emails
+  E_W7F3601564_b3187416:
+    archive_name: E_W7F3601564_b3187416.eml
+    archive_path: .archive/emails/E_W7F3601564_b3187416.eml
+    archived_at: '2025-09-11T21:59:28.059893'
+    file_size: 10965
+    original_name: Toner [TASKalfa 5004i] [SN - W7F3601564] [IP - 172.27.132.41] Block
+      5 Level 5 School of Electronics & ICT (SEIT).eml
+    original_path: emails/originals/Toner [TASKalfa 5004i] [SN - W7F3601564] [IP -
+      172.27.132.41] Block 5 Level 5 School of Electronics & ICT (SEIT).eml
+    serial: W7F3601564
+    type: emails
+  E_W7F3601564_cf44e371:
+    archive_name: E_W7F3601564_cf44e371.eml
+    archive_path: .archive/emails/E_W7F3601564_cf44e371.eml
+    archived_at: '2025-09-11T21:59:28.059987'
+    file_size: 30911
+    original_name: Counter [TASKalfa 5004i] [SN - W7F3601564] [IP - 172.27.132.41]
+      Block 5 Level 5 School of Electronics & ICT (SEIT).eml
+    original_path: emails/originals/Counter [TASKalfa 5004i] [SN - W7F3601564] [IP
+      - 172.27.132.41] Block 5 Level 5 School of Electronics & ICT (SEIT).eml
+    serial: W7F3601564
+    type: emails
+  E_W7F3601564_d60e8600:
+    archive_name: E_W7F3601564_d60e8600.eml
+    archive_path: .archive/emails/E_W7F3601564_d60e8600.eml
+    archived_at: '2025-09-11T21:59:28.052627'
+    file_size: 1723696
+    original_name: W7F3601564 (2).eml
+    original_path: emails/originals/W7F3601564 (2).eml
+    serial: W7F3601564
+    type: emails
+  E_W7F3601564_e4cc3aa3:
+    archive_name: E_W7F3601564_e4cc3aa3.eml
+    archive_path: .archive/emails/E_W7F3601564_e4cc3aa3.eml
+    archived_at: '2025-09-11T21:59:28.034134'
+    file_size: 30911
+    original_name: Counter [TASKalfa 5004i] [SN - W7F3601564] [IP - 172.27.132.41]
+      Block 5 Level 5 School of Electronics & ICT (SEIT).eml
+    original_path: emails/pending/Counter [TASKalfa 5004i] [SN - W7F3601564] [IP -
+      172.27.132.41] Block 5 Level 5 School of Electronics & ICT (SEIT).eml
+    serial: W7F3601564
+    type: emails
+  E_W7F3601564_f55e9c7a:
+    archive_name: E_W7F3601564_f55e9c7a.eml
+    archive_path: .archive/emails/E_W7F3601564_f55e9c7a.eml
+    archived_at: '2025-09-11T21:59:28.029749'
+    file_size: 1723696
+    original_name: W7F3601564 (2).eml
+    original_path: emails/pending/W7F3601564 (2).eml
+    serial: W7F3601564
+    type: emails
+  E_W7F3601568_2d7c794d:
+    archive_name: E_W7F3601568_2d7c794d.eml
+    archive_path: .archive/emails/E_W7F3601568_2d7c794d.eml
+    archived_at: '2025-09-11T21:59:28.028739'
+    file_size: 744965
+    original_name: W7F3601568 (2).eml
+    original_path: emails/pending/W7F3601568 (2).eml
+    serial: W7F3601568
+    type: emails
+  E_W7F3601568_5fee4460:
+    archive_name: E_W7F3601568_5fee4460.eml
+    archive_path: .archive/emails/E_W7F3601568_5fee4460.eml
+    archived_at: '2025-09-11T21:59:28.050226'
+    file_size: 744965
+    original_name: W7F3601568 (2).eml
+    original_path: emails/originals/W7F3601568 (2).eml
+    serial: W7F3601568
+    type: emails
+  E_W7F3601568_9123e516:
+    archive_name: E_W7F3601568_9123e516.eml
+    archive_path: .archive/emails/E_W7F3601568_9123e516.eml
+    archived_at: '2025-09-11T21:59:28.033164'
+    file_size: 520858
+    original_name: W7F3601568 (1).eml
+    original_path: emails/pending/W7F3601568 (1).eml
+    serial: W7F3601568
+    type: emails
+  E_W7F3601568_bb1dc4b1:
+    archive_name: E_W7F3601568_bb1dc4b1.eml
+    archive_path: .archive/emails/E_W7F3601568_bb1dc4b1.eml
+    archived_at: '2025-09-11T21:59:28.062232'
+    file_size: 478444
+    original_name: W7F3601568.eml
+    original_path: emails/originals/W7F3601568.eml
+    serial: W7F3601568
+    type: emails
+  E_W7F3601568_d475313e:
+    archive_name: E_W7F3601568_d475313e.eml
+    archive_path: .archive/emails/E_W7F3601568_d475313e.eml
+    archived_at: '2025-09-11T21:59:28.035497'
+    file_size: 478444
+    original_name: W7F3601568.eml
+    original_path: emails/pending/W7F3601568.eml
+    serial: W7F3601568
+    type: emails
+  E_W7F3601568_f50dd183:
+    archive_name: E_W7F3601568_f50dd183.eml
+    archive_path: .archive/emails/E_W7F3601568_f50dd183.eml
+    archived_at: '2025-09-11T21:59:28.058423'
+    file_size: 520858
+    original_name: W7F3601568 (1).eml
+    original_path: emails/originals/W7F3601568 (1).eml
+    serial: W7F3601568
+    type: emails
+  E_W7F3601570_0202e507:
+    archive_name: E_W7F3601570_0202e507.eml
+    archive_path: .archive/emails/E_W7F3601570_0202e507.eml
+    archived_at: '2025-09-11T21:59:28.056936'
+    file_size: 487974
+    original_name: W7F3601570 (2).eml
+    original_path: emails/originals/W7F3601570 (2).eml
+    serial: W7F3601570
+    type: emails
+  E_W7F3601570_02154ea4:
+    archive_name: E_W7F3601570_02154ea4.eml
+    archive_path: .archive/emails/E_W7F3601570_02154ea4.eml
+    archived_at: '2025-09-11T21:59:28.032503'
+    file_size: 487974
+    original_name: W7F3601570 (2).eml
+    original_path: emails/pending/W7F3601570 (2).eml
+    serial: W7F3601570
+    type: emails
+  E_W7F3601570_20425548:
+    archive_name: E_W7F3601570_20425548.eml
+    archive_path: .archive/emails/E_W7F3601570_20425548.eml
+    archived_at: '2025-09-11T21:59:28.034797'
+    file_size: 480482
+    original_name: W7F3601570 (3).eml
+    original_path: emails/pending/W7F3601570 (3).eml
+    serial: W7F3601570
+    type: emails
+  E_W7F3601570_2983956f:
+    archive_name: E_W7F3601570_2983956f.eml
+    archive_path: .archive/emails/E_W7F3601570_2983956f.eml
+    archived_at: '2025-09-11T21:59:28.027618'
+    file_size: 31566
+    original_name: Counter [TASKalfa 5004i] [SN - W7F3601570] [IP - 172.27.132.43]
+      Block 5 Level 5 School of Electronics & ICT (SEIT).eml
+    original_path: emails/pending/Counter [TASKalfa 5004i] [SN - W7F3601570] [IP -
+      172.27.132.43] Block 5 Level 5 School of Electronics & ICT (SEIT).eml
+    serial: W7F3601570
+    type: emails
+  E_W7F3601570_2ade2e5d:
+    archive_name: E_W7F3601570_2ade2e5d.eml
+    archive_path: .archive/emails/E_W7F3601570_2ade2e5d.eml
+    archived_at: '2025-09-11T21:59:28.033258'
+    file_size: 31109
+    original_name: 018 - TASKalfa 5004i - W7F3601570 - Counter - Block 5 Level 5 School
+      of Electronics & ICT (SEIT), TASKalfa 5004i .eml
+    original_path: emails/pending/018 - TASKalfa 5004i - W7F3601570 - Counter - Block
+      5 Level 5 School of Electronics & ICT (SEIT), TASKalfa 5004i .eml
+    serial: W7F3601570
+    type: emails
+  E_W7F3601570_3c01b5da:
+    archive_name: E_W7F3601570_3c01b5da.eml
+    archive_path: .archive/emails/E_W7F3601570_3c01b5da.eml
+    archived_at: '2025-09-11T21:59:28.051424'
+    file_size: 65233
+    original_name: W7F3601570.eml
+    original_path: emails/originals/W7F3601570.eml
+    serial: W7F3601570
+    type: emails
+  E_W7F3601570_45cc52b4:
+    archive_name: E_W7F3601570_45cc52b4.eml
+    archive_path: .archive/emails/E_W7F3601570_45cc52b4.eml
+    archived_at: '2025-09-11T21:59:28.033724'
+    file_size: 449557
+    original_name: W7F3601570 (1).eml
+    original_path: emails/pending/W7F3601570 (1).eml
+    serial: W7F3601570
+    type: emails
+  E_W7F3601570_5f0c516a:
+    archive_name: E_W7F3601570_5f0c516a.eml
+    archive_path: .archive/emails/E_W7F3601570_5f0c516a.eml
+    archived_at: '2025-09-11T21:59:28.029013'
+    file_size: 65233
+    original_name: W7F3601570.eml
+    original_path: emails/pending/W7F3601570.eml
+    serial: W7F3601570
+    type: emails
+  E_W7F3601570_6d95991a:
+    archive_name: E_W7F3601570_6d95991a.eml
+    archive_path: .archive/emails/E_W7F3601570_6d95991a.eml
+    archived_at: '2025-09-11T21:59:28.058799'
+    file_size: 11110
+    original_name: Toner [TASKalfa 5004i] [SN - W7F3601570] [IP - 172.27.132.43] Block
+      5 Level 5 School of Electronics & ICT (SEIT).eml
+    original_path: emails/originals/Toner [TASKalfa 5004i] [SN - W7F3601570] [IP -
+      172.27.132.43] Block 5 Level 5 School of Electronics & ICT (SEIT).eml
+    serial: W7F3601570
+    type: emails
+  E_W7F3601570_74dfa688:
+    archive_name: E_W7F3601570_74dfa688.eml
+    archive_path: .archive/emails/E_W7F3601570_74dfa688.eml
+    archived_at: '2025-09-11T21:59:28.059198'
+    file_size: 449557
+    original_name: W7F3601570 (1).eml
+    original_path: emails/originals/W7F3601570 (1).eml
+    serial: W7F3601570
+    type: emails
+  E_W7F3601570_76933a1a:
+    archive_name: E_W7F3601570_76933a1a.eml
+    archive_path: .archive/emails/E_W7F3601570_76933a1a.eml
+    archived_at: '2025-09-11T21:59:28.047391'
+    file_size: 31566
+    original_name: Counter [TASKalfa 5004i] [SN - W7F3601570] [IP - 172.27.132.43]
+      Block 5 Level 5 School of Electronics & ICT (SEIT).eml
+    original_path: emails/originals/Counter [TASKalfa 5004i] [SN - W7F3601570] [IP
+      - 172.27.132.43] Block 5 Level 5 School of Electronics & ICT (SEIT).eml
+    serial: W7F3601570
+    type: emails
+  E_W7F3601570_7d31be96:
+    archive_name: E_W7F3601570_7d31be96.eml
+    archive_path: .archive/emails/E_W7F3601570_7d31be96.eml
+    archived_at: '2025-09-11T21:59:28.033539'
+    file_size: 11110
+    original_name: Toner [TASKalfa 5004i] [SN - W7F3601570] [IP - 172.27.132.43] Block
+      5 Level 5 School of Electronics & ICT (SEIT).eml
+    original_path: emails/pending/Toner [TASKalfa 5004i] [SN - W7F3601570] [IP - 172.27.132.43]
+      Block 5 Level 5 School of Electronics & ICT (SEIT).eml
+    serial: W7F3601570
+    type: emails
+  E_W7F3601570_9f83c2a6:
+    archive_name: E_W7F3601570_9f83c2a6.eml
+    archive_path: .archive/emails/E_W7F3601570_9f83c2a6.eml
+    archived_at: '2025-09-11T21:59:28.061164'
+    file_size: 480482
+    original_name: W7F3601570 (3).eml
+    original_path: emails/originals/W7F3601570 (3).eml
+    serial: W7F3601570
+    type: emails
+  E_W7F3601570_c0078c17:
+    archive_name: E_W7F3601570_c0078c17.eml
+    archive_path: .archive/emails/E_W7F3601570_c0078c17.eml
+    archived_at: '2025-09-11T21:59:28.058516'
+    file_size: 31109
+    original_name: 018 - TASKalfa 5004i - W7F3601570 - Counter - Block 5 Level 5 School
+      of Electronics & ICT (SEIT), TASKalfa 5004i .eml
+    original_path: emails/originals/018 - TASKalfa 5004i - W7F3601570 - Counter -
+      Block 5 Level 5 School of Electronics & ICT (SEIT), TASKalfa 5004i .eml
+    serial: W7F3601570
+    type: emails
+  E_W7F3601610_5794b68d:
+    archive_name: E_W7F3601610_5794b68d.eml
+    archive_path: .archive/emails/E_W7F3601610_5794b68d.eml
+    archived_at: '2025-09-11T21:59:28.028255'
+    file_size: 645146
+    original_name: W7F3601610 (2).eml
+    original_path: emails/pending/W7F3601610 (2).eml
+    serial: W7F3601610
+    type: emails
+  E_W7F3601610_86afe8d1:
+    archive_name: E_W7F3601610_86afe8d1.eml
+    archive_path: .archive/emails/E_W7F3601610_86afe8d1.eml
+    archived_at: '2025-09-11T21:59:28.049170'
+    file_size: 645146
+    original_name: W7F3601610 (2).eml
+    original_path: emails/originals/W7F3601610 (2).eml
+    serial: W7F3601610
+    type: emails
+  E_W7F3601610_90c4129d:
+    archive_name: E_W7F3601610_90c4129d.eml
+    archive_path: .archive/emails/E_W7F3601610_90c4129d.eml
+    archived_at: '2025-09-11T21:59:28.045927'
+    file_size: 686799
+    original_name: W7F3601610 (1).eml
+    original_path: emails/originals/W7F3601610 (1).eml
+    serial: W7F3601610
+    type: emails
+  E_W7F3601610_92d32cda:
+    archive_name: E_W7F3601610_92d32cda.eml
+    archive_path: .archive/emails/E_W7F3601610_92d32cda.eml
+    archived_at: '2025-09-11T21:59:28.053201'
+    file_size: 444531
+    original_name: W7F3601610.eml
+    original_path: emails/originals/W7F3601610.eml
+    serial: W7F3601610
+    type: emails
+  E_W7F3601610_ba6a25f8:
+    archive_name: E_W7F3601610_ba6a25f8.eml
+    archive_path: .archive/emails/E_W7F3601610_ba6a25f8.eml
+    archived_at: '2025-09-11T21:59:28.026874'
+    file_size: 686799
+    original_name: W7F3601610 (1).eml
+    original_path: emails/pending/W7F3601610 (1).eml
+    serial: W7F3601610
+    type: emails
+  E_W7F3601610_e143657a:
+    archive_name: E_W7F3601610_e143657a.eml
+    archive_path: .archive/emails/E_W7F3601610_e143657a.eml
+    archived_at: '2025-09-11T21:59:28.030142'
+    file_size: 444531
+    original_name: W7F3601610.eml
+    original_path: emails/pending/W7F3601610.eml
+    serial: W7F3601610
+    type: emails
+  E_W7F3601615_0737d6c7:
+    archive_name: E_W7F3601615_0737d6c7.eml
+    archive_path: .archive/emails/E_W7F3601615_0737d6c7.eml
+    archived_at: '2025-09-11T21:59:28.054470'
+    file_size: 9322
+    original_name: Undeliverable_ W7F3601615.eml
+    original_path: emails/originals/Undeliverable_ W7F3601615.eml
+    serial: W7F3601615
+    type: emails
+  E_W7F3601615_1d01e122:
+    archive_name: E_W7F3601615_1d01e122.eml
+    archive_path: .archive/emails/E_W7F3601615_1d01e122.eml
+    archived_at: '2025-09-11T21:59:28.054929'
+    file_size: 941212
+    original_name: W7F3601615 (3).eml
+    original_path: emails/originals/W7F3601615 (3).eml
+    serial: W7F3601615
+    type: emails
+  E_W7F3601615_3d6654ac:
+    archive_name: E_W7F3601615_3d6654ac.eml
+    archive_path: .archive/emails/E_W7F3601615_3d6654ac.eml
+    archived_at: '2025-09-11T21:59:28.030515'
+    file_size: 349008
+    original_name: W7F3601615.eml
+    original_path: emails/pending/W7F3601615.eml
+    serial: W7F3601615
+    type: emails
+  E_W7F3601615_48b4bd3b:
+    archive_name: E_W7F3601615_48b4bd3b.eml
+    archive_path: .archive/emails/E_W7F3601615_48b4bd3b.eml
+    archived_at: '2025-09-11T21:59:28.031185'
+    file_size: 9322
+    original_name: Undeliverable_ W7F3601615.eml
+    original_path: emails/pending/Undeliverable_ W7F3601615.eml
+    serial: W7F3601615
+    type: emails
+  E_W7F3601615_4b3aa729:
+    archive_name: E_W7F3601615_4b3aa729.eml
+    archive_path: .archive/emails/E_W7F3601615_4b3aa729.eml
+    archived_at: '2025-09-11T21:59:28.031652'
+    file_size: 941212
+    original_name: W7F3601615 (3).eml
+    original_path: emails/pending/W7F3601615 (3).eml
+    serial: W7F3601615
+    type: emails
+  E_W7F3601615_55e6f44f:
+    archive_name: E_W7F3601615_55e6f44f.eml
+    archive_path: .archive/emails/E_W7F3601615_55e6f44f.eml
+    archived_at: '2025-09-11T21:59:28.053687'
+    file_size: 349008
+    original_name: W7F3601615.eml
+    original_path: emails/originals/W7F3601615.eml
+    serial: W7F3601615
+    type: emails
+  E_W7F3601615_85b9bc6e:
+    archive_name: E_W7F3601615_85b9bc6e.eml
+    archive_path: .archive/emails/E_W7F3601615_85b9bc6e.eml
+    archived_at: '2025-09-11T21:59:28.054747'
+    file_size: 433460
+    original_name: W7F3601615 (1).eml
+    original_path: emails/originals/W7F3601615 (1).eml
+    serial: W7F3601615
+    type: emails
+  E_W7F3601615_b77d39c9:
+    archive_name: E_W7F3601615_b77d39c9.eml
+    archive_path: .archive/emails/E_W7F3601615_b77d39c9.eml
+    archived_at: '2025-09-11T21:59:28.031467'
+    file_size: 433460
+    original_name: W7F3601615 (1).eml
+    original_path: emails/pending/W7F3601615 (1).eml
+    serial: W7F3601615
+    type: emails
+  E_W7F3601615_c87f977c:
+    archive_name: E_W7F3601615_c87f977c.eml
+    archive_path: .archive/emails/E_W7F3601615_c87f977c.eml
+    archived_at: '2025-09-11T21:59:28.029292'
+    file_size: 497593
+    original_name: W7F3601615 (2).eml
+    original_path: emails/pending/W7F3601615 (2).eml
+    serial: W7F3601615
+    type: emails
+  E_W7F3601615_f0991fcb:
+    archive_name: E_W7F3601615_f0991fcb.eml
+    archive_path: .archive/emails/E_W7F3601615_f0991fcb.eml
+    archived_at: '2025-09-11T21:59:28.051872'
+    file_size: 497593
+    original_name: W7F3601615 (2).eml
+    original_path: emails/originals/W7F3601615 (2).eml
+    serial: W7F3601615
+    type: emails
+  E_W7F3701713_0c007718:
+    archive_name: E_W7F3701713_0c007718.eml
+    archive_path: .archive/emails/E_W7F3701713_0c007718.eml
+    archived_at: '2025-09-11T21:59:28.052354'
+    file_size: 32234
+    original_name: W7F3701713 (4).eml
+    original_path: emails/originals/W7F3701713 (4).eml
+    serial: W7F3701713
+    type: emails
+  E_W7F3701713_29cdc600:
+    archive_name: E_W7F3701713_29cdc600.eml
+    archive_path: .archive/emails/E_W7F3701713_29cdc600.eml
+    archived_at: '2025-09-11T21:59:28.029471'
+    file_size: 32234
+    original_name: W7F3701713 (4).eml
+    original_path: emails/pending/W7F3701713 (4).eml
+    serial: W7F3701713
+    type: emails
+  E_W7F3701713_2ee130d8:
+    archive_name: E_W7F3701713_2ee130d8.eml
+    archive_path: .archive/emails/E_W7F3701713_2ee130d8.eml
+    archived_at: '2025-09-11T21:59:28.032131'
+    file_size: 9308
+    original_name: Undeliverable_ W7F3701713.eml
+    original_path: emails/pending/Undeliverable_ W7F3701713.eml
+    serial: W7F3701713
+    type: emails
+  E_W7F3701713_34a51bf9:
+    archive_name: E_W7F3701713_34a51bf9.eml
+    archive_path: .archive/emails/E_W7F3701713_34a51bf9.eml
+    archived_at: '2025-09-11T21:59:28.032967'
+    file_size: 202122
+    original_name: W7F3701713.eml
+    original_path: emails/pending/W7F3701713.eml
+    serial: W7F3701713
+    type: emails
+  E_W7F3701713_423b84be:
+    archive_name: E_W7F3701713_423b84be.eml
+    archive_path: .archive/emails/E_W7F3701713_423b84be.eml
+    archived_at: '2025-09-11T21:59:28.047109'
+    file_size: 211823
+    original_name: W7F3701713 (5).eml
+    original_path: emails/originals/W7F3701713 (5).eml
+    serial: W7F3701713
+    type: emails
+  E_W7F3701713_6b8db2b8:
+    archive_name: E_W7F3701713_6b8db2b8.eml
+    archive_path: .archive/emails/E_W7F3701713_6b8db2b8.eml
+    archived_at: '2025-09-11T21:59:28.028554'
+    file_size: 423550
+    original_name: W7F3701713 (1).eml
+    original_path: emails/pending/W7F3701713 (1).eml
+    serial: W7F3701713
+    type: emails
+  E_W7F3701713_b23e8206:
+    archive_name: E_W7F3701713_b23e8206.eml
+    archive_path: .archive/emails/E_W7F3701713_b23e8206.eml
+    archived_at: '2025-09-11T21:59:28.057844'
+    file_size: 202122
+    original_name: W7F3701713.eml
+    original_path: emails/originals/W7F3701713.eml
+    serial: W7F3701713
+    type: emails
+  E_W7F3701713_b929b0ee:
+    archive_name: E_W7F3701713_b929b0ee.eml
+    archive_path: .archive/emails/E_W7F3701713_b929b0ee.eml
+    archived_at: '2025-09-11T21:59:28.027525'
+    file_size: 211823
+    original_name: W7F3701713 (5).eml
+    original_path: emails/pending/W7F3701713 (5).eml
+    serial: W7F3701713
+    type: emails
+  E_W7F3701713_d4e8243e:
+    archive_name: E_W7F3701713_d4e8243e.eml
+    archive_path: .archive/emails/E_W7F3701713_d4e8243e.eml
+    archived_at: '2025-09-11T21:59:28.051604'
+    file_size: 275778
+    original_name: W7F3701713 (3).eml
+    original_path: emails/originals/W7F3701713 (3).eml
+    serial: W7F3701713
+    type: emails
+  E_W7F3701713_f02bb27c:
+    archive_name: E_W7F3701713_f02bb27c.eml
+    archive_path: .archive/emails/E_W7F3701713_f02bb27c.eml
+    archived_at: '2025-09-11T21:59:28.054655'
+    file_size: 556460
+    original_name: W7F3701713 (2).eml
+    original_path: emails/originals/W7F3701713 (2).eml
+    serial: W7F3701713
+    type: emails
+  E_W7F3701713_f55061eb:
+    archive_name: E_W7F3701713_f55061eb.eml
+    archive_path: .archive/emails/E_W7F3701713_f55061eb.eml
+    archived_at: '2025-09-11T21:59:28.029203'
+    file_size: 275778
+    original_name: W7F3701713 (3).eml
+    original_path: emails/pending/W7F3701713 (3).eml
+    serial: W7F3701713
+    type: emails
+  E_W7F3701713_f8a1bb50:
+    archive_name: E_W7F3701713_f8a1bb50.eml
+    archive_path: .archive/emails/E_W7F3701713_f8a1bb50.eml
+    archived_at: '2025-09-11T21:59:28.049848'
+    file_size: 423550
+    original_name: W7F3701713 (1).eml
+    original_path: emails/originals/W7F3701713 (1).eml
+    serial: W7F3701713
+    type: emails
+  E_W7F3701713_fc1aecba:
+    archive_name: E_W7F3701713_fc1aecba.eml
+    archive_path: .archive/emails/E_W7F3701713_fc1aecba.eml
+    archived_at: '2025-09-11T21:59:28.055989'
+    file_size: 9308
+    original_name: Undeliverable_ W7F3701713.eml
+    original_path: emails/originals/Undeliverable_ W7F3701713.eml
+    serial: W7F3701713
+    type: emails
+  E_W7F3701713_fc63ed2d:
+    archive_name: E_W7F3701713_fc63ed2d.eml
+    archive_path: .archive/emails/E_W7F3701713_fc63ed2d.eml
+    archived_at: '2025-09-11T21:59:28.031376'
+    file_size: 556460
+    original_name: W7F3701713 (2).eml
+    original_path: emails/pending/W7F3701713 (2).eml
+    serial: W7F3701713
+    type: emails
+  E_W7F3701780_aa1d4a44:
+    archive_name: E_W7F3701780_aa1d4a44.eml
+    archive_path: .archive/emails/E_W7F3701780_aa1d4a44.eml
+    archived_at: '2025-09-11T21:59:28.028644'
+    file_size: 9314
+    original_name: Undeliverable_ W7F3701780.eml
+    original_path: emails/pending/Undeliverable_ W7F3701780.eml
+    serial: W7F3701780
+    type: emails
+  E_W7F3701780_dfeb5fe6:
+    archive_name: E_W7F3701780_dfeb5fe6.eml
+    archive_path: .archive/emails/E_W7F3701780_dfeb5fe6.eml
+    archived_at: '2025-09-11T21:59:28.050044'
+    file_size: 9314
+    original_name: Undeliverable_ W7F3701780.eml
+    original_path: emails/originals/Undeliverable_ W7F3701780.eml
+    serial: W7F3701780
+    type: emails
+  M_W792300234_1f5cc1c1:
+    archive_name: M_W792300234_1f5cc1c1.msg
+    archive_path: .archive/emails/M_W792300234_1f5cc1c1.msg
+    archived_at: '2025-09-11T21:59:28.056467'
+    file_size: 2283008
+    original_name: W792300234 (2).msg
+    original_path: emails/originals/W792300234 (2).msg
+    serial: W792300234
+    type: emails
+  M_W792300234_2f7ffb39:
+    archive_name: M_W792300234_2f7ffb39.msg
+    archive_path: .archive/emails/M_W792300234_2f7ffb39.msg
+    archived_at: '2025-09-11T21:59:28.049397'
+    file_size: 2143744
+    original_name: W792300234 (3).msg
+    original_path: emails/originals/W792300234 (3).msg
+    serial: W792300234
+    type: emails
+  M_W792300234_4689ba2f:
+    archive_name: M_W792300234_4689ba2f.msg
+    archive_path: .archive/emails/M_W792300234_4689ba2f.msg
+    archived_at: '2025-09-11T21:59:28.040981'
+    file_size: 1875968
+    original_name: W792300234.msg
+    original_path: emails/pending/W792300234.msg
+    serial: W792300234
+    type: emails
+  M_W792300234_53df44f6:
+    archive_name: M_W792300234_53df44f6.msg
+    archive_path: .archive/emails/M_W792300234_53df44f6.msg
+    archived_at: '2025-09-11T21:59:28.041745'
+    file_size: 2283008
+    original_name: W792300234 (2).msg
+    original_path: emails/pending/W792300234 (2).msg
+    serial: W792300234
+    type: emails
+  M_W792300234_95a39344:
+    archive_name: M_W792300234_95a39344.msg
+    archive_path: .archive/emails/M_W792300234_95a39344.msg
+    archived_at: '2025-09-11T21:59:28.055122'
+    file_size: 1875968
+    original_name: W792300234.msg
+    original_path: emails/originals/W792300234.msg
+    serial: W792300234
+    type: emails
+  M_W792300234_bd42e92f:
+    archive_name: M_W792300234_bd42e92f.msg
+    archive_path: .archive/emails/M_W792300234_bd42e92f.msg
+    archived_at: '2025-09-11T21:59:28.038532'
+    file_size: 2143744
+    original_name: W792300234 (3).msg
+    original_path: emails/pending/W792300234 (3).msg
+    serial: W792300234
+    type: emails
+  M_W792300234_f2298890:
+    archive_name: M_W792300234_f2298890.msg
+    archive_path: .archive/emails/M_W792300234_f2298890.msg
+    archived_at: '2025-09-11T21:59:28.049488'
+    file_size: 326656
+    original_name: W792300234 (1).msg
+    original_path: emails/originals/W792300234 (1).msg
+    serial: W792300234
+    type: emails
+  M_W792300234_f460d931:
+    archive_name: M_W792300234_f460d931.msg
+    archive_path: .archive/emails/M_W792300234_f460d931.msg
+    archived_at: '2025-09-11T21:59:28.038624'
+    file_size: 326656
+    original_name: W792300234 (1).msg
+    original_path: emails/pending/W792300234 (1).msg
+    serial: W792300234
+    type: emails
+  M_W792Y00900_01dc67d6:
+    archive_name: M_W792Y00900_01dc67d6.msg
+    archive_path: .archive/emails/M_W792Y00900_01dc67d6.msg
+    archived_at: '2025-09-11T21:59:28.039299'
+    file_size: 92672
+    original_name: Undeliverable_ W792Y00900.msg
+    original_path: emails/pending/Undeliverable_ W792Y00900.msg
+    serial: W792Y00900
+    type: emails
+  M_W792Y00900_3cba83d8:
+    archive_name: M_W792Y00900_3cba83d8.msg
+    archive_path: .archive/emails/M_W792Y00900_3cba83d8.msg
+    archived_at: '2025-09-11T21:59:28.050676'
+    file_size: 92672
+    original_name: Undeliverable_ W792Y00900.msg
+    original_path: emails/originals/Undeliverable_ W792Y00900.msg
+    serial: W792Y00900
+    type: emails
+  M_W792Y00901_0930fdd5:
+    archive_name: M_W792Y00901_0930fdd5.msg
+    archive_path: .archive/emails/M_W792Y00901_0930fdd5.msg
+    archived_at: '2025-09-11T21:59:28.038806'
+    file_size: 1521152
+    original_name: W792Y00901 (1).msg
+    original_path: emails/pending/W792Y00901 (1).msg
+    serial: W792Y00901
+    type: emails
+  M_W792Y00901_4c52ee37:
+    archive_name: M_W792Y00901_4c52ee37.msg
+    archive_path: .archive/emails/M_W792Y00901_4c52ee37.msg
+    archived_at: '2025-09-11T21:59:28.039090'
+    file_size: 1944576
+    original_name: W792Y00901.msg
+    original_path: emails/pending/W792Y00901.msg
+    serial: W792Y00901
+    type: emails
+  M_W792Y00901_61ad8c72:
+    archive_name: M_W792Y00901_61ad8c72.msg
+    archive_path: .archive/emails/M_W792Y00901_61ad8c72.msg
+    archived_at: '2025-09-11T21:59:28.049667'
+    file_size: 1521152
+    original_name: W792Y00901 (1).msg
+    original_path: emails/originals/W792Y00901 (1).msg
+    serial: W792Y00901
+    type: emails
+  M_W792Y00901_d4fdfef4:
+    archive_name: M_W792Y00901_d4fdfef4.msg
+    archive_path: .archive/emails/M_W792Y00901_d4fdfef4.msg
+    archived_at: '2025-09-11T21:59:28.050315'
+    file_size: 1944576
+    original_name: W792Y00901.msg
+    original_path: emails/originals/W792Y00901.msg
+    serial: W792Y00901
+    type: emails
+  M_W792Y00912_2077cee7:
+    archive_name: M_W792Y00912_2077cee7.msg
+    archive_path: .archive/emails/M_W792Y00912_2077cee7.msg
+    archived_at: '2025-09-11T21:59:28.051051'
+    file_size: 93184
+    original_name: Undeliverable_ W792Y00912.msg
+    original_path: emails/originals/Undeliverable_ W792Y00912.msg
+    serial: W792Y00912
+    type: emails
+  M_W792Y00912_d6d5c9b7:
+    archive_name: M_W792Y00912_d6d5c9b7.msg
+    archive_path: .archive/emails/M_W792Y00912_d6d5c9b7.msg
+    archived_at: '2025-09-11T21:59:28.039687'
+    file_size: 93184
+    original_name: Undeliverable_ W792Y00912.msg
+    original_path: emails/pending/Undeliverable_ W792Y00912.msg
+    serial: W792Y00912
+    type: emails
+  M_W792Y00913_10993cbc:
+    archive_name: M_W792Y00913_10993cbc.msg
+    archive_path: .archive/emails/M_W792Y00913_10993cbc.msg
+    archived_at: '2025-09-11T21:59:28.051144'
+    file_size: 1294848
+    original_name: W792Y00913.msg
+    original_path: emails/originals/W792Y00913.msg
+    serial: W792Y00913
+    type: emails
+  M_W792Y00913_188f5e67:
+    archive_name: M_W792Y00913_188f5e67.msg
+    archive_path: .archive/emails/M_W792Y00913_188f5e67.msg
+    archived_at: '2025-09-11T21:59:28.039781'
+    file_size: 1294848
+    original_name: W792Y00913.msg
+    original_path: emails/pending/W792Y00913.msg
+    serial: W792Y00913
+    type: emails
+  M_W792Y00913_4ff734cf:
+    archive_name: M_W792Y00913_4ff734cf.msg
+    archive_path: .archive/emails/M_W792Y00913_4ff734cf.msg
+    archived_at: '2025-09-11T21:59:28.042337'
+    file_size: 1690624
+    original_name: W792Y00913 (1).msg
+    original_path: emails/pending/W792Y00913 (1).msg
+    serial: W792Y00913
+    type: emails
+  M_W792Y00913_5b2a17e0:
+    archive_name: M_W792Y00913_5b2a17e0.msg
+    archive_path: .archive/emails/M_W792Y00913_5b2a17e0.msg
+    archived_at: '2025-09-11T21:59:28.041468'
+    file_size: 2795008
+    original_name: W792Y00913 (2).msg
+    original_path: emails/pending/W792Y00913 (2).msg
+    serial: W792Y00913
+    type: emails
+  M_W792Y00913_92e9f20e:
+    archive_name: M_W792Y00913_92e9f20e.msg
+    archive_path: .archive/emails/M_W792Y00913_92e9f20e.msg
+    archived_at: '2025-09-11T21:59:28.057408'
+    file_size: 1690624
+    original_name: W792Y00913 (1).msg
+    original_path: emails/originals/W792Y00913 (1).msg
+    serial: W792Y00913
+    type: emails
+  M_W792Y00913_b972731e:
+    archive_name: M_W792Y00913_b972731e.msg
+    archive_path: .archive/emails/M_W792Y00913_b972731e.msg
+    archived_at: '2025-09-11T21:59:28.055892'
+    file_size: 2795008
+    original_name: W792Y00913 (2).msg
+    original_path: emails/originals/W792Y00913 (2).msg
+    serial: W792Y00913
+    type: emails
+  M_W792Y00917_17efb620:
+    archive_name: M_W792Y00917_17efb620.msg
+    archive_path: .archive/emails/M_W792Y00917_17efb620.msg
+    archived_at: '2025-09-11T21:59:28.044167'
+    file_size: 1894400
+    original_name: W792Y00917.msg
+    original_path: emails/pending/W792Y00917.msg
+    serial: W792Y00917
+    type: emails
+  M_W792Y00917_1b9f55dd:
+    archive_name: M_W792Y00917_1b9f55dd.msg
+    archive_path: .archive/emails/M_W792Y00917_1b9f55dd.msg
+    archived_at: '2025-09-11T21:59:28.061630'
+    file_size: 1894400
+    original_name: W792Y00917.msg
+    original_path: emails/originals/W792Y00917.msg
+    serial: W792Y00917
+    type: emails
+  M_W792Y00917_261e603c:
+    archive_name: M_W792Y00917_261e603c.msg
+    archive_path: .archive/emails/M_W792Y00917_261e603c.msg
+    archived_at: '2025-09-11T21:59:28.054270'
+    file_size: 2169856
+    original_name: W792Y00917 (2).msg
+    original_path: emails/originals/W792Y00917 (2).msg
+    serial: W792Y00917
+    type: emails
+  M_W792Y00917_2d55b2b4:
+    archive_name: M_W792Y00917_2d55b2b4.msg
+    archive_path: .archive/emails/M_W792Y00917_2d55b2b4.msg
+    archived_at: '2025-09-11T21:59:28.040854'
+    file_size: 2169856
+    original_name: W792Y00917 (2).msg
+    original_path: emails/pending/W792Y00917 (2).msg
+    serial: W792Y00917
+    type: emails
+  M_W792Y00917_64c1bdd2:
+    archive_name: M_W792Y00917_64c1bdd2.msg
+    archive_path: .archive/emails/M_W792Y00917_64c1bdd2.msg
+    archived_at: '2025-09-11T21:59:28.057749'
+    file_size: 1552896
+    original_name: W792Y00917 (1).msg
+    original_path: emails/originals/W792Y00917 (1).msg
+    serial: W792Y00917
+    type: emails
+  M_W792Y00917_76fabc24:
+    archive_name: M_W792Y00917_76fabc24.msg
+    archive_path: .archive/emails/M_W792Y00917_76fabc24.msg
+    archived_at: '2025-09-11T21:59:28.042430'
+    file_size: 1552896
+    original_name: W792Y00917 (1).msg
+    original_path: emails/pending/W792Y00917 (1).msg
+    serial: W792Y00917
+    type: emails
+  M_W793601285_388980c5:
+    archive_name: M_W793601285_388980c5.msg
+    archive_path: .archive/emails/M_W793601285_388980c5.msg
+    archived_at: '2025-09-11T21:59:28.057131'
+    file_size: 1882112
+    original_name: W793601285.msg
+    original_path: emails/originals/W793601285.msg
+    serial: W793601285
+    type: emails
+  M_W793601285_89a5cbd0:
+    archive_name: M_W793601285_89a5cbd0.msg
+    archive_path: .archive/emails/M_W793601285_89a5cbd0.msg
+    archived_at: '2025-09-11T21:59:28.042244'
+    file_size: 1882112
+    original_name: W793601285.msg
+    original_path: emails/pending/W793601285.msg
+    serial: W793601285
+    type: emails
+  M_W793601330_01bf4608:
+    archive_name: M_W793601330_01bf4608.msg
+    archive_path: .archive/emails/M_W793601330_01bf4608.msg
+    archived_at: '2025-09-11T21:59:28.037865'
+    file_size: 4185600
+    original_name: W793601330 (2).msg
+    original_path: emails/pending/W793601330 (2).msg
+    serial: W793601330
+    type: emails
+  M_W793601330_12b001ea:
+    archive_name: M_W793601330_12b001ea.msg
+    archive_path: .archive/emails/M_W793601330_12b001ea.msg
+    archived_at: '2025-09-11T21:59:28.038261'
+    file_size: 1480704
+    original_name: W793601330 (1).msg
+    original_path: emails/pending/W793601330 (1).msg
+    serial: W793601330
+    type: emails
+  M_W793601330_69573a96:
+    archive_name: M_W793601330_69573a96.msg
+    archive_path: .archive/emails/M_W793601330_69573a96.msg
+    archived_at: '2025-09-11T21:59:28.050861'
+    file_size: 2264064
+    original_name: W793601330.msg
+    original_path: emails/originals/W793601330.msg
+    serial: W793601330
+    type: emails
+  M_W793601330_6db95c14:
+    archive_name: M_W793601330_6db95c14.msg
+    archive_path: .archive/emails/M_W793601330_6db95c14.msg
+    archived_at: '2025-09-11T21:59:28.039495'
+    file_size: 2264064
+    original_name: W793601330.msg
+    original_path: emails/pending/W793601330.msg
+    serial: W793601330
+    type: emails
+  M_W793601330_7036b668:
+    archive_name: M_W793601330_7036b668.msg
+    archive_path: .archive/emails/M_W793601330_7036b668.msg
+    archived_at: '2025-09-11T21:59:28.047962'
+    file_size: 4185600
+    original_name: W793601330 (2).msg
+    original_path: emails/originals/W793601330 (2).msg
+    serial: W793601330
+    type: emails
+  M_W793601330_9221c155:
+    archive_name: M_W793601330_9221c155.msg
+    archive_path: .archive/emails/M_W793601330_9221c155.msg
+    archived_at: '2025-09-11T21:59:28.048654'
+    file_size: 1480704
+    original_name: W793601330 (1).msg
+    original_path: emails/originals/W793601330 (1).msg
+    serial: W793601330
+    type: emails
+  M_W793601403_08539fb7:
+    archive_name: M_W793601403_08539fb7.msg
+    archive_path: .archive/emails/M_W793601403_08539fb7.msg
+    archived_at: '2025-09-11T21:59:28.060090'
+    file_size: 1633792
+    original_name: W793601403 (1).msg
+    original_path: emails/originals/W793601403 (1).msg
+    serial: W793601403
+    type: emails
+  M_W793601403_2b77e5af:
+    archive_name: M_W793601403_2b77e5af.msg
+    archive_path: .archive/emails/M_W793601403_2b77e5af.msg
+    archived_at: '2025-09-11T21:59:28.051692'
+    file_size: 1561088
+    original_name: W793601403.msg
+    original_path: emails/originals/W793601403.msg
+    serial: W793601403
+    type: emails
+  M_W793601403_98632587:
+    archive_name: M_W793601403_98632587.msg
+    archive_path: .archive/emails/M_W793601403_98632587.msg
+    archived_at: '2025-09-11T21:59:28.040075'
+    file_size: 1561088
+    original_name: W793601403.msg
+    original_path: emails/pending/W793601403.msg
+    serial: W793601403
+    type: emails
+  M_W793601403_fd0997da:
+    archive_name: M_W793601403_fd0997da.msg
+    archive_path: .archive/emails/M_W793601403_fd0997da.msg
+    archived_at: '2025-09-11T21:59:28.043487'
+    file_size: 1633792
+    original_name: W793601403 (1).msg
+    original_path: emails/pending/W793601403 (1).msg
+    serial: W793601403
+    type: emails
+  M_W794302146_0db7bb5f:
+    archive_name: M_W794302146_0db7bb5f.msg
+    archive_path: .archive/emails/M_W794302146_0db7bb5f.msg
+    archived_at: '2025-09-11T21:59:28.043582'
+    file_size: 251392
+    original_name: W794302146 (2).msg
+    original_path: emails/pending/W794302146 (2).msg
+    serial: W794302146
+    type: emails
+  M_W794302146_0e342836:
+    archive_name: M_W794302146_0e342836.msg
+    archive_path: .archive/emails/M_W794302146_0e342836.msg
+    archived_at: '2025-09-11T21:59:28.060186'
+    file_size: 251392
+    original_name: W794302146 (2).msg
+    original_path: emails/originals/W794302146 (2).msg
+    serial: W794302146
+    type: emails
+  M_W794302146_2d4d59aa:
+    archive_name: M_W794302146_2d4d59aa.msg
+    archive_path: .archive/emails/M_W794302146_2d4d59aa.msg
+    archived_at: '2025-09-11T21:59:28.041839'
+    file_size: 1752064
+    original_name: W794302146.msg
+    original_path: emails/pending/W794302146.msg
+    serial: W794302146
+    type: emails
+  M_W794302146_37e1de21:
+    archive_name: M_W794302146_37e1de21.msg
+    archive_path: .archive/emails/M_W794302146_37e1de21.msg
+    archived_at: '2025-09-11T21:59:28.047866'
+    file_size: 141312
+    original_name: TASKalfa 5054ci - W794302146 - Counter - Block 5 Level 5 School
+      of Electronics & ICT (SEIT), TASKalfa 5054ci.msg
+    original_path: emails/originals/TASKalfa 5054ci - W794302146 - Counter - Block
+      5 Level 5 School of Electronics & ICT (SEIT), TASKalfa 5054ci.msg
+    serial: W794302146
+    type: emails
+  M_W794302146_4d25604e:
+    archive_name: M_W794302146_4d25604e.msg
+    archive_path: .archive/emails/M_W794302146_4d25604e.msg
+    archived_at: '2025-09-11T21:59:28.042616'
+    file_size: 108032
+    original_name: Toner [TASKalfa 5054ci] [SN - W794302146] [IP - 172.27.132.49]
+      - Block 1 Level 5 School of Electronics & ICT (SEIT, Rm 1533).msg
+    original_path: emails/pending/Toner [TASKalfa 5054ci] [SN - W794302146] [IP -
+      172.27.132.49] - Block 1 Level 5 School of Electronics & ICT (SEIT, Rm 1533).msg
+    serial: W794302146
+    type: emails
+  M_W794302146_58a361f3:
+    archive_name: M_W794302146_58a361f3.msg
+    archive_path: .archive/emails/M_W794302146_58a361f3.msg
+    archived_at: '2025-09-11T21:59:28.056559'
+    file_size: 1752064
+    original_name: W794302146.msg
+    original_path: emails/originals/W794302146.msg
+    serial: W794302146
+    type: emails
+  M_W794302146_6785a3a6:
+    archive_name: M_W794302146_6785a3a6.msg
+    archive_path: .archive/emails/M_W794302146_6785a3a6.msg
+    archived_at: '2025-09-11T21:59:28.061538'
+    file_size: 1538048
+    original_name: W794302146 (1).msg
+    original_path: emails/originals/W794302146 (1).msg
+    serial: W794302146
+    type: emails
+  M_W794302146_8002a10b:
+    archive_name: M_W794302146_8002a10b.msg
+    archive_path: .archive/emails/M_W794302146_8002a10b.msg
+    archived_at: '2025-09-11T21:59:28.044068'
+    file_size: 1538048
+    original_name: W794302146 (1).msg
+    original_path: emails/pending/W794302146 (1).msg
+    serial: W794302146
+    type: emails
+  M_W794302146_8cc8a91c:
+    archive_name: M_W794302146_8cc8a91c.msg
+    archive_path: .archive/emails/M_W794302146_8cc8a91c.msg
+    archived_at: '2025-09-11T21:59:28.037771'
+    file_size: 141312
+    original_name: TASKalfa 5054ci - W794302146 - Counter - Block 5 Level 5 School
+      of Electronics & ICT (SEIT), TASKalfa 5054ci.msg
+    original_path: emails/pending/TASKalfa 5054ci - W794302146 - Counter - Block 5
+      Level 5 School of Electronics & ICT (SEIT), TASKalfa 5054ci.msg
+    serial: W794302146
+    type: emails
+  M_W794302146_987f02ea:
+    archive_name: M_W794302146_987f02ea.msg
+    archive_path: .archive/emails/M_W794302146_987f02ea.msg
+    archived_at: '2025-09-11T21:59:28.058045'
+    file_size: 108032
+    original_name: Toner [TASKalfa 5054ci] [SN - W794302146] [IP - 172.27.132.49]
+      - Block 1 Level 5 School of Electronics & ICT (SEIT, Rm 1533).msg
+    original_path: emails/originals/Toner [TASKalfa 5054ci] [SN - W794302146] [IP
+      - 172.27.132.49] - Block 1 Level 5 School of Electronics & ICT (SEIT, Rm 1533).msg
+    serial: W794302146
+    type: emails
+  M_W794302146_b49d016f:
+    archive_name: M_W794302146_b49d016f.msg
+    archive_path: .archive/emails/M_W794302146_b49d016f.msg
+    archived_at: '2025-09-11T21:59:28.036765'
+    file_size: 2688512
+    original_name: W794302146 (3).msg
+    original_path: emails/pending/W794302146 (3).msg
+    serial: W794302146
+    type: emails
+  M_W794302146_e3abbc2e:
+    archive_name: M_W794302146_e3abbc2e.msg
+    archive_path: .archive/emails/M_W794302146_e3abbc2e.msg
+    archived_at: '2025-09-11T21:59:28.046044'
+    file_size: 2688512
+    original_name: W794302146 (3).msg
+    original_path: emails/originals/W794302146 (3).msg
+    serial: W794302146
+    type: emails
+  M_W7F3501393_31a12bb1:
+    archive_name: M_W7F3501393_31a12bb1.msg
+    archive_path: .archive/emails/M_W7F3501393_31a12bb1.msg
+    archived_at: '2025-09-11T21:59:28.053011'
+    file_size: 2375680
+    original_name: W7F3501393 (1).msg
+    original_path: emails/originals/W7F3501393 (1).msg
+    serial: W7F3501393
+    type: emails
+  M_W7F3501393_3c4ea141:
+    archive_name: M_W7F3501393_3c4ea141.msg
+    archive_path: .archive/emails/M_W7F3501393_3c4ea141.msg
+    archived_at: '2025-09-11T21:59:28.045244'
+    file_size: 1809408
+    original_name: W7F3501393.msg
+    original_path: emails/originals/W7F3501393.msg
+    serial: W7F3501393
+    type: emails
+  M_W7F3501393_5945f13b:
+    archive_name: M_W7F3501393_5945f13b.msg
+    archive_path: .archive/emails/M_W7F3501393_5945f13b.msg
+    archived_at: '2025-09-11T21:59:28.040547'
+    file_size: 2375680
+    original_name: W7F3501393 (1).msg
+    original_path: emails/pending/W7F3501393 (1).msg
+    serial: W7F3501393
+    type: emails
+  M_W7F3501393_703d0d04:
+    archive_name: M_W7F3501393_703d0d04.msg
+    archive_path: .archive/emails/M_W7F3501393_703d0d04.msg
+    archived_at: '2025-09-11T21:59:28.036378'
+    file_size: 1809408
+    original_name: W7F3501393.msg
+    original_path: emails/pending/W7F3501393.msg
+    serial: W7F3501393
+    type: emails
+  M_W7F3501393_84ba743c:
+    archive_name: M_W7F3501393_84ba743c.msg
+    archive_path: .archive/emails/M_W7F3501393_84ba743c.msg
+    archived_at: '2025-09-11T21:59:28.047485'
+    file_size: 1566720
+    original_name: W7F3501393 (2).msg
+    original_path: emails/originals/W7F3501393 (2).msg
+    serial: W7F3501393
+    type: emails
+  M_W7F3501393_d680c2c5:
+    archive_name: M_W7F3501393_d680c2c5.msg
+    archive_path: .archive/emails/M_W7F3501393_d680c2c5.msg
+    archived_at: '2025-09-11T21:59:28.037488'
+    file_size: 1566720
+    original_name: W7F3501393 (2).msg
+    original_path: emails/pending/W7F3501393 (2).msg
+    serial: W7F3501393
+    type: emails
+  M_W7F3501399_116d47bb:
+    archive_name: M_W7F3501399_116d47bb.msg
+    archive_path: .archive/emails/M_W7F3501399_116d47bb.msg
+    archived_at: '2025-09-11T21:59:28.041930'
+    file_size: 93184
+    original_name: Undeliverable_ W7F3501399.msg
+    original_path: emails/pending/Undeliverable_ W7F3501399.msg
+    serial: W7F3501399
+    type: emails
+  M_W7F3501399_4e7de943:
+    archive_name: M_W7F3501399_4e7de943.msg
+    archive_path: .archive/emails/M_W7F3501399_4e7de943.msg
+    archived_at: '2025-09-11T21:59:28.056651'
+    file_size: 93184
+    original_name: Undeliverable_ W7F3501399.msg
+    original_path: emails/originals/Undeliverable_ W7F3501399.msg
+    serial: W7F3501399
+    type: emails
+  M_W7F3501401_01538bc4:
+    archive_name: M_W7F3501401_01538bc4.msg
+    archive_path: .archive/emails/M_W7F3501401_01538bc4.msg
+    archived_at: '2025-09-11T21:59:28.061351'
+    file_size: 4935168
+    original_name: W7F3501401.msg
+    original_path: emails/originals/W7F3501401.msg
+    serial: W7F3501401
+    type: emails
+  M_W7F3501401_296dacaa:
+    archive_name: M_W7F3501401_296dacaa.msg
+    archive_path: .archive/emails/M_W7F3501401_296dacaa.msg
+    archived_at: '2025-09-11T21:59:28.044354'
+    file_size: 1492992
+    original_name: W7F3501401 (2).msg
+    original_path: emails/pending/W7F3501401 (2).msg
+    serial: W7F3501401
+    type: emails
+  M_W7F3501401_33ff8a4a:
+    archive_name: M_W7F3501401_33ff8a4a.msg
+    archive_path: .archive/emails/M_W7F3501401_33ff8a4a.msg
+    archived_at: '2025-09-11T21:59:28.043963'
+    file_size: 4935168
+    original_name: W7F3501401.msg
+    original_path: emails/pending/W7F3501401.msg
+    serial: W7F3501401
+    type: emails
+  M_W7F3501401_4a020081:
+    archive_name: M_W7F3501401_4a020081.msg
+    archive_path: .archive/emails/M_W7F3501401_4a020081.msg
+    archived_at: '2025-09-11T21:59:28.062509'
+    file_size: 1492992
+    original_name: W7F3501401 (2).msg
+    original_path: emails/originals/W7F3501401 (2).msg
+    serial: W7F3501401
+    type: emails
+  M_W7F3501401_c7b2c7b7:
+    archive_name: M_W7F3501401_c7b2c7b7.msg
+    archive_path: .archive/emails/M_W7F3501401_c7b2c7b7.msg
+    archived_at: '2025-09-11T21:59:28.053109'
+    file_size: 1320960
+    original_name: W7F3501401 (1).msg
+    original_path: emails/originals/W7F3501401 (1).msg
+    serial: W7F3501401
+    type: emails
+  M_W7F3501401_e2ccc45a:
+    archive_name: M_W7F3501401_e2ccc45a.msg
+    archive_path: .archive/emails/M_W7F3501401_e2ccc45a.msg
+    archived_at: '2025-09-11T21:59:28.040638'
+    file_size: 1320960
+    original_name: W7F3501401 (1).msg
+    original_path: emails/pending/W7F3501401 (1).msg
+    serial: W7F3501401
+    type: emails
+  M_W7F3501405_19a22241:
+    archive_name: M_W7F3501405_19a22241.msg
+    archive_path: .archive/emails/M_W7F3501405_19a22241.msg
+    archived_at: '2025-09-11T21:59:28.042994'
+    file_size: 1874432
+    original_name: W7F3501405 (1).msg
+    original_path: emails/pending/W7F3501405 (1).msg
+    serial: W7F3501405
+    type: emails
+  M_W7F3501405_2dd69701:
+    archive_name: M_W7F3501405_2dd69701.msg
+    archive_path: .archive/emails/M_W7F3501405_2dd69701.msg
+    archived_at: '2025-09-11T21:59:28.059104'
+    file_size: 1874432
+    original_name: W7F3501405 (1).msg
+    original_path: emails/originals/W7F3501405 (1).msg
+    serial: W7F3501405
+    type: emails
+  M_W7F3501405_73eaddce:
+    archive_name: M_W7F3501405_73eaddce.msg
+    archive_path: .archive/emails/M_W7F3501405_73eaddce.msg
+    archived_at: '2025-09-11T21:59:28.046144'
+    file_size: 280576
+    original_name: W7F3501405.msg
+    original_path: emails/originals/W7F3501405.msg
+    serial: W7F3501405
+    type: emails
+  M_W7F3501405_f3c215bf:
+    archive_name: M_W7F3501405_f3c215bf.msg
+    archive_path: .archive/emails/M_W7F3501405_f3c215bf.msg
+    archived_at: '2025-09-11T21:59:28.037254'
+    file_size: 2546688
+    original_name: W7F3501405 (2).msg
+    original_path: emails/pending/W7F3501405 (2).msg
+    serial: W7F3501405
+    type: emails
+  M_W7F3501405_fb788b5a:
+    archive_name: M_W7F3501405_fb788b5a.msg
+    archive_path: .archive/emails/M_W7F3501405_fb788b5a.msg
+    archived_at: '2025-09-11T21:59:28.047204'
+    file_size: 2546688
+    original_name: W7F3501405 (2).msg
+    original_path: emails/originals/W7F3501405 (2).msg
+    serial: W7F3501405
+    type: emails
+  M_W7F3501405_ff59c7eb:
+    archive_name: M_W7F3501405_ff59c7eb.msg
+    archive_path: .archive/emails/M_W7F3501405_ff59c7eb.msg
+    archived_at: '2025-09-11T21:59:28.036862'
+    file_size: 280576
+    original_name: W7F3501405.msg
+    original_path: emails/pending/W7F3501405.msg
+    serial: W7F3501405
+    type: emails
+  M_W7F3501425_1e27f032:
+    archive_name: M_W7F3501425_1e27f032.msg
+    archive_path: .archive/emails/M_W7F3501425_1e27f032.msg
+    archived_at: '2025-09-11T21:59:28.050403'
+    file_size: 1650688
+    original_name: W7F3501425 (1).msg
+    original_path: emails/originals/W7F3501425 (1).msg
+    serial: W7F3501425
+    type: emails
+  M_W7F3501425_3f5bacc6:
+    archive_name: M_W7F3501425_3f5bacc6.msg
+    archive_path: .archive/emails/M_W7F3501425_3f5bacc6.msg
+    archived_at: '2025-09-11T21:59:28.058990'
+    file_size: 1956352
+    original_name: W7F3501425.msg
+    original_path: emails/originals/W7F3501425.msg
+    serial: W7F3501425
+    type: emails
+  M_W7F3501425_50c80c93:
+    archive_name: M_W7F3501425_50c80c93.msg
+    archive_path: .archive/emails/M_W7F3501425_50c80c93.msg
+    archived_at: '2025-09-11T21:59:28.039184'
+    file_size: 1650688
+    original_name: W7F3501425 (1).msg
+    original_path: emails/pending/W7F3501425 (1).msg
+    serial: W7F3501425
+    type: emails
+  M_W7F3501425_e75bf576:
+    archive_name: M_W7F3501425_e75bf576.msg
+    archive_path: .archive/emails/M_W7F3501425_e75bf576.msg
+    archived_at: '2025-09-11T21:59:28.042896'
+    file_size: 1956352
+    original_name: W7F3501425.msg
+    original_path: emails/pending/W7F3501425.msg
+    serial: W7F3501425
+    type: emails
+  M_W7F3501460_13373a64:
+    archive_name: M_W7F3501460_13373a64.msg
+    archive_path: .archive/emails/M_W7F3501460_13373a64.msg
+    archived_at: '2025-09-11T21:59:28.037675'
+    file_size: 1757184
+    original_name: W7F3501460 (1).msg
+    original_path: emails/pending/W7F3501460 (1).msg
+    serial: W7F3501460
+    type: emails
+  M_W7F3501460_22b56bc4:
+    archive_name: M_W7F3501460_22b56bc4.msg
+    archive_path: .archive/emails/M_W7F3501460_22b56bc4.msg
+    archived_at: '2025-09-11T21:59:28.038715'
+    file_size: 1637376
+    original_name: W7F3501460.msg
+    original_path: emails/pending/W7F3501460.msg
+    serial: W7F3501460
+    type: emails
+  M_W7F3501460_a550763d:
+    archive_name: M_W7F3501460_a550763d.msg
+    archive_path: .archive/emails/M_W7F3501460_a550763d.msg
+    archived_at: '2025-09-11T21:59:28.049578'
+    file_size: 1637376
+    original_name: W7F3501460.msg
+    original_path: emails/originals/W7F3501460.msg
+    serial: W7F3501460
+    type: emails
+  M_W7F3501460_c41a47b6:
+    archive_name: M_W7F3501460_c41a47b6.msg
+    archive_path: .archive/emails/M_W7F3501460_c41a47b6.msg
+    archived_at: '2025-09-11T21:59:28.047675'
+    file_size: 1757184
+    original_name: W7F3501460 (1).msg
+    original_path: emails/originals/W7F3501460 (1).msg
+    serial: W7F3501460
+    type: emails
+  M_W7F3601552_20d6ce12:
+    archive_name: M_W7F3601552_20d6ce12.msg
+    archive_path: .archive/emails/M_W7F3601552_20d6ce12.msg
+    archived_at: '2025-09-11T21:59:28.050951'
+    file_size: 2290688
+    original_name: W7F3601552 (1).msg
+    original_path: emails/originals/W7F3601552 (1).msg
+    serial: W7F3601552
+    type: emails
+  M_W7F3601552_28267898:
+    archive_name: M_W7F3601552_28267898.msg
+    archive_path: .archive/emails/M_W7F3601552_28267898.msg
+    archived_at: '2025-09-11T21:59:28.042152'
+    file_size: 134144
+    original_name: Counter [TASKalfa 5004i] [SN - W7F3601552] [IP - 172.27.132.44]
+      Block 5 Level 5 School of Electronics & ICT (SEIT).msg
+    original_path: emails/pending/Counter [TASKalfa 5004i] [SN - W7F3601552] [IP -
+      172.27.132.44] Block 5 Level 5 School of Electronics & ICT (SEIT).msg
+    serial: W7F3601552
+    type: emails
+  M_W7F3601552_3ccd01e7:
+    archive_name: M_W7F3601552_3ccd01e7.msg
+    archive_path: .archive/emails/M_W7F3601552_3ccd01e7.msg
+    archived_at: '2025-09-11T21:59:28.049936'
+    file_size: 1519104
+    original_name: W7F3601552.msg
+    original_path: emails/originals/W7F3601552.msg
+    serial: W7F3601552
+    type: emails
+  M_W7F3601552_4d09e526:
+    archive_name: M_W7F3601552_4d09e526.msg
+    archive_path: .archive/emails/M_W7F3601552_4d09e526.msg
+    archived_at: '2025-09-11T21:59:28.036475'
+    file_size: 244224
+    original_name: W7F3601552 (2).msg
+    original_path: emails/pending/W7F3601552 (2).msg
+    serial: W7F3601552
+    type: emails
+  M_W7F3601552_5fab30c7:
+    archive_name: M_W7F3601552_5fab30c7.msg
+    archive_path: .archive/emails/M_W7F3601552_5fab30c7.msg
+    archived_at: '2025-09-11T21:59:28.038896'
+    file_size: 1519104
+    original_name: W7F3601552.msg
+    original_path: emails/pending/W7F3601552.msg
+    serial: W7F3601552
+    type: emails
+  M_W7F3601552_923cfa74:
+    archive_name: M_W7F3601552_923cfa74.msg
+    archive_path: .archive/emails/M_W7F3601552_923cfa74.msg
+    archived_at: '2025-09-11T21:59:28.057943'
+    file_size: 102400
+    original_name: Toner [TASKalfa 5004i] [SN - W7F3601552] [IP - 172.27.132.44] Block
+      5 Level 5 School of Electronics & ICT (SEIT).msg
+    original_path: emails/originals/Toner [TASKalfa 5004i] [SN - W7F3601552] [IP -
+      172.27.132.44] Block 5 Level 5 School of Electronics & ICT (SEIT).msg
+    serial: W7F3601552
+    type: emails
+  M_W7F3601552_9f03f664:
+    archive_name: M_W7F3601552_9f03f664.msg
+    archive_path: .archive/emails/M_W7F3601552_9f03f664.msg
+    archived_at: '2025-09-11T21:59:28.039593'
+    file_size: 2290688
+    original_name: W7F3601552 (1).msg
+    original_path: emails/pending/W7F3601552 (1).msg
+    serial: W7F3601552
+    type: emails
+  M_W7F3601552_bae1554c:
+    archive_name: M_W7F3601552_bae1554c.msg
+    archive_path: .archive/emails/M_W7F3601552_bae1554c.msg
+    archived_at: '2025-09-11T21:59:28.042523'
+    file_size: 102400
+    original_name: Toner [TASKalfa 5004i] [SN - W7F3601552] [IP - 172.27.132.44] Block
+      5 Level 5 School of Electronics & ICT (SEIT).msg
+    original_path: emails/pending/Toner [TASKalfa 5004i] [SN - W7F3601552] [IP - 172.27.132.44]
+      Block 5 Level 5 School of Electronics & ICT (SEIT).msg
+    serial: W7F3601552
+    type: emails
+  M_W7F3601552_cc9c41ee:
+    archive_name: M_W7F3601552_cc9c41ee.msg
+    archive_path: .archive/emails/M_W7F3601552_cc9c41ee.msg
+    archived_at: '2025-09-11T21:59:28.041087'
+    file_size: 1503232
+    original_name: W7F3601552 (4).msg
+    original_path: emails/pending/W7F3601552 (4).msg
+    serial: W7F3601552
+    type: emails
+  M_W7F3601552_def5dc1b:
+    archive_name: M_W7F3601552_def5dc1b.msg
+    archive_path: .archive/emails/M_W7F3601552_def5dc1b.msg
+    archived_at: '2025-09-11T21:59:28.043769'
+    file_size: 1412608
+    original_name: W7F3601552 (3).msg
+    original_path: emails/pending/W7F3601552 (3).msg
+    serial: W7F3601552
+    type: emails
+  M_W7F3601552_e8e7b4e2:
+    archive_name: M_W7F3601552_e8e7b4e2.msg
+    archive_path: .archive/emails/M_W7F3601552_e8e7b4e2.msg
+    archived_at: '2025-09-11T21:59:28.057035'
+    file_size: 134144
+    original_name: Counter [TASKalfa 5004i] [SN - W7F3601552] [IP - 172.27.132.44]
+      Block 5 Level 5 School of Electronics & ICT (SEIT).msg
+    original_path: emails/originals/Counter [TASKalfa 5004i] [SN - W7F3601552] [IP
+      - 172.27.132.44] Block 5 Level 5 School of Electronics & ICT (SEIT).msg
+    serial: W7F3601552
+    type: emails
+  M_W7F3601552_ec322a55:
+    archive_name: M_W7F3601552_ec322a55.msg
+    archive_path: .archive/emails/M_W7F3601552_ec322a55.msg
+    archived_at: '2025-09-11T21:59:28.060868'
+    file_size: 1412608
+    original_name: W7F3601552 (3).msg
+    original_path: emails/originals/W7F3601552 (3).msg
+    serial: W7F3601552
+    type: emails
+  M_W7F3601552_f80a1cc6:
+    archive_name: M_W7F3601552_f80a1cc6.msg
+    archive_path: .archive/emails/M_W7F3601552_f80a1cc6.msg
+    archived_at: '2025-09-11T21:59:28.055213'
+    file_size: 1503232
+    original_name: W7F3601552 (4).msg
+    original_path: emails/originals/W7F3601552 (4).msg
+    serial: W7F3601552
+    type: emails
+  M_W7F3601552_ff692839:
+    archive_name: M_W7F3601552_ff692839.msg
+    archive_path: .archive/emails/M_W7F3601552_ff692839.msg
+    archived_at: '2025-09-11T21:59:28.045543'
+    file_size: 244224
+    original_name: W7F3601552 (2).msg
+    original_path: emails/originals/W7F3601552 (2).msg
+    serial: W7F3601552
+    type: emails
+  M_W7F3601555_099f9d15:
+    archive_name: M_W7F3601555_099f9d15.msg
+    archive_path: .archive/emails/M_W7F3601555_099f9d15.msg
+    archived_at: '2025-09-11T21:59:28.051781'
+    file_size: 2782720
+    original_name: W7F3601555 (3).msg
+    original_path: emails/originals/W7F3601555 (3).msg
+    serial: W7F3601555
+    type: emails
+  M_W7F3601555_1cc36344:
+    archive_name: M_W7F3601555_1cc36344.msg
+    archive_path: .archive/emails/M_W7F3601555_1cc36344.msg
+    archived_at: '2025-09-11T21:59:28.036669'
+    file_size: 1561600
+    original_name: W7F3601555 (1).msg
+    original_path: emails/pending/W7F3601555 (1).msg
+    serial: W7F3601555
+    type: emails
+  M_W7F3601555_3752934b:
+    archive_name: M_W7F3601555_3752934b.msg
+    archive_path: .archive/emails/M_W7F3601555_3752934b.msg
+    archived_at: '2025-09-11T21:59:28.059296'
+    file_size: 1814528
+    original_name: W7F3601555 (2).msg
+    original_path: emails/originals/W7F3601555 (2).msg
+    serial: W7F3601555
+    type: emails
+  M_W7F3601555_3ab91560:
+    archive_name: M_W7F3601555_3ab91560.msg
+    archive_path: .archive/emails/M_W7F3601555_3ab91560.msg
+    archived_at: '2025-09-11T21:59:28.048353'
+    file_size: 99840
+    original_name: Toner [TASKalfa 5004i] [SN - W7F3601555] [IP - 172.27.132.45] Block
+      5 Level 5 School of Electronics & ICT (SEIT).msg
+    original_path: emails/originals/Toner [TASKalfa 5004i] [SN - W7F3601555] [IP -
+      172.27.132.45] Block 5 Level 5 School of Electronics & ICT (SEIT).msg
+    serial: W7F3601555
+    type: emails
+  M_W7F3601555_5b914300:
+    archive_name: M_W7F3601555_5b914300.msg
+    archive_path: .archive/emails/M_W7F3601555_5b914300.msg
+    archived_at: '2025-09-11T21:59:28.050766'
+    file_size: 130560
+    original_name: Counter [TASKalfa 5004i] [SN - W7F3601555] [IP - 172.27.132.45]
+      Block 5 Level 5 School of Electronics & ICT (SEIT).msg
+    original_path: emails/originals/Counter [TASKalfa 5004i] [SN - W7F3601555] [IP
+      - 172.27.132.45] Block 5 Level 5 School of Electronics & ICT (SEIT).msg
+    serial: W7F3601555
+    type: emails
+  M_W7F3601555_7aa68e6f:
+    archive_name: M_W7F3601555_7aa68e6f.msg
+    archive_path: .archive/emails/M_W7F3601555_7aa68e6f.msg
+    archived_at: '2025-09-11T21:59:28.055507'
+    file_size: 238592
+    original_name: W7F3601555.msg
+    original_path: emails/originals/W7F3601555.msg
+    serial: W7F3601555
+    type: emails
+  M_W7F3601555_7d5bfa22:
+    archive_name: M_W7F3601555_7d5bfa22.msg
+    archive_path: .archive/emails/M_W7F3601555_7d5bfa22.msg
+    archived_at: '2025-09-11T21:59:28.045829'
+    file_size: 1561600
+    original_name: W7F3601555 (1).msg
+    original_path: emails/originals/W7F3601555 (1).msg
+    serial: W7F3601555
+    type: emails
+  M_W7F3601555_8a4eee5a:
+    archive_name: M_W7F3601555_8a4eee5a.msg
+    archive_path: .archive/emails/M_W7F3601555_8a4eee5a.msg
+    archived_at: '2025-09-11T21:59:28.038167'
+    file_size: 99840
+    original_name: Toner [TASKalfa 5004i] [SN - W7F3601555] [IP - 172.27.132.45] Block
+      5 Level 5 School of Electronics & ICT (SEIT).msg
+    original_path: emails/pending/Toner [TASKalfa 5004i] [SN - W7F3601555] [IP - 172.27.132.45]
+      Block 5 Level 5 School of Electronics & ICT (SEIT).msg
+    serial: W7F3601555
+    type: emails
+  M_W7F3601555_8cdfb68d:
+    archive_name: M_W7F3601555_8cdfb68d.msg
+    archive_path: .archive/emails/M_W7F3601555_8cdfb68d.msg
+    archived_at: '2025-09-11T21:59:28.043100'
+    file_size: 1814528
+    original_name: W7F3601555 (2).msg
+    original_path: emails/pending/W7F3601555 (2).msg
+    serial: W7F3601555
+    type: emails
+  M_W7F3601555_a77c49df:
+    archive_name: M_W7F3601555_a77c49df.msg
+    archive_path: .archive/emails/M_W7F3601555_a77c49df.msg
+    archived_at: '2025-09-11T21:59:28.040175'
+    file_size: 2782720
+    original_name: W7F3601555 (3).msg
+    original_path: emails/pending/W7F3601555 (3).msg
+    serial: W7F3601555
+    type: emails
+  M_W7F3601555_cf965e1c:
+    archive_name: M_W7F3601555_cf965e1c.msg
+    archive_path: .archive/emails/M_W7F3601555_cf965e1c.msg
+    archived_at: '2025-09-11T21:59:28.041281'
+    file_size: 238592
+    original_name: W7F3601555.msg
+    original_path: emails/pending/W7F3601555.msg
+    serial: W7F3601555
+    type: emails
+  M_W7F3601555_faf85d62:
+    archive_name: M_W7F3601555_faf85d62.msg
+    archive_path: .archive/emails/M_W7F3601555_faf85d62.msg
+    archived_at: '2025-09-11T21:59:28.039399'
+    file_size: 130560
+    original_name: Counter [TASKalfa 5004i] [SN - W7F3601555] [IP - 172.27.132.45]
+      Block 5 Level 5 School of Electronics & ICT (SEIT).msg
+    original_path: emails/pending/Counter [TASKalfa 5004i] [SN - W7F3601555] [IP -
+      172.27.132.45] Block 5 Level 5 School of Electronics & ICT (SEIT).msg
+    serial: W7F3601555
+    type: emails
+  M_W7F3601558_26b11747:
+    archive_name: M_W7F3601558_26b11747.msg
+    archive_path: .archive/emails/M_W7F3601558_26b11747.msg
+    archived_at: '2025-09-11T21:59:28.055394'
+    file_size: 1636352
+    original_name: W7F3601558 (1).msg
+    original_path: emails/originals/W7F3601558 (1).msg
+    serial: W7F3601558
+    type: emails
+  M_W7F3601558_3295f660:
+    archive_name: M_W7F3601558_3295f660.msg
+    archive_path: .archive/emails/M_W7F3601558_3295f660.msg
+    archived_at: '2025-09-11T21:59:28.041182'
+    file_size: 1636352
+    original_name: W7F3601558 (1).msg
+    original_path: emails/pending/W7F3601558 (1).msg
+    serial: W7F3601558
+    type: emails
+  M_W7F3601558_5b3e98b4:
+    archive_name: M_W7F3601558_5b3e98b4.msg
+    archive_path: .archive/emails/M_W7F3601558_5b3e98b4.msg
+    archived_at: '2025-09-11T21:59:28.059499'
+    file_size: 1440768
+    original_name: W7F3601558.msg
+    original_path: emails/originals/W7F3601558.msg
+    serial: W7F3601558
+    type: emails
+  M_W7F3601558_66fe035e:
+    archive_name: M_W7F3601558_66fe035e.msg
+    archive_path: .archive/emails/M_W7F3601558_66fe035e.msg
+    archived_at: '2025-09-11T21:59:28.043204'
+    file_size: 1440768
+    original_name: W7F3601558.msg
+    original_path: emails/pending/W7F3601558.msg
+    serial: W7F3601558
+    type: emails
+  M_W7F3601563_16aa1194:
+    archive_name: M_W7F3601563_16aa1194.msg
+    archive_path: .archive/emails/M_W7F3601563_16aa1194.msg
+    archived_at: '2025-09-11T21:59:28.037159'
+    file_size: 1320448
+    original_name: W7F3601563 (1).msg
+    original_path: emails/pending/W7F3601563 (1).msg
+    serial: W7F3601563
+    type: emails
+  M_W7F3601563_1aefa58b:
+    archive_name: M_W7F3601563_1aefa58b.msg
+    archive_path: .archive/emails/M_W7F3601563_1aefa58b.msg
+    archived_at: '2025-09-11T21:59:28.041653'
+    file_size: 134144
+    original_name: Counter [TASKalfa 5004i] [SN - W7F3601563] [IP - 172.27.132.42]
+      Block 5 Level 5 School of Electronics & ICT (SEIT).msg
+    original_path: emails/pending/Counter [TASKalfa 5004i] [SN - W7F3601563] [IP -
+      172.27.132.42] Block 5 Level 5 School of Electronics & ICT (SEIT).msg
+    serial: W7F3601563
+    type: emails
+  M_W7F3601563_3cf140c9:
+    archive_name: M_W7F3601563_3cf140c9.msg
+    archive_path: .archive/emails/M_W7F3601563_3cf140c9.msg
+    archived_at: '2025-09-11T21:59:28.058239'
+    file_size: 2151424
+    original_name: W7F3601563 (2).msg
+    original_path: emails/originals/W7F3601563 (2).msg
+    serial: W7F3601563
+    type: emails
+  M_W7F3601563_422198e2:
+    archive_name: M_W7F3601563_422198e2.msg
+    archive_path: .archive/emails/M_W7F3601563_422198e2.msg
+    archived_at: '2025-09-11T21:59:28.056090'
+    file_size: 244224
+    original_name: W7F3601563.msg
+    original_path: emails/originals/W7F3601563.msg
+    serial: W7F3601563
+    type: emails
+  M_W7F3601563_545b77f5:
+    archive_name: M_W7F3601563_545b77f5.msg
+    archive_path: .archive/emails/M_W7F3601563_545b77f5.msg
+    archived_at: '2025-09-11T21:59:28.047579'
+    file_size: 2003968
+    original_name: W7F3601563 (3).msg
+    original_path: emails/originals/W7F3601563 (3).msg
+    serial: W7F3601563
+    type: emails
+  M_W7F3601563_92ab131d:
+    archive_name: M_W7F3601563_92ab131d.msg
+    archive_path: .archive/emails/M_W7F3601563_92ab131d.msg
+    archived_at: '2025-09-11T21:59:28.046717'
+    file_size: 1320448
+    original_name: W7F3601563 (1).msg
+    original_path: emails/originals/W7F3601563 (1).msg
+    serial: W7F3601563
+    type: emails
+  M_W7F3601563_a69de8bb:
+    archive_name: M_W7F3601563_a69de8bb.msg
+    archive_path: .archive/emails/M_W7F3601563_a69de8bb.msg
+    archived_at: '2025-09-11T21:59:28.041561'
+    file_size: 244224
+    original_name: W7F3601563.msg
+    original_path: emails/pending/W7F3601563.msg
+    serial: W7F3601563
+    type: emails
+  M_W7F3601563_b6ceae4f:
+    archive_name: M_W7F3601563_b6ceae4f.msg
+    archive_path: .archive/emails/M_W7F3601563_b6ceae4f.msg
+    archived_at: '2025-09-11T21:59:28.048257'
+    file_size: 102400
+    original_name: Toner [TASKalfa 5004i] [SN - W7F3601563] [IP - 172.27.132.42] Block
+      5 Level 5 School of Electronics & ICT (SEIT).msg
+    original_path: emails/originals/Toner [TASKalfa 5004i] [SN - W7F3601563] [IP -
+      172.27.132.42] Block 5 Level 5 School of Electronics & ICT (SEIT).msg
+    serial: W7F3601563
+    type: emails
+  M_W7F3601563_d23ddb7c:
+    archive_name: M_W7F3601563_d23ddb7c.msg
+    archive_path: .archive/emails/M_W7F3601563_d23ddb7c.msg
+    archived_at: '2025-09-11T21:59:28.056187'
+    file_size: 134144
+    original_name: Counter [TASKalfa 5004i] [SN - W7F3601563] [IP - 172.27.132.42]
+      Block 5 Level 5 School of Electronics & ICT (SEIT).msg
+    original_path: emails/originals/Counter [TASKalfa 5004i] [SN - W7F3601563] [IP
+      - 172.27.132.42] Block 5 Level 5 School of Electronics & ICT (SEIT).msg
+    serial: W7F3601563
+    type: emails
+  M_W7F3601563_d46f44d9:
+    archive_name: M_W7F3601563_d46f44d9.msg
+    archive_path: .archive/emails/M_W7F3601563_d46f44d9.msg
+    archived_at: '2025-09-11T21:59:28.042801'
+    file_size: 2151424
+    original_name: W7F3601563 (2).msg
+    original_path: emails/pending/W7F3601563 (2).msg
+    serial: W7F3601563
+    type: emails
+  M_W7F3601563_d828a93b:
+    archive_name: M_W7F3601563_d828a93b.msg
+    archive_path: .archive/emails/M_W7F3601563_d828a93b.msg
+    archived_at: '2025-09-11T21:59:28.037584'
+    file_size: 2003968
+    original_name: W7F3601563 (3).msg
+    original_path: emails/pending/W7F3601563 (3).msg
+    serial: W7F3601563
+    type: emails
+  M_W7F3601563_daaeb895:
+    archive_name: M_W7F3601563_daaeb895.msg
+    archive_path: .archive/emails/M_W7F3601563_daaeb895.msg
+    archived_at: '2025-09-11T21:59:28.038062'
+    file_size: 102400
+    original_name: Toner [TASKalfa 5004i] [SN - W7F3601563] [IP - 172.27.132.42] Block
+      5 Level 5 School of Electronics & ICT (SEIT).msg
+    original_path: emails/pending/Toner [TASKalfa 5004i] [SN - W7F3601563] [IP - 172.27.132.42]
+      Block 5 Level 5 School of Electronics & ICT (SEIT).msg
+    serial: W7F3601563
+    type: emails
+  M_W7F3601564_45dd7dca:
+    archive_name: M_W7F3601564_45dd7dca.msg
+    archive_path: .archive/emails/M_W7F3601564_45dd7dca.msg
+    archived_at: '2025-09-11T21:59:28.048975'
+    file_size: 102400
+    original_name: Toner [TASKalfa 5004i] [SN - W7F3601564] [IP - 172.27.132.41] Block
+      5 Level 5 School of Electronics & ICT (SEIT).msg
+    original_path: emails/originals/Toner [TASKalfa 5004i] [SN - W7F3601564] [IP -
+      172.27.132.41] Block 5 Level 5 School of Electronics & ICT (SEIT).msg
+    serial: W7F3601564
+    type: emails
+  M_W7F3601564_64580f84:
+    archive_name: M_W7F3601564_64580f84.msg
+    archive_path: .archive/emails/M_W7F3601564_64580f84.msg
+    archived_at: '2025-09-11T21:59:28.062691'
+    file_size: 131072
+    original_name: Counter [TASKalfa 5004i] [SN - W7F3601564] [IP - 172.27.132.41]
+      Block 5 Level 5 School of Electronics & ICT (SEIT).msg
+    original_path: emails/originals/Counter [TASKalfa 5004i] [SN - W7F3601564] [IP
+      - 172.27.132.41] Block 5 Level 5 School of Electronics & ICT (SEIT).msg
+    serial: W7F3601564
+    type: emails
+  M_W7F3601564_83e68ac2:
+    archive_name: M_W7F3601564_83e68ac2.msg
+    archive_path: .archive/emails/M_W7F3601564_83e68ac2.msg
+    archived_at: '2025-09-11T21:59:28.038442'
+    file_size: 102400
+    original_name: Toner [TASKalfa 5004i] [SN - W7F3601564] [IP - 172.27.132.41] Block
+      5 Level 5 School of Electronics & ICT (SEIT).msg
+    original_path: emails/pending/Toner [TASKalfa 5004i] [SN - W7F3601564] [IP - 172.27.132.41]
+      Block 5 Level 5 School of Electronics & ICT (SEIT).msg
+    serial: W7F3601564
+    type: emails
+  M_W7F3601564_d24ff37b:
+    archive_name: M_W7F3601564_d24ff37b.msg
+    archive_path: .archive/emails/M_W7F3601564_d24ff37b.msg
+    archived_at: '2025-09-11T21:59:28.044447'
+    file_size: 131072
+    original_name: Counter [TASKalfa 5004i] [SN - W7F3601564] [IP - 172.27.132.41]
+      Block 5 Level 5 School of Electronics & ICT (SEIT).msg
+    original_path: emails/pending/Counter [TASKalfa 5004i] [SN - W7F3601564] [IP -
+      172.27.132.41] Block 5 Level 5 School of Electronics & ICT (SEIT).msg
+    serial: W7F3601564
+    type: emails
+  M_W7F3601568_5ad183b5:
+    archive_name: M_W7F3601568_5ad183b5.msg
+    archive_path: .archive/emails/M_W7F3601568_5ad183b5.msg
+    archived_at: '2025-09-11T21:59:28.045733'
+    file_size: 2322432
+    original_name: W7F3601568 (2).msg
+    original_path: emails/originals/W7F3601568 (2).msg
+    serial: W7F3601568
+    type: emails
+  M_W7F3601568_759a8d49:
+    archive_name: M_W7F3601568_759a8d49.msg
+    archive_path: .archive/emails/M_W7F3601568_759a8d49.msg
+    archived_at: '2025-09-11T21:59:28.052064'
+    file_size: 1428480
+    original_name: W7F3601568 (1).msg
+    original_path: emails/originals/W7F3601568 (1).msg
+    serial: W7F3601568
+    type: emails
+  M_W7F3601568_7b8abcb5:
+    archive_name: M_W7F3601568_7b8abcb5.msg
+    archive_path: .archive/emails/M_W7F3601568_7b8abcb5.msg
+    archived_at: '2025-09-11T21:59:28.051961'
+    file_size: 1657344
+    original_name: W7F3601568.msg
+    original_path: emails/originals/W7F3601568.msg
+    serial: W7F3601568
+    type: emails
+  M_W7F3601568_8440d1bb:
+    archive_name: M_W7F3601568_8440d1bb.msg
+    archive_path: .archive/emails/M_W7F3601568_8440d1bb.msg
+    archived_at: '2025-09-11T21:59:28.040362'
+    file_size: 1428480
+    original_name: W7F3601568 (1).msg
+    original_path: emails/pending/W7F3601568 (1).msg
+    serial: W7F3601568
+    type: emails
+  M_W7F3601568_8bbfbdd9:
+    archive_name: M_W7F3601568_8bbfbdd9.msg
+    archive_path: .archive/emails/M_W7F3601568_8bbfbdd9.msg
+    archived_at: '2025-09-11T21:59:28.036572'
+    file_size: 2322432
+    original_name: W7F3601568 (2).msg
+    original_path: emails/pending/W7F3601568 (2).msg
+    serial: W7F3601568
+    type: emails
+  M_W7F3601568_b2917e99:
+    archive_name: M_W7F3601568_b2917e99.msg
+    archive_path: .archive/emails/M_W7F3601568_b2917e99.msg
+    archived_at: '2025-09-11T21:59:28.040269'
+    file_size: 1657344
+    original_name: W7F3601568.msg
+    original_path: emails/pending/W7F3601568.msg
+    serial: W7F3601568
+    type: emails
+  M_W7F3601570_3e674ba1:
+    archive_name: M_W7F3601570_3e674ba1.msg
+    archive_path: .archive/emails/M_W7F3601570_3e674ba1.msg
+    archived_at: '2025-09-11T21:59:28.043674'
+    file_size: 1530368
+    original_name: W7F3601570 (2).msg
+    original_path: emails/pending/W7F3601570 (2).msg
+    serial: W7F3601570
+    type: emails
+  M_W7F3601570_3ee4226d:
+    archive_name: M_W7F3601570_3ee4226d.msg
+    archive_path: .archive/emails/M_W7F3601570_3ee4226d.msg
+    archived_at: '2025-09-11T21:59:28.060464'
+    file_size: 1530368
+    original_name: W7F3601570 (2).msg
+    original_path: emails/originals/W7F3601570 (2).msg
+    serial: W7F3601570
+    type: emails
+  M_W7F3601570_431f45b8:
+    archive_name: M_W7F3601570_431f45b8.msg
+    archive_path: .archive/emails/M_W7F3601570_431f45b8.msg
+    archived_at: '2025-09-11T21:59:28.044261'
+    file_size: 1495040
+    original_name: W7F3601570 (3).msg
+    original_path: emails/pending/W7F3601570 (3).msg
+    serial: W7F3601570
+    type: emails
+  M_W7F3601570_67d10d77:
+    archive_name: M_W7F3601570_67d10d77.msg
+    archive_path: .archive/emails/M_W7F3601570_67d10d77.msg
+    archived_at: '2025-09-11T21:59:28.036275'
+    file_size: 134144
+    original_name: Counter [TASKalfa 5004i] [SN - W7F3601570] [IP - 172.27.132.43]
+      Block 5 Level 5 School of Electronics & ICT (SEIT).msg
+    original_path: emails/pending/Counter [TASKalfa 5004i] [SN - W7F3601570] [IP -
+      172.27.132.43] Block 5 Level 5 School of Electronics & ICT (SEIT).msg
+    serial: W7F3601570
+    type: emails
+  M_W7F3601570_8fd9ffe4:
+    archive_name: M_W7F3601570_8fd9ffe4.msg
+    archive_path: .archive/emails/M_W7F3601570_8fd9ffe4.msg
+    archived_at: '2025-09-11T21:59:28.048875'
+    file_size: 242688
+    original_name: W7F3601570.msg
+    original_path: emails/originals/W7F3601570.msg
+    serial: W7F3601570
+    type: emails
+  M_W7F3601570_93f5cf4e:
+    archive_name: M_W7F3601570_93f5cf4e.msg
+    archive_path: .archive/emails/M_W7F3601570_93f5cf4e.msg
+    archived_at: '2025-09-11T21:59:28.050137'
+    file_size: 1394688
+    original_name: W7F3601570 (1).msg
+    original_path: emails/originals/W7F3601570 (1).msg
+    serial: W7F3601570
+    type: emails
+  M_W7F3601570_964b5f1d:
+    archive_name: M_W7F3601570_964b5f1d.msg
+    archive_path: .archive/emails/M_W7F3601570_964b5f1d.msg
+    archived_at: '2025-09-11T21:59:28.058140'
+    file_size: 102400
+    original_name: Toner [TASKalfa 5004i] [SN - W7F3601570] [IP - 172.27.132.43] Block
+      5 Level 5 School of Electronics & ICT (SEIT).msg
+    original_path: emails/originals/Toner [TASKalfa 5004i] [SN - W7F3601570] [IP -
+      172.27.132.43] Block 5 Level 5 School of Electronics & ICT (SEIT).msg
+    serial: W7F3601570
+    type: emails
+  M_W7F3601570_96f79b87:
+    archive_name: M_W7F3601570_96f79b87.msg
+    archive_path: .archive/emails/M_W7F3601570_96f79b87.msg
+    archived_at: '2025-09-11T21:59:28.038352'
+    file_size: 242688
+    original_name: W7F3601570.msg
+    original_path: emails/pending/W7F3601570.msg
+    serial: W7F3601570
+    type: emails
+  M_W7F3601570_a0a2d6ef:
+    archive_name: M_W7F3601570_a0a2d6ef.msg
+    archive_path: .archive/emails/M_W7F3601570_a0a2d6ef.msg
+    archived_at: '2025-09-11T21:59:28.042709'
+    file_size: 102400
+    original_name: Toner [TASKalfa 5004i] [SN - W7F3601570] [IP - 172.27.132.43] Block
+      5 Level 5 School of Electronics & ICT (SEIT).msg
+    original_path: emails/pending/Toner [TASKalfa 5004i] [SN - W7F3601570] [IP - 172.27.132.43]
+      Block 5 Level 5 School of Electronics & ICT (SEIT).msg
+    serial: W7F3601570
+    type: emails
+  M_W7F3601570_ca7c75a2:
+    archive_name: M_W7F3601570_ca7c75a2.msg
+    archive_path: .archive/emails/M_W7F3601570_ca7c75a2.msg
+    archived_at: '2025-09-11T21:59:28.038987'
+    file_size: 1394688
+    original_name: W7F3601570 (1).msg
+    original_path: emails/pending/W7F3601570 (1).msg
+    serial: W7F3601570
+    type: emails
+  M_W7F3601570_d33e9103:
+    archive_name: M_W7F3601570_d33e9103.msg
+    archive_path: .archive/emails/M_W7F3601570_d33e9103.msg
+    archived_at: '2025-09-11T21:59:28.062140'
+    file_size: 1495040
+    original_name: W7F3601570 (3).msg
+    original_path: emails/originals/W7F3601570 (3).msg
+    serial: W7F3601570
+    type: emails
+  M_W7F3601570_dfc1ce1a:
+    archive_name: M_W7F3601570_dfc1ce1a.msg
+    archive_path: .archive/emails/M_W7F3601570_dfc1ce1a.msg
+    archived_at: '2025-09-11T21:59:28.045120'
+    file_size: 134144
+    original_name: Counter [TASKalfa 5004i] [SN - W7F3601570] [IP - 172.27.132.43]
+      Block 5 Level 5 School of Electronics & ICT (SEIT).msg
+    original_path: emails/originals/Counter [TASKalfa 5004i] [SN - W7F3601570] [IP
+      - 172.27.132.43] Block 5 Level 5 School of Electronics & ICT (SEIT).msg
+    serial: W7F3601570
+    type: emails
+  M_W7F3601615_0e72717a:
+    archive_name: M_W7F3601615_0e72717a.msg
+    archive_path: .archive/emails/M_W7F3601615_0e72717a.msg
+    archived_at: '2025-09-11T21:59:28.051235'
+    file_size: 2736128
+    original_name: W7F3601615 (2).msg
+    original_path: emails/originals/W7F3601615 (2).msg
+    serial: W7F3601615
+    type: emails
+  M_W7F3601615_0e8a19f7:
+    archive_name: M_W7F3601615_0e8a19f7.msg
+    archive_path: .archive/emails/M_W7F3601615_0e8a19f7.msg
+    archived_at: '2025-09-11T21:59:28.037349'
+    file_size: 1272320
+    original_name: W7F3601615 (1).msg
+    original_path: emails/pending/W7F3601615 (1).msg
+    serial: W7F3601615
+    type: emails
+  M_W7F3601615_0f76478d:
+    archive_name: M_W7F3601615_0f76478d.msg
+    archive_path: .archive/emails/M_W7F3601615_0f76478d.msg
+    archived_at: '2025-09-11T21:59:28.037957'
+    file_size: 94720
+    original_name: Undeliverable_ W7F3601615.msg
+    original_path: emails/pending/Undeliverable_ W7F3601615.msg
+    serial: W7F3601615
+    type: emails
+  M_W7F3601615_1d812f6a:
+    archive_name: M_W7F3601615_1d812f6a.msg
+    archive_path: .archive/emails/M_W7F3601615_1d812f6a.msg
+    archived_at: '2025-09-11T21:59:28.037062'
+    file_size: 1030144
+    original_name: W7F3601615.msg
+    original_path: emails/pending/W7F3601615.msg
+    serial: W7F3601615
+    type: emails
+  M_W7F3601615_1f329300:
+    archive_name: M_W7F3601615_1f329300.msg
+    archive_path: .archive/emails/M_W7F3601615_1f329300.msg
+    archived_at: '2025-09-11T21:59:28.039879'
+    file_size: 2736128
+    original_name: W7F3601615 (2).msg
+    original_path: emails/pending/W7F3601615 (2).msg
+    serial: W7F3601615
+    type: emails
+  M_W7F3601615_2a6fe265:
+    archive_name: M_W7F3601615_2a6fe265.msg
+    archive_path: .archive/emails/M_W7F3601615_2a6fe265.msg
+    archived_at: '2025-09-11T21:59:28.046520'
+    file_size: 1030144
+    original_name: W7F3601615.msg
+    original_path: emails/originals/W7F3601615.msg
+    serial: W7F3601615
+    type: emails
+  M_W7F3601615_568a9f00:
+    archive_name: M_W7F3601615_568a9f00.msg
+    archive_path: .archive/emails/M_W7F3601615_568a9f00.msg
+    archived_at: '2025-09-11T21:59:28.048162'
+    file_size: 94720
+    original_name: Undeliverable_ W7F3601615.msg
+    original_path: emails/originals/Undeliverable_ W7F3601615.msg
+    serial: W7F3601615
+    type: emails
+  M_W7F3601615_7b2aedef:
+    archive_name: M_W7F3601615_7b2aedef.msg
+    archive_path: .archive/emails/M_W7F3601615_7b2aedef.msg
+    archived_at: '2025-09-11T21:59:28.047297'
+    file_size: 1272320
+    original_name: W7F3601615 (1).msg
+    original_path: emails/originals/W7F3601615 (1).msg
+    serial: W7F3601615
+    type: emails
+  M_W7F3601615_8b4e9ed4:
+    archive_name: M_W7F3601615_8b4e9ed4.msg
+    archive_path: .archive/emails/M_W7F3601615_8b4e9ed4.msg
+    archived_at: '2025-09-11T21:59:28.059703'
+    file_size: 1490432
+    original_name: W7F3601615 (3).msg
+    original_path: emails/originals/W7F3601615 (3).msg
+    serial: W7F3601615
+    type: emails
+  M_W7F3601615_b3db1e67:
+    archive_name: M_W7F3601615_b3db1e67.msg
+    archive_path: .archive/emails/M_W7F3601615_b3db1e67.msg
+    archived_at: '2025-09-11T21:59:28.043394'
+    file_size: 1490432
+    original_name: W7F3601615 (3).msg
+    original_path: emails/pending/W7F3601615 (3).msg
+    serial: W7F3601615
+    type: emails
+  M_W7F3701713_0155221e:
+    archive_name: M_W7F3701713_0155221e.msg
+    archive_path: .archive/emails/M_W7F3701713_0155221e.msg
+    archived_at: '2025-09-11T21:59:28.041375'
+    file_size: 837632
+    original_name: W7F3701713 (3).msg
+    original_path: emails/pending/W7F3701713 (3).msg
+    serial: W7F3701713
+    type: emails
+  M_W7F3701713_0348a852:
+    archive_name: M_W7F3701713_0348a852.msg
+    archive_path: .archive/emails/M_W7F3701713_0348a852.msg
+    archived_at: '2025-09-11T21:59:28.043298'
+    file_size: 689664
+    original_name: W7F3701713 (5).msg
+    original_path: emails/pending/W7F3701713 (5).msg
+    serial: W7F3701713
+    type: emails
+  M_W7F3701713_1e6b26f6:
+    archive_name: M_W7F3701713_1e6b26f6.msg
+    archive_path: .archive/emails/M_W7F3701713_1e6b26f6.msg
+    archived_at: '2025-09-11T21:59:28.043863'
+    file_size: 92672
+    original_name: Undeliverable_ W7F3701713.msg
+    original_path: emails/pending/Undeliverable_ W7F3701713.msg
+    serial: W7F3701713
+    type: emails
+  M_W7F3701713_2add6731:
+    archive_name: M_W7F3701713_2add6731.msg
+    archive_path: .archive/emails/M_W7F3701713_2add6731.msg
+    archived_at: '2025-09-11T21:59:28.036958'
+    file_size: 156672
+    original_name: W7F3701713 (4).msg
+    original_path: emails/pending/W7F3701713 (4).msg
+    serial: W7F3701713
+    type: emails
+  M_W7F3701713_35bb6e0b:
+    archive_name: M_W7F3701713_35bb6e0b.msg
+    archive_path: .archive/emails/M_W7F3701713_35bb6e0b.msg
+    archived_at: '2025-09-11T21:59:28.042054'
+    file_size: 643584
+    original_name: W7F3701713.msg
+    original_path: emails/pending/W7F3701713.msg
+    serial: W7F3701713
+    type: emails
+  M_W7F3701713_3d53e831:
+    archive_name: M_W7F3701713_3d53e831.msg
+    archive_path: .archive/emails/M_W7F3701713_3d53e831.msg
+    archived_at: '2025-09-11T21:59:28.055708'
+    file_size: 837632
+    original_name: W7F3701713 (3).msg
+    original_path: emails/originals/W7F3701713 (3).msg
+    serial: W7F3701713
+    type: emails
+  M_W7F3701713_62cbad26:
+    archive_name: M_W7F3701713_62cbad26.msg
+    archive_path: .archive/emails/M_W7F3701713_62cbad26.msg
+    archived_at: '2025-09-11T21:59:28.051333'
+    file_size: 1701888
+    original_name: W7F3701713 (2).msg
+    original_path: emails/originals/W7F3701713 (2).msg
+    serial: W7F3701713
+    type: emails
+  M_W7F3701713_76a09ce4:
+    archive_name: M_W7F3701713_76a09ce4.msg
+    archive_path: .archive/emails/M_W7F3701713_76a09ce4.msg
+    archived_at: '2025-09-11T21:59:28.053503'
+    file_size: 1295872
+    original_name: W7F3701713 (1).msg
+    original_path: emails/originals/W7F3701713 (1).msg
+    serial: W7F3701713
+    type: emails
+  M_W7F3701713_89b2741a:
+    archive_name: M_W7F3701713_89b2741a.msg
+    archive_path: .archive/emails/M_W7F3701713_89b2741a.msg
+    archived_at: '2025-09-11T21:59:28.061066'
+    file_size: 92672
+    original_name: Undeliverable_ W7F3701713.msg
+    original_path: emails/originals/Undeliverable_ W7F3701713.msg
+    serial: W7F3701713
+    type: emails
+  M_W7F3701713_8faa4283:
+    archive_name: M_W7F3701713_8faa4283.msg
+    archive_path: .archive/emails/M_W7F3701713_8faa4283.msg
+    archived_at: '2025-09-11T21:59:28.046426'
+    file_size: 156672
+    original_name: W7F3701713 (4).msg
+    original_path: emails/originals/W7F3701713 (4).msg
+    serial: W7F3701713
+    type: emails
+  M_W7F3701713_9795fce5:
+    archive_name: M_W7F3701713_9795fce5.msg
+    archive_path: .archive/emails/M_W7F3701713_9795fce5.msg
+    archived_at: '2025-09-11T21:59:28.056836'
+    file_size: 643584
+    original_name: W7F3701713.msg
+    original_path: emails/originals/W7F3701713.msg
+    serial: W7F3701713
+    type: emails
+  M_W7F3701713_cf2a56aa:
+    archive_name: M_W7F3701713_cf2a56aa.msg
+    archive_path: .archive/emails/M_W7F3701713_cf2a56aa.msg
+    archived_at: '2025-09-11T21:59:28.040729'
+    file_size: 1295872
+    original_name: W7F3701713 (1).msg
+    original_path: emails/pending/W7F3701713 (1).msg
+    serial: W7F3701713
+    type: emails
+  M_W7F3701713_cf35031b:
+    archive_name: M_W7F3701713_cf35031b.msg
+    archive_path: .archive/emails/M_W7F3701713_cf35031b.msg
+    archived_at: '2025-09-11T21:59:28.059606'
+    file_size: 689664
+    original_name: W7F3701713 (5).msg
+    original_path: emails/originals/W7F3701713 (5).msg
+    serial: W7F3701713
+    type: emails
+  M_W7F3701713_fb09913e:
+    archive_name: M_W7F3701713_fb09913e.msg
+    archive_path: .archive/emails/M_W7F3701713_fb09913e.msg
+    archived_at: '2025-09-11T21:59:28.039972'
+    file_size: 1701888
+    original_name: W7F3701713 (2).msg
+    original_path: emails/pending/W7F3701713 (2).msg
+    serial: W7F3701713
+    type: emails
+  M_W7F3701780_50bdb158:
+    archive_name: M_W7F3701780_50bdb158.msg
+    archive_path: .archive/emails/M_W7F3701780_50bdb158.msg
+    archived_at: '2025-09-11T21:59:28.052262'
+    file_size: 93184
+    original_name: Undeliverable_ W7F3701780.msg
+    original_path: emails/originals/Undeliverable_ W7F3701780.msg
+    serial: W7F3701780
+    type: emails
+  M_W7F3701780_b2cdc394:
+    archive_name: M_W7F3701780_b2cdc394.msg
+    archive_path: .archive/emails/M_W7F3701780_b2cdc394.msg
+    archived_at: '2025-09-11T21:59:28.040455'
+    file_size: 93184
+    original_name: Undeliverable_ W7F3701780.msg
+    original_path: emails/pending/Undeliverable_ W7F3701780.msg
+    serial: W7F3701780
+    type: emails
+  P_db1d1f0d:
+    archive_name: P_db1d1f0d.pdf
+    archive_path: .archive/docs/P_db1d1f0d.pdf
+    archived_at: '2025-09-11T21:59:28.063131'
+    file_size: 45407
+    original_name: Automating Kyocera Command Center RX with Python.pdf
+    original_path: emails/Automating Kyocera Command Center RX with Python.pdf
+    serial: null
+    type: docs
+  T_c6e0c6e2:
+    archive_name: T_c6e0c6e2.txt
+    archive_path: .archive/docs/T_c6e0c6e2.txt
+    archived_at: '2025-09-11T21:59:28.063686'
+    file_size: 1417
+    original_name: README_PLACE_EML_FILES_HERE.txt
+    original_path: emails/README_PLACE_EML_FILES_HERE.txt
+    serial: null
+    type: docs
+index:
+  002 - TASKalfa 5054ci - W792300234 - Counter - Block 3 Level 2 Student Services (SSV), TASKalfa 5054ci .eml: E_W792300234_e0dd2b34
+  007 - TASKalfa 5004i - W7F3501393 - Counter - Block 3 Level 7 School of Hospitality (SOH), TASKalfa 5004i .eml: E_W7F3501393_650bf61a
+  010 - TASKalfa 5004i - W7F3501399 - Counter - Block 3 Level 8 School of Engineering (FME), TASKalfa 5004i .eml: E_W7F3501399_a34fc3ae
+  018 - TASKalfa 5004i - W7F3601570 - Counter - Block 5 Level 5 School of Electronics & ICT (SEIT), TASKalfa 5004i .eml: E_W7F3601570_c0078c17
+  Automating Kyocera Command Center RX with Python.pdf: P_db1d1f0d
+  Counter [TASKalfa 5004i] [SN - W7F3601552] [IP - 172.27.132.44] Block 5 Level 5 School of Electronics & ICT (SEIT).eml: E_W7F3601552_189ba322
+  Counter [TASKalfa 5004i] [SN - W7F3601552] [IP - 172.27.132.44] Block 5 Level 5 School of Electronics & ICT (SEIT).msg: M_W7F3601552_e8e7b4e2
+  Counter [TASKalfa 5004i] [SN - W7F3601555] [IP - 172.27.132.45] Block 5 Level 5 School of Electronics & ICT (SEIT).eml: E_W7F3601555_84e14394
+  Counter [TASKalfa 5004i] [SN - W7F3601555] [IP - 172.27.132.45] Block 5 Level 5 School of Electronics & ICT (SEIT).msg: M_W7F3601555_5b914300
+  Counter [TASKalfa 5004i] [SN - W7F3601563] [IP - 172.27.132.42] Block 5 Level 5 School of Electronics & ICT (SEIT).eml: E_W7F3601563_639594b9
+  Counter [TASKalfa 5004i] [SN - W7F3601563] [IP - 172.27.132.42] Block 5 Level 5 School of Electronics & ICT (SEIT).msg: M_W7F3601563_d23ddb7c
+  Counter [TASKalfa 5004i] [SN - W7F3601564] [IP - 172.27.132.41] Block 5 Level 5 School of Electronics & ICT (SEIT).eml: E_W7F3601564_cf44e371
+  Counter [TASKalfa 5004i] [SN - W7F3601564] [IP - 172.27.132.41] Block 5 Level 5 School of Electronics & ICT (SEIT).msg: M_W7F3601564_64580f84
+  Counter [TASKalfa 5004i] [SN - W7F3601570] [IP - 172.27.132.43] Block 5 Level 5 School of Electronics & ICT (SEIT).eml: E_W7F3601570_76933a1a
+  Counter [TASKalfa 5004i] [SN - W7F3601570] [IP - 172.27.132.43] Block 5 Level 5 School of Electronics & ICT (SEIT).msg: M_W7F3601570_dfc1ce1a
+  Devices in ITE CW-with-ip-add.csv: D_63d6031d
+  Devices in ITE CW-with-ip-add.ods: D_50e68bc9
+  README_PLACE_EML_FILES_HERE.txt: T_c6e0c6e2
+  TASKalfa 5054ci - W794302146 - Counter - Block 5 Level 5 School of Electronics & ICT (SEIT), TASKalfa 5054ci.eml: E_W794302146_f6cea033
+  TASKalfa 5054ci - W794302146 - Counter - Block 5 Level 5 School of Electronics & ICT (SEIT), TASKalfa 5054ci.msg: M_W794302146_37e1de21
+  Toner [TASKalfa 5004i] [SN - W7F3601552] [IP - 172.27.132.44] Block 5 Level 5 School of Electronics & ICT (SEIT).eml: E_W7F3601552_9d56a2e7
+  Toner [TASKalfa 5004i] [SN - W7F3601552] [IP - 172.27.132.44] Block 5 Level 5 School of Electronics & ICT (SEIT).msg: M_W7F3601552_923cfa74
+  Toner [TASKalfa 5004i] [SN - W7F3601555] [IP - 172.27.132.45] Block 5 Level 5 School of Electronics & ICT (SEIT).eml: E_W7F3601555_29ef94a2
+  Toner [TASKalfa 5004i] [SN - W7F3601555] [IP - 172.27.132.45] Block 5 Level 5 School of Electronics & ICT (SEIT).msg: M_W7F3601555_3ab91560
+  Toner [TASKalfa 5004i] [SN - W7F3601563] [IP - 172.27.132.42] Block 5 Level 5 School of Electronics & ICT (SEIT).eml: E_W7F3601563_8041d54e
+  Toner [TASKalfa 5004i] [SN - W7F3601563] [IP - 172.27.132.42] Block 5 Level 5 School of Electronics & ICT (SEIT).msg: M_W7F3601563_b6ceae4f
+  Toner [TASKalfa 5004i] [SN - W7F3601564] [IP - 172.27.132.41] Block 5 Level 5 School of Electronics & ICT (SEIT).eml: E_W7F3601564_b3187416
+  Toner [TASKalfa 5004i] [SN - W7F3601564] [IP - 172.27.132.41] Block 5 Level 5 School of Electronics & ICT (SEIT).msg: M_W7F3601564_45dd7dca
+  Toner [TASKalfa 5004i] [SN - W7F3601570] [IP - 172.27.132.43] Block 5 Level 5 School of Electronics & ICT (SEIT).eml: E_W7F3601570_6d95991a
+  Toner [TASKalfa 5004i] [SN - W7F3601570] [IP - 172.27.132.43] Block 5 Level 5 School of Electronics & ICT (SEIT).msg: M_W7F3601570_964b5f1d
+  ? Toner [TASKalfa 5054ci] [SN - W794302146] [IP - 172.27.132.49] - Block 1 Level
+    5 School of Electronics & ICT (SEIT, Rm 1533).eml
+  : E_W794302146_0130e866
+  ? Toner [TASKalfa 5054ci] [SN - W794302146] [IP - 172.27.132.49] - Block 1 Level
+    5 School of Electronics & ICT (SEIT, Rm 1533).msg
+  : M_W794302146_987f02ea
+  Undeliverable_ W792Y00900.eml: E_W792Y00900_d0f29d27
+  Undeliverable_ W792Y00900.msg: M_W792Y00900_3cba83d8
+  Undeliverable_ W792Y00912.eml: E_W792Y00912_2dccea1c
+  Undeliverable_ W792Y00912.msg: M_W792Y00912_2077cee7
+  Undeliverable_ W7F3501399.eml: E_W7F3501399_14376846
+  Undeliverable_ W7F3501399.msg: M_W7F3501399_4e7de943
+  Undeliverable_ W7F3601615.eml: E_W7F3601615_0737d6c7
+  Undeliverable_ W7F3601615.msg: M_W7F3601615_568a9f00
+  Undeliverable_ W7F3701713.eml: E_W7F3701713_fc1aecba
+  Undeliverable_ W7F3701713.msg: M_W7F3701713_89b2741a
+  Undeliverable_ W7F3701780.eml: E_W7F3701780_dfeb5fe6
+  Undeliverable_ W7F3701780.msg: M_W7F3701780_50bdb158
+  W792300234 (1).eml: E_W792300234_c7b6613b
+  W792300234 (1).msg: M_W792300234_f2298890
+  W792300234 (2).eml: E_W792300234_3a761afa
+  W792300234 (2).msg: M_W792300234_1f5cc1c1
+  W792300234 (3).eml: E_W792300234_8c7ac74c
+  W792300234 (3).msg: M_W792300234_2f7ffb39
+  W792300234.eml: E_W792300234_fa929c15
+  W792300234.msg: M_W792300234_95a39344
+  W792Y00901 (1).eml: E_W792Y00901_40917891
+  W792Y00901 (1).msg: M_W792Y00901_61ad8c72
+  W792Y00901.eml: E_W792Y00901_a8259eb1
+  W792Y00901.msg: M_W792Y00901_d4fdfef4
+  W792Y00913 (1).eml: E_W792Y00913_3b142381
+  W792Y00913 (1).msg: M_W792Y00913_92e9f20e
+  W792Y00913 (2).eml: E_W792Y00913_471e8c12
+  W792Y00913 (2).msg: M_W792Y00913_b972731e
+  W792Y00913.eml: E_W792Y00913_d9beada1
+  W792Y00913.msg: M_W792Y00913_10993cbc
+  W792Y00917 (1).eml: E_W792Y00917_113e953f
+  W792Y00917 (1).msg: M_W792Y00917_64c1bdd2
+  W792Y00917 (2).eml: E_W792Y00917_8404e912
+  W792Y00917 (2).msg: M_W792Y00917_261e603c
+  W792Y00917.eml: E_W792Y00917_32e430e2
+  W792Y00917.msg: M_W792Y00917_1b9f55dd
+  W793601285 (1).eml: E_W793601285_f3c6701c
+  W793601285 (2).eml: E_W793601285_bab2fa2b
+  W793601285.eml: E_W793601285_1b9c22ca
+  W793601285.msg: M_W793601285_388980c5
+  W793601330 (1).eml: E_W793601330_be4635eb
+  W793601330 (1).msg: M_W793601330_9221c155
+  W793601330 (2).eml: E_W793601330_d9c501a4
+  W793601330 (2).msg: M_W793601330_7036b668
+  W793601330.eml: E_W793601330_208c6a27
+  W793601330.msg: M_W793601330_69573a96
+  W793601403 (1).eml: E_W793601403_245d12fc
+  W793601403 (1).msg: M_W793601403_08539fb7
+  W793601403.eml: E_W793601403_13a24344
+  W793601403.msg: M_W793601403_2b77e5af
+  W794302146 (1).eml: E_W794302146_1aef099a
+  W794302146 (1).msg: M_W794302146_6785a3a6
+  W794302146 (2).eml: E_W794302146_57d2e83f
+  W794302146 (2).msg: M_W794302146_0e342836
+  W794302146 (3).eml: E_W794302146_99b46196
+  W794302146 (3).msg: M_W794302146_e3abbc2e
+  W794302146 (4).eml: E_W794302146_77d13d94
+  W794302146.eml: E_W794302146_21a1b0e3
+  W794302146.msg: M_W794302146_58a361f3
+  W7F3501393 (1).eml: E_W7F3501393_ee45afba
+  W7F3501393 (1).msg: M_W7F3501393_31a12bb1
+  W7F3501393 (2).eml: E_W7F3501393_f3ae0ba6
+  W7F3501393 (2).msg: M_W7F3501393_84ba743c
+  W7F3501393.eml: E_W7F3501393_0396d054
+  W7F3501393.msg: M_W7F3501393_3c4ea141
+  W7F3501401 (1).eml: E_W7F3501401_a897c1d6
+  W7F3501401 (1).msg: M_W7F3501401_c7b2c7b7
+  W7F3501401 (2).eml: E_W7F3501401_6a1689b3
+  W7F3501401 (2).msg: M_W7F3501401_4a020081
+  W7F3501401.eml: E_W7F3501401_93835939
+  W7F3501401.msg: M_W7F3501401_01538bc4
+  W7F3501405 (1).eml: E_W7F3501405_fa1f5c00
+  W7F3501405 (1).msg: M_W7F3501405_2dd69701
+  W7F3501405 (2).eml: E_W7F3501405_952495e2
+  W7F3501405 (2).msg: M_W7F3501405_fb788b5a
+  W7F3501405.eml: E_W7F3501405_f43f7f63
+  W7F3501405.msg: M_W7F3501405_73eaddce
+  W7F3501425 (1).eml: E_W7F3501425_c82d16bb
+  W7F3501425 (1).msg: M_W7F3501425_1e27f032
+  W7F3501425.eml: E_W7F3501425_608e42d1
+  W7F3501425.msg: M_W7F3501425_3f5bacc6
+  W7F3501460 (1).msg: M_W7F3501460_c41a47b6
+  W7F3501460 (2).eml: E_W7F3501460_d1729df2
+  W7F3501460.eml: E_W7F3501460_0eba6f93
+  W7F3501460.msg: M_W7F3501460_a550763d
+  W7F3601550 (1).eml: E_W7F3601550_9d98ba00
+  W7F3601550.eml: E_W7F3601550_e4a16bbe
+  W7F3601552 (1).eml: E_W7F3601552_44b76fa4
+  W7F3601552 (1).msg: M_W7F3601552_20d6ce12
+  W7F3601552 (2).eml: E_W7F3601552_9b4e8dba
+  W7F3601552 (2).msg: M_W7F3601552_ff692839
+  W7F3601552 (3).eml: E_W7F3601552_d59f4a6a
+  W7F3601552 (3).msg: M_W7F3601552_ec322a55
+  W7F3601552 (4).eml: E_W7F3601552_3e4f9010
+  W7F3601552 (4).msg: M_W7F3601552_f80a1cc6
+  W7F3601552.eml: E_W7F3601552_01e8c4e4
+  W7F3601552.msg: M_W7F3601552_3ccd01e7
+  W7F3601555 (1).eml: E_W7F3601555_fba85b19
+  W7F3601555 (1).msg: M_W7F3601555_7d5bfa22
+  W7F3601555 (2).eml: E_W7F3601555_d2816f75
+  W7F3601555 (2).msg: M_W7F3601555_3752934b
+  W7F3601555 (3).eml: E_W7F3601555_2c6f9b9b
+  W7F3601555 (3).msg: M_W7F3601555_099f9d15
+  W7F3601555.eml: E_W7F3601555_619eedea
+  W7F3601555.msg: M_W7F3601555_7aa68e6f
+  W7F3601558 (1).msg: M_W7F3601558_26b11747
+  W7F3601558 (2).eml: E_W7F3601558_d0ae4e83
+  W7F3601558.eml: E_W7F3601558_9491025d
+  W7F3601558.msg: M_W7F3601558_5b3e98b4
+  W7F3601563 (1).eml: E_W7F3601563_bc64012f
+  W7F3601563 (1).msg: M_W7F3601563_92ab131d
+  W7F3601563 (2).eml: E_W7F3601563_f457ab5f
+  W7F3601563 (2).msg: M_W7F3601563_3cf140c9
+  W7F3601563 (3).eml: E_W7F3601563_7da806b6
+  W7F3601563 (3).msg: M_W7F3601563_545b77f5
+  W7F3601563.eml: E_W7F3601563_e085055e
+  W7F3601563.msg: M_W7F3601563_422198e2
+  W7F3601564 (1).eml: E_W7F3601564_4f42b297
+  W7F3601564 (2).eml: E_W7F3601564_d60e8600
+  W7F3601564.eml: E_W7F3601564_b022257c
+  W7F3601568 (1).eml: E_W7F3601568_f50dd183
+  W7F3601568 (1).msg: M_W7F3601568_759a8d49
+  W7F3601568 (2).eml: E_W7F3601568_5fee4460
+  W7F3601568 (2).msg: M_W7F3601568_5ad183b5
+  W7F3601568.eml: E_W7F3601568_bb1dc4b1
+  W7F3601568.msg: M_W7F3601568_7b8abcb5
+  W7F3601570 (1).eml: E_W7F3601570_74dfa688
+  W7F3601570 (1).msg: M_W7F3601570_93f5cf4e
+  W7F3601570 (2).eml: E_W7F3601570_0202e507
+  W7F3601570 (2).msg: M_W7F3601570_3ee4226d
+  W7F3601570 (3).eml: E_W7F3601570_9f83c2a6
+  W7F3601570 (3).msg: M_W7F3601570_d33e9103
+  W7F3601570.eml: E_W7F3601570_3c01b5da
+  W7F3601570.msg: M_W7F3601570_8fd9ffe4
+  W7F3601610 (1).eml: E_W7F3601610_90c4129d
+  W7F3601610 (2).eml: E_W7F3601610_86afe8d1
+  W7F3601610.eml: E_W7F3601610_92d32cda
+  W7F3601615 (1).eml: E_W7F3601615_85b9bc6e
+  W7F3601615 (1).msg: M_W7F3601615_7b2aedef
+  W7F3601615 (2).eml: E_W7F3601615_f0991fcb
+  W7F3601615 (2).msg: M_W7F3601615_0e72717a
+  W7F3601615 (3).eml: E_W7F3601615_1d01e122
+  W7F3601615 (3).msg: M_W7F3601615_8b4e9ed4
+  W7F3601615.eml: E_W7F3601615_55e6f44f
+  W7F3601615.msg: M_W7F3601615_2a6fe265
+  W7F3701713 (1).eml: E_W7F3701713_f8a1bb50
+  W7F3701713 (1).msg: M_W7F3701713_76a09ce4
+  W7F3701713 (2).eml: E_W7F3701713_f02bb27c
+  W7F3701713 (2).msg: M_W7F3701713_62cbad26
+  W7F3701713 (3).eml: E_W7F3701713_d4e8243e
+  W7F3701713 (3).msg: M_W7F3701713_3d53e831
+  W7F3701713 (4).eml: E_W7F3701713_0c007718
+  W7F3701713 (4).msg: M_W7F3701713_8faa4283
+  W7F3701713 (5).eml: E_W7F3701713_423b84be
+  W7F3701713 (5).msg: M_W7F3701713_cf35031b
+  W7F3701713.eml: E_W7F3701713_b23e8206
+  W7F3701713.msg: M_W7F3701713_9795fce5
+version: '1.0'

@@ -1,0 +1,78 @@
+---
+export interface Props {
+	title: string;
+	description?: string;
+}
+
+const { title, description = "DeepResearchAgent - Hierarchical multi-agent framework for complex task solving and deep research" } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content={description} />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<title>{title}</title>
+	</head>
+	<body class="min-h-screen bg-background font-sans antialiased">
+		<div class="relative flex min-h-screen flex-col">
+			<header class="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+				<div class="container flex h-14 items-center">
+					<div class="mr-4 hidden md:flex">
+						<a class="mr-6 flex items-center space-x-2" href="/">
+							<span class="hidden font-bold sm:inline-block">DeepResearchAgent</span>
+						</a>
+						<nav class="flex items-center space-x-6 text-sm font-medium">
+							<a class="transition-colors hover:text-foreground/80 text-foreground/60" href="/quick-start">Quick Start</a>
+							<a class="transition-colors hover:text-foreground/80 text-foreground/60" href="/emergency-recovery">Emergency Recovery</a>
+							<a class="transition-colors hover:text-foreground/80 text-foreground/60" href="/file-organization">File Organization</a>
+							<a class="transition-colors hover:text-foreground/80 text-foreground/60" href="/configuration">Configuration</a>
+						</nav>
+					</div>
+					<div class="flex flex-1 items-center justify-between space-x-2 md:justify-end">
+						<div class="w-full flex-1 md:w-auto md:flex-none">
+							<!-- Mobile menu button would go here -->
+						</div>
+						<nav class="flex items-center">
+							<a
+								href="#"
+								class="inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 hover:bg-accent hover:text-accent-foreground h-9 py-2 mr-2 px-0 text-base hover:bg-transparent focus-visible:bg-transparent focus-visible:ring-0 focus-visible:ring-offset-0"
+							>
+								<svg viewBox="0 0 15 15" class="h-5 w-5" fill="currentColor">
+									<path
+										d="M7.49933 0.25C3.50635 0.25 0.25 3.50635 0.25 7.49933C0.25 10.9379 2.75158 13.8158 6.00191 14.6213C6.45186 14.7138 6.62129 14.4517 6.62129 14.2285C6.62129 14.0235 6.61168 13.4508 6.60739 12.6901C4.29031 13.2324 3.76056 11.7623 3.76056 11.7623C3.34899 10.7953 2.75298 10.5345 2.75298 10.5345C1.91481 9.97557 2.81975 9.98652 2.81975 9.98652C3.74961 10.0533 4.22644 10.9031 4.22644 10.9031C5.04116 12.3179 6.33689 11.9147 6.64094 11.7002C6.72509 11.1094 6.96191 10.7062 7.22089 10.4971C5.26564 10.2851 3.21806 9.64742 3.21806 6.94416C3.21806 6.02032 3.56451 5.26615 4.24248 4.67773C4.14576 4.46473 3.83715 3.69768 4.33297 2.64279C4.33297 2.64279 5.10445 2.4166 6.59614 3.38781C7.33191 3.20159 8.11405 3.10847 8.89116 3.10453C9.66827 3.10847 10.4504 3.20159 11.1861 3.38781C12.6778 2.4166 13.4493 2.64279 13.4493 2.64279C13.9451 3.69768 13.6365 4.46473 13.5398 4.67773C14.2177 5.26615 14.5622 6.02032 14.5622 6.94416C14.5622 9.65436 12.511 10.2815 10.5501 10.4889C10.8717 10.7656 11.1654 11.3092 11.1654 12.1401C11.1654 13.3129 11.154 14.2572 11.154 14.5724C11.154 14.7974 11.3201 15.0619 11.7759 14.6197C15.0234 13.8116 17.5 10.9363 17.5 7.49933C17.5 3.50635 14.2437 0.25 10.2507 0.25H7.49933Z"
+										fill-rule="evenodd"
+										clip-rule="evenodd"
+									></path>
+								</svg>
+								<span class="sr-only">GitHub</span>
+							</a>
+						</nav>
+					</div>
+				</div>
+			</header>
+			<main class="flex-1">
+				<slot />
+			</main>
+			<footer class="border-t py-6 md:py-0">
+				<div class="container flex flex-col items-center justify-between gap-4 md:h-24 md:flex-row">
+					<div class="flex flex-col items-center gap-4 px-8 md:flex-row md:gap-2 md:px-0">
+						<p class="text-center text-sm leading-loose text-muted-foreground md:text-left">
+							Built with <a href="https://astro.build" target="_blank" class="font-medium underline underline-offset-4">Astro</a>,
+							<a href="https://tailwindcss.com" target="_blank" class="font-medium underline underline-offset-4">Tailwind CSS</a>, and
+							<a href="https://ui.shadcn.com" target="_blank" class="font-medium underline underline-offset-4">shadcn/ui</a>.
+						</p>
+					</div>
+				</div>
+			</footer>
+		</div>
+	</body>
+</html>
+
+<style>
+	html {
+		font-family: system-ui, sans-serif;
+	}
+</style>

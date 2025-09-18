@@ -1,0 +1,61 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- TUI Window -->
+  <rect x="50" y="50" width="700" height="500" fill="#1e1e1e" stroke="#00bfff" stroke-width="2"/>
+  
+  <!-- Title Bar -->
+  <rect x="50" y="50" width="700" height="40" fill="#0078d4"/>
+  <text x="400" y="75" text-anchor="middle" fill="white" font-size="16" font-weight="bold">Kyocera Meter Reader TUI v1.0.0</text>
+  
+  <!-- Menu Bar -->
+  <rect x="50" y="90" width="700" height="30" fill="#2d2d2d"/>
+  <text x="100" y="108" fill="#00ff00" font-size="12">[F1] Dashboard</text>
+  <text x="250" y="108" fill="#00bfff" font-size="12">[F2] Devices</text>
+  <text x="380" y="108" fill="#00bfff" font-size="12">[F3] Process</text>
+  <text x="500" y="108" fill="#00bfff" font-size="12">[F4] Reports</text>
+  <text x="620" y="108" fill="#00bfff" font-size="12">[F5] Settings</text>
+  
+  <!-- Main Content Area - Dashboard View -->
+  <rect x="70" y="140" width="320" height="180" fill="#2a2a2a" stroke="#444" rx="5"/>
+  <text x="230" y="165" text-anchor="middle" fill="#00ff00" font-size="14" font-weight="bold">Today's Statistics</text>
+  <text x="90" y="190" fill="#fff" font-size="11">📧 Emails Processed: 48</text>
+  <text x="90" y="210" fill="#fff" font-size="11">✅ Success Rate: 95.8%</text>
+  <text x="90" y="230" fill="#fff" font-size="11">📊 Total Readings: 15,234</text>
+  <text x="90" y="250" fill="#fff" font-size="11">🖨️ Active Devices: 52</text>
+  <text x="90" y="270" fill="#fff" font-size="11">⚠️ Alerts: 2</text>
+  <text x="90" y="290" fill="#fff" font-size="11">💾 Database Size: 124 MB</text>
+  
+  <!-- Device List -->
+  <rect x="410" y="140" width="320" height="180" fill="#2a2a2a" stroke="#444" rx="5"/>
+  <text x="570" y="165" text-anchor="middle" fill="#00ff00" font-size="14" font-weight="bold">Recent Activity</text>
+  <text x="430" y="190" fill="#0f0" font-size="10" font-family="monospace">│ W7F3605465 │ 2025-09-11 09:30 │ ✓ │</text>
+  <text x="430" y="210" fill="#0f0" font-size="10" font-family="monospace">│ W7F3605466 │ 2025-09-11 09:28 │ ✓ │</text>
+  <text x="430" y="230" fill="#f00" font-size="10" font-family="monospace">│ W7F3605467 │ 2025-09-11 09:25 │ ✗ │</text>
+  <text x="430" y="250" fill="#0f0" font-size="10" font-family="monospace">│ W794302146 │ 2025-09-11 09:22 │ ✓ │</text>
+  <text x="430" y="270" fill="#0f0" font-size="10" font-family="monospace">│ W793605468 │ 2025-09-11 09:20 │ ✓ │</text>
+  
+  <!-- Graph Area -->
+  <rect x="70" y="340" width="660" height="180" fill="#2a2a2a" stroke="#444" rx="5"/>
+  <text x="400" y="365" text-anchor="middle" fill="#00ff00" font-size="14" font-weight="bold">Usage Trend (Last 7 Days)</text>
+  
+  <!-- Simple bar chart -->
+  <rect x="150" y="450" width="40" height="50" fill="#00ff00"/>
+  <rect x="230" y="430" width="40" height="70" fill="#00ff00"/>
+  <rect x="310" y="420" width="40" height="80" fill="#00ff00"/>
+  <rect x="390" y="410" width="40" height="90" fill="#00ff00"/>
+  <rect x="470" y="400" width="40" height="100" fill="#00ff00"/>
+  <rect x="550" y="415" width="40" height="85" fill="#00ff00"/>
+  <rect x="630" y="425" width="40" height="75" fill="#00bfff"/>
+  
+  <text x="170" y="515" text-anchor="middle" fill="#888" font-size="10">Mon</text>
+  <text x="250" y="515" text-anchor="middle" fill="#888" font-size="10">Tue</text>
+  <text x="330" y="515" text-anchor="middle" fill="#888" font-size="10">Wed</text>
+  <text x="410" y="515" text-anchor="middle" fill="#888" font-size="10">Thu</text>
+  <text x="490" y="515" text-anchor="middle" fill="#888" font-size="10">Fri</text>
+  <text x="570" y="515" text-anchor="middle" fill="#888" font-size="10">Sat</text>
+  <text x="650" y="515" text-anchor="middle" fill="#888" font-size="10">Today</text>
+  
+  <!-- Status Bar -->
+  <rect x="50" y="520" width="700" height="30" fill="#0078d4"/>
+  <text x="70" y="540" fill="white" font-size="11">[↑↓] Navigate  [Enter] Select  [q] Quit  [r] Refresh  [h] Help</text>
+  <text x="680" y="540" fill="white" font-size="11">09:35:22</text>
+</svg>

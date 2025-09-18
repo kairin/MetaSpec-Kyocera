@@ -1,0 +1,339 @@
+# Universal Guardian Agent Validation Framework
+# Generalizes Git workflow validation patterns for all subagent domains
+
+openapi: 3.0.3
+info:
+  title: Universal Guardian Agent Validation Framework
+  version: 1.0.0
+  description: Domain-agnostic validation patterns for all Guardian subagents
+
+components:
+  schemas:
+    UniversalValidationRequest:
+      type: object
+      required:
+        - agent_id
+        - domain_type
+        - validation_level
+      properties:
+        agent_id:
+          type: string
+          pattern: '^[0-9]{3}$'
+          description: Guardian agent identifier
+        domain_type:
+          type: string
+          enum:
+            - strategy
+            - design
+            - architecture
+            - development
+            - infrastructure
+            - operations
+            - git-workflow
+          description: Agent domain for specialized validation rules
+        validation_level:
+          type: string
+          enum:
+            - surface      # Basic functionality check
+            - standard     # Full validation suite
+            - comprehensive # Deep audit with performance testing
+          default: standard
+        context:
+          $ref: '#/components/schemas/ValidationContext'
+
+    ValidationContext:
+      type: object
+      properties:
+        repository_type:
+          type: string
+          enum:
+            - single-repo
+            - multi-repo
+            - monorepo
+          description: Repository structure context
+        technology_stack:
+          type: array
+          items:
+            type: string
+          description: Technologies this agent works with
+        integration_points:
+          type: array
+          items:
+            type: string
+          description: Other systems this agent integrates with
+        performance_requirements:
+          $ref: '#/components/schemas/PerformanceRequirements'
+
+    PerformanceRequirements:
+      type: object
+      properties:
+        max_response_time:
+          type: integer
+          description: Maximum acceptable response time in seconds
+        throughput_target:
+          type: integer
+          description: Minimum operations per hour
+        memory_limit:
+          type: integer
+          description: Maximum memory usage in MB
+        concurrent_operations:
+          type: integer
+          description: Maximum parallel operations
+
+    UniversalValidationResponse:
+      type: object
+      required:
+        - agent_id
+        - overall_status
+        - validation_categories
+        - recommendations
+      properties:
+        agent_id:
+          type: string
+        overall_status:
+          type: string
+          enum:
+            - production_ready
+            - needs_improvement
+            - major_issues
+            - blocked
+        validation_categories:
+          type: array
+          items:
+            $ref: '#/components/schemas/ValidationCategory'
+        recommendations:
+          $ref: '#/components/schemas/ValidationRecommendations'
+        metrics:
+          $ref: '#/components/schemas/ValidationMetrics'
+
+    ValidationCategory:
+      type: object
+      required:
+        - category_name
+        - checks
+        - summary
+      properties:
+        category_name:
+          type: string
+          enum:
+            - dependency_sequence    # STEP 4.1: Build order and prerequisites
+            - shared_components      # STEP 4.2: Common libraries and functions
+            - configuration_consistency # STEP 4.3: Config loading patterns
+            - error_handling_patterns # STEP 4.4: Uniform error handling
+            - logging_mechanisms     # STEP 4.5: Consistent logging
+            - cross_references      # STEP 4.6: Inter-agent connections
+            - over_engineering      # STEP 4.7: Complexity analysis
+            - best_practices        # STEP 4.8: Domain-specific standards
+            - implementation_completeness # STEP 4.9: Coverage analysis
+            - constitutional_adherence # STEP 4.10: Principle compliance
+        checks:
+          type: array
+          items:
+            $ref: '#/components/schemas/ValidationCheck'
+        summary:
+          $ref: '#/components/schemas/CategorySummary'
+
+    ValidationCheck:
+      type: object
+      required:
+        - check_id
+        - description
+        - status
+        - domain_specific_rules
+      properties:
+        check_id:
+          type: string
+          description: Unique check identifier
+        description:
+          type: string
+          description: What is being validated
+        status:
+          type: string
+          enum:
+            - "✓"      # pass
+            - "☐"      # not implemented
+            - "~"      # partial (include percentage)
+            - "✗"      # fail
+            - "⚠️"      # warning/needs attention
+        domain_specific_rules:
+          type: array
+          items:
+            $ref: '#/components/schemas/DomainRule'
+        remediation:
+          type: string
+          description: How to fix issues
+        complexity_impact:
+          type: string
+          enum:
+            - low
+            - medium
+            - high
+            - critical
+
+    DomainRule:
+      type: object
+      required:
+        - rule_name
+        - applies_to_domains
+        - validation_logic
+      properties:
+        rule_name:
+          type: string
+          description: Name of the domain-specific rule
+        applies_to_domains:
+          type: array
+          items:
+            type: string
+          description: Which domains this rule applies to
+        validation_logic:
+          type: string
+          description: How to validate this rule
+        examples:
+          type: array
+          items:
+            type: string
+          description: Examples of compliant implementations
+
+    ValidationRecommendations:
+      type: object
+      properties:
+        immediate_actions:
+          type: array
+          items:
+            type: string
+          description: Critical issues to fix before deployment
+        improvements:
+          type: array
+          items:
+            type: string
+          description: Enhancements to consider
+        simplifications:
+          type: array
+          items:
+            type: string
+          description: Over-engineered components to simplify
+        go_no_go_decision:
+          $ref: '#/components/schemas/GoNoGoDecision'
+
+    GoNoGoDecision:
+      type: object
+      required:
+        - decision
+        - risk_level
+        - estimated_effort
+        - success_probability
+      properties:
+        decision:
+          type: string
+          enum:
+            - GO
+            - NO_GO
+            - CONDITIONAL_GO
+        risk_level:
+          type: string
+          enum:
+            - low
+            - medium
+            - high
+            - critical
+        estimated_effort:
+          type: string
+          description: Time estimate to address issues
+        success_probability:
+          type: number
+          minimum: 0.0
+          maximum: 1.0
+          description: Likelihood of successful implementation
+        blocking_issues:
+          type: array
+          items:
+            type: string
+          description: Issues preventing GO decision
+        mitigation_plan:
+          type: string
+          description: Plan to address identified risks
+
+paths:
+  /validate/universal:
+    post:
+      summary: Universal validation for any Guardian agent
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/UniversalValidationRequest'
+      responses:
+        '200':
+          description: Validation completed
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/UniversalValidationResponse'
+
+# Domain-Specific Rule Examples
+examples:
+  strategy_agent_rules:
+    dependency_sequence:
+      - rule: "Market research must complete before strategy formulation"
+      - rule: "Stakeholder input required before final decisions"
+      - rule: "Competitive analysis dependencies clearly mapped"
+
+    shared_components:
+      - rule: "Market data APIs shared across strategy agents"
+      - rule: "Decision framework templates reused"
+      - rule: "Stakeholder communication patterns standardized"
+
+    configuration_consistency:
+      - rule: "Market data sources configurable"
+      - rule: "Decision criteria thresholds consistent"
+      - rule: "Reporting formats standardized"
+
+  design_agent_rules:
+    dependency_sequence:
+      - rule: "User research must inform design decisions"
+      - rule: "Design system components built before specific implementations"
+      - rule: "Accessibility guidelines enforced throughout"
+
+    shared_components:
+      - rule: "Design system library shared across all design agents"
+      - rule: "User research templates standardized"
+      - rule: "Usability testing frameworks common"
+
+  development_agent_rules:
+    dependency_sequence:
+      - rule: "Architecture decisions before implementation"
+      - rule: "Database schema before application code"
+      - rule: "Tests before implementation (TDD)"
+
+    shared_components:
+      - rule: "Common utilities library for all development agents"
+      - rule: "Code quality standards enforced consistently"
+      - rule: "Deployment pipeline shared"
+
+    best_practices:
+      - rule: "Code reviews required before merge"
+      - rule: "Security scans pass before deployment"
+      - rule: "Performance benchmarks met"
+
+  infrastructure_agent_rules:
+    dependency_sequence:
+      - rule: "Infrastructure provisioning before application deployment"
+      - rule: "Security hardening before production access"
+      - rule: "Monitoring setup before service launch"
+
+    shared_components:
+      - rule: "Infrastructure as code templates shared"
+      - rule: "Security policies consistent across environments"
+      - rule: "Monitoring configurations standardized"
+
+  operations_agent_rules:
+    dependency_sequence:
+      - rule: "Monitoring must be active before declaring services ready"
+      - rule: "Backup procedures tested before production"
+      - rule: "Incident response plans documented before launch"
+
+    shared_components:
+      - rule: "Incident response playbooks shared"
+      - rule: "Monitoring dashboards consistent"
+      - rule: "Backup and recovery procedures standardized"

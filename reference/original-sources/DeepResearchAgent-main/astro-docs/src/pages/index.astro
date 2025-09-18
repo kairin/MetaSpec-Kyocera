@@ -1,0 +1,200 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { Button } from '../components/ui/button';
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '../components/ui/card';
+import { Badge } from '../components/ui/badge';
+---
+
+<Layout title="DeepResearchAgent - AI Research Framework">
+	<!-- Import global styles -->
+	<style>
+		@import '../styles/globals.css';
+	</style>
+
+	<!-- Hero Section -->
+	<section class="relative overflow-hidden bg-gradient-to-r from-slate-900 via-purple-900 to-slate-900 py-24 sm:py-32">
+		<div class="absolute inset-0 bg-[url('/images/grid-background.svg')] bg-center [mask-image:linear-gradient(180deg,white,rgba(255,255,255,0))]"></div>
+		<div class="relative">
+			<div class="mx-auto max-w-7xl px-6 lg:px-8">
+				<div class="mx-auto max-w-2xl text-center">
+					<h1 class="text-4xl font-bold tracking-tight text-white sm:text-6xl">
+						DeepResearch<span class="text-purple-400">Agent</span>
+					</h1>
+					<p class="mt-6 text-lg leading-8 text-gray-300">
+						Hierarchical multi-agent framework for complex task solving and deep research. Advanced AI research framework with multi-provider model support.
+					</p>
+					<div class="mt-10 flex items-center justify-center gap-x-6">
+						<Button size="lg" asChild>
+							<a href="/quick-start">Get Started</a>
+						</Button>
+						<Button variant="emergency" size="lg" asChild>
+							<a href="/emergency-recovery">🚨 Emergency Recovery</a>
+						</Button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Features Section -->
+	<section class="py-24 sm:py-32">
+		<div class="mx-auto max-w-7xl px-6 lg:px-8">
+			<div class="mx-auto max-w-2xl text-center">
+				<Badge variant="secondary" class="mb-4">Key Features</Badge>
+				<h2 class="text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
+					Everything you need for AI research
+				</h2>
+				<p class="mt-4 text-lg text-muted-foreground">
+					From emergency recovery to advanced research workflows, DeepResearchAgent provides a complete toolkit for AI-powered research and development.
+				</p>
+			</div>
+
+			<div class="mx-auto mt-16 grid max-w-6xl grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+				<Card class="relative overflow-hidden transition-all hover:shadow-lg hover:scale-105">
+					<CardHeader>
+						<div class="flex items-center space-x-2">
+							<span class="text-2xl">🚨</span>
+							<Badge variant="emergency">Critical</Badge>
+						</div>
+						<CardTitle>Emergency Recovery</CardTitle>
+						<CardDescription>
+							Ultra-fast terminal recovery from mouse tracking floods. Comprehensive emergency procedures when your terminal becomes unresponsive.
+						</CardDescription>
+					</CardHeader>
+					<CardContent>
+						<div class="text-sm text-muted-foreground">
+							<div class="quick-reference">
+								<strong>Quick Fix:</strong><br/>
+								<code>./fix</code> or <code>python3 f.py</code>
+							</div>
+						</div>
+					</CardContent>
+				</Card>
+
+				<Card class="relative overflow-hidden transition-all hover:shadow-lg hover:scale-105">
+					<CardHeader>
+						<div class="flex items-center space-x-2">
+							<span class="text-2xl">📂</span>
+							<Badge variant="success">Organized</Badge>
+						</div>
+						<CardTitle>Clean File Organization</CardTitle>
+						<CardDescription>
+							Logical project structure with emergency tools organized for maximum accessibility while maintaining clean development workflows.
+						</CardDescription>
+					</CardHeader>
+					<CardContent>
+						<div class="file-tree text-xs">
+							tools/emergency/  # Emergency tools<br/>
+							tools/development/  # Dev utilities<br/>
+							scripts/  # Automation<br/>
+							docs/  # Documentation
+						</div>
+					</CardContent>
+				</Card>
+
+				<Card class="relative overflow-hidden transition-all hover:shadow-lg hover:scale-105">
+					<CardHeader>
+						<div class="flex items-center space-x-2">
+							<span class="text-2xl">🤖</span>
+							<Badge variant="default">Multi-Agent</Badge>
+						</div>
+						<CardTitle>Hierarchical AI System</CardTitle>
+						<CardDescription>
+							Central planning agent coordinates specialized execution agents using async, tool-based architecture.
+						</CardDescription>
+					</CardHeader>
+					<CardContent>
+						<div class="space-y-2 text-sm text-muted-foreground">
+							<div class="status-complete">83.39% GAIA benchmark</div>
+							<div class="status-complete">Multi-provider models</div>
+							<div class="status-complete">Async architecture</div>
+						</div>
+					</CardContent>
+				</Card>
+
+				<Card class="relative overflow-hidden transition-all hover:shadow-lg hover:scale-105">
+					<CardHeader>
+						<div class="flex items-center space-x-2">
+							<span class="text-2xl">⚙️</span>
+							<Badge variant="outline">Flexible</Badge>
+						</div>
+						<CardTitle>Multi-Provider Configuration</CardTitle>
+						<CardDescription>
+							Support for Claude Code, Gemini, HuggingFace models, and more. Flexible configuration for different use cases.
+						</CardDescription>
+					</CardHeader>
+					<CardContent>
+						<div class="space-y-1 text-sm text-muted-foreground">
+							<div>• Claude Code CLI</div>
+							<div>• Google Cloud Gemini</div>
+							<div>• HuggingFace Models</div>
+							<div>• Local-only setup</div>
+						</div>
+					</CardContent>
+				</Card>
+
+				<Card class="relative overflow-hidden transition-all hover:shadow-lg hover:scale-105">
+					<CardHeader>
+						<div class="flex items-center space-x-2">
+							<span class="text-2xl">🛠️</span>
+							<Badge variant="secondary">Developer-First</Badge>
+						</div>
+						<CardTitle>Development Tools</CardTitle>
+						<CardDescription>
+							Complete development workflow with local CI/CD, comprehensive testing, and debugging utilities.
+						</CardDescription>
+					</CardHeader>
+					<CardContent>
+						<div class="terminal text-xs">
+							uv run python tools/development/test_minimal_tui.py<br/>
+							uv run python tools/development/debug_terminal.py<br/>
+							./scripts/local_ci_cd.sh
+						</div>
+					</CardContent>
+				</Card>
+
+				<Card class="relative overflow-hidden transition-all hover:shadow-lg hover:scale-105">
+					<CardHeader>
+						<div class="flex items-center space-x-2">
+							<span class="text-2xl">🔒</span>
+							<Badge variant="outline">Secure</Badge>
+						</div>
+						<CardTitle>Security & MCP</CardTitle>
+						<CardDescription>
+							Sandboxed execution, isolated browsers, API monitoring, and dynamic tool discovery through MCP integration.
+						</CardDescription>
+					</CardHeader>
+					<CardContent>
+						<div class="space-y-2 text-sm text-muted-foreground">
+							<div class="status-complete">Python restrictions</div>
+							<div class="status-complete">Isolated browsers</div>
+							<div class="status-complete">API monitoring</div>
+						</div>
+					</CardContent>
+				</Card>
+			</div>
+		</div>
+	</section>
+
+	<!-- Call to Action Section -->
+	<section class="bg-gray-50 dark:bg-gray-900 py-24 sm:py-32">
+		<div class="mx-auto max-w-7xl px-6 lg:px-8">
+			<div class="mx-auto max-w-2xl text-center">
+				<h2 class="text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
+					Ready to get started?
+				</h2>
+				<p class="mt-4 text-lg text-muted-foreground">
+					Set up DeepResearchAgent in 5 minutes and start building advanced AI research workflows.
+				</p>
+				<div class="mt-8 flex items-center justify-center gap-x-6">
+					<Button size="lg" asChild>
+						<a href="/quick-start">Quick Start Guide</a>
+					</Button>
+					<Button variant="outline" size="lg" asChild>
+						<a href="/configuration">Configuration</a>
+					</Button>
+				</div>
+			</div>
+		</div>
+	</section>
+</Layout>

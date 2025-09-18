@@ -1,0 +1,19 @@
+{
+  "version": "1.0",
+  "last_updated": "2025-09-17T07:05:58.395001",
+  "projects": [
+    {
+      "id": "monthlykyocera_20250917_070558",
+      "name": "MonthlyKyocera",
+      "path": "/tmp/monthly-kyocera",
+      "description": "",
+      "status": "active",
+      "config_file": "configs/config_cli_fallback.py",
+      "created_at": "2025-09-17T07:05:58.394989",
+      "last_researched_at": null,
+      "research_sessions": [],
+      "tags": [],
+      "metadata": {}
+    }
+  ]
+}

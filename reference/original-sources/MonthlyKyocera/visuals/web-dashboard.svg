@@ -1,0 +1,83 @@
+<svg viewBox="0 0 900 700" xmlns="http://www.w3.org/2000/svg">
+  <!-- Browser Window -->
+  <rect x="50" y="50" width="800" height="600" fill="#ffffff" stroke="#ddd" stroke-width="2"/>
+  
+  <!-- Browser Chrome -->
+  <rect x="50" y="50" width="800" height="35" fill="#f5f5f5" stroke="#ddd"/>
+  <circle cx="70" cy="67" r="6" fill="#ff5f57"/>
+  <circle cx="90" cy="67" r="6" fill="#ffbd2e"/>
+  <circle cx="110" cy="67" r="6" fill="#28ca42"/>
+  <rect x="150" y="60" width="650" height="15" fill="#fff" stroke="#ddd" rx="7"/>
+  <text x="160" y="71" font-size="10" fill="#666">🔒 localhost:8000/dashboard</text>
+  
+  <!-- Navigation Bar -->
+  <rect x="50" y="85" width="800" height="60" fill="#7c3aed"/>
+  <text x="80" y="120" fill="white" font-size="20" font-weight="bold">Kyocera Meter Reader</text>
+  <text x="500" y="120" fill="white" font-size="14">Dashboard</text>
+  <text x="600" y="120" fill="white" font-size="14">Devices</text>
+  <text x="680" y="120" fill="white" font-size="14">Reports</text>
+  <text x="760" y="120" fill="white" font-size="14">Settings</text>
+  
+  <!-- Stats Cards -->
+  <rect x="80" y="170" width="180" height="100" fill="#f8f9fa" stroke="#dee2e6" rx="8"/>
+  <text x="100" y="200" font-size="12" fill="#6c757d">Total Devices</text>
+  <text x="100" y="235" font-size="28" font-weight="bold" fill="#212529">52</text>
+  <text x="100" y="255" font-size="11" fill="#28a745">↑ 2 this month</text>
+  
+  <rect x="280" y="170" width="180" height="100" fill="#f8f9fa" stroke="#dee2e6" rx="8"/>
+  <text x="300" y="200" font-size="12" fill="#6c757d">Readings Today</text>
+  <text x="300" y="235" font-size="28" font-weight="bold" fill="#212529">48</text>
+  <text x="300" y="255" font-size="11" fill="#28a745">95.8% success</text>
+  
+  <rect x="480" y="170" width="180" height="100" fill="#f8f9fa" stroke="#dee2e6" rx="8"/>
+  <text x="500" y="200" font-size="12" fill="#6c757d">Total Pages</text>
+  <text x="500" y="235" font-size="28" font-weight="bold" fill="#212529">1.2M</text>
+  <text x="500" y="255" font-size="11" fill="#6c757d">This month</text>
+  
+  <rect x="680" y="170" width="150" height="100" fill="#fff3cd" stroke="#ffc107" rx="8"/>
+  <text x="700" y="200" font-size="12" fill="#856404">Alerts</text>
+  <text x="700" y="235" font-size="28" font-weight="bold" fill="#856404">2</text>
+  <text x="700" y="255" font-size="11" fill="#856404">Need attention</text>
+  
+  <!-- Chart Area -->
+  <rect x="80" y="290" width="750" height="250" fill="#ffffff" stroke="#dee2e6" rx="8"/>
+  <text x="100" y="320" font-size="16" font-weight="bold">Monthly Usage Trends</text>
+  
+  <!-- Line Chart -->
+  <line x1="120" y1="500" x2="790" y2="500" stroke="#dee2e6" stroke-width="1"/>
+  <line x1="120" y1="350" x2="120" y2="500" stroke="#dee2e6" stroke-width="1"/>
+  
+  <!-- Chart Line -->
+  <polyline points="150,480 250,460 350,450 450,420 550,400 650,410 750,390" 
+            fill="none" stroke="#7c3aed" stroke-width="3"/>
+  
+  <!-- Data Points -->
+  <circle cx="150" cy="480" r="4" fill="#7c3aed"/>
+  <circle cx="250" cy="460" r="4" fill="#7c3aed"/>
+  <circle cx="350" cy="450" r="4" fill="#7c3aed"/>
+  <circle cx="450" cy="420" r="4" fill="#7c3aed"/>
+  <circle cx="550" cy="400" r="4" fill="#7c3aed"/>
+  <circle cx="650" cy="410" r="4" fill="#7c3aed"/>
+  <circle cx="750" cy="390" r="4" fill="#7c3aed"/>
+  
+  <!-- Month Labels -->
+  <text x="150" y="520" text-anchor="middle" font-size="10" fill="#6c757d">Mar</text>
+  <text x="250" y="520" text-anchor="middle" font-size="10" fill="#6c757d">Apr</text>
+  <text x="350" y="520" text-anchor="middle" font-size="10" fill="#6c757d">May</text>
+  <text x="450" y="520" text-anchor="middle" font-size="10" fill="#6c757d">Jun</text>
+  <text x="550" y="520" text-anchor="middle" font-size="10" fill="#6c757d">Jul</text>
+  <text x="650" y="520" text-anchor="middle" font-size="10" fill="#6c757d">Aug</text>
+  <text x="750" y="520" text-anchor="middle" font-size="10" fill="#6c757d">Sep</text>
+  
+  <!-- Recent Activity Table -->
+  <rect x="80" y="560" width="750" height="30" fill="#f8f9fa"/>
+  <text x="100" y="580" font-size="12" font-weight="bold">Device</text>
+  <text x="300" y="580" font-size="12" font-weight="bold">Last Reading</text>
+  <text x="500" y="580" font-size="12" font-weight="bold">Total Count</text>
+  <text x="700" y="580" font-size="12" font-weight="bold">Status</text>
+  
+  <text x="100" y="610" font-size="11">TASKalfa 5004i - W7F3605465</text>
+  <text x="300" y="610" font-size="11">2025-09-11 09:30</text>
+  <text x="500" y="610" font-size="11">234,567</text>
+  <text x="700" y="610" font-size="11" fill="#28a745">✓ Active</text>
+</svg>

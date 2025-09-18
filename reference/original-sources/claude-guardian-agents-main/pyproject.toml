@@ -1,0 +1,172 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "claude-guardian-agents"
+version = "2.5.1"
+description = "Guardian Agents - Intelligent agent orchestration and project management system"
+readme = "README.md"
+requires-python = ">=3.13"
+license = { text = "MIT" }
+authors = [
+    { name = "Guardian Agents Team" },
+]
+keywords = [
+    "agents",
+    "automation",
+    "project-management",
+    "claude",
+    "ai-orchestration"
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: System :: Systems Administration",
+]
+dependencies = [
+    "pyyaml>=6.0",
+    "requests>=2.28.0",
+    "rich>=13.0.0",
+    "click>=8.0.0",
+    "python-dateutil>=2.8.0",
+    "pathlib-compat>=1.0.0; python_version<'3.4'",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0",
+    "pytest-cov>=4.0.0",
+    "black>=23.0.0",
+    "ruff>=0.1.0",
+    "mypy>=1.0.0",
+    "pre-commit>=3.0.0",
+]
+docs = [
+    "mkdocs>=1.4.0",
+    "mkdocs-material>=9.0.0",
+    "mkdocs-mermaid2-plugin>=1.0.0",
+]
+validation = [
+    "jsonschema>=4.0.0",
+    "openapi-spec-validator>=0.6.0",
+    "yamllint>=1.32.0",
+    "python-frontmatter>=1.0.0",
+    "types-PyYAML",
+    "types-requests",
+    "types-python-dateutil",
+    "bandit[toml]",
+    "pbr",
+]
+
+[project.urls]
+Homepage = "https://github.com/user/claude-guardian-agents"
+Documentation = "https://github.com/user/claude-guardian-agents#readme"
+Repository = "https://github.com/user/claude-guardian-agents.git"
+Issues = "https://github.com/user/claude-guardian-agents/issues"
+
+[project.scripts]
+guardian-track = "scripts.track_progress:main"
+guardian-reports = "scripts.generate_reports:main"
+guardian-validate = "scripts.validate_gpm:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src"]
+
+[tool.black]
+target-version = ["py312"]
+line-length = 88
+extend-exclude = '''
+/(
+  # directories
+  \.eggs
+  | \.git
+  | \.hg
+  | \.mypy_cache
+  | \.tox
+  | \.venv
+  | build
+  | dist
+  | node_modules
+)/
+'''
+
+[tool.ruff]
+target-version = "py312"
+line-length = 88
+extend-exclude = [
+    "docs",
+    ".eggs",
+    ".git",
+    ".mypy_cache",
+    ".ruff_cache",
+    ".tox",
+    ".venv",
+    "__pypackages__",
+    "build",
+    "dist",
+    "node_modules",
+]
+
+[tool.ruff.lint]
+select = [
+    "E",   # pycodestyle errors
+    "W",   # pycodestyle warnings
+    "F",   # pyflakes
+    "I",   # isort
+    "B",   # flake8-bugbear
+    "C4",  # flake8-comprehensions
+    "UP",  # pyupgrade
+]
+ignore = [
+    "E501",  # line too long, handled by black
+    "B008",  # do not perform function calls in argument defaults
+]
+
+[tool.ruff.lint.per-file-ignores]
+"__init__.py" = ["F401"]
+
+[tool.mypy]
+python_version = "3.13"
+
+[tool.bandit]
+exclude_dirs = ["tests", ".venv"]
+skips = ["B101"]
+testpaths = ["tests"]
+python_files = ["test_*.py", "*_test.py"]
+python_classes = ["Test*"]
+python_functions = ["test_*"]
+addopts = [
+    "--cov=src",
+    "--cov-report=term-missing",
+    "--cov-report=html",
+    "--cov-fail-under=80",
+]
+
+[tool.coverage.run]
+source = ["src"]
+omit = [
+    "*/tests/*",
+    "*/test_*",
+    "*/__pycache__/*",
+    ".venv/*",
+]
+
+[tool.coverage.report]
+exclude_lines = [
+    "pragma: no cover",
+    "def __repr__",
+    "if self.debug:",
+    "if settings.DEBUG",
+    "raise AssertionError",
+    "raise NotImplementedError",
+    "if 0:",
+    "if __name__ == .__main__.:",
+    "class .*\\bProtocol\\):",
+    "@(abc\\.)?abstractmethod",
+]

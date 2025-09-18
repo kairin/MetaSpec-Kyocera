@@ -1,0 +1,205 @@
+# CLI Interface Contract
+# Kyocera Meter Reading Management System
+
+name: meter-cli
+version: 1.0.0
+description: Process meter reading emails from Kyocera devices
+
+commands:
+  process:
+    description: Process meter reading emails
+    usage: meter-cli process [options]
+    options:
+      --input:
+        type: string
+        required: false
+        default: ./emails/pending
+        description: Input directory containing .eml files
+      --output:
+        type: string
+        required: false
+        default: ./devices
+        description: Output directory for processed files
+      --dry-run:
+        type: boolean
+        required: false
+        default: false
+        description: Simulate processing without making changes
+      --verbose:
+        type: boolean
+        required: false
+        default: false
+        description: Enable verbose logging
+      --format:
+        type: string
+        required: false
+        default: text
+        choices: [text, json]
+        description: Output format
+    returns:
+      success:
+        code: 0
+        output: Processing summary
+      partial:
+        code: 1
+        output: Some files failed processing
+      error:
+        code: 2
+        output: Critical error occurred
+
+  validate:
+    description: Validate folder structure integrity
+    usage: meter-cli validate [options]
+    options:
+      --path:
+        type: string
+        required: false
+        default: ./devices
+        description: Root path to validate
+      --repair:
+        type: boolean
+        required: false
+        default: false
+        description: Attempt to repair issues
+      --format:
+        type: string
+        required: false
+        default: text
+        choices: [text, json]
+        description: Output format
+    returns:
+      success:
+        code: 0
+        output: Validation passed
+      warning:
+        code: 1
+        output: Issues found (fixed if --repair)
+      error:
+        code: 2
+        output: Critical issues that cannot be auto-fixed
+
+  report:
+    description: Generate summary report
+    usage: meter-cli report [options]
+    options:
+      --start-date:
+        type: date
+        required: false
+        description: Start date (YYYY-MM-DD)
+      --end-date:
+        type: date
+        required: false
+        description: End date (YYYY-MM-DD)
+      --device:
+        type: string
+        required: false
+        description: Filter by device serial
+      --output:
+        type: string
+        required: false
+        default: ./reports/SUMMARY.md
+        description: Output file path
+      --format:
+        type: string
+        required: false
+        default: markdown
+        choices: [markdown, json, csv]
+        description: Report format
+    returns:
+      success:
+        code: 0
+        output: Report generated successfully
+
+  parse:
+    description: Parse single email file (debug)
+    usage: meter-cli parse <file>
+    arguments:
+      file:
+        type: string
+        required: true
+        description: Path to .eml file
+    options:
+      --format:
+        type: string
+        required: false
+        default: text
+        choices: [text, json]
+        description: Output format
+    returns:
+      success:
+        code: 0
+        output: Parsed email data
+
+  list:
+    description: List devices and readings
+    usage: meter-cli list [options]
+    options:
+      --type:
+        type: string
+        required: false
+        default: devices
+        choices: [devices, readings, all]
+        description: What to list
+      --limit:
+        type: integer
+        required: false
+        default: 50
+        description: Maximum items to show
+      --format:
+        type: string
+        required: false
+        default: table
+        choices: [table, json, csv]
+        description: Output format
+    returns:
+      success:
+        code: 0
+        output: Formatted list
+
+global_options:
+  --help:
+    type: boolean
+    description: Show help message
+  --version:
+    type: boolean
+    description: Show version information
+  --config:
+    type: string
+    description: Path to configuration file
+  --log-level:
+    type: string
+    default: INFO
+    choices: [DEBUG, INFO, WARNING, ERROR]
+    description: Logging level
+
+input_formats:
+  email:
+    extension: .eml
+    mime_type: message/rfc822
+    encoding: UTF-8 or ASCII
+
+output_formats:
+  pdf:
+    extension: .pdf
+    mime_type: application/pdf
+  text:
+    extension: .txt
+    mime_type: text/plain
+    encoding: UTF-8
+  json:
+    extension: .json
+    mime_type: application/json
+    encoding: UTF-8
+
+error_codes:
+  0: Success
+  1: Partial success (some operations failed)
+  2: General error
+  3: Invalid arguments
+  4: File not found
+  5: Permission denied
+  6: Invalid email format
+  7: Device not found
+  8: Duplicate reading
+  9: Storage full
+  10: Network error (future use)

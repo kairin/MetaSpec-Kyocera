@@ -1,0 +1,36 @@
+name: Auto Merge Docs Consolidations
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+    branches: [ main ]
+
+jobs:
+  automerge:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Add comment and merge
+        uses: actions/github-script@v6
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            const pr = context.payload.pull_request;
+            if (!pr) {
+              core.info('No pull request payload');
+              return;
+            }
+            const title = pr.title || '';
+            if (!title.includes('docs: consolidate')) {
+              core.info('PR title does not match consolidation pattern; exiting.');
+              return;
+            }
+            const owner = context.repo.owner;
+            const repo = context.repo.repo;
+            const number = pr.number;
+            // Post a comment
+            await github.issues.createComment({ owner, repo, issue_number: number, body: 'Auto-merge workflow: merging consolidation PR per repository policy. Preserving branch.' });
+            // Attempt to merge using merge commit
+            await github.pulls.merge({ owner, repo, pull_number: number, merge_method: 'merge' });

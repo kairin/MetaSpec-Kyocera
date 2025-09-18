@@ -1,0 +1,62 @@
+---
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
+import { Badge } from '@/components/ui/badge'
+
+interface Props {
+  title: string;
+  status: 'planning' | 'in-progress' | 'completed' | 'pending';
+  description?: string;
+  className?: string;
+}
+
+const { title, status, description, className = '' } = Astro.props;
+
+// Status color mapping
+const statusVariants = {
+  'completed': 'default',
+  'in-progress': 'secondary',
+  'planning': 'outline',
+  'pending': 'outline'
+} as const;
+
+const statusEmojis = {
+  'completed': '✅',
+  'in-progress': '🔄',
+  'planning': '📋',
+  'pending': '⏳'
+} as const;
+---
+
+<Card className={`mb-6 transition-all hover:shadow-md ${className}`}>
+  <CardHeader>
+    <div class="flex items-center justify-between">
+      <CardTitle class="flex items-center gap-2">
+        <span class="text-lg">{statusEmojis[status]}</span>
+        {title}
+      </CardTitle>
+      <Badge variant={statusVariants[status]} class="capitalize">
+        {status.replace('-', ' ')}
+      </Badge>
+    </div>
+    {description && (
+      <p class="text-sm text-muted-foreground mt-2">
+        {description}
+      </p>
+    )}
+  </CardHeader>
+  <CardContent>
+    <slot />
+  </CardContent>
+</Card>
+
+<style>
+  /* Additional styling for documentation context */
+  .documentation-card {
+    @apply border-border/50 bg-card/50 backdrop-blur-sm;
+  }
+
+  /* Dark mode optimizations */
+  .dark .documentation-card {
+    @apply border-border/30 bg-card/30;
+  }
+</style>

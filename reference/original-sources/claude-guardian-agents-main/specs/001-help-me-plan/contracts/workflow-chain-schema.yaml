@@ -1,0 +1,288 @@
+# Workflow Chain Interface Contract
+# Defines how agents communicate and chain together
+
+openapi: 3.0.3
+info:
+  title: Workflow Chain Interface Contract
+  version: 1.0.0
+  description: Contract for agent-to-agent communication and chaining
+
+paths:
+  /agent/invoke:
+    post:
+      summary: Invoke an agent in a workflow chain
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/AgentInvocationRequest'
+      responses:
+        '200':
+          description: Successful agent invocation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/AgentInvocationResponse'
+        '400':
+          description: Invalid request or agent configuration
+        '500':
+          description: Agent execution error
+
+  /agent/handoff:
+    post:
+      summary: Hand off task to next agent in chain
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/HandoffRequest'
+      responses:
+        '200':
+          description: Successful handoff
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HandoffResponse'
+
+components:
+  schemas:
+    AgentInvocationRequest:
+      type: object
+      required:
+        - agent_id
+        - task_description
+        - context
+      properties:
+        agent_id:
+          type: string
+          pattern: '^[0-9]{3}$'
+          description: Three-digit agent identifier
+          example: "001"
+        task_description:
+          type: string
+          minLength: 10
+          maxLength: 1000
+          description: Task to be performed
+        context:
+          $ref: '#/components/schemas/TaskContext'
+        priority:
+          type: string
+          enum:
+            - low
+            - normal
+            - high
+            - critical
+          default: normal
+        timeout:
+          type: integer
+          minimum: 5
+          maximum: 300
+          description: Maximum execution time in seconds
+
+    TaskContext:
+      type: object
+      properties:
+        user_request:
+          type: string
+          description: Original user request
+        previous_agent:
+          type: string
+          description: ID of previous agent in chain
+        conversation_history:
+          type: array
+          items:
+            $ref: '#/components/schemas/ConversationEntry'
+        metadata:
+          type: object
+          description: Additional context data
+        performance_requirements:
+          $ref: '#/components/schemas/PerformanceRequirements'
+
+    ConversationEntry:
+      type: object
+      required:
+        - agent_id
+        - timestamp
+        - action
+        - result
+      properties:
+        agent_id:
+          type: string
+        timestamp:
+          type: string
+          format: date-time
+        action:
+          type: string
+        result:
+          type: string
+        metadata:
+          type: object
+
+    PerformanceRequirements:
+      type: object
+      properties:
+        max_response_time:
+          type: integer
+          description: Maximum acceptable response time in seconds
+        quality_threshold:
+          type: number
+          minimum: 0.0
+          maximum: 1.0
+          description: Minimum quality requirement
+        cost_constraint:
+          type: number
+          description: Maximum cost per task execution
+
+    AgentInvocationResponse:
+      type: object
+      required:
+        - agent_id
+        - status
+        - result
+        - performance_metrics
+      properties:
+        agent_id:
+          type: string
+        status:
+          type: string
+          enum:
+            - success
+            - partial_success
+            - failure
+            - timeout
+        result:
+          type: string
+          description: Agent output or result
+        next_agent:
+          type: string
+          description: Recommended next agent ID
+        handoff_context:
+          type: object
+          description: Context to pass to next agent
+        performance_metrics:
+          $ref: '#/components/schemas/PerformanceMetrics'
+        errors:
+          type: array
+          items:
+            $ref: '#/components/schemas/ExecutionError'
+
+    HandoffRequest:
+      type: object
+      required:
+        - from_agent
+        - to_agent
+        - task_context
+      properties:
+        from_agent:
+          type: string
+          description: Agent initiating handoff
+        to_agent:
+          type: string
+          description: Target agent for handoff
+        task_context:
+          $ref: '#/components/schemas/TaskContext'
+        handoff_reason:
+          type: string
+          enum:
+            - sequential_workflow
+            - conditional_routing
+            - capability_boundary
+            - error_recovery
+            - user_request
+        completion_status:
+          type: string
+          enum:
+            - completed
+            - partial
+            - failed
+            - delegated
+
+    HandoffResponse:
+      type: object
+      required:
+        - handoff_id
+        - status
+        - target_agent_confirmation
+      properties:
+        handoff_id:
+          type: string
+          description: Unique handoff transaction ID
+        status:
+          type: string
+          enum:
+            - accepted
+            - rejected
+            - deferred
+        target_agent_confirmation:
+          type: boolean
+          description: Whether target agent accepted the task
+        estimated_completion:
+          type: string
+          format: date-time
+          description: Expected completion time
+        alternative_agents:
+          type: array
+          items:
+            type: string
+          description: Alternative agents if handoff rejected
+
+    PerformanceMetrics:
+      type: object
+      required:
+        - execution_time
+        - model_used
+        - token_count
+      properties:
+        execution_time:
+          type: number
+          description: Actual execution time in seconds
+        model_used:
+          type: string
+          enum:
+            - claude-3-5-haiku
+            - claude-3-5-sonnet
+        token_count:
+          type: object
+          properties:
+            input_tokens:
+              type: integer
+            output_tokens:
+              type: integer
+        cost:
+          type: number
+          description: Execution cost in USD
+        quality_score:
+          type: number
+          minimum: 0.0
+          maximum: 1.0
+          description: Self-assessed quality score
+
+    ExecutionError:
+      type: object
+      required:
+        - error_code
+        - error_message
+        - timestamp
+      properties:
+        error_code:
+          type: string
+          enum:
+            - TIMEOUT
+            - INVALID_INPUT
+            - TOOL_ERROR
+            - MODEL_ERROR
+            - CAPABILITY_EXCEEDED
+            - RESOURCE_LIMIT
+        error_message:
+          type: string
+        timestamp:
+          type: string
+          format: date-time
+        recovery_suggestion:
+          type: string
+          description: Suggested recovery action
+        escalation_required:
+          type: boolean
+          description: Whether error requires human intervention

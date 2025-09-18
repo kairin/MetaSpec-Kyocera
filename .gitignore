@@ -1,0 +1,200 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+.venv/
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage directory used by tools like istanbul
+coverage/
+
+# nyc test coverage
+.nyc_output
+
+# Grunt intermediate storage
+.grunt
+
+# Bower dependency directory
+bower_components
+
+# node_modules
+node_modules/
+web/node_modules/
+
+# Optional npm cache directory
+.npm
+
+# Optional REPL history
+.node_repl_history
+
+# Output of 'npm pack'
+*.tgz
+
+# Yarn Integrity file
+.yarn-integrity
+
+# dotenv environment variables file
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# parcel-bundler cache
+.cache
+.parcel-cache
+
+# next.js build output
+.next
+
+# nuxt.js build output
+.nuxt
+
+# vuepress build output
+.vuepress/dist
+
+# Serverless directories
+.serverless
+
+# DuckDB database files (keep in data/ but ignore for git)
+*.duckdb
+*.duckdb.wal
+
+# Data directories (these should be backed up separately)
+data/duckdb/
+data/archives/
+data/backups/
+data/web-dist/
+
+# Email processing directories
+emails/pending/
+emails/processed/
+emails/quarantine/
+
+# Test outputs
+test_output/
+*.pytest_cache/
+
+# Temporary files
+*.tmp
+*.temp
+temp/
+tmp/
+
+# Build outputs
+web/dist/
+docs/
+build/
+
+# Package manager lock files (keep package.json but ignore locks for flexibility)
+package-lock.json
+yarn.lock
+
+# uv lock file (can be regenerated)
+uv.lock
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# pyenv
+.python-version
+
+# celery beat schedule file
+celerybeat-schedule
+
+# SageMath parsed files
+*.sage.py
+
+# Environments
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Spyder project settings
+.spyderproject
+.spyproject
+
+# Rope project settings
+.ropeproject
+
+# mkdocs documentation
+/site
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# PyCharm
+.idea/
+
+# Archive files that are too large
+*.zip
+*.tar.gz
+*.rar
+*.7z
+
+# Sensitive data
+secrets/
+private/
+confidential/
+
+# System monitoring
+monitors/
+performance/

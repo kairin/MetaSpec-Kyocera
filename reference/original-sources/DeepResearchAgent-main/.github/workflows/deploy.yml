@@ -1,0 +1,67 @@
+name: Deploy to GitHub Pages
+
+# 🚫 DISABLED: All deployment runs locally to avoid charges
+# Run locally with: ./scripts/build_and_deploy_docs.sh
+# See AGENTS.md for local development workflow
+
+on:
+  # ❌ DISABLED - Never run online to prevent charges
+  # push:
+  #   branches: [ main ]
+  # pull_request:
+  #   branches: [ main ]
+  # workflow_dispatch:  # Manual trigger disabled
+
+  # This workflow is intentionally disabled
+  workflow_call:  # Only callable from other workflows (none exist)
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v4
+      
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '20'
+        
+    - name: Install dependencies
+      run: |
+        cd astro-docs
+        npm install
+        
+    - name: Build Astro site
+      run: |
+        cd astro-docs
+        npm run build
+      
+    - name: Setup Pages
+      uses: actions/configure-pages@v1
+      
+    - name: Upload artifact
+      uses: actions/upload-pages-artifact@v3
+      with:
+        path: './astro-docs/dist'
+
+  deploy:
+    runs-on: ubuntu-latest
+    needs: build
+    if: github.ref == 'refs/heads/main'
+    steps:
+    - name: Deploy to GitHub Pages
+      id: deployment
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./astro-docs/dist

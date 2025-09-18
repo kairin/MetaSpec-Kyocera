@@ -1,0 +1,222 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '../components/ui/card';
+import { Badge } from '../components/ui/badge';
+import { Button } from '../components/ui/button';
+---
+
+<Layout title="Quick Start - DeepResearchAgent">
+	<style>
+		@import '../styles/globals.css';
+	</style>
+
+	<div class="container mx-auto px-6 py-12">
+		<div class="mx-auto max-w-4xl">
+			<!-- Header -->
+			<div class="text-center mb-12">
+				<Badge variant="secondary" class="mb-4">Getting Started</Badge>
+				<h1 class="text-4xl font-bold tracking-tight mb-4">Quick Start Guide</h1>
+				<p class="text-xl text-muted-foreground">
+					Get DeepResearchAgent running in 5 minutes with this streamlined setup guide.
+				</p>
+			</div>
+
+			<!-- Prerequisites -->
+			<Card class="mb-8">
+				<CardHeader>
+					<CardTitle class="flex items-center space-x-2">
+						<span>📋</span>
+						<span>Prerequisites</span>
+					</CardTitle>
+					<CardDescription>
+						What you'll need before getting started
+					</CardDescription>
+				</CardHeader>
+				<CardContent>
+					<ul class="space-y-2 text-sm">
+						<li class="flex items-center space-x-2">
+							<Badge variant="outline" class="text-xs">Required</Badge>
+							<span>Python 3.13 (recommended)</span>
+						</li>
+						<li class="flex items-center space-x-2">
+							<Badge variant="outline" class="text-xs">Required</Badge>
+							<span>Git for repository management</span>
+						</li>
+						<li class="flex items-center space-x-2">
+							<Badge variant="outline" class="text-xs">Required</Badge>
+							<span>Terminal access (proper TTY environment)</span>
+						</li>
+					</ul>
+				</CardContent>
+			</Card>
+
+			<!-- Installation Steps -->
+			<div class="space-y-8">
+				<!-- Step 1 -->
+				<Card>
+					<CardHeader>
+						<CardTitle class="flex items-center space-x-2">
+							<Badge variant="default">1</Badge>
+							<span>Install uv Package Manager</span>
+						</CardTitle>
+						<CardDescription>
+							uv is a fast Python package installer and resolver
+						</CardDescription>
+					</CardHeader>
+					<CardContent>
+						<div class="code-block">
+							<pre><code>curl -LsSf https://astral.sh/uv/install.sh | sh</code></pre>
+						</div>
+					</CardContent>
+				</Card>
+
+				<!-- Step 2 -->
+				<Card>
+					<CardHeader>
+						<CardTitle class="flex items-center space-x-2">
+							<Badge variant="default">2</Badge>
+							<span>Clone and Setup</span>
+						</CardTitle>
+						<CardDescription>
+							Get the repository and install dependencies
+						</CardDescription>
+					</CardHeader>
+					<CardContent>
+						<div class="space-y-4">
+							<div class="code-block">
+								<pre><code>git clone &lt;repository-url&gt;
+cd DeepResearchAgent
+
+# Install dependencies
+uv sync --all-extras
+
+# Install browser dependencies
+uv run playwright install chromium --with-deps
+
+# Setup environment
+cp .env.template .env
+# Edit .env with your API keys if needed</code></pre>
+							</div>
+						</div>
+					</CardContent>
+				</Card>
+
+				<!-- Step 3 -->
+				<Card>
+					<CardHeader>
+						<CardTitle class="flex items-center space-x-2">
+							<Badge variant="success">3</Badge>
+							<span>Running the System</span>
+						</CardTitle>
+						<CardDescription>
+							Choose your preferred mode to run DeepResearchAgent
+						</CardDescription>
+					</CardHeader>
+					<CardContent>
+						<div class="space-y-6">
+							<!-- CLI Mode -->
+							<div>
+								<h4 class="font-semibold mb-2 flex items-center space-x-2">
+									<Badge variant="secondary">Recommended</Badge>
+									<span>CLI Mode</span>
+								</h4>
+								<div class="code-block mb-2">
+									<pre><code># CLI-optimized for Claude Code and Gemini
+uv run python main.py --config configs/config_cli_fallback.py
+
+# With custom task
+uv run python main.py --config configs/config_cli_fallback.py --task "Your research task"</code></pre>
+								</div>
+							</div>
+
+							<!-- TUI Mode -->
+							<div>
+								<h4 class="font-semibold mb-2">TUI Mode (Interactive Interface)</h4>
+								<div class="code-block mb-2">
+									<pre><code># Interactive menu system
+uv run python main.py --tui</code></pre>
+								</div>
+								<div class="bg-yellow-50 dark:bg-yellow-900/20 border border-yellow-200 dark:border-yellow-800 rounded-lg p-3 text-sm">
+									<strong>Note:</strong> TUI requires a proper terminal environment. If you see escape sequences, use CLI mode instead.
+								</div>
+							</div>
+
+							<!-- Single Agent Mode -->
+							<div>
+								<h4 class="font-semibold mb-2">Single Agent Mode</h4>
+								<div class="code-block">
+									<pre><code># Run individual agents
+uv run python examples/run_general.py</code></pre>
+								</div>
+							</div>
+						</div>
+					</CardContent>
+				</Card>
+			</div>
+
+			<!-- External Project Analysis -->
+			<Card class="mt-8">
+				<CardHeader>
+					<CardTitle class="flex items-center space-x-2">
+						<span>🔗</span>
+						<span>External Project Analysis</span>
+					</CardTitle>
+					<CardDescription>
+						Use DeepResearchAgent on any external project
+					</CardDescription>
+				</CardHeader>
+				<CardContent>
+					<div class="code-block">
+						<pre><code># Create project-specific config
+cp configs/config_cli_fallback.py configs/config_my_project.py
+
+# Analyze external codebase
+uv run python main.py --config configs/config_my_project.py \
+    --task "Analyze codebase in /path/to/external_project"</code></pre>
+					</div>
+				</CardContent>
+			</Card>
+
+			<!-- Next Steps -->
+			<Card class="mt-8">
+				<CardHeader>
+					<CardTitle class="flex items-center space-x-2">
+						<span>🚀</span>
+						<span>Next Steps</span>
+					</CardTitle>
+					<CardDescription>
+						Continue your journey with DeepResearchAgent
+					</CardDescription>
+				</CardHeader>
+				<CardContent>
+					<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+						<Button variant="outline" asChild class="h-auto p-4">
+							<a href="/file-organization" class="flex flex-col items-start space-y-2">
+								<span class="font-semibold">📂 File Organization</span>
+								<span class="text-sm text-muted-foreground">Learn the project structure</span>
+							</a>
+						</Button>
+						<Button variant="outline" asChild class="h-auto p-4">
+							<a href="/configuration" class="flex flex-col items-start space-y-2">
+								<span class="font-semibold">⚙️ Configuration Guide</span>
+								<span class="text-sm text-muted-foreground">Set up models and providers</span>
+							</a>
+						</Button>
+						<Button variant="outline" asChild class="h-auto p-4">
+							<a href="/emergency-recovery" class="flex flex-col items-start space-y-2">
+								<span class="font-semibold">🚨 Emergency Recovery</span>
+								<span class="text-sm text-muted-foreground">Terminal troubleshooting</span>
+							</a>
+						</Button>
+						<Button variant="outline" asChild class="h-auto p-4">
+							<a href="/development" class="flex flex-col items-start space-y-2">
+								<span class="font-semibold">🛠️ Development Guide</span>
+								<span class="text-sm text-muted-foreground">Contributing workflows</span>
+							</a>
+						</Button>
+					</div>
+				</CardContent>
+			</Card>
+		</div>
+	</div>
+</Layout>

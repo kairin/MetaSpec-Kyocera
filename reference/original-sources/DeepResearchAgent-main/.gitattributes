@@ -1,0 +1,38 @@
+# Git attributes for protecting fork-specific changes
+
+# Critical migration files - use our version in merges
+pyproject.toml merge=ours
+Makefile merge=ours
+uv.lock merge=ours
+
+# Fork-specific documentation - use our version
+CHANGELOG.md merge=ours
+FORK_MANAGEMENT.md merge=ours
+
+# Scripts directory - use our version
+scripts/ merge=ours
+
+# Configuration files that may have migration-specific changes
+configs/base.py merge=ours
+configs/config_*.py merge=ours
+
+# Source files with circular import fixes
+src/tools/auto_browser.py merge=ours
+src/tools/deep_analyzer.py merge=ours
+src/tools/archive_searcher.py merge=ours
+src/tools/planning.py merge=ours
+src/tools/image_generator.py merge=ours
+src/tools/oai_deep_research.py merge=ours
+src/tools/custom_browser.py merge=ours
+src/tools/video_generator.py merge=ours
+src/tools/web_searcher.py merge=ours
+src/tools/deep_researcher.py merge=ours
+src/tools/file_reader.py merge=ours
+src/tools/web_fetcher.py merge=ours
+src/tools/final_answer.py merge=ours
+src/tools/python_interpreter.py merge=ours
+
+# markitdown API fixes
+src/utils/url_utils.py merge=ours
+src/tools/markdown/mdconvert.py merge=ours
+src/utils/agent_types.py merge=ours

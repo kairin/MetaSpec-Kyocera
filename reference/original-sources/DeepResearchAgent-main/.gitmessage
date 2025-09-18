@@ -1,0 +1,9 @@
+Merge upstream changes while preserving uv migration
+
+# Migration checklist:
+# - [ ] Validated with: uv run python scripts/validate_migration.py
+# - [ ] Tested core imports work
+# - [ ] Verified uv commands still work
+# - [ ] Checked for new Poetry references to convert
+# - [ ] Updated any new installation instructions to use uv
+

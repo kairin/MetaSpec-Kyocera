@@ -1,0 +1,1 @@
+../../.guardian/4-thinktank/THINK-TANK-DESIGN.md
