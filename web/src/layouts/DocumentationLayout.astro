@@ -6,7 +6,7 @@ export interface Props {
   description?: string;
 }
 
-const { title, description = "MetaSpec-Kyocera Documentation" } = Astro.props;
+const { title = "MetaSpec-Kyocera", description = "MetaSpec-Kyocera Documentation" } = Astro.props;
 ---
 
 <!DOCTYPE html>
@@ -26,6 +26,7 @@ const { title, description = "MetaSpec-Kyocera Documentation" } = Astro.props;
 
     <!-- JetBrains Mono for code -->
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
 </head>
 <body class="bg-background text-foreground min-h-screen antialiased">
     <div class="flex">
@@ -48,37 +49,37 @@ const { title, description = "MetaSpec-Kyocera Documentation" } = Astro.props;
                 <!-- Planning Section -->
                 <div class="mb-6">
                     <div class="nav-section-title">Planning</div>
-                    <a href="/MetaSpec-Kyocera/docs/planning/system-planning/" class="nav-link">System Planning</a>
+                    <a href="/MetaSpec-Kyocera/docs/planning/SYSTEM_PLANNING/" class="nav-link">System Planning</a>
                 </div>
 
                 <!-- Implementation Section -->
                 <div class="mb-6">
                     <div class="nav-section-title">Implementation</div>
-                    <a href="/MetaSpec-Kyocera/docs/implementation/phase-1-foundation/" class="nav-link">Phase 1 Foundation</a>
+                    <a href="/MetaSpec-Kyocera/docs/implementation/PHASE_1_FOUNDATION/" class="nav-link">Phase 1 Foundation</a>
                 </div>
 
                 <!-- Architecture Section -->
                 <div class="mb-6">
                     <div class="nav-section-title">Architecture</div>
-                    <a href="/MetaSpec-Kyocera/docs/architecture/web-interface-integration/" class="nav-link">Web Interface</a>
+                    <a href="/MetaSpec-Kyocera/docs/architecture/WEB_INTERFACE_INTEGRATION/" class="nav-link">Web Interface</a>
                 </div>
 
                 <!-- User Guides Section -->
                 <div class="mb-6">
                     <div class="nav-section-title">User Guides</div>
-                    <a href="/MetaSpec-Kyocera/docs/user-guides/getting-started/" class="nav-link">Getting Started</a>
+                    <a href="/MetaSpec-Kyocera/docs/user-guides/GETTING_STARTED/" class="nav-link">Getting Started</a>
                 </div>
 
                 <!-- Development Section -->
                 <div class="mb-6">
                     <div class="nav-section-title">Development</div>
-                    <a href="/MetaSpec-Kyocera/docs/development/development-setup/" class="nav-link">Development Setup</a>
+                    <a href="/MetaSpec-Kyocera/docs/development/DEVELOPMENT_SETUP/" class="nav-link">Development Setup</a>
                 </div>
 
                 <!-- API Reference Section -->
                 <div class="mb-6">
                     <div class="nav-section-title">API Reference</div>
-                    <a href="/MetaSpec-Kyocera/docs/api/api-overview/" class="nav-link">API Overview</a>
+                    <a href="/MetaSpec-Kyocera/docs/api/API_OVERVIEW/" class="nav-link">API Overview</a>
                 </div>
             </div>
         </nav>
