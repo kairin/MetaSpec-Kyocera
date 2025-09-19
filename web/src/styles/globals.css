@@ -1,3 +1,11 @@
+/* Import fonts first */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root {
   --background: 0 0% 100%;
   --foreground: 222.2 84% 4.9%;
@@ -41,4 +49,24 @@
   --border: 217.2 32.6% 17.5%;
   --input: 217.2 32.6% 17.5%;
   --ring: 224.3 76.3% 94.1%;
+}
+
+@layer components {
+  /* Navigation styles */
+  .nav-section-title {
+    @apply text-sm font-semibold text-muted-foreground uppercase tracking-wider mb-3 mt-6 first:mt-0;
+  }
+
+  .nav-link {
+    @apply block py-2 px-3 text-sm text-muted-foreground hover:text-foreground hover:bg-secondary rounded-md transition-all duration-200 border-l-2 border-transparent hover:border-primary/20;
+  }
+
+  .nav-link.active {
+    @apply text-foreground bg-secondary border-primary font-medium;
+  }
+
+  /* Enhanced scroll-to-top button */
+  #scroll-to-top {
+    @apply fixed bottom-4 right-4 bg-primary hover:bg-primary/90 text-primary-foreground p-3 rounded-full shadow-lg transition-all duration-200 z-50;
+  }
 }

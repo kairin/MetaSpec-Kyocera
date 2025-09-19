@@ -7,7 +7,7 @@ import mdx from '@astrojs/mdx';
 export default defineConfig({
   integrations: [
     tailwind({
-      applyBaseStyles: true, // Let TailwindCSS handle base styles
+      applyBaseStyles: false, // We handle base styles in globals.css
     }),
     react(),
     mdx()
@@ -20,7 +20,8 @@ export default defineConfig({
   },
   build: {
     outDir: 'dist',
-    assets: '_astro'
+    assets: '_astro',
+    inlineStylesheets: 'never', // Ensure CSS is external for better caching
   },
   output: 'static', // Static site generation for zero-cost GitHub Pages hosting
   markdown: {
@@ -33,6 +34,9 @@ export default defineConfig({
   vite: {
     define: {
       __DATE__: `"${new Date().toISOString()}"`,
+    },
+    build: {
+      assetsInlineLimit: 0, // Force all assets to be external
     },
   },
 });

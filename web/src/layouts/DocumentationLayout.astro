@@ -32,8 +32,8 @@ const { title, description = "MetaSpec-Kyocera Documentation" } = Astro.props;
         <!-- Sidebar Navigation -->
         <nav class="w-64 bg-white shadow-sm border-r border-gray-200 min-h-screen fixed left-0 top-0 overflow-y-auto">
             <div class="p-6">
-                <h1 class="text-xl font-bold text-gray-900 mb-6">
-                    <a href="/docs/readme" class="hover:text-blue-600 transition-colors">
+                <h1 class="text-xl font-bold text-foreground mb-6">
+                    <a href="/MetaSpec-Kyocera/docs/readme/" class="hover:text-primary transition-colors">
                         MetaSpec-Kyocera
                     </a>
                 </h1>
@@ -41,44 +41,44 @@ const { title, description = "MetaSpec-Kyocera Documentation" } = Astro.props;
                 <!-- Overview Section -->
                 <div class="mb-6">
                     <div class="nav-section-title">Overview</div>
-                    <a href="/docs/readme" class="nav-link">Project README</a>
-                    <a href="/docs/agents" class="nav-link">LLM Instructions</a>
+                    <a href="/MetaSpec-Kyocera/docs/readme/" class="nav-link">Project README</a>
+                    <a href="/MetaSpec-Kyocera/docs/agents/" class="nav-link">LLM Instructions</a>
                 </div>
 
                 <!-- Planning Section -->
                 <div class="mb-6">
                     <div class="nav-section-title">Planning</div>
-                    <a href="/docs/planning/system-planning" class="nav-link">System Planning</a>
+                    <a href="/MetaSpec-Kyocera/docs/planning/system-planning/" class="nav-link">System Planning</a>
                 </div>
 
                 <!-- Implementation Section -->
                 <div class="mb-6">
                     <div class="nav-section-title">Implementation</div>
-                    <a href="/docs/implementation/phase-1-foundation" class="nav-link">Phase 1 Foundation</a>
+                    <a href="/MetaSpec-Kyocera/docs/implementation/phase-1-foundation/" class="nav-link">Phase 1 Foundation</a>
                 </div>
 
                 <!-- Architecture Section -->
                 <div class="mb-6">
                     <div class="nav-section-title">Architecture</div>
-                    <a href="/docs/architecture/web-interface-integration" class="nav-link">Web Interface</a>
+                    <a href="/MetaSpec-Kyocera/docs/architecture/web-interface-integration/" class="nav-link">Web Interface</a>
                 </div>
 
                 <!-- User Guides Section -->
                 <div class="mb-6">
                     <div class="nav-section-title">User Guides</div>
-                    <a href="/docs/user-guides/getting-started" class="nav-link">Getting Started</a>
+                    <a href="/MetaSpec-Kyocera/docs/user-guides/getting-started/" class="nav-link">Getting Started</a>
                 </div>
 
                 <!-- Development Section -->
                 <div class="mb-6">
                     <div class="nav-section-title">Development</div>
-                    <a href="/docs/development/development-setup" class="nav-link">Development Setup</a>
+                    <a href="/MetaSpec-Kyocera/docs/development/development-setup/" class="nav-link">Development Setup</a>
                 </div>
 
                 <!-- API Reference Section -->
                 <div class="mb-6">
                     <div class="nav-section-title">API Reference</div>
-                    <a href="/docs/api/api-overview" class="nav-link">API Overview</a>
+                    <a href="/MetaSpec-Kyocera/docs/api/api-overview/" class="nav-link">API Overview</a>
                 </div>
             </div>
         </nav>
@@ -94,32 +94,38 @@ const { title, description = "MetaSpec-Kyocera Documentation" } = Astro.props;
     </div>
 
     <script>
-        // Highlight current page in navigation
+        // Highlight current page in navigation - with GitHub Pages base path support
         document.addEventListener('DOMContentLoaded', function() {
             const currentPath = window.location.pathname;
             const navLinks = document.querySelectorAll('.nav-link');
 
             navLinks.forEach(link => {
-                if (link.getAttribute('href') === currentPath) {
+                const href = link.getAttribute('href');
+                // Handle both relative and absolute paths for GitHub Pages
+                if (href === currentPath || currentPath.endsWith(href) ||
+                    (href.startsWith('/') && currentPath.includes(href.substring(1)))) {
                     link.classList.add('active');
                 }
             });
         });
 
-        // Add scroll-to-top functionality
+        // Enhanced scroll-to-top functionality with proper styling
+        let scrollButton = null;
         window.addEventListener('scroll', function() {
             if (window.scrollY > 300) {
-                if (!document.getElementById('scroll-to-top')) {
-                    const button = document.createElement('button');
-                    button.id = 'scroll-to-top';
-                    button.innerHTML = '↑';
-                    button.className = 'fixed bottom-4 right-4 bg-blue-600 text-white p-3 rounded-full shadow-lg hover:bg-blue-700 transition-colors';
-                    button.onclick = () => window.scrollTo({ top: 0, behavior: 'smooth' });
-                    document.body.appendChild(button);
+                if (!scrollButton) {
+                    scrollButton = document.createElement('button');
+                    scrollButton.id = 'scroll-to-top';
+                    scrollButton.innerHTML = '↑';
+                    scrollButton.setAttribute('aria-label', 'Scroll to top');
+                    scrollButton.onclick = () => window.scrollTo({ top: 0, behavior: 'smooth' });
+                    document.body.appendChild(scrollButton);
                 }
             } else {
-                const button = document.getElementById('scroll-to-top');
-                if (button) button.remove();
+                if (scrollButton) {
+                    scrollButton.remove();
+                    scrollButton = null;
+                }
             }
         });
     </script>
