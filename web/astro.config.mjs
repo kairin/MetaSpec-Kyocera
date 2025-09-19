@@ -7,7 +7,7 @@ import mdx from '@astrojs/mdx';
 export default defineConfig({
   integrations: [
     tailwind({
-      applyBaseStyles: false, // Use shadcn/ui base styles
+      applyBaseStyles: false, // We handle base styles in globals.css
     }),
     react(),
     mdx()

@@ -1,4 +1,7 @@
 ---
+// Import global styles using ESM syntax
+import '../styles/globals.css';
+
 export interface Props {
   title: string;
   description?: string;
@@ -16,8 +19,6 @@ const { title, description = "MetaSpec-Kyocera Documentation" } = Astro.props;
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <title>{title} | MetaSpec-Kyocera</title>
 
-    <!-- Import global styles -->
-    <link rel="stylesheet" href="/src/styles/globals.css" />
 
     <!-- Inter font from Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
